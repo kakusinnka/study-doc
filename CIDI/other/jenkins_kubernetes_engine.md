@@ -1,0 +1,1 @@
+# [使用 Jenkins 持续部署到 Google Kubernetes Engine](https://cloud.google.com/architecture/continuous-delivery-jenkins-kubernetes-engine)

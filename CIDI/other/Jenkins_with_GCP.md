@@ -1,0 +1,1 @@
+# [如何使用 Google Cloud Platform (GCP) 配置 Jenkins](https://dareplanet.tech/en/insights/how-to-configure-jenkins-with-google-cloud-platform/)
