@@ -73,3 +73,21 @@ Using_Operators.md
 Customizing_DAG_Scheduling_with_Timetables.md
 
 ## Customizing the UI
+* 自定义状态颜色
+* 自定义 DAG UI 标题和 Airflow 页面标题
+* 在仪表板上添加自定义警报消息
+
+## 创建自定义运算符
+些许有些难。。。暂且先跳过。
+* 挂钩
+* 用户界面
+* 模板化
+* 定义一个运算符额外链接
+* 传感器
+
+## 创建自定义 @task 装饰器
+些许有些难。。。暂且先跳过。
+*（可选）添加IDE自动补全支持
+
+## 管理连接
+ManagingConnections.md
