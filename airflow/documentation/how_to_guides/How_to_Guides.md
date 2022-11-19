@@ -91,3 +91,21 @@ Customizing_DAG_Scheduling_with_Timetables.md
 
 ## 管理连接
 ManagingConnections.md
+
+## 管理变量
+* 变量是 Airflow 的运行时配置概念——一个全局的通用键/值存储，可以从您的任务中查询，并通过 Airflow 的用户界面轻松设置，或作为 JSON 文件批量上传。
+* Airflow 变量也可以使用环境变量来创建和管理。使用环境变量设置的变量不会出现在 Airflow UI 中，但您可以在 DAG 文件中使用它们。 使用环境变量设置的变量也将优先于 Airflow UI 中定义的变量。
+
+## 在反向代理后面运行 Airflow
+对反向代理本身不是很熟悉
+
+## 使用 systemd 运行 Airflow
+对 systemd 本身不是很熟悉
+
+## 使用测试模式配置
+不知道在说啥
+
+## 定义一个运算符额外链接
+不知道在说啥
+
+## 电子邮件配置
