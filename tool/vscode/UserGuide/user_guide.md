@@ -5,8 +5,11 @@
 ## 扩展市场
 * ExtensionMarketplace.md
 
-智能感知
-代码导航
+## 智能感知
+* IntelliSense.md
+
+## 代码导航
+* CodeNavigation.md
 重构
 调试
 网页版 VS 代码

@@ -39,5 +39,11 @@ Version: 2.2.5
 ## How-to Guides
 这些操作指南将引导您完成使用和配置 Airflow 环境的常见任务。
 
+## UI / Screenshots
+Airflow UI 可让您轻松监控数据管道并对其进行故障排除。 -> UI_Screenshots.md
+
+## Concepts
+在这里，您可以找到有关 Airflow 的每个核心概念及其使用方法的详细文档，以及高级架构概述。 -> Concepts
+
 ## Time Zones
 Time_Zones.md
