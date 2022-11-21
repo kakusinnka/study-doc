@@ -10,8 +10,13 @@
 
 ## 代码导航
 * CodeNavigation.md
-重构
-调试
+
+## 重构
+* Refactoring.md
+
+## 调试
+* Debugging.md
+
 网页版 VS 代码
 任务
 设置同步
