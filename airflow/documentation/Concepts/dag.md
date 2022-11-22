@@ -104,9 +104,25 @@ DAG 将以以下两种方式之一运行：
 默认情况下，DAG 任务只有在它依赖的所有任务都成功时才会运行。但是，有几种修改方法:
 * 分支: 根据条件选择要移动到的任务。
   * Python 函数返回的 task_id 必须直接引用 BranchPythonOperator 任务下游的任务。
+* Latest Only: 如果不是 "latest" DAG 运行，这个特殊的 Operator 会跳过其下游的所有任务。latest: 
+* Depends On Past: depends_on_past=True 使其依赖于自己之前的任务实例是否成功，而 wait_for_downstream=True 则要求所有直接依赖的下游任务实例都在其之前的执行中成功。start_date 必须设定。第一次总会运行。
+* 触发规则: 
+  * all_success（默认）：所有上游任务都已成功
+  * all_failed：所有上游任务都处于 failed 或 upstream_failed 状态
+  * all_done：所有上游任务都在执行时完成
+  * one_failed：至少一个上游任务失败（不等待所有上游任务完成）
+  * one_success：至少一个上游任务已经成功（不等待所有上游任务完成）
+  * none_failed: 所有上游任务都没有 failed 或 upstream_failed。也就是所有上游任务都已成功或被跳过
+  * none_failed_min_one_success: 所有上游任务都没有 failed or upstream_failed，且至少有一个上游任务成功了。
+  * none_skipped: 没有上游任务处于 skipped 状态——即所有上游任务都处于success, failed, 或 upstream_failed 状态
+  * always: 完全没有依赖关系，随时运行这个任务
 
 ## 动态 DAG
+由于 DAG 是由 Python 代码定义的，因此不需要它是纯粹的声明性的；您可以自由使用循环、函数等来定义您的 DAG。
+
 ## DAG 可视化
+* TaskGroups: TaskGroup 可用于在 Graph 视图中将任务组织到分层组中。
+
 ## DAG 和 TASK 文档
 ## SubDAGs
 ## TaskGroups vs SubDAGs
