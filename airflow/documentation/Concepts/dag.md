@@ -122,10 +122,28 @@ DAG 将以以下两种方式之一运行：
 
 ## DAG 可视化
 * TaskGroups: TaskGroup 可用于在 Graph 视图中将任务组织到分层组中。
+* Edge Labels(边缘标签): 给 Graph 视图中标记不同任务之间的依赖边。
 
-## DAG 和 TASK 文档
+## DAG 和 TASK 注释文档
+可以向 Web 界面中可见的 DAG 和 Task 对象添加文档或注释（DAG 的“Graph”和“Tree”，任务的“Task Instance Details”）。
+
 ## SubDAGs
+您希望将大量任务分组到一个逻辑单元中, 可以考虑 SubDAG。
+
 ## TaskGroups vs SubDAGs
+|  TaskGroup   | SubDAG  |
+|  ----  | ----  |
+| 同一 DAG 的一部分 | 作为单独的 DAG |
+| 同一 DAG 视图和统计信息 | 父 DAG 和子 DAG 之间的独立视图和统计数据集 |
+| 一组DAG配置 | 几组DAG配置 |
+| 通过现有的 SchedulerJob 支持并行配置 | 由于新生成的 BackfillJob，不支持并行配置 |
+| 使用上下文管理器的简单构造声明 | 具有命名限制的复杂 DAG 工厂 |
+SubDAG 已被弃用，因此 TaskGroup 始终是首选。
+
 ## 打包 DAG
 ## .airflowignore
+.airflowignore 文件指定 DAG_FOLDER 或 PLUGINS_FOLDER 中 Airflow 应有意忽略的目录或文件。
+* 您还可以为 DAG_FOLDER 中的子文件夹准备 .airflowignore 文件，它只适用于该子文件夹。
+
 ## DAG 依赖项
+Dag Dependencies 视图 Menu -> Browse -> DAG Dependencies 有助于可视化 DAG 之间的依赖关系。
