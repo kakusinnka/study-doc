@@ -43,8 +43,10 @@ Operator 在概念上是预定义Task的模板，您可以在 DAG 中以声明�
 * 与 Operators 非常相似，Airflow 有大量预建的传感器供您使用，既可以在核心 Airflow 中使用，也可以通过我们的供应商系统使用。
 
 ## 可延迟的 Operators(操作员) 和 Triggers(触发器)
-* 使用可延迟 Operators
-* 编写可延迟的 Operators
+Operators 和 Sensor 在整个运行期间占用一个完整的 worker slot(工作槽)，即使它们处于空闲状态。为了解决资源浪费，使用可延迟运算符，能够在知道必须等待时暂停自身并释放工作人员的能力，并将恢复它的工作交给称为Trigger。
+
+* 使用可延迟 Operators: 使用可延迟运算符几乎是透明的.
+* 编写可延迟的 Operators: 编写它们需要更多的工作。
 * 高可用性
 * 智能传感器
 
@@ -54,12 +56,15 @@ Operator 在概念上是预定义Task的模板，您可以在 DAG 中以声明�
 * 迁移到可延迟 Operators
 
 ## 任务流
+使用纯 Python 代码而不是 Operators 编写大部分 DAG，那么 TaskFlow API 将使编写干净的 DAG 变得容易得多，而无需额外的样板，全部使用 @task 装饰器。
+
 * 历史
 
 ## Executor(执行者)
+执行器是任务实例运行的机制。它们有一个通用的 API 并且是“可插入的”，这意味着您可以根据您的安装需要更换执行器。Airflow 一次只能配置一个执行器；这是由配置文件[core]部分中的 executor 选项设置的。
 * Executor(执行者) 类型
 
-## 调度器
+## 调度器 Scheduler.md
 * DAG 文件处理
 * 使用未来日期触发 DAG
 * 运行多个调度程序
