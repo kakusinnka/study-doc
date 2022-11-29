@@ -45,5 +45,11 @@ Airflow UI 可让您轻松监控数据管道并对其进行故障排除。 -> UI
 ## Concepts
 在这里，您可以找到有关 Airflow 的每个核心概念及其使用方法的详细文档，以及高级架构概述。 -> Concepts
 
+## Executor
+Concepts/Concepts.md#Executor
+
+## DAG Runs
+DAGRuns.md
+
 ## Time Zones
 Time_Zones.md
