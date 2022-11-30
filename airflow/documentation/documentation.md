@@ -51,5 +51,11 @@ Concepts/Concepts.md#Executor
 ## DAG Runs
 DAGRuns.md
 
-## Time Zones
+## Plugins
+Plugins.md
+
+## Security
+Security.md
+
+## Time Zoes
 Time_Zones.md
