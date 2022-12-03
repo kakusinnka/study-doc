@@ -59,3 +59,6 @@ Security.md
 
 ## Time Zoes
 Time_Zones.md
+
+## Modules Management
+ModulesManagement.md

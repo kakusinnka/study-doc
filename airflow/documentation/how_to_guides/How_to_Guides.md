@@ -109,3 +109,4 @@ ManagingConnections.md
 不知道在说啥
 
 ## 电子邮件配置
+如果你想让 airflow 在重试、失败时发送邮件，并且你想使用 airflow.utils.email.send_email_smtp 功能，你必须在这里配置一个 [smtp](https://airflow.apache.org/docs/apache-airflow/2.2.5/configurations-ref.html#config-smtp) 服务器
