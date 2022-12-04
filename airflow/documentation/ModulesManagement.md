@@ -58,4 +58,44 @@ from my_company.my_custom_dags.base_dag import BaseDag
 您还可以使用 airflow info 命令查看确切路径，并使用它们类似于使用环境变量 PYTHONPATH 指定的目录。
 
 ## 将目录添加到 PYTHONPATH
-## 在 Python 中创建包
+## 在 Python 中创建包 airflow-src\other\CreatingPackageInPython
+这是创建包的方法:
+1. 在开始之前，安装以下软件包: 
+   1. setuptools: setuptools 是一个包开发过程库，专为创建和分发 Python 包而设计。
+   2. wheel: wheel 包为 setuptools 提供了一个 bdist_wheel 命令。它创建可通过 pip install 命令直接安装的 .whl 文件。
+   ```
+   pip install --upgrade pip setuptools wheel
+   ```
+2. 创建包目录
+3. 在包内创建文件 __init__.py
+4. Create setup.py
+5. Build the wheel (造轮子)
+```
+python setup.py bdist_wheel
+```
+这将在项目中创建一些目录，整体结构如下所示：
+```
+.
+├── airflow_operators
+│   ├── __init__.py
+├── airflow_operators.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   └── top_level.txt
+├── build
+│   └── bdist.macosx-10.15-x86_64
+├── dist
+│   └── airflow_operators-0.0.0-py3-none-any.whl
+└── setup.py
+```
+6. 使用 pip 安装 .whl 文件
+```
+pip install dist/airflow_operators-0.0.0-py3-none-any.whl
+```
+7. 该包现在可以使用了！
+```
+>>> import airflow_operators
+Hello from airflow_operators
+>>>
+```

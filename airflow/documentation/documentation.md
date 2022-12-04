@@ -57,8 +57,21 @@ Plugins.md
 ## Security
 Security.md
 
+## Logging & Monitoring
+LoggingMonitoring.md
+
 ## Time Zoes
 Time_Zones.md
+
+## Using the CLI
+### 设置 Bash/Zsh 完成
+## 创建连接
+### 将 DAG 结构导出为图像
+### 显示 DAG 结构
+### 格式化命令输出
+
+## 一体化(Integration)
+Airflow 有一种机制，允许您扩展其功能并与其他系统集成。
 
 ## Modules Management
 ModulesManagement.md
