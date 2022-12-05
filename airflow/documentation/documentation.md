@@ -73,5 +73,51 @@ Time_Zones.md
 ## 一体化(Integration)
 Airflow 有一种机制，允许您扩展其功能并与其他系统集成。
 
+## Kubernetes
+Apache Airflow 旨在成为一个对 Kubernetes 非常友好的项目，许多用户在 Kubernetes 集群中运行 Airflow，以便利用 Kubernetes 提供的更高的稳定性和自动缩放选项。
+### Kubernetes 的 Helm Chart
+我们为 Airflow 维护官方 Helm chart，帮助您定义、安装和升级部署。Helm Chart 使用由社区维护和发布的官方 Docker 镜像和 Dockerfile
+### Kubernetes 执行器
+Kubernetes Executor 允许您将所有 Airflow 任务作为单独的 Pod 在 Kubernetes 上运行.
+### KubernetesPodOperator
+KubernetesPodOperator 允许您在 Kubernetes 上创建 Pod。
+### Pod 突变钩子
+Airflow 本地设置文件 (airflow_local_settings.py) 可以定义一个 pod_mutation_hook 函数，该函数能够在将 pod 对象发送到 Kubernetes 客户端进行调度之前对其进行突变。
+
+## Lineage
+不知道在说啥。
+
+## DAG序列化
+通过DAG 序列化，我们的目标是将 Web 服务器与 DAG 解析分离，这将使 Web 服务器非常轻量级。
+![DAG序列化](../image/dag_serialization.png)
+### Dag 序列化设置
+```
+[core]
+min_serialized_dag_update_interval = 30
+min_serialized_dag_fetch_interval = 10
+max_num_rendered_ti_fields_per_task = 30
+```
+* min_serialized_dag_update_interval：此标志设置最小间隔（以秒为单位），在此之后应更新数据库中的序列化 DAG。
+* min_serialized_dag_fetch_interval：此选项控制当序列化 DAG 已加载到 Web 服务器的 DagBag 中时，从数据库中重新获取序列化 DAG 的频率。
+* max_num_rendered_ti_fields_per_task：此选项控制每个任务存储在数据库中的最大渲染任务实例字段数。
+### 限制
+### 使用不同的 JSON 库
+要使用不同的 JSON 库而不是标准 json 库，您需要在本地 Airflow 设置文件 ( airflow_local_settings.py) 中定义一个变量，如下所示：
+```
+import ujson
+
+json = ujson
+```
+
 ## Modules Management
 ModulesManagement.md
+
+
+## Airflow的发布流程和版本政策
+### 弃用政策
+### 实验功能
+
+## 变更日志
+
+## 最佳实践
+BestPractices.md
