@@ -7,6 +7,24 @@ Quickstart.md
 
 # 方法指南
 ## 所有方法指南
+
 ## 启用和停用 Cloud Composer 服务
 停用 Cloud Composer API 后，项目中的环境将无法恢复。停用 API 后，您仍然可以访问存储在环境存储桶中的数据，但环境本身不再可用。
-How-to-guides.md
+
+## 创建环境
+CreateEnvironments.md
+
+## 使用 Terraform 创建环境
+Terraform 待学习
+
+## 优化环境性能和费用
+OptimizeEnvPerformanceCost.md
+
+## 运行本地 Airflow 环境
+RunLocalAirflowEnv.md
+
+## 配置网络
+先不看
+
+## 配置环境
+ConfigEnv.md
