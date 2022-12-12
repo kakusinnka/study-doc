@@ -45,3 +45,54 @@ Airflow 连接可让您从 Cloud Composer 环境访问 Google Cloud 项目中的
 ## 创建新的 Airflow 连接
 * 准备工作: 向与您的 Cloud Composer 环境关联的服务帐号授予适当的 IAM 权限，并使用 DAG 定义中的默认连接。
 * 创建与其他项目的连接: 要使用您创建的连接，请在构建 Google Cloud Airflow 操作器时将其设置为相应的连接 ID 参数。
+
+# 指定维护窗口
+## 关于维护窗口
+借助维护期，您可以控制环境的维护时间段：
+* 如果您为环境定义了自定义维护窗口，则 Cloud Composer 会在这些定义的时间段内执行维护。
+* 如果您没有为环境定义自定义维护期，则 Cloud Composer 会在默认维护期执行维护。
+## 维护窗口期间会发生什么
+指定维护窗口时，您在一周内为维护操作提供至少 12 小时的时间：
+* 在维护期间，您的环境将保持可用。在进行维护操作时，环境中的部分组件可能会暂时不可用。
+* 为保证 Cloud Composer 有足够的时间来安排和执行所有维护操作，您必须提供这 12 小时的时间。
+## 默认维护窗口
+默认情况下，维护窗口的运行时间为星期日、星期五和星期六的 00:00:00 到 04:00:00 (GMT)。
+## 如何使用维护窗口
+维护操作可能会影响 DAG 和 Airflow 任务的执行，因此我们建议您执行以下操作：
+1. 定义 Cloud Composer 环境的维护窗口。
+2. 通过在 DAG 中使用 start_date 和 schedule_interval 参数，安排在指定维护窗口之外运行的 DAG。
+## 为新环境指定维护窗口
+您可以在创建环境时指定维护窗口。
+## 为现有环境指定维护窗口
+
+# 配置电子邮件通知
+## 准备工作
+## 配置 SendGrid 电子邮件服务
+要接收通知，请配置您的环境变量以通过 SendGrid 电子邮件服务发送电子邮件。
+### 使用 SendGrid 注册
+### 配置变量
+* 在 Secret Manager 中存储值:  1, 安装 apache-airflow-providers-sendgrid PyPI 包。2, 确保为机密后端设置权限和 Airflow 配置选项。 先放一放。
+* 使用环境变量设置值: 为您的环境设置以下环境变量
+* 测试您的 SendGrid 配置
+```
+import datetime
+
+import airflow
+from airflow.operators.email import EmailOperator
+
+
+with airflow.DAG(
+    "composer_sample_sendgrid",
+    start_date=datetime.datetime(2022, 1, 1),
+) as dag:
+
+    task_email = EmailOperator(
+        task_id="send-email",
+        conn_id="sendgrid_default",
+        # You can specify more than one recipient with a list.
+        to="user@example.com",
+        subject="EmailOperator test for SendGrid",
+        html_content="This is a test message sent through SendGrid.",
+        dag=dag,
+    )
+```
