@@ -23,8 +23,12 @@
 ## 任务
 Tasks.md
 
-设置同步
-片段
+## 设置同步
+SettingsSync.md
+
+## 片段
+Snippets.md
+
 埃米特
 命令行界面
 工作区信任
