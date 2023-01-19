@@ -29,18 +29,36 @@ Docker 使用客户端-服务器架构。Docker客户端与 Docker守护进程�
 * 使用 Docker Compose 运行应用程序
 
 ## 第 2 部分：容器化应用程序
-* 要完成本指南，您需要以下内容：
-* Docker 在本地运行。按照说明下载并安装 Docker。
-* 一个Git 客户端。
-* 用于编辑文件的 IDE 或文本编辑器。Docker 建议使用Visual Studio Code。
-* 对容器和图像的概念性理解。
+* 用 git 获取应用程序
+* 写一个 Dockerfile, 使用 docker build 构建镜像。
+* 使用 docker run 启动容器。
 
 ## 第 3 部分：更新应用程序
+* 更新代码，重新 build 镜像，停止旧的容器，启动新容器（避免端口冲突）。
 
 ## 第 4 部分：共享应用程序
+* 创建 Docker Hub
+* 使用 docker push 推镜像（注意镜像名前半部分要与远程库匹配）。
+* 使用 ddocker run 运行新做的镜像。
+
 ## 第 5 部分：保留数据库
+一个容器中创建的文件在另一个容器中不可用。卷提供了将容器的特定文件系统路径连接回主机的能力。
+* 使用docker volume create命令创建卷（在 Docker Desktop 中运行时，Docker 命令实际上是在您机器上的小型 VM 中运行。如果您想查看挂载点目录的实际内容，则需要查看该 VM 的内部）。
+  ```
+  docker run -dp 3000:3000 --mount type=volume,src=todo-db,target=/etc/todos getting-started
+  ```
+* 运行容器时，添加 --mount 指定卷装载的选项。
+* 使用 docker volume inspect 命令查看卷的信息。Mountpoint是磁盘上存储数据的实际位置。
+
 ## 第 6 部分：使用绑定安装
+绑定挂载是另一种类型的挂载，它允许您将主机文件系统中的目录共享到容器中。
+```
+docker run -it --mount type=bind,src="$(pwd)",target=/src ubuntu bash
+```
+
 ## 第 7 部分：多容器应用程序
+每个容器都应该做一件事，并且把它做好。
+* 创建网络。
 ## 第 8 部分：使用 Docker Compose
 ## 第 9 部分：形象构建最佳实践
 ## 第 10 部分：下一步是什么？
