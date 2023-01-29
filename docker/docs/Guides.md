@@ -58,8 +58,11 @@ docker run -it --mount type=bind,src="$(pwd)",target=/src ubuntu bash
 
 ## 第 7 部分：多容器应用程序
 每个容器都应该做一件事，并且把它做好。
-* 创建网络。
+* 使用 docker network create 创建网络。
+
 ## 第 8 部分：使用 Docker Compose
+* 创建一个名为 docker-compose.yml 的文件。
+
 ## 第 9 部分：形象构建最佳实践
 ## 第 10 部分：下一步是什么？
 # Language-specific guides
