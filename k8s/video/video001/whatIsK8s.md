@@ -90,7 +90,7 @@ Deployment支持自动水平扩展，可以根据负载变化自动调整Pod的�
 3. spec.template: 指定要由ReplicaSet创建的Pod的模板规范。
 
 ## K8s 基础构架解释
-![K8s基础构架图](../images/k8s-architecture-diagram.jpg)
+![K8s基础构架图](../../images/k8s-architecture-diagram.jpg)
 ### 上图展示了Kubernetes的整体架构，主要包括以下几个组件：
 * Master Node：控制整个集群的中心节点，负责管理集群的资源和协调各种活动。
   * API Server：是Kubernetes集群的中心控制器，负责处理集群内部各种请求和操作。
@@ -103,11 +103,10 @@ Deployment支持自动水平扩展，可以根据负载变化自动调整Pod的�
   * Kubelet：是Kubernetes Node上的代理，负责管理和运行Pod。
   * Kube-proxy：是Kubernetes集群中的网络代理，用于实现集群内部的服务发现和负载均衡。
 
-![K8s基础构架图](../images/container-pod-deplyment-kubernetes.png)
+![K8s基础构架图](../../images/container-pod-deplyment-kubernetes.png)
+![K8s基础构架图](../../images/layers-of-abstraction.png)
 
 ## Minikube 和 Kubectl
 ### Minikube是一个在本地机器上运行Kubernetes集群的工具，它使用虚拟机或容器技术创建一个单节点Kubernetes集群。Minikube非常适合Kubernetes初学者或开发人员在本地开发、测试和学习Kubernetes。
 
 ### kubectl是Kubernetes的命令行工具，用于管理和操作Kubernetes集群。使用kubectl，您可以在Kubernetes集群中创建、更新、删除和查询资源对象，例如Pod、Deployment、Service、ConfigMap、Secret等。kubectl还可以帮助您查看集群状态、监视资源对象、调试应用程序和执行复杂的操作。
-
-> 参考 minikubeAndKubectlSetUpLocal.md

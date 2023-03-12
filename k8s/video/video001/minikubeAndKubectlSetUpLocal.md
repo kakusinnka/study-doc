@@ -15,11 +15,15 @@ minikube start
 ```
 minikube status
 ```
+### 启动 Kubernetes 集群内部 Service 的代理
+```
+minikube service mongo-express-service
+```
 
 ***
 ***
-![Kubectl 命令](./../images/kubectl001.png)
-![Kubectl 命令](./../images/kubectl002.png)
+![Kubectl 命令](./../../images/kubectl001.png)
+![Kubectl 命令](./../../images/kubectl002.png)
 
 ### 获取 kubectl 版本
 ```
@@ -41,9 +45,21 @@ kubectl edit deployment nginx-depl
 ```
 kubectl get nodes
 ```
+### 获取 namespace 状态
+```
+kubectl get namespace
+```
+### 列出当前命名空间中所有可用的Kubernetes资源
+```
+kubectl get all
+```
 ### 获取 pod 状态
 ```
 kubectl get pod
+```
+### 获取 pod 状态 通过添加 -o wide 参数，可以将输出结果扩展为包含更多的列，以提供更详细的信息。
+```
+kubectl get pod -o wide
 ```
 ### 获取 service 状态
 ```
@@ -53,9 +69,21 @@ kubectl get services
 ```
 kubectl get deployment
 ```
+### 获取 Deployment 资源的完整定义
+```
+kubectl get deployment nginx-deployment -o yaml > nginx-deployment-status.yaml
+```
 ### 获取 replicaset 状态
 ```
 kubectl get replicaset
+```
+### 获取 secret 状态
+```
+kubectl get secret
+```
+### 显示当前Kubernetes集群的基本信息，包括Master节点的地址和端口、Dashboard的地址等。
+```
+kubectl cluster-info
 ```
 ### 删除 deployment
 ```
@@ -65,9 +93,17 @@ kubectl delete deployment mongo-depl
 ```
 kubectl logs nginx-depl-8475696677-dqtz5
 ```
+### 于列出Kubernetes API服务器上所有非命名空间资源的API资源类型及其对应的简称。
+```
+kubectl api-resources --namespaced=false
+```
 ### 获取关于 pod 的描述
 ```
 kubectl describe pod mongo-depl-5ccf565747-znrjh
+```
+### 获取关于 service 的描述
+```
+kubectl describe service nginx-service
 ```
 ### 进入 pod 内部
 ```
