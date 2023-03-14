@@ -19,6 +19,10 @@ minikube status
 ```
 minikube service mongo-express-service
 ```
+###  启用 Ingress 控制器的命令
+```
+minikube addons enable ingress
+```
 
 ***
 ***
