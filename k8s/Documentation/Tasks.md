@@ -48,12 +48,12 @@ $ minikube start
 1. 更新 apt 包索引并使用 Kubernetes apt 存储库安装所需的包：
   sudo apt-get update
   sudo apt-get install -y ca-certificates curl
-1. 下载 Google Cloud 公开签名秘钥：
+2. 下载 Google Cloud 公开签名秘钥：
   sudo mkdir /etc/apt/keyrings
   sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-1. 添加 Kubernetes apt 仓库：
+3. 添加 Kubernetes apt 仓库：
   echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-1. 更新 apt 包索引，使之包含新的仓库并安装 kubectl：
+4. 更新 apt 包索引，使之包含新的仓库并安装 kubectl：
   sudo apt-get update
   sudo apt-get install -y kubectl
 ```
