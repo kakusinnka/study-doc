@@ -1,5 +1,6 @@
 ## Service
-在 Kubernetes 中，一个 Service 用于定义一组具有相同功能的 Pod，并且提供一个稳定的访问它们的方式，以便其它的应用程序或者 Service 能够与它们进行通信。它们可以通过 Cluster IP 或者 NodePort 或者 LoadBalancer 或者 ExternalName 来暴露服务。
+在 Kubernetes 中，一个 Service 用于定义一组具有相同功能的 Pod，并且提供一个稳定的访问它们的方式，以便其它的应用程序或者 Service 能够与它们进行通信。它们可以通过 Cluster IP 或者 NodePort 或者 LoadBalancer 或者 ExternalName 来暴露服务。  
+![Service](../../images/k8s-service-02.png)  
 
 ### 以下是 Service 的主要特点：
 * 稳定的 DNS 名称：Service 在 Kubernetes 集群内会分配一个稳定的 DNS 名称，其它应用程序可以通过这个名称来访问这个 Service，而不必关心 Service 后面的 Pod 是否在改变。
@@ -25,6 +26,8 @@
 
 ClusterIP类型的Service将在集群内部创建一个虚拟IP地址，只有在集群内部才能访问，对于外部的请求它是不可见的。当客户端向Service的虚拟IP地址发送请求时，请求会被路由到一个后端Pod上，这个Pod的IP地址和端口是通过Endpoint对象来维护的。Endpoint对象是Service和Pod之间的一种关系，它包含了一个或多个Pod的IP地址和端口，当Service创建或更新时，Endpoint对象会自动更新。
 
-NodePort类型的Service会在每个节点上监听一个端口，所有进入该端口的请求都会被转发到Service的ClusterIP地址和端口上。NodePort类型的Service通常用于让外部客户端可以访问集群内部的服务。当Service创建时，Kubernetes会自动为它分配一个端口，也可以通过配置指定一个固定的端口。
+NodePort类型的Service会在每个节点上监听一个端口，所有进入该端口的请求都会被转发到Service的ClusterIP地址和端口上。NodePort类型的Service通常用于让外部客户端可以访问集群内部的服务。当Service创建时，Kubernetes会自动为它分配一个端口，也可以通过配置指定一个固定的端口。  
+![Service](../../images/k8s-service-nodeport-01.png)  
+![Service](../../images/k8s-service-nodeport-02.png)  
 
 LoadBalancer类型的Service通常用于将服务暴露到公共互联网上，它会在云服务提供商（如AWS、GCP、Azure）上创建一个负载均衡器，并将请求路由到Service的ClusterIP地址和端口上。当Service创建时，Kubernetes会向云服务提供商请求一个负载均衡器，并分配一个外部IP地址。
