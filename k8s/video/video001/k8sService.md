@@ -25,9 +25,16 @@
 当客户端向Service发送请求时，请求会被路由到一个后端Pod上，负载均衡器会根据Service的配置来选择后端Pod。Service的配置包括了三种类型：ClusterIP、NodePort和LoadBalancer。
 
 ClusterIP类型的Service将在集群内部创建一个虚拟IP地址，只有在集群内部才能访问，对于外部的请求它是不可见的。当客户端向Service的虚拟IP地址发送请求时，请求会被路由到一个后端Pod上，这个Pod的IP地址和端口是通过Endpoint对象来维护的。Endpoint对象是Service和Pod之间的一种关系，它包含了一个或多个Pod的IP地址和端口，当Service创建或更新时，Endpoint对象会自动更新。
+![Service_ClusterIP](../../images/k8s-service-clusterIp-01.png)  
 
 NodePort类型的Service会在每个节点上监听一个端口，所有进入该端口的请求都会被转发到Service的ClusterIP地址和端口上。NodePort类型的Service通常用于让外部客户端可以访问集群内部的服务。当Service创建时，Kubernetes会自动为它分配一个端口，也可以通过配置指定一个固定的端口。  
-![Service](../../images/k8s-service-nodeport-01.png)  
-![Service](../../images/k8s-service-nodeport-02.png)  
+![Service_NodePort](../../images/k8s-service-nodeport-01.png)  
+![Service_NodePort](../../images/k8s-service-nodeport-02.png)  
+![Service_NodePort](../../images/k8s-service-nodeport-03.png)  
 
-LoadBalancer类型的Service通常用于将服务暴露到公共互联网上，它会在云服务提供商（如AWS、GCP、Azure）上创建一个负载均衡器，并将请求路由到Service的ClusterIP地址和端口上。当Service创建时，Kubernetes会向云服务提供商请求一个负载均衡器，并分配一个外部IP地址。
+LoadBalancer类型的Service通常用于将服务暴露到公共互联网上，它会在云服务提供商（如AWS、GCP、Azure）上创建一个负载均衡器，并将请求路由到Service的ClusterIP地址和端口上。当Service创建时，Kubernetes会向云服务提供商请求一个负载均衡器，并分配一个外部IP地址。  
+![Service_LoadBalancer](../../images/k8s-service-LoadBalancer-01.png)  
+
+Kubernetes Ingress是Kubernetes集群中的API对象之一，它用于管理外部到集群内Service的映射规则，提供了对HTTP和HTTPS流量的访问控制和路由的管理。  
+简单来说，Ingress允许你为你的服务定义外部访问规则。它可以将多个服务路由到同一域名下的不同路径，或将同一服务暴露在不同的域名下。  
+![Service_Ingress](../../images/k8s-service-ingress-01.png)  
