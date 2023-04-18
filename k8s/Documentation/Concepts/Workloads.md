@@ -151,7 +151,11 @@ pod-template-hash 是 Kubernetes 中一个由 Deployment、ReplicaSet 或 Statef
 ### 更新 Deployment
 更新 nginx Pod 以使用 nginx:1.16.1 镜像，而不是 nginx:1.14.2 镜像。
 ```
+kubectl set image deployment.v1.apps/nginx-deployment nginx=nginx:1.16.1
+# 或者
 kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
+# 或者 直接编辑 nginx-deployment.yaml
+将 .spec.template.spec.containers[0].image 从 nginx:1.14.2 更改至 nginx:1.16.1
 ```
 #### 翻转（多 Deployment 动态更新）
 Deployment 控制器每次注意到新的 Deployment 时，都会创建一个 ReplicaSet 以启动所需的 Pod。当 Deployment 正在上线时被更新，Deployment 会针对更新创建一个新的 ReplicaSet 并开始对其扩容，之前正在被扩容的 ReplicaSet 会被翻转: 假定你在创建一个 Deployment 以生成 nginx:1.14.2 的 5 个副本，但接下来 更新 Deployment 以创建 5 个 nginx:1.16.1 的副本，而此时只有 3 个 nginx:1.14.2 副本已创建。在这种情况下，Deployment 会立即开始杀死 3 个 nginx:1.14.2 Pod， 并开始创建 nginx:1.16.1 Pod。它不会等待 nginx:1.14.2 的 5 个副本都创建完成后才开始执行变更动作。
