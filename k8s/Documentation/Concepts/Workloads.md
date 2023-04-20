@@ -183,24 +183,53 @@ kubectl scale deployment/nginx-deployment --replicas=10
 kubectl autoscale deployment/nginx-deployment --min=10 --max=15 --cpu-percent=80
 ```
 #### 比例缩放
+理解：maxSurge=3，maxUnavailable=2
+### 暂停、恢复 Deployment 的上线过程
+```
+# 使用如下指令暂停上线
+kubectl rollout pause deployment/nginx-deployment
 
-暂停、恢复 Deployment 的上线过程
-Deployment 状态
-进行中的 Deployment
-完成的 Deployment
-失败的 Deployment
-对失败 Deployment 的操作
-清理策略
-金丝雀部署
-编写 Deployment 规约
-Pod 模板
-副本
-选择算符
-策略
-进度期限秒数
-最短就绪时间
-修订历史限制
-paused（暂停的）
+# 进行一系列 Deployment 的更新操作
+
+# 恢复 Deployment 上线
+kubectl rollout resume deployment/nginx-deployment
+```
+### Deployment 状态
+#### 进行中的 Deployment
+#### 完成的 Deployment
+#### 失败的 Deployment
+#### 对失败 Deployment 的操作
+```
+# 监视 Deployment 的进度
+kubectl rollout status
+# 从 kubectl rollout 命令获得的返回状态
+echo $?
+```
+### 清理策略
+你可以在 Deployment 中设置 .spec.revisionHistoryLimit 字段以指定保留此 Deployment 的多少个旧有 ReplicaSet。其余的 ReplicaSet 将在后台被垃圾回收。 默认情况下，此值为 10。
+### 金丝雀部署
+### 编写 Deployment 规约
+#### Pod 模板
+.spec 中只有 .spec.template 和 .spec.selector 是必需的字段。
+#### 副本
+.spec.replicas 是指定所需 Pod 的可选字段。它的默认值是1。
+#### 选择算符
+.spec.selector 是指定本 Deployment 的 Pod 标签选择算符的必需字段。
+#### 策略
+.spec.strategy 策略指定用于用新 Pod 替换旧 Pod 的策略。 .spec.strategy.type 可以是 “Recreate” 或 “RollingUpdate”。“RollingUpdate” 是默认值。
+* 重新创建 Deployment: 重新创建 Deployment
+* 滚动更新 Deployment: Deployment 会在 .spec.strategy.type==RollingUpdate时，采取 滚动更新的方式更新 Pod。你可以指定 maxUnavailable 和 maxSurge 来控制滚动更新 过程。
+  * 最大不可用: .spec.strategy.rollingUpdate.maxUnavailable 是一个可选字段，用来指定 更新过程中不可用的 Pod 的个数上限。
+  * 最大峰值: .spec.strategy.rollingUpdate.maxSurge 是一个可选字段，用来指定可以创建的超出期望 Pod 个数的 Pod 数量。
+#### 进度期限秒数
+.spec.progressDeadlineSeconds 是一个可选字段，用于指定系统在报告 Deployment 进展失败 之前等待 Deployment 取得进展的秒数。Deployment 控制器将在默认 600 毫秒内持续重试 Deployment。
+#### 最短就绪时间
+.spec.minReadySeconds 是一个可选字段，用于指定新创建的 Pod 在没有任意容器崩溃情况下的最小就绪时间， 只有超出这个时间 Pod 才被视为可用。默认值为 0（Pod 在准备就绪后立即将被视为可用）。 
+#### 修订历史限制
+.spec.revisionHistoryLimit 是一个可选字段，用来设定出于回滚目的所要保留的旧 ReplicaSet 数量。
+#### paused（暂停的）
+.spec.paused 是用于暂停和恢复 Deployment 的可选布尔字段。
+
 ## ReplicaSet
 ReplicaSet 的工作原理
 何时使用 ReplicaSet
