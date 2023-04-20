@@ -231,20 +231,71 @@ echo $?
 .spec.paused 是用于暂停和恢复 Deployment 的可选布尔字段。
 
 ## ReplicaSet
-ReplicaSet 的工作原理
-何时使用 ReplicaSet
-示例
-非模板 Pod 的获得
-编写 ReplicaSet 的清单
-Pod 模板
-Pod 选择算符
-Replicas
-使用 ReplicaSet
-删除 ReplicaSet 和它的 Pod
-只删除 ReplicaSet
-将 Pod 从 ReplicaSet 中隔离
-扩缩 ReplicaSet
-Pod 删除开销
+### ReplicaSet 的工作原理
+ReplicaSet 的目的是维护一组在任何时候都处于运行状态的 Pod 副本的稳定集合。 因此，它通常用来保证给定数量的、完全相同的 Pod 的可用性。
+### 何时使用 ReplicaSet
+ReplicaSet 确保任何时间都有指定数量的 Pod 副本在运行。 然而，Deployment 是一个更高级的概念，它管理 ReplicaSet，并向 Pod 提供声明式的更新以及许多其他有用的功能。 因此，我们建议使用 Deployment 而不是直接使用 ReplicaSet， 除非你需要自定义更新业务流程或根本不需要更新。
+### ReplicaSet 与 Deployment 的区别
+ReplicaSet 和 Deployment 都是 Kubernetes 中的控制器，用于管理 Pod 的创建、删除和更新。它们之间的区别在于 Deployment 为 ReplicaSet 提供了高级的控制和管理功能，可以进行滚动升级、回滚、部署暂停等操作。  
+具体来说，Deployment 是在 ReplicaSet 的基础上封装了一个更高级别的控制器，可以更加方便地管理 Pod 的部署和更新。Deployment 可以通过指定 Pod 的副本数和更新策略来控制 ReplicaSet 中的 Pod。Deployment 还支持滚动升级、回滚、部署暂停等操作，而这些操作在 ReplicaSet 中需要手动完成。因此，在实际使用中，一般会使用 Deployment 来管理应用的部署，而不是直接使用 ReplicaSet。
+### 示例
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:
+    app: guestbook
+    tier: frontend
+spec:
+  # 按你的实际情况修改副本数
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: php-redis
+        image: gcr.io/google_samples/gb-frontend:v3
+```
+```
+# 创建 yaml 文件所定义的 ReplicaSet 及其管理的 Pod
+kubectl apply -f https://kubernetes.io/examples/controllers/frontend.yaml
+# 查看 ReplicaSet
+kubectl get rs
+# 查看 ReplicaSet 的状态
+kubectl describe rs/frontend
+# 查看启动了的 Pod 集合
+kubectl get pods
+# 取回运行中的某个 Pod 的 YAML：
+kubectl get pods frontend-b2zdv -o yaml
+```
+### 非模板 Pod 的获得
+尽管你完全可以直接创建裸的 Pod，强烈建议你确保这些裸的 Pod 并不包含可能与你的某个 ReplicaSet 的选择算符相匹配的标签。原因在于 ReplicaSet 并不仅限于拥有在其模板中设置的 Pod，它还可以获得其他 Pod。
+### 编写 ReplicaSet 的清单
+ReplicaSet 也需要 apiVersion、kind、和 metadata 字段。 对于 ReplicaSet 而言，其 kind 始终是 ReplicaSet。当控制平面为 ReplicaSet 创建新的 Pod 时，ReplicaSet 的 .metadata.name 是命名这些 Pod 的部分基础。
+#### Pod 模板
+.spec.template 是一个 Pod 模板， 要求设置标签。对于模板的重启策略 字段，.spec.template.spec.restartPolicy，唯一允许的取值是 Always，这也是默认值
+#### Pod 选择算符
+.spec.selector 字段是一个标签选择算符。
+#### Replicas
+你可以通过设置 .spec.replicas 来指定要同时运行的 Pod 个数。 ReplicaSet 创建、删除 Pod 以与此值匹配。  
+如果你没有指定 .spec.replicas，那么默认值为 1。  
+### 使用 ReplicaSet
+#### 删除 ReplicaSet 和它的 Pod
+当你删除 ReplicaSet 时，它会自动删除它创建的 Pod。
+#### 只删除 ReplicaSet
+如果你想要删除 ReplicaSet 而不删除它创建的 Pod，你可以使用 --cascade=false 选项。  
+#### 将 Pod 从 ReplicaSet 中隔离
+可以通过改变标签来从 ReplicaSet 中移除 Pod。
+#### 扩缩 ReplicaSet
+通过更新 .spec.replicas 字段，ReplicaSet 可以被轻松地进行扩缩。
+#### Pod 删除开销
+controller.kubernetes.io/pod-deletion-cost 是一个标签（label），用于指示在需要进行调度决策时删除 Pod 的成本。值越高，删除成本越高，Pod 越不容易被删除。
 ReplicaSet 作为水平的 Pod 自动扩缩器目标
 ReplicaSet 的替代方案
 Deployment（推荐）
