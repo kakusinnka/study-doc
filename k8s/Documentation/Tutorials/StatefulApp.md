@@ -27,6 +27,15 @@
 ### OrderedReady Pod 管理策略
 ### Parallel Pod 管理策略
 ### 清理现场
+
 ## 示例：使用持久卷部署 WordPress 和 MySQL
+略
+
+---
+在 Kubernetes 中，PVC（PersistentVolumeClaim）是请求 Kubernetes 集群上的存储资源（PV）。PV 代表 Kubernetes 集群中的物理存储，由管理员提供和管理。PVC 允许用户声明他们的存储需求，而无需了解实际的实现。使用 PVC，应用程序可以请求存储资源，并且可以从该资源中进行扩展和缩小。可以使用 StorageClass 将存储资源（PV）提供给 PVC。
+
+---
+
 ## 示例：使用 StatefulSet 部署 Cassandra
+略
 ## 运行 ZooKeeper，一个分布式协调系统

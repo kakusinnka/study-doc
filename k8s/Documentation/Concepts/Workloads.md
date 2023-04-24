@@ -304,27 +304,110 @@ Job
 DaemonSet
 ReplicationController
 ## StatefulSet
-使用 StatefulSet
-限制
-组件
-Pod 选择算符
-卷申领模板
-最短就绪秒数
-Pod 标识
-有序索引
-起始序号
-稳定的网络 ID
-稳定的存储
-Pod 名称标签
-部署和扩缩保证
-Pod 管理策略
-更新策略
-滚动更新
-分区滚动更新
-最大不可用 Pod
-强制回滚
-PersistentVolumeClaim 保留
-副本数
+在 Kubernetes 中，StatefulSet 是一种控制器对象，用于管理运行有状态应用程序的 Pod。与 Deployment 和 ReplicaSet 不同，StatefulSet 为每个 Pod 分配唯一标识符和稳定的网络标识符（即主机名），这些标识符不会随着 Pod 在集群中的重新部署而改变。  
+
+StatefulSet 对于运行具有状态服务的应用程序非常有用，例如数据库或消息传递系统。它们支持顺序部署，有序扩展和顺序删除 Pod，这些功能通常对于有状态应用程序很重要。当需要在有状态应用程序中进行存储时，可以使用 StatefulSet 来管理这些存储卷并确保数据的持久性。  
+### 使用 StatefulSet
+略
+### 限制
+略
+### 组件
+下面的示例演示了 StatefulSet 的组件。
+```
+# 名为 nginx 的 Headless Service 用来控制网络域名。
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    name: web
+  clusterIP: None
+  selector:
+    app: nginx
+---
+# 名为 web 的 StatefulSet 有一个 Spec，它表明将在独立的 3 个 Pod 副本中启动 nginx 容器。
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx # 必须匹配 .spec.template.metadata.labels
+  serviceName: "nginx"
+  replicas: 3 # 默认值是 1
+  minReadySeconds: 10 # 默认值是 0
+  template:
+    metadata:
+      labels:
+        app: nginx # 必须匹配 .spec.selector.matchLabels
+    spec:
+      # 用于设置Pod在被终止前的等待时间，以便在该时间内完成正在运行的任务和清理工作。
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: nginx
+        image: registry.k8s.io/nginx-slim:0.8
+        ports:
+        - containerPort: 80
+          name: web
+        volumeMounts:
+        - name: www
+          mountPath: /usr/share/nginx/html
+  # volumeClaimTemplates 将通过 PersistentVolume 制备程序所准备的 PersistentVolumes 来提供稳定的存储。
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "my-storage-class"
+      resources:
+        requests:
+          storage: 1Gi
+```
+#### Pod 选择算符
+略
+#### 卷申领模板
+略
+#### 最短就绪秒数
+.spec.minReadySeconds 是一个可选字段。指定控制器要等待的最小时间（以秒为单位），以确保每个新创建的Pod已准备好运行并可以接受流量。
+### Pod 标识
+略
+#### 有序索引
+略
+#### 起始序号
+略
+#### 稳定的网络 ID
+Pod DNS: web-{0..N-1}.nginx.default.svc.cluster.local  
+         $(pod 名称).$(服务名称).$(名字空间).svc.cluster.local  
+Pod 名称: $(StatefulSet 名称)-$(序号)
+#### 稳定的存储
+VolumeClaimTemplate -> PersistentVolumeClaim -> PersistentVolume  
+当 Pod 或者 StatefulSet 被删除时，与 PersistentVolumeClaims 相关联的 PersistentVolume 并不会被删除。要删除它必须通过手动方式来完成。
+#### Pod 名称标签
+略
+### 部署和扩缩保证
+略
+#### Pod 管理策略
+略
+### 更新策略
+略
+### 滚动更新
+略
+#### 分区滚动更新
+略
+#### 最大不可用 Pod
+略
+#### 强制回滚
+略
+### PersistentVolumeClaim 保留
+略
+#### 副本数
+略
+
 ## DaemonSet
 ## Job
 ## 已完成 Job 的自动清理
