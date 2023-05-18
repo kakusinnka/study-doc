@@ -28,3 +28,42 @@ GKE 为集群提供以下操作模式：
 # 开始
 ## 快速入门
 ### 部署容器化网络服务器应用
+1. 启用 Artifact Registry API, Kubernetes Engine API .
+2. 创建名为 hello-cluster 的 Autopilot 集群:
+```
+gcloud container clusters create-auto hello-cluster \
+    --region=asia-northeast2
+```
+3. 获取用于集群的身份验证凭据:
+```
+gcloud container clusters get-credentials hello-cluster \
+    --region asia-northeast2
+```
+4. 部署应用:
+```
+kubectl create deployment hello-server \
+    --image=us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+```
+5. 公开 Deployment:
+```
+kubectl expose deployment hello-server --type LoadBalancer --port 80 --target-port 8080
+```
+6. 检查和查看应用
+```
+kubectl get pods
+kubectl get service hello-server
+http://EXTERNAL-IP 
+```
+7. 清理
+
+删除应用的 Service:
+```
+kubectl delete service hello-server
+```
+ 删除集群:
+```
+gcloud container clusters delete hello-cluster \
+    --region asia-northeast2
+```
+
+### 部署特定语言的应用
