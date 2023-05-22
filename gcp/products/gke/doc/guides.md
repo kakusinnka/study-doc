@@ -194,6 +194,8 @@ kubectl apply -f service.yaml
 1. 启用 Artifact Registry, Cloud Build, Google Cloud Deploy, Cloud Source Repositories, Google Kubernetes Engine, Resource Manager, and Service Networking API。
 2. 为服务帐号授予所需的权限：
 ```
+gcloud config set project PROJECT_ID
+
 gcloud projects add-iam-policy-binding PROJECT_ID \
     --member=serviceAccount:$(gcloud projects describe PROJECT_ID \
     --format="value(projectNumber)")-compute@developer.gserviceaccount.com \
@@ -239,6 +241,8 @@ gcloud container clusters get-credentials prod --region us-central1
 5. 克隆代码库并在 Cloud Shell 中打开。
 ```
 https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fgoogle%2Fgolden-path-for-app-delivery&cloudshell_git_branch=main&cloudshell_open_in_editor=README.md&hl=zh-cn
+
+gcloud config set project PROJECT_ID
 ```
 6. 在 Cloud Source Repositories 中创建一个代码库来存储源代码
 ```
@@ -300,7 +304,7 @@ options:
   machineType: E2_HIGHCPU_8
 timeout: 3600s
 ```
-9. cloudbuild.yaml
+9. 创建 Cloud Build 触发器
 ```
 gcloud beta builds triggers create cloud-source-repositories \
     --name="cicd-sample-main" \
