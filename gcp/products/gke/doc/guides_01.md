@@ -373,4 +373,8 @@ git commit -m "use lowercase for: sample app info"
 ```
 git push google
 ```
+6. 打开 Google Cloud Deploy 交付流水线页面, 部署到预演环境中。
+7. 将版本提升到生产环境
+
 ### 解决持续交付挑战
+文字介绍了部署模型，组织模型，工程环境以及 GitOps 概念。值得反复阅读。
