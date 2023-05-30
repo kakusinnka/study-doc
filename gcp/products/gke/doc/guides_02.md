@@ -113,3 +113,6 @@ gcloud container clusters get-credentials CLUSTER_NAME \
 
 ### 使用标记将政策应用于集群
 标记是一种可附加到 Google Cloud 中的资源的键值对。您可以使用标记，根据资源是否有特定标记，有条件地允许或拒绝政策。作为平台管理员，您可以使用访问权限控制和标记来根据集群是否具有特定标记有条件地授予 Identity and Access Management (IAM) 角色。
+
+## 配置节点池
+### 节点镜像简介
