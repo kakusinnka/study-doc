@@ -116,3 +116,25 @@ gcloud container clusters get-credentials CLUSTER_NAME \
 
 ## 配置节点池
 ### 节点镜像简介
+Google Kubernetes Engine (GKE) 节点的节点映像。GKE Autopilot 节点始终使用带有 containerd 的 Container-Optimized OS (cos_containerd)，这是推荐的节点操作系统。如果使用 GKE Standard，则可以选择创建集群或节点池期间在每个节点上运行的操作系统映像。还可以升级现有 Standard 集群以使用其他节点映像。
+
+### containerd 节点映像
+Google Kubernetes Engine (GKE) 节点中使用 containerd 作为容器运行时的节点映像的信息。
+
+### 指定节点镜像
+为 Google Kubernetes Engine (GKE) Standard 模式集群中的节点指定节点映像。
+
+### GKE 上的 Arm 工作负载简介
+略
+
+### 创建具有 Arm 节点的集群和节点池
+略
+
+### 规划 GKE Standard 节点大小
+规划 Google Kubernetes Engine (GKE) 标准节点池中节点的大小，以降低工作负载中断和资源不足终止的风险。GKE Autopilot 不需要此规划，因为 Google 会为您管理节点。
+* 节点可分配资源：可用于工作负载的其余资源（系统开销之外的资源）称为可分配资源。
+* GKE 资源预留：GKE 会根据节点上可用资源的总大小在节点上预留特定数量的内存和 CPU 资源。
+* 本地临时存储预留：GKE 提供具有本地临时存储空间的节点，由本地连接的设备（例如节点的启动磁盘或本地 SSD）提供支持。
+* 使用资源预留规划节点大小
+
+### Spot 虚拟机简介
