@@ -138,3 +138,15 @@ Google Kubernetes Engine (GKE) 节点中使用 containerd 作为容器运行时�
 * 使用资源预留规划节点大小
 
 ### Spot 虚拟机简介
+Spot 虚拟机是一种价格低于标准 Compute Engine 虚拟机但不保证可用性的 Compute Engine 虚拟机 (VM) 实例。
+
+### 使用单租户节点
+单租户节点是运行特定项目虚拟机的专用物理服务器。您可以使用单租户节点将您的虚拟机与其他项目中的虚拟机进行物理隔离，或者将您的虚拟机汇集到同一主机硬件上。
+
+### Windows Server 容器简介
+在 GKE 上使用 Windows Server 容器可让您利用 Kubernetes 的优势：灵活性、部署速度以及简化 Windows Server 应用的管理。您可以在同一集群中并行运行 Windows Server 容器和 Linux 容器，从而为这两个容器平台提供集中管理平面。目前不支持 Microsoft Hyper-V 容器。
+
+## 使用硬件和 AI 加速
+
+
+
