@@ -29,3 +29,14 @@ Cloud Logging是一种支持日志、搜索、分析和监控的实时日志管�
 略
 
 ## 快速入门：使用 Python 脚本编写和查询日志
+略
+
+# 收集和写入日志
+## 您应该使用哪个：代理还是客户端库？
+以编程方式使用客户端库还是使用 Logging 代理将应用日志发送到 Cloud Logging。
+![每个选项的摘要](./images/patterns-diagram.png)
+
+## 结构化日志记录
+## 从虚拟机和第三方应用收集日志
+## 收集 Kubernetes Engine 日志
+## 写入应用日志
