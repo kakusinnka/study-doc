@@ -37,6 +37,43 @@ Cloud Logging是一种支持日志、搜索、分析和监控的实时日志管�
 ![每个选项的摘要](./images/patterns-diagram.png)
 
 ## 结构化日志记录
+略
+
 ## 从虚拟机和第三方应用收集日志
+### 管理虚拟机上的 Logging 代理
+Ops Agent，旧版 Logging 代理
+
+### Ops Agent
+#### Ops Agent 概览
+略
+#### 安装 Ops Agent
+* 使用 Google Cloud CLI 创建代理政策，以在一组虚拟机上安装和管理代理。
+* 使用自动化工具在一组虚拟机上安装代理
+* 在单个虚拟机上安装 Ops Agent
+#### 管理 Ops Agent
+* 授权 Ops Agent
+* 配置 Ops Agent
+* 对 Ops Agent 自日志使用日志轮替
+#### 排查 Ops Agent 问题
+略
+#### 从第三方应用收集日志
+略
+### 旧版 Logging 代理
+略
+### 收集本地和多云日志
+略
 ## 收集 Kubernetes Engine 日志
+略
+
 ## 写入应用日志
+### logging 库概览
+许多编程语言都有标准的日志写入接口，您可以重新配置这些接口以使用日志记录。
+### Java: 使用 Logback 或 java.util.logging
+您可以使用 Logback 附加器或 java.util.logging 处理程序将 Java 应用中的日志写入 Cloud Logging，也可以直接使用 Java 版 Cloud Logging 库。
+#### 适用于 Cloud Logging 的 Logback 附加器
+* 使用 Logback 附加器，您可以将 Cloud Logging 与 SLF4J 日志门面一起使用。
+* 您也可以通过默认的 Java Logging API 处理程序来使用 Cloud Logging API。
+* 如需了解如何直接使用 Java 版 Cloud Logging 客户端库，请参阅 [Cloud Logging 客户端库](https://cloud.google.com/logging/docs/reference/libraries)。
+
+# 安全访问日志
+## 使用 IAM 控制访问权限
