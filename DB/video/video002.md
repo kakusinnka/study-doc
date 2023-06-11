@@ -16,3 +16,43 @@
 ## 视频：认识数据库实验辅导视频
 ### 直播录放
 略
+
+# 实验（二 MySQL）：MySQL安装
+## 安装配置及实验操作指导ppt
+略
+
+## 安装配置及实验操作指导视频（带解说）
+略
+
+## 安装配置及实验操作过程说明文档
+略
+
+# 实验（二 MySQL）：MySQL源码安装
+略
+
+# 实验（二 PostgreSQL）： PostgreSQL 安装
+略
+
+# 实验（二 PostgreSQL）：pgSQL源码安装
+略
+
+# 实验（三 PostgreSQL）：数据库/表的基本操作
+略
+
+# 实验（四 PostgreSQL）：SQL数据定义与修改
+略
+
+# 实验（五 PostgreSQL）：简单数据查询
+略
+
+# 实验（六 PostgreSQL）：高级数据查询
+略
+
+# 实验（七 C/C++访问PostgreSQL）：嵌入式pgSQL
+略
+
+# 实验（八 Java访问PostgreSQL）：JDBC与PL/pgSQL
+略
+
+# 实验（十 PostgreSQL）：视图与访问控制
+略
