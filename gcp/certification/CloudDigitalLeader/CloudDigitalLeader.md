@@ -9,3 +9,6 @@ Cloud Digital Leader 考试评估您在以下领域的知识：
 ## 考试概览
 ### 第 1 步：了解考试内容
 [考试指南](./CertificationExamGuide.md) 包含可能在考试中评估的主题列表。查看考试指南以确定您的知识是否与考试主题相符。
+### 第 2 步。通过培训扩展您的知识
+遵循 [学习路径](./LearningPath.md)：按照 Cloud Digital Leader 学习路径准备考试。探索来自 Google Cloud 的在线培训和其他资源。
+其他资源
