@@ -3,7 +3,7 @@
 
 ## [使用 Google Cloud 进行数字化转型](./DigitalTransformation.md)
 
-## 利用数据和 Google Cloud 进行创新
+## [利用数据和 Google Cloud 进行创新](InnovatingWithDataAndGCP.md)
 
 ## 使用 Google Cloud 实现基础架构和应用程序现代化
 
