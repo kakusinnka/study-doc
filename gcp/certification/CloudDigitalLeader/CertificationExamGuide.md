@@ -38,7 +38,7 @@ Cloud Digital Leader 可以阐明 Google Cloud 核心产品和服务的功能以
 
 ### 1.3 云计算模型和责任共担
 
-     ● 讨论使用基础架构即服务 (IaaS) 的好处和取舍； 平台即服务（PaaS）； 和软件即服务 (SaaS)。
+     ● 讨论使用基础架构即服务 (IaaS) 的好处和权衡； 平台即服务（PaaS）； 和软件即服务 (SaaS)。
 
          ● 定义 IaaS、PaaS 和 SaaS。
 
