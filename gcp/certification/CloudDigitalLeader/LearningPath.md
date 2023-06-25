@@ -7,4 +7,4 @@
 
 ## [使用 Google Cloud 实现基础架构和应用程序现代化](./InfrastructureAndApplicationModernization.md)
 
-## 了解 Google Cloud 安全和运营
+## [了解 Google Cloud 安全和运营](./SecurityAndOperations.md)
