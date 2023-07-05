@@ -1,5 +1,4 @@
 ## 用语集
-
 | 英语 | 汉语 | 日语 | 说明 |
 | ---- | ---- | ---- | ---- |
 | Assured Workloads | 有保证的工作负载 | 略 | 加速您在 Google Cloud 上运行更安全、更合规的工作负载。 |
@@ -7,13 +6,18 @@
 | LDAP（Lightweight Directory Access Protocol） | 轻量级目录访问协议 | 略 | 用于连接到管理网络设备和用户等信息的目录服务的协议。 |
 | BeyondCorp | 超越公司 | 略 | BeyondCorp 是 Google 打造的零信任模型。旨在让每个员工都能在不借助 VPN 的情况下通过不受信任的网络工作。 |
 | Identity-Aware Proxy | 身份感知代理 | 略 | 利用身份和情境信息保护对您的应用和虚拟机的访问。 |
-| Cloud Identity | 云身份 | 略 | 统一的身份、访问权限、应用和端点管理 (IAM/EMM) 平台。 |
 | Google Cloud Directory Sync | 谷歌云目录同步 | 略 | 您可以将 Google 帐户数据与 Microsoft Active Directory 或 LDAP 服务器同步。 |
+
+## 常用服务
+| 英语 | 汉语 | 日语 | 说明 |
+| ---- | ---- | ---- | ---- |
+| Cloud Identity | 云身份 | 略 | 统一的身份、访问权限、应用和端点管理 (IAM/EMM) 平台。 |
+| Dataprep by Trifacta | 智能数据准备 | 略 | 一种智能云数据服务，可直观地探索、清理和准备数据以进行分析和机器学习。 |
+| Dataproc | 数据处理程序 | 略 | 使用 Dataproc 大规模实现数据湖现代化、ETL 和安全数据科学。 |
 
 
 
 ## 生僻词
-
 | 英语 | 汉语 | 日语 |
 | ---- | ---- | ---- |
 | Compliance | 合规性 | コンプライアンス |
