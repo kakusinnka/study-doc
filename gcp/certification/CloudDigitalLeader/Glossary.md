@@ -12,24 +12,31 @@
 
 
 
-## 用语集，生僻词
+## 生僻词
 
-| 英语 | 汉语 | 日语 | 说明 |
-| ---- | ---- | ---- | ---- |
-| Compliance | 合规性 | コンプライアンス | 略 |
-| Archive | 存档 | アーカイブ | 略 |
-| Latency | 延迟 | レイテンシー | 略 |
-| Root Node | 根节点 | ルートノード | 略 |
-| Policy | 策略 | ポリシー | 略 |
-| Tenant | 租户 | テナント | 略 |
-| Algorithm | 算法 | アルゴリズム | 略 |
-| Infrastructure | 基础设施 | インフラストラクチャ | 略 |
-| Approach | 方法 | アプローチ | 略 |
-| Provisioning | 供应 | プロビジョニング | 略 |
-| Private | 私人的 | プライベート | 略 |
-| Bare Metal | 裸机 | ベアメタル  | 略 |
-| Network Fabric | 网络结构 | ネットワークファブリック  | 略 |
-| On-Premises | 本地 | オンプレミス | 略 |
-| Zero Trust | 零信任 | ゼロトラスト | 略 |
+| 英语 | 汉语 | 日语 |
+| ---- | ---- | ---- |
+| Compliance | 合规性 | コンプライアンス |
+| Archive | 存档 | アーカイブ |
+| Latency | 延迟 | レイテンシー |
+| Root Node | 根节点 | ルートノード |
+| Policy | 策略 | ポリシー |
+| Tenant | 租户 | テナント |
+| Algorithm | 算法 | アルゴリズム |
+| Infrastructure | 基础设施 | インフラストラクチャ |
+| Approach | 方法 | アプローチ |
+| Provisioning | 供应 | プロビジョニング |
+| Private | 私人的 | プライベート |
+| Bare Metal | 裸机 | ベアメタル  |
+| Network Fabric | 网络结构 | ネットワークファブリック  |
+| On-Premises | 本地 | オンプレミス |
+| Zero Trust | 零信任 | ゼロトラスト |
+| Throughput | 吞吐量 | スループット |
+| Collection | 采集 | コレクション |
+| Driven | 驱动的 | ドリブン |
+| Onboarding | 入职 | オンボーディング |
+| Streaming | 流式传输 | ストリーミング |
+| Scalability | 可扩展性 | スケーラビリティ |
+| Preparation | 准备 | プレパレーション |
 
 
