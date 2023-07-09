@@ -1,15 +1,16 @@
 ## 常用服务
 | 英语 | 汉语 | 说明 | 特征 |
 | ---- | ---- | ---- | ---- |
-| Cloud Identity | 云身份 | 统一的身份、访问权限、应用和端点管理 (IAM/EMM) 平台。 | 略 |
-| Identity Platform | 身份识别平台 | 利用我们的客户身份和访问权限管理 (CIAM) 平台，为您的应用添加 Google 级的身份和访问权限管理机制。 | 略 |
-| Identity-Aware Proxy | 身份感知代理 | 略 | 利用身份和情境信息保护对您的应用和虚拟机的访问。 | 略 |
+| Cloud Identity | 云身份 | 统一的身份、访问权限、应用和端点管理 (IAM/EMM) 平台。 | * 让用户可以通过单点登录轻松访问应用 <br/> * 多重身份验证可以保护用户和公司数据 <br/> * 端点管理对个人和公司设备的强制执行相关政策 |
+| Identity Platform | 身份识别平台 | 利用我们的客户身份和访问权限管理 (CIAM) 平台，为您的应用添加 Google 级的身份和访问权限管理机制。 | * 为您的应用添加身份和访问权限管理功能 <br/> * 保护用户帐号 <br/> * 在 Google Cloud 上自信地扩大规模 |
+| Identity-Aware Proxy | 身份感知代理 | 利用身份和情境信息保护对您的应用和虚拟机的访问。 | 略 |
 | Identity and Access Management (IAM) | 身份和访问管理 | 细粒度的访问控制和可视性，用于集中管理云资源。 | 略 |
 | Binary Authorization | 二进制授权 | 为容器和无服务器环境仅部署可信工作负载。 | 略 |
 | Cloud Access Transparency & Approval | 云访问透明度 & 审批 | 通过管理访问日志和审批控制，帮助扩大对云提供商的可见性和控制。 | 略 |
-| Assured Workloads | 有保证的工作负载 | 略 | 加速您在 Google Cloud 上运行更安全、更合规的工作负载。 | 略 |
-| BeyondCorp | 超越公司 | 略 | BeyondCorp 是 Google 打造的零信任模型。旨在让每个员工都能在不借助 VPN 的情况下通过不受信任的网络工作。 | 略 |
-| Google Cloud Directory Sync | 谷歌云目录同步 | 略 | 您可以将 Google 帐户数据与 Microsoft Active Directory 或 LDAP 服务器同步。 | 略 |
+| Assured Workloads | 有保证的工作负载 | 加速您在 Google Cloud 上运行更安全、更合规的工作负载。 | 略 |
+| BeyondCorp | 超越公司 | BeyondCorp 是 Google 打造的零信任模型。旨在让每个员工都能在不借助 VPN 的情况下通过不受信任的网络工作。 | 略 |
+| Google Cloud Directory Sync | 谷歌云目录同步 | 您可以将 Google 帐户数据与 Microsoft Active Directory 或 LDAP 服务器同步。 | 略 |
+| Web App and API Protection (WAAP)  | Web 应用程序和 API 保护 (WAAP) | 保护您的应用和 API 免受威胁和欺诈的危害，并确保可用性和合规性。 | 略 |
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
@@ -31,6 +32,7 @@
 | Cross-Cloud Interconnect | 跨云互联 | Cross-Cloud Interconnect 在其他云的网络和 Google 网络之间提供直接物理连接。可帮助您在 Google Cloud 与其他云服务提供商之间建立高带宽专用连接。 | 略 |
 | Security Command Center | 安全指挥中心 | Google Cloud 的内置安全和风险管理解决方案。 | * 发现错误配置和漏洞 <br/> * 识别网络风险并确定补救措施的优先级 <br/> * 检测您的 Google Cloud 资源所面临的威胁 <br/> * 监控和管理法规遵从 |
 | Web Security Scanner | 网络安全扫描仪 | Web Security Scanner 可识别 App Engine、Google Kubernetes Engine（GKE）和 Compute Engine Web 应用中的安全漏洞。 | 略 |
+| Compliance Reports Manager | 合规报告管理器 | Google Cloud 提供行业领先的安全性、第三方审核与认证、相关文档和合约承诺，旨在帮助您满足合规要求。 | 略 |
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
@@ -49,14 +51,14 @@
 | Anthos | 安索斯 | Anthos 是一个现代应用管理平台，可为云端和本地环境提供一致的开发和运营体验。 | 略 |
 | Cloud Asset Inventory | 云资产清单 | 元数据目录服务，让您可查看、监控和分析您在不同项目和服务中的所有 Google Cloud 和 Anthos 资产。 | 略 |
 | Migrate to Containers | 迁移到容器 | 使用 Migrate to Containers 可以对传统应用进行现代化改造，将其从虚拟机 (VM) 实例迁移到在 Google Kubernetes Engine (GKE)、Anthos 集群或 Cloud Run 平台上运行的原生容器。您可以从在 VMware 或 Compute Engine 上运行的虚拟机迁移工作负载，这使您可以轻松灵活地实现现有工作负载的容器化。 | 略 |
-| Migrate for Compute Engine | 将虚拟机从本地数据中心迁移到 Google Cloud Compute Engine。 | ---- | ---- |
+| Migrate for Compute Engine | 略 | 将虚拟机从本地数据中心迁移到 Google Cloud Compute Engine。 | 略 |
 
 ## 用语集
-| 英语 | 汉语 | 日语 | 说明 |
-| ---- | ---- | ---- | ---- |
-| CIDR（Classless Inter-Domain Routing） | 无类域间路由 | 略 | 现代网络中广泛采用的IP地址分配和路由协议。 |
-| LDAP（Lightweight Directory Access Protocol） | 轻量级目录访问协议 | 略 | 用于连接到管理网络设备和用户等信息的目录服务的协议。 |
-| Confidential Computing | 机密计算 | 略 | 机密计算是通过基于硬件的可信执行环境 (TEE) 来保护正在使用的数据。TEE 是安全且隔离的环境，可防止对正在使用的应用程序和数据进行未经授权的访问或修改。 |
+| 英语 | 汉语 |  说明 |
+| ---- | ---- | ---- |
+| CIDR（Classless Inter-Domain Routing） | 无类域间路由 |  现代网络中广泛采用的IP地址分配和路由协议。 |
+| LDAP（Lightweight Directory Access Protocol） | 轻量级目录访问协议 |  用于连接到管理网络设备和用户等信息的目录服务的协议。 |
+| Confidential Computing | 机密计算 | 机密计算是通过基于硬件的可信执行环境 (TEE) 来保护正在使用的数据。TEE 是安全且隔离的环境，可防止对正在使用的应用程序和数据进行未经授权的访问或修改。 |
 
 ## 生僻词
 | 英语 | 汉语 | 日语 |
@@ -80,6 +82,7 @@
 | Collection | 采集 | コレクション |
 | Driven | 驱动的 | ドリブン |
 | Onboarding | 入职 | オンボーディング |
+| Onboarding Process | 新手入门流程 | オンボーディングプロセス |
 | Streaming | 流式传输 | ストリーミング |
 | Scalability | 可扩展性 | スケーラビリティ |
 | Preparation | 准备 | プレパレーション |
@@ -106,6 +109,13 @@
 | Insight | 洞察力 | インサイト |
 | Ecosystem | 生态系统 | エコシステム |
 | Enterprise | 企业 | エンタープライズ |
+| Experience | 经验 | エクスペリエンス |
+| Metrics | 指标 | メトリクス |
+| Conversion | 转换 | コンバージョン |
+| Quick Reference | 快速参考 | クイック リファレンス |
+| Web Traffic | 网络流量 | ウェブ トラフィック |
+
+
 
 
 
