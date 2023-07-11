@@ -17,8 +17,10 @@
 | Cloud Spanner | 云扳手 | Cloud Spanner 是一项全代管式任务关键型关系型数据库服务，可提供全球范围的事务一致性、自动同步复制功能以实现高可用性。 | 略 |
 | Cloud Bigtable | 略 | 兼容 HBase 的企业级 NoSQL 数据库服务，具有单位数毫秒级延迟，规模不受限制，可用性高达 99.999%，用于处理大规模分析和运营工作负载。 | Bigtable 是一个键值存储 NoSQL 数据库 |
 | Filestore | 文件存储 | 全代管式高性能文件存储服务。 | 一个 NoSQL 文档数据库，可以轻松地在全球范围内存储、同步和查询移动应用程序和 Web 应用程序的数据。 这是一个 JSON 格式等文档的数据库。 |
+| Dataflow | 数据流 | 无服务器、快速且经济高效的统一流式数据处理和批量数据处理。 | * 快速进行流式数据分析。 <br/> * 现成可用的实时 AI 模式。 |
 | Dataprep by Trifacta | 智能数据准备 | 一种智能云数据服务，可直观地探索、清理和准备数据以进行分析和机器学习。 | 略 |
 | Dataproc | 数据处理程序 | 使用 Dataproc 大规模实现数据湖现代化、ETL 和安全数据科学。 | 略 |
+| Storage Transfer Service | 存储传输服务 | 在 Google Cloud、Amazon、Azure 和本地等对象和文件存储系统之间快速安全地转移数据。 | 略 |
 | Looker Studio | 观者工作室 | 自助式商业智能具有无与伦比的灵活性，可实现更明智的业务决策。 （以前称为数据工作室）。 | 略 |
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
@@ -37,7 +39,8 @@
 | ---- | ---- | ---- | ---- |
 | ---- | ---- | ---- | ---- |
 | TensorFlow | 略 | 借助 TensorFlow，初学者和专家可以轻松创建适用于桌面、移动、Web 和云环境的机器学习模型。 | 略 |
-| AutoML | 自动机器学习 | 只需极少的工作量和机器学习专业知识，即可训练出高质量的自定义机器学习模型。 | 略 |
+| TensorFlow | 略 | 借助 TensorFlow，初学者和专家可以轻松创建适用于桌面、移动、Web 和云环境的机器学习模型。 | 略 |
+| Vision AI & Cloud Vision API | 视觉人工智能 & 云视觉API | 只需几分钟即可启动新的视频和图像分析应用。 | 略 |
 | Recommendations AI | 推荐人工智能 | 大规模提供高度个性化的商品推荐。 | 略 |
 | Document AI | 人工智能文档 | 从文档中提取结构化数据，然后分析、搜索和存储这些数据。 | 略 |
 | ---- | ---- | ---- | ---- |
@@ -49,6 +52,7 @@
 | Cloud Build | 云构建 | Cloud Build 是一个无服务器 CI/CD 管道，可自动执行构建、测试和部署，以加速软件交付流程。 | 略 |
 | Artifact Registry | 工件注册表 | 新一代 Container Registry。 存储、管理和保护您的构建工件。 | 略 |
 | Anthos | 安索斯 | Anthos 是一个现代应用管理平台，可为云端和本地环境提供一致的开发和运营体验。 | 略 |
+| AppSheet | 应用表 | 让组织中的每个人无需编写代码即可构建和扩展应用。 | 略 |
 | Cloud Asset Inventory | 云资产清单 | 元数据目录服务，让您可查看、监控和分析您在不同项目和服务中的所有 Google Cloud 和 Anthos 资产。 | 略 |
 | Migrate to Containers | 迁移到容器 | 使用 Migrate to Containers 可以对传统应用进行现代化改造，将其从虚拟机 (VM) 实例迁移到在 Google Kubernetes Engine (GKE)、Anthos 集群或 Cloud Run 平台上运行的原生容器。您可以从在 VMware 或 Compute Engine 上运行的虚拟机迁移工作负载，这使您可以轻松灵活地实现现有工作负载的容器化。 | 略 |
 | Migrate for Compute Engine | 略 | 将虚拟机从本地数据中心迁移到 Google Cloud Compute Engine。 | 略 |
@@ -58,7 +62,7 @@
 | ---- | ---- | ---- |
 | CIDR（Classless Inter-Domain Routing） | 无类域间路由 |  现代网络中广泛采用的IP地址分配和路由协议。 |
 | LDAP（Lightweight Directory Access Protocol） | 轻量级目录访问协议 |  用于连接到管理网络设备和用户等信息的目录服务的协议。 |
-| Confidential Computing | 机密计算 | 机密计算是通过基于硬件的可信执行环境 (TEE) 来保护正在使用的数据。TEE 是安全且隔离的环境，可防止对正在使用的应用程序和数据进行未经授权的访问或修改。 |
+| Confidential Computing | 机密计算 | 利用机密虚拟机、机密 GKE、机密 Dataflow、机密 Dataproc 和 Confidential Space 保护使用中的数据。 |
 
 ## 生僻词
 | 英语 | 汉语 | 日语 |
@@ -114,6 +118,12 @@
 | Conversion | 转换 | コンバージョン |
 | Quick Reference | 快速参考 | クイック リファレンス |
 | Web Traffic | 网络流量 | ウェブ トラフィック |
+| Overhead | 开销 | オーバーヘッド |
+| Premium | 优质的 | プレミアム |
+| Enhanced | 加强版 | エンハンスト |
+| Ingest | 摄取 | インジェスト |
+| Preemptible | 可抢占式 | プリエンプティブル |
+| Ransomware | 勒索软件 | ランサムウェア |
 
 
 
