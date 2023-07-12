@@ -124,6 +124,9 @@
 | Ingest | 摄取 | インジェスト |
 | Preemptible | 可抢占式 | プリエンプティブル |
 | Ransomware | 勒索软件 | ランサムウェア |
+| Partition | 分割 | パーティション |
+| Edge Caching | 边缘缓存 | エッジ キャッシング |
+| Anycast | 任意广播 | エニーキャスト |
 
 
 

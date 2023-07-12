@@ -33,4 +33,5 @@ Cloud Digital Leader 考试评估您在以下领域的知识：
 
 ## 步骤 5. 考试准备
 ### [用语集](./Glossary.md)  
-### [知识点](./KnowledgePoint.md)
+### [知识点](./KnowledgePoint.md)  
+### [博客](./Blog.md)
