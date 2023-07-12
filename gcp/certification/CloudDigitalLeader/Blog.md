@@ -104,3 +104,17 @@ Cloud Functions 的例子：
 * 任何基于 Web 的工作负载。
 * 适用于移动应用或游戏的 REST 或 gRPC API。
 * 内部自定义后台应用程序。
+
+## [Google Cloud Identity 与 Identity Platform](https://www.goldyarora.com/google-cloud-identity-vs-identity-platform/)
+
+如果您是一名为客户开发应用程序的开发人员，并且您不想投入时间构建自己的身份模块，那么您可以即插即用 Google Identity platform。  
+如果您想使用集中式身份提供商，它可以帮助您的员工（包括全职兼职员工和承包商）能够无缝访问不同的应用程序，而无需将其凭据放入所有这些应用程序中，那么您应该去Google Cloud Identity。  
+
+## [使用身份感知代理控制对您网站的访问](https://cloud.google.com/blog/topics/developers-practitioners/control-access-your-web-sites-identity-aware-proxy?hl=en)
+
+IAP 是一种拦截对网站的请求、对发出请求的用户进行身份验证并仅允许授权用户的请求到达该网站的服务。 IAP 可用于保护在许多平台上运行的网站，包括 App Engine、Compute Engine 以及 Google Cloud Load Balancer 背后的其他服务。但它不仅限于 Google Cloud：您也可以将其与 IAP Connector 结合使用来保护您自己的本地应用程序。  
+![IAP](./images/iap_connector.png)  
+身份感知代理的核心步骤：
+* 通过指定仅允许使用公司电子邮件地址进行身份验证的用户访问，创建仅限员工或“内部网”的服务器。 IAP 可以对 Gmail 或 Google Workspace 地址、公司 Active Directory 或通过 Google Cloud Directory Sync 的其他 LDAP 目录中的地址或其他常见身份提供商支持的地址进行身份验证。
+* 对于公共但经过身份验证的访问，请指定 IAP 应允许“allAuthenticatedUsers”。任何愿意并能够进行身份验证的人都将有权访问该网站。 IAP 的第二个主要功能是向每个请求添加带有用户身份信息的标头，以便接收站点可​​以使用该信息，而无需执行自己的身份验证。
+* 通过指定组电子邮件地址而不是单个电子邮件地址，可以将访问权限限制为任何组或组的组合。 IAP 可以比仅基于身份的访问更进一步。组织可以设置组成员必须遵循的设备策略才能获得访问权限。这些策略可能要求特定的操作系统版本、在浏览器或移动设备上使用公司配置文件，甚至仅使用公司拥有的设备。
