@@ -81,7 +81,8 @@ Identity Platform 是一个客户身份和访问管理 (CIAM) 平台，提供身
 
 ---
 
-Cloud Identity 是一个集成的身份、访问、应用和端点管理 (IAM/EMM) 平台，负责 Google Cloud 用户和资源的身份验证管理。
+Cloud Identity 是一个集成的身份、访问、应用和端点管理 (IAM/EMM) 平台，负责 Google Cloud 用户和资源的身份验证管理。  
+Cloud Identity 是一种身份即服务 (IDaaS) 和企业移动管理 (EMM) 产品。它在 Google Workspace 中以独立的产品形式向用户提供身份认证和端点管理服务。作为管理员，您可以使用 Cloud Identity 在同一个地方（即 Google 管理控制台）管理用户、应用和设备。
 
 ---
 
