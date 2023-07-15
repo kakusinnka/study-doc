@@ -108,12 +108,12 @@ Cloud Debugger 是一种代码验证服务，可让您在不停止或减慢正�
 
 ---
 
-Cloud Functions 是一个无服务器应用程序平台，允许您在无需服务器管理的情况下运行代码。 您可以轻松创建由事件触发的事件驱动应用程序。
+Cloud Functions 是一个无服务器应用程序平台，允许您在无需服务器管理的情况下运行代码。 您可以轻松创建由事件触发的事件驱动应用程序。  
+Google Cloud Functions 是一个用于构建和连接云服务的无服务器代码执行环境。 Cloud Functions 允许您编写与云基础设施和服务发出的事件相关联的简单、单一用途的函数。 当监控的事件发生时，该函数被触发。 并且这个函数处理会根据需求自动缩放。
 
 ---
 
 App Engine 是一个 PaaS 解决方案，为 Web 应用程序提供开发环境和托管。 我们使用 Node.js、Java、Ruby、C#、Go、Python 或 PHP 提供托管应用程序开发环境。  
-App Engine 是 Google Cloud 中完全托管的无服务器计算选项，您可以使用它来构建和部署低延迟、高度可扩展的应用程序。  
 App Engine 是 Google Cloud 中完全托管的无服务器计算选项，您可以使用它来构建和部署低延迟、高度可扩展的应用程序。  
 App Engine 使您可以轻松托管和运行应用程序。它将它们从零扩展到全球规模，而无需您管理基础设施。  
 建议将 App Engine 用于各种应用程序，包括需要低延迟响应的 Web 流量、HTTP 方法和 APIs。  
@@ -205,10 +205,24 @@ Cloud Pub/Sub 允许订阅者同时接收多条消息，发布者同时将消息
 
 Cloud Tasks：异步执行任务。Cloud Tasks 是一项全代管式服务，您可利用它管理大量分布式任务的执行、分派和送达。
 
+--
+
 您可以使用 Cloud Asset Inventory 获取虚拟机清单。 Cloud Asset Inventory 是一项元数据库存服务，可让您列出、查看、监控和分析项目和服务中使用的 Google Cloud 和 Anthos 资产。 您可以使用它导出整个库存的快照以供查看。  
 Cloud Asset Inventory 提供对资源使用历史记录和详细信息的深入了解。 它具有强大的过滤和搜索功能，允许您在迁移资产的同时进行自动化分析。
 
---
+---
+
+Cloud Access Transparency：云访问透明度是一项通过管理管理员访问日志和授权来控制云提供商访问的服务。 这使我们能够通过使访问透明来验证云提供商的访问。
+
+---
+
+Confidential Computing（机密计算）：利用机密虚拟机、机密 GKE、机密 Dataflow、机密 Dataproc 和 Confidential Space 保护使用中的数据。
+
+---
+
+Binary Authorization（二进制授权）：为容器和无服务器环境仅部署可信工作负载。一种身份验证机制，用于仅将受信任的容器映像部署到 Google Kubernetes Engine (GKE) 和 Cloud Run。
+
+---
 
 DataFlow 是一种数据处理服务，用于执行流式数据处理和批量数据处理。 借助 Dataflow，您可以配置快速且简化的流数据管道，并且数据传输延迟较低。
 
@@ -241,7 +255,11 @@ Cloud Data Loss Prevention：可以帮助您发现、分类和保护最敏感数
 
 ---
 
-Security Command Center：Google Cloud 的内置安全和风险管理解决方案。
+Security Command Center：Google Cloud 的内置安全和风险管理解决方案。发现错误配置和漏洞，识别网络风险并确定补救措施的优先级，检测您的 Google Cloud 资源所面临的威胁，监控和管理法规遵从。
+
+---
+
+Cloud Security Scanner：Web Security Scanner 可识别 App Engine、Google Kubernetes Engine（GKE）和 Compute Engine Web 应用中的安全漏洞。它会抓取您的应用，跟踪起始网址范围内的所有链接，并尝试执行尽可能多的用户输入和事件处理程序。
 
 ---
 
@@ -274,3 +292,42 @@ Cloud Data Fusion：可适应任何规模的全代管式云原生数据集成服
 
 ---
 
+Google Cloud Assured Workload（Google Cloud 有保障的工作负载）：帮助您更快在 Google Cloud 上运行更安全、合规的工作负载。
+
+---
+
+借助 Google Cloud Directory Sync，管理员可以将 Active Directory/LDAP 用户与 Google Cloud 网域目录用户同步。  
+BeyondCorp 是 Google 为增强安全性而实施的零信任模型。它与用户身份验证无关。  
+Identity-Aware Proxy 是调解用户和应用程序之间通信的代理。身份感知代理使用身份和上下文来保护对应用程序和虚拟机的访问。  
+Cloud Identity 是一个集成的身份、访问、应用和端点管理 (IAM/EMM) 平台，负责 Google Cloud 用户和资源的身份验证管理。  
+
+---
+
+Cloud Firestore：在全球范围内存储和同步应用数据。  
+为全球级应用打造的 NoSQL 数据库，Cloud Firestore 是一款 NoSQL 文档数据库，它使您可以在全球范围内轻松存储、同步和查询您的移动应用及 Web 应用的数据。  
+以您偏好的方式查询数据及设计数据结构  
+构建真正的无服务器应用  
+跨设备同步数据，在线或离线皆可  
+可适应全球级规模的扩容能力  
+基于用户的强健安全机制  
+
+---
+
+Jupyter Notebooks：通过使用 Jupyter Notebooks 编写和测试各种机器学习模型的代码，您可以比较结果并选择最佳的机器学习模型。 Jupyter Notebooks 是一项托管服务，为数据科学家和机器学习开发人员提供用于实验、开发和部署模型的集成环境。
+
+---
+
+AutoML：借助 AutoML，即使机器学习专业知识有限，您也可以训练满足您业务需求的高质量模型。 然而，仅适用于某些类型的数据，例如图像、表格文本、翻译和视频。
+
+---
+
+产品发布阶段：
+* 预览版(Preview)(プレビュー)：在预览版阶段，产品或功能已准备好接受客户测试。预览版产品通常会公开发布，但功能不一定完整，不提供服务等级协议 (SLA)，也没有技术支持义务。除非 Google 另有说明，否则预览版产品仅适用于测试环境。预览版阶段平均持续约六个月。
+* 正式版(General Availability)(一般提供)：正式版产品和功能面向所有客户开放，已准备好在生产环境中使用，并已纳入 Google Cloud 服务等级协议 (SLA) 的涵盖范围（如适用）。Google 通常会通过 API、CLI 和 Google Cloud 控制台支持正式版产品和功能，除非在特殊情况下，在特定产品或功能的背景下无法合理提供上述一项或多项支持服务。
+* 已弃用(Deprecated)(非推奨)：已弃用的功能会被安排关停和移除。如需了解详情，请参阅 Google Cloud Platform 服务条款的“服务停用”部分。
+* [旧版] 抢先体验版、Alpha 版、Beta 版：
+  * 抢先体验版(Early access)(早期アクセス)：抢先体验版功能仅仅提供给一组封闭测试人员，对数量有限的发布进行测试。测试仅限受邀人员参与，并且可能要求签署正式发布前测试协议，包括保密条款。这些功能可能不稳定，可能会以不向后兼容的方式进行更改，并且不能保证肯定会发布。我们不提供服务等级协议 (SLA)，也没有技术支持义务。抢先体验版很少见，侧重于验证产品的原型设计。
+  * Alpha(アルファ版) 版：Alpha 版是相应版本获准在更广范围内发布之前进行的限量测试。Alpha 版测试的重点是在数量有限的一组客户中对功能进行验证，并收集反馈。一般而言，客户通过受邀方式参与 Alpha 版测试，并且应遵守正式发布前测试条款。Alpha 版不一定会提供完整的功能，不提供服务等级协议 (SLA)，也没有技术支持义务。不过，Alpha 版通常适合在测试环境中使用。Alpha 版阶段通常持续六个月。
+  * Beta(ベータ版) 版：在 Beta 版阶段，产品或功能已准备好接受更广泛的客户测试和使用。测试版通常会公开发布。除非产品条款或特定 Beta 版计划的条款另有规定，否则 Beta 版没有服务等级协议 (SLA) 或技术支持义务。Beta 版阶段平均约持续六个月。
+
+---

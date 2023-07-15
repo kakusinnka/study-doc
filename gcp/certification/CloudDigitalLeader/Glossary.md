@@ -127,9 +127,5 @@
 | Partition | 分割 | パーティション |
 | Edge Caching | 边缘缓存 | エッジ キャッシング |
 | Anycast | 任意广播 | エニーキャスト |
-
-
-
-
-
-
+| Transformation | 转型 | トランスフォーメーション |
+| Monolithic | 整体式的 | モノリシック |
