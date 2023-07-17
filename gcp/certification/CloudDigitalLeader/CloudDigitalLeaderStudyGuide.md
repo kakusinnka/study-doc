@@ -24,7 +24,7 @@
 * 模块 3：机器学习创新：该模块定义机器学习 (ML) 和人工智能 (AI)。它涵盖了一些影响机器学习模型有效性的重要数据质量考虑因素。它还重点介绍了几个现实世界的用例，在这些用例中，客户利用机器学习从根本上改变了他们的业务。
 * 补充阅读
   * [什么是数据湖？](https://cloud.google.com/learn/what-is-a-data-lake?hl=zh-cn)
-  * [什么是数据仓库？](chrome-extension://bpoadfkcbjbfhfodiogcnhhhpibjhbnh/pdf/index.html)
+  * [什么是数据仓库？](https://cloud.google.com/learn/what-is-a-data-warehouse?hl=zh-cn)
   * [什么是流分析？](https://cloud.google.com/learn/what-is-streaming-analytics?hl=zh-cn)
   * [什么是商业智能？](https://cloud.google.com/learn/what-is-business-intelligence?hl=zh-cn)
 
@@ -42,3 +42,5 @@
 * 模块 1：云端财务治理：本模块涵盖了云成本管理的基础知识，并概述了企业如何选择通过持续从云提供商购买 IT 服务来维护部分（或不维护）自己的基础设施。它还探讨了管理 Google Cloud 成本的最佳实践。
 * 模块 2：云安全：该模块检查共享责任模型，指的是访问、存储或使用数据的企业如何与云提供商一起负责保护和保护这些数据。它还着眼于最重要的网络安全威胁和 Google Cloud 内置的深度防御安全。、
 * 模块 3：监控云 IT 服务和运营：本模块讨论 IT 团队和业务领导者需要如何重新思考云中的 IT 资源管理。这包括调整期望以平衡服务可用性和可靠性与敏捷应用程序开发，以及创建团队结构以更好地服务客户。最后，该模块介绍了 Cloud Identity、Cloud Debugger 和 Cloud Logging 等 Google Cloud 资源监控工具如何帮助他们保持云环境的可见性、问责性、控制力和智能性。
+* 补充阅读
+  * [Google Cloud 安全基础指南](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf)
