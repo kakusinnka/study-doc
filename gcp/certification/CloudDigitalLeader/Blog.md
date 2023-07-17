@@ -245,3 +245,45 @@ BeyondCorp Enterprise 制定了零信任模型来访问您的应用程序和资�
 
 ### 治理、风险和合规性
 包括了解安全风险、定义和执行策略、通过获得认证来证明合规性以及保持良好的安全态势。  
+
+## [云计算 101：常见问题](https://cloud.google.com/blog/topics/inside-google-cloud/cloud-computing-101-frequently-asked-questions?hl=en)
+
+略
+
+## [我应该在哪里运行我的东西？选择 Google Cloud 计算选项](https://cloud.google.com/blog/topics/developers-practitioners/where-should-i-run-my-stuff-choosing-google-cloud-compute-option?hl=en)
+
+### 这些服务是什么？
+* 计算引擎(Compute Engine) - 虚拟机。您可以保留 CPU、内存、磁盘和 GPU 的配置，并决定要运行的操作系统和其他软件。
+* Kubernetes Engine - 托管 Kubernetes 集群。 Kubernetes 是一个开源系统，用于自动化容器化应用程序的部署、扩展和管理。您创建一个集群并配置要运行的容器； Kubernetes 使它们保持运行并管理扩展、更新和连接。
+* Cloud Run - 运行单个容器的完全托管的无服务器平台。您向 Cloud Run 提供代码或容器，它会根据需要进行托管和自动扩展，以响应网络和其他事件。
+* App Engine - 用于完整 Web 应用程序的完全托管的无服务器平台。 App Engine 处理网络、应用程序扩展和数据库扩展。您可以使用受支持的语言之一编写 Web 应用程序，部署到 App Engine，然后它会处理扩展、更新版本等操作。
+* 云函数 - 事件驱动的无服务器函数。您编写单独的函数代码，Cloud Functions 在发生事件（例如 HTTP、Pub/Sub 和 Cloud Storage 更改等）时调用您的函数。
+
+### 您需要什么级别的抽象？
+* 如果您需要对底层基础设施（例如操作系统、磁盘映像、CPU、RAM 和磁盘）进行更多控制，那么使用 Compute Engine 是有意义的。这是遗留应用程序迁移和需要特定操作系统的现有系统的典型路径。
+* 容器提供了一种虚拟化操作系统的方法，以便多个工作负载可以在单个操作系统实例上运行。它们速度快、重量轻，并且具有便携性。如果您的应用程序是容器化的，那么您有两个主要选择。  
+  * 您可以使用 Google Kubernetes Engine（或 GKE），它使您可以完全控制容器，直至具有特定操作系统、CPU、GPU、磁盘、内存和网络的节点。当您需要灵活性和控制力但操作和工程支持有限时，GKE 还提供 Autopilot。
+  * 另一方面，如果您只是希望在容器中运行应用程序而不必担心基础设施的扩展，那么 Cloud Run 是最佳选择。您只需编写应用程序代码，将其打包到容器中，然后进行部署。
+* 如果您只想编写基于 HTTP 的应用程序，并将应用程序的可扩展性和部署留给 Google Cloud，那么 App Engine（一个专为托管和运行 Web 应用程序而设计的无服务器、完全托管选项）是一个不错的选择你。
+* 如果您的代码是一个函数并且仅根据事件/触发器执行操作，那么使用 Cloud Functions 部署它是有意义的。
+
+### 您的用例是什么？
+* 如果您要迁移具有特定许可、操作系统、内核或网络要求的旧应用程序，请使用 Compute Engine。
+* 如果您的应用程序需要 HTTP/s 之外的特定操作系统或网络协议，请使用 GKE。当您使用 GKE 时，您就是在使用 Kubernetes，这使得您可以轻松部署并扩展到混合云和多云环境。 Anthos 是专为混合云和多云部署而设计的平台。它提供了跨所有集群（从基础设施到应用程序性能和拓扑）的单一管理平台可见性。示例：基于微服务的应用程序。
+* 如果您只需要使用您选择的编程语言部署容器化应用程序并支持 HTTP/s 和 Websocket，请使用 Cloud Run。示例：网站、API、数据处理应用程序、网络钩子。
+* 如果您想在无服务器平台中部署和托管基于 Web 的应用程序 (HTTP/s)，请使用 App Engine。示例：Web 应用程序、移动应用程序后端
+* 如果您的代码是一个函数并且仅根据来自 Pub/Sub 或 Cloud Storage 的事件/触发器执行操作，请使用 Cloud Functions。示例：视频保存到 Cloud Storage 存储分区后，立即启动视频转码功能。
+
+### 需要开源的可移植性吗？
+如果您的需求基于可移植性和开源支持，请查看 GKE、Cloud Run 和 Cloud Functions。它们均基于开源框架，可帮助您避免供应商锁定，并让您可以自由地将基础架构扩展到混合和多云环境。 GKE 集群由 Kubernetes 开源集群管理系统提供支持，该系统提供了与集群交互的机制。 Cloud Run for Anthos 由 Knative 提供支持，Knative 是一个开源项目，支持 Kubernetes 上的无服务器工作负载。 Cloud Functions 使用开源 FaaS（函数即服务）框架跨多个环境运行函数。
+
+### 你的团队动态如何？
+如果您有一个小型开发团队，并且希望他们的注意力集中在代码上，那么 Cloud Run 或 App Engine 等无服务器选项是一个不错的选择，因为您不必让团队管理基础架构、规模和应用程序。操作。如果您拥有更大的团队以及自己的工具和流程，那么 Compute Engine 或 GKE 更有意义，因为它使您能够定义自己的 CI/CD、安全性、规模和操作流程。
+
+### 您更喜欢哪种类型的计费模式？
+Compute Engine 和 GKE 计费模型基于资源，这意味着您需要为已配置的实例付费，而与使用情况无关。您还可以利用持续和承诺的使用折扣。  
+Cloud Run、App Engine 和 Cloud Functions 按请求计费，这意味着您按需付费。
+
+## [Google 云网络概述](https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-networking-overview?hl=en)
+
+略

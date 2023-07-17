@@ -12,12 +12,12 @@ Cloud Digital Leader 考试评估您在以下领域的知识：
 ## 第 2 步。通过培训扩展您的知识
 ### 遵循 [学习路径](./LearningPath.md) ：按照 Cloud Digital Leader 学习路径准备考试。探索来自 Google Cloud 的在线培训和其他资源。
 ### 其他资源
-* 云数字领导者学习指南
-* YouTube 上的云数字领导者
-* Google Cloud 采用框架影响研究
-* 谷歌云解决方案
-* 云客户案例研究
-* 企业组织的最佳实践
+* [云数字领导者学习指南](./CloudDigitalLeaderStudyGuide.md)
+* [YouTube 上的云数字领导者](https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu)
+* [Google Cloud 采用框架影响研究](https://cloud.google.com/adoption-framework?hl=zh-cn)
+* [谷歌云解决方案](https://cloud.google.com/solutions?hl=zh-cn)
+* [云客户案例研究](https://cloud.google.com/customers?hl=zh-cn)
+* [企业组织的最佳实践](https://cloud.google.com/architecture/framework?hl=zh-cn)
 
 ## 步骤 3. 准备样题
     Cloud Digital Leader 示例问题将帮助您熟悉考试问题的格式以及考试中可能涵盖的示例内容。
