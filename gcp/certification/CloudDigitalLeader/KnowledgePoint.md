@@ -206,7 +206,7 @@ Cloud Pub/Sub 允许订阅者同时接收多条消息，发布者同时将消息
 
 Cloud Tasks：异步执行任务。Cloud Tasks 是一项全代管式服务，您可利用它管理大量分布式任务的执行、分派和送达。
 
---
+---
 
 您可以使用 Cloud Asset Inventory 获取虚拟机清单。 Cloud Asset Inventory 是一项元数据库存服务，可让您列出、查看、监控和分析项目和服务中使用的 Google Cloud 和 Anthos 资产。 您可以使用它导出整个库存的快照以供查看。  
 Cloud Asset Inventory 提供对资源使用历史记录和详细信息的深入了解。 它具有强大的过滤和搜索功能，允许您在迁移资产的同时进行自动化分析。
