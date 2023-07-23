@@ -238,7 +238,8 @@ Cloud 移动应用让您可以直接从移动设备管理 Google Cloud 上运行
 略
 
 ## 通过自动缩放配置弹性应用程序
-您可以使用一组预定义的机器类型或创建您自己的自定义机器类型。为此，Compute Engine 具有一项称为自动缩放的功能，可以根据负载指标向应用程序添加或删除虚拟机。
+横向扩展：Compute Engine 具有一项称为自动缩放的功能，可以根据负载指标向应用程序添加或删除虚拟机。  
+纵向扩展：借助 Compute Engine，您实际上可以配置非常大的虚拟机，这非常适合内存数据库和 CPU 密集型分析等工作负载。  
 
 ## 使用 App Engine 探索 PaaS
 您将探索 App Engine 如何运行您的应用程序，而无需您管理基础架构。App Engine 允许您在完全托管的无服务器平台上构建高度可扩展的应用程序。  
@@ -393,5 +394,52 @@ console.log(`My Cloud Function: ${name}`);
 略
 
 ### 恭喜！
+略
+
+## 使用 GKE 容器化和编排应用程序
+Kubernetes 是一种容器编排工具，可用于简化容器化环境的管理。
+
+## 实验室简介：Kubernetes Engine：Qwik Start
+略
+
+## Kubernetes Engine: Qwik Start (GSP100)
+### 概览
+Google Kubernetes Engine (GKE) 提供了一个代管式环境，使用 Google 基础架构在其中部署、管理和扩缩容器化应用。Kubernetes Engine 环境包括多个机器（具体来讲，就是 Compute Engine 实例），它们组合在一起形成容器集群。
+
+Google Kubernetes Engine (GKE) 集群由 Kubernetes 开源集群管理系统提供支持。Kubernetes 为用户提供了与容器集群进行交互的机制。您可以使用 Kubernetes 命令和资源来部署和管理应用、执行管理任务、设置政策，以及监控您部署的工作负载的运行状况。
+
+Kubernetes 借鉴了一些常用 Google 服务背后的设计原理，可以带来同样的好处：自动管理、对应用容器进行监控和活跃性探测、自动扩缩、滚动更新等。
+
+### 设置和要求
+略
+
+### 任务 1. 设置默认计算可用区
+略
+
+### 任务 2. 创建 GKE 集群
+略
+
+### 任务 3. 获取用于集群的身份验证凭据
+gcloud container clusters get-credentials lab-cluster 命令用于获取指定GKE集群的认证凭据，并将其配置为当前工作环境中的默认集群，以便您可以使用kubectl命令与该集群进行交互。
+
+### 任务 4. 向集群部署一个应用
+GKE 使用 Kubernetes 对象创建和管理集群的资源。Kubernetes 提供了 Deployment 对象，用以部署 Web 服务器等无状态应用。Service 对象则用于定义从互联网访问您的应用时需要遵循的规则和负载均衡机制。
+
+### 任务 5. 删除集群
+略
+
+### 恭喜！
+略
+
+## 使用 Cloud Run 托管无服务器计算
+Cloud Run 是一个托管计算平台，可让您使用 Web 请求或 Pub/Sub 事件运行无状态容器。  
+Cloud Run 开发人员工作流程是一个简单的三步过程。
+* 首先，使用您最喜欢的编程语言编写应用程序。该应用程序应该启动一个侦听 Web 请求的服务器。
+* 其次，构建应用程序并将其打包到容器映像中。
+* 最后，将容器映像部署到 Cloud Run。
+
+部署容器映像后，您将收到一个唯一的 HTTPS URL，您将使用该 URL 来运行新的容器化应用程序。然后，Cloud Run 按需启动容器来处理请求，并确保通过动态添加和删除容器来处理所有传入请求。
+
+## 测验
 略
 
