@@ -34,9 +34,9 @@ Google Cloud 提供关系型和非关系型数据库以及全球对象存储。
 
 ## 区分云中的结构化和非结构化存储
 非结构化数据是以非表格形式存储的信息，例如文档、图像和音频文件。非结构化数据通常最适合 Cloud Storage 。
-![非结构化数据](../../images/unstructured-data-gcs.png)  
+![非结构化数据](../images/unstructured-data-gcs.png)  
 结构化数据，它表示存储在表、行和列中的信息。  
-![非结构化数据](../../images/structured-data.png)  
+![非结构化数据](../images/structured-data.png)  
 结构化数据有两种类型：事务工作负载和分析工作负载。  
 
 ---
@@ -55,7 +55,7 @@ BigQuery 是 Google 的数据仓库解决方案，可让您分析 PB 级数据�
 Bigtable 还为分析工作负载提供可扩展的 NoSQL 解决方案。  
 它最适合仅需要毫秒延迟的实时、高吞吐量应用程序。  
 
-![非结构化数据](../../images/choose-best-storage.png)  
+![非结构化数据](../images/choose-best-storage.png)  
 
 ## 如何使用 Cloud Storage 进行非结构化数据存储
 ### 什么是对象存储？
