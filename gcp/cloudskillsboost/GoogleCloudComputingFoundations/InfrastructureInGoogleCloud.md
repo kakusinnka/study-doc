@@ -256,3 +256,101 @@ Cloud Endpoints，它是一个用于在任何 Google Cloud 后端上开发、部
 Cloud Endpoints 是一个分布式 API 管理系统，它使用分布式可扩展服务代理，该代理是在自己的 Docker 容器中运行的服务代理。目标是帮助您创建和维护低延迟和高性能的最苛刻的 API。  
 Cloud Endpoints 提供 API 控制台、托管、日志记录、监控和其他功能，帮助您创建、共享、维护和保护 API。  
 
+## 实验室简介：云端点：Qwik Start
+在本实验中，您将：
+* 部署 Cloud Endpoints 配置。
+* 部署 API 后端。
+* 向 API 发送请求。
+* 跟踪 API 活动。
+* 向 API 添加配额。
+
+## 云端点：Qwik Start (GSP164)
+### 概述
+在本实验中，您将使用 Google Cloud Endpoints 部署示例 API，这是一组用于从 App Engine 应用程序内生成 API 的工具。 示例代码将包括：
+* 一个 REST API，您可以查询该 API，通过三个字母的 IATA 代码（例如，SFO、JFK、AMS）查找机场名称。
+* 将 API 配置上传到 Cloud Endpoints 的脚本。
+* 部署 Google App Engine 灵活后端来托管示例 API 的脚本。
+
+向示例 API 发送一些请求后，您可以查看 Cloud Endpoints 活动图和日志。 这些工具可让您监控 API 并深入了解其使用情况。
+
+### 设置和要求
+略
+
+### 任务 1. 获取示例代码
+略
+
+### 任务 2. 部署端点配置
+略
+
+### 任务 3. 部署 API 后端
+略
+
+### 任务 4. 向 API 发送请求
+略
+
+### 任务 5. 跟踪 API 活动
+略
+
+### 任务 6. 向 API 添加配额
+略
+
+### 恭喜！
+略
+
+## Apigee
+另一个可用于开发和管理 API 代理的 Google Cloud 平台是 Apigee API Management。与 Cloud Endpoints 不同，Apigee API Management 特别关注业务问题，例如速率限制、配额和分析。
+
+## Pub/Sub
+Pub/Sub 是一种 Google Cloud 异步消息服务和 API，支持大规模分布式面向消息的架构。  
+Pub/Sub 这个名称是 Publisher/Subscriber 的缩写，即向订阅者发布消息。  
+Pub/Sub 是一种分布式消息服务，可以从各种设备流（例如游戏事件、物联网设备和应用程序流）接收消息。  
+
+## 实验室简介：Pub/Sub：Qwik Start - Python
+在本实验中，您将：
+* 了解 Pub/Sub 的基础知识。
+* 创建并列出 Pub/Sub 主题。
+* 创建并列出 Pub/Sub 订阅。
+* 向主题发布消息。
+* 使用拉取订阅者输出各个主题消息。
+
+## Google Cloud Pub/Sub：Qwik Start - Python (GSP094)
+### 概览
+使用 Google Cloud Pub/Sub 服务，应用能够可靠、快速地异步交换消息。为实现这一目标，数据制作者需要将消息发布到 Cloud Pub/Sub 主题。然后，订阅程序客户端会创建对该主题的订阅，并处理来自该订阅的消息。对于无法可靠地传送的消息，Cloud Pub/Sub 最多会将其保留七天。  
+在本实验中，您需要执行以下操作：
+* 了解 Pub/Sub 的基础知识。
+* 创建并列出 Pub/Sub 主题。
+* 创建并列出 Pub/Sub 订阅。
+* 向主题发布消息。
+* 使用拉取订阅程序输出单独的主题消息。
+
+
+### 设置和要求
+略
+
+### 任务 1. 创建虚拟环境
+略
+
+### 任务 2. 安装客户端库
+略
+
+### 任务 3. Pub/Sub - 基础知识
+发布者创建主题并向主题发送消息，订阅程序则为相应主题创建订阅以接收来自该主题的消息。
+
+### 任务 4. 创建主题
+略
+### 任务 5. 创建订阅
+略
+### 任务 6. 发布消息
+略
+### 任务 7. 查看邮件
+略
+### 任务 8. 检验您的掌握情况
+略
+### 恭喜！
+略
+
+## 总结
+略
+
+# 您无法保护云的安全，对吗？
+## 介绍
