@@ -316,11 +316,38 @@ Cloud Monitoring 可帮助您了解云应用的性能、正常运行时间和总
 略
 
 ### 创建 Compute Engine 实例
+略
+
 ### 向实例添加 Apache2 HTTP Server
+略
+
 ### 创建拨测
+拨测用于验证资源是否一直可供使用。作为练习，请创建拨测来验证您虚拟机的运行情况。
+
 ### 创建提醒政策
+略
+
 ### 创建信息中心和图表
+略
+
 ### 查看日志
+略
+
 ### 查看拨测结果和所触发的提醒
+略
+
 ### （可选）移除您的提醒政策
+略
+
 ### 恭喜！
+略
+
+
+## 测验
+略
+
+## 总结
+1. 首先您了解了基础设施即代码 (IaC)。
+2. 然后您探索了 Terraform 作为 IaC 选项。
+3. 接下来，您研究了云中监控（monitoring）、日志记录（logging）、错误报告（error reporting）、跟踪（tracing）和分析（profiling）的作用。
+4. 最后，您学习了如何使用 Google Cloud 操作套件进行监控（monitoring）、日志记录（logging）、错误报告（error reporting）、跟踪（tracing）和分析（profiling）。
