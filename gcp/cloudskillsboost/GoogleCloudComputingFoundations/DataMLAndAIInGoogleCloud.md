@@ -44,8 +44,10 @@ Dataproc 是一项托管 Spark 和 Hadoop 服务，可让您使用开源数据�
 * 映像版本控制
 * 内置集成
 
+## 实验室简介：Dataproc：Qwik Start - 控制台
+您将创建一个 Dataproc 集群，在集群中运行一个简单的 Apache Spark 作业，并使用 Google Cloud 控制台修改集群中的工作线程数量。
 
-
+## Dataproc：Qwik Start - 控制台
 
 # 让机器来做工作
 机器学习：解释什么是机器学习、使用的术语及其价值主张
