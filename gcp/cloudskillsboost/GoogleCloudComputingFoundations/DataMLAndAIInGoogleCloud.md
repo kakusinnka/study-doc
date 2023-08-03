@@ -47,7 +47,59 @@ Dataproc 是一项托管 Spark 和 Hadoop 服务，可让您使用开源数据�
 ## 实验室简介：Dataproc：Qwik Start - 控制台
 您将创建一个 Dataproc 集群，在集群中运行一个简单的 Apache Spark 作业，并使用 Google Cloud 控制台修改集群中的工作线程数量。
 
-## Dataproc：Qwik Start - 控制台
+## Dataproc：Qwik Start - 控制台 (GSP103)
+### 概览
+Cloud Dataproc 是一项快速、简单易用的全托管式云服务，为您提供了一种更简单、更经济实惠的方式来运行 Apache Spark 和 Apache Hadoop 集群。过去需要数小时或数天才能完成的操作现在只需几秒钟或几分钟就可以完成。您可以快速创建 Cloud Dataproc 集群并随时调整其规模，而不必担心您不断增长的数据流水线负载超过集群处理能力。
+
+本实验向您介绍如何使用 Google Cloud Console 创建 Google Cloud Dataproc 集群，在该集群中运行简单的 Apache Spark 作业，然后修改该集群中的工作器数量。
+
+### 设置和要求
+略
+
+### 创建集群
+略
+
+### 提交作业
+略
+
+### 查看作业的输出结果
+略
+
+### 检验您的掌握情况
+略
+
+### 恭喜！
+略
+
+## 实验室简介：Dataproc：Qwik Start - 命令行
+略
+
+## Dataproc：Qwik Start - 命令行 (GSP104)
+### 概述
+略
+
+### 设置和要求
+略
+
+### 任务 1. 创建集群
+略
+
+### 任务 2. 提交作业
+略
+
+### 任务 3. 更新集群
+略
+
+### 任务 4. 测试您的理解程度
+略
+
+### 恭喜！
+略
+
+## 使用 Dataflow 构建提取、转换和加载管道
+使用 Dataflow 执行提取、转换和加载操作。  
+Dataflow 是 Google 提供的一项托管服务，针对大规模批处理或长时间运行的流处理进行了优化。Dataflow 创建一个管道来处理流数据和批数据。  
+
 
 # 让机器来做工作
 机器学习：解释什么是机器学习、使用的术语及其价值主张
