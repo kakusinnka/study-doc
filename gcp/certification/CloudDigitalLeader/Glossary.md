@@ -129,3 +129,6 @@
 | Anycast | 任意广播 | エニーキャスト |
 | Transformation | 转型 | トランスフォーメーション |
 | Monolithic | 整体式的 | モノリシック |
+| Disk Snapshot | 磁盘快照 | ディスクスナップショット |
+| Provisioning | 配置 | プロビジョニング |
+| Over Fit | 过拟合 | オーバーフィット |
