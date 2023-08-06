@@ -132,3 +132,5 @@
 | Disk Snapshot | 磁盘快照 | ディスクスナップショット |
 | Provisioning | 配置 | プロビジョニング |
 | Over Fit | 过拟合 | オーバーフィット |
+| Cross-site Scripting | 跨站脚本 | クロスサイトスクリプティング |
+| Privacy | 隐私 | プライバシー |

@@ -163,7 +163,7 @@ VPC 提供全球分布式防火墙，可以控制该防火墙以限制通过传�
   * VPN（Virtual Private Network，虚拟私有网络）：是一种用于在公共网络（如互联网）上建立加密隧道的技术，用于在远程位置之间创建安全的通信连接。通过VPN，用户可以在不受地理位置限制的情况下，安全地访问远程网络资源，就像直接连接到私有网络一样。
 * 借助直接对等互连 (Direct Peering)，您能够在企业网络和 Google 边缘网络之间建立直接对等互连连接，并交换高吞吐量的云端流量。建立直接对等互连以后，可以为您的本地网络到 Google 服务（包括可通过一个或多个公共 IP 地址公开的 Google Cloud 产品）提供直接通道。从 Google 网络到您的本地网络的流量（包括来自您的项目中 VPC 网络的流量）也会经由该直接通道。
 * 借助运营商对等互连 (Carrier Peering)，您可以通过服务提供商访问 Google 应用（例如 Google Workspace），以获取将您的基础架构连接到 Google 的企业级网络服务。通过服务提供商连接到 Google 时，您可以使用一条或多条链路获得具有更高可用性、更短延迟时间的连接。与服务提供商合作，获取您所需的连接。
-* 合作伙伴互连通 (Partner Interconnect) 过支持的服务提供商在本地网络与 Virtual Private Cloud (VPC) 网络之间提供连接。如果您的数据中心所在的物理位置无法连接到专用互连对接网点，或者如果您的数据不需要用尽 10 Gbps 的连接，则合作伙伴互连连接很有用。  ![合作伙伴互连通](../images/partner-interconnect.png)
+* 合作伙伴互连 (Partner Interconnect) 通过支持的服务提供商在本地网络与 Virtual Private Cloud (VPC) 网络之间提供连接。如果您的数据中心所在的物理位置无法连接到专用互连对接网点，或者如果您的数据不需要用尽 10 Gbps 的连接，则合作伙伴互连连接很有用。  ![合作伙伴互连通](../images/partner-interconnect.png)
 * 专用互连 (Dedicated Interconnect) 可在您的本地网络和 Google 网络之间提供直接物理连接。通过专用互连，您可以在网络之间传输大量数据，这比在公共互联网上购买额外带宽更加经济实惠。  ![专用互连](../images/single-interconnect.png)
 
 ## 负载平衡选项

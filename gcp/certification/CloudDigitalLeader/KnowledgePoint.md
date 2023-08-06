@@ -260,6 +260,10 @@ Security Command Center：Google Cloud 的内置安全和风险管理解决方�
 
 ---
 
+合规性资源中心 (Compliance resource center) (コンプライアンス リソース センター)：Google Cloud 提供行业领先的认证、文档和第三方审核，旨在帮助您满足合规性要求。
+
+---
+
 Cloud Security Scanner：Web Security Scanner 可识别 App Engine、Google Kubernetes Engine（GKE）和 Compute Engine Web 应用中的安全漏洞。它会抓取您的应用，跟踪起始网址范围内的所有链接，并尝试执行尽可能多的用户输入和事件处理程序。
 
 ---
@@ -370,5 +374,31 @@ Cloud Run for Anthos：通过 Google 管理且支持的 Knative 开发者平台 
 
 Google Cloud Platform (GCP) 产品传统上经历了四个发布阶段: 抢先体验 (Early Access)、Alpha、Beta 和正式版 (General Availability) (GA)，而今天，我们将其简化为两个阶段：预览版和正式版。  
 所有新的 GCP 产品都将以预览版或正式版 (GA) 形式推出。在预览时，产品或功能已准备好供您测试和评估。  
+
+---
+
+通过设置 deletionProtection 标志，可以防止意外删除虚拟机实例。如果用户尝试删除您已为其设置 deletionProtection 标志的虚拟机实例，则请求会失败。只有已被授予具有 compute.instances.create 权限的角色的用户才能重置该标志以允许删除资源。
+
+---
+
+| 标准支持服务 | 增强型支持服务 | 高级支持服务 |
+|---|---|---|
+| 建议用于正在开发的工作负载，依托可无限获取的技术支持，开启您的上云之旅。 排查问题、测试和探索。 | 专为生产环境中的工作负载而设计，具有快速的响应速度和附加服务，通过优质可靠的支持来优化您的体验。 | 专为具有关键工作负载的企业而设计，响应速度最快，提供客制化支持服务及专属技术客户经理。 |
+| P2 支持请求：4 小时 </br> P3 支持请求：8 小时 </br> P4 支持请求：8 小时 | P1 支持请求：1 小时 </br> P2 支持请求：4 小时 </br> P3 支持请求：8 小时 </br> P4 支持请求：8 小时 | P1 支持请求：15 分钟 </br> P2 支持请求：2 小时 </br> P3 支持请求：4 小时 </br> P4 支持请求：8 小时 |
+
+---
+
+Google Cloud Marketplace：寻找与 Google Cloud 集成的热门解决方案，加快您的数字化转型进程。通过在线探索、灵活购买并获取企业级云解决方案，提升贵组织的采购能力并简化采购流程。
+
+---
+
+Memorystore：借助适用于 Redis 和 Memcached 且具备可伸缩性、安全性和高可用性的内存中服务，缩短延迟时间。  
+* 构建可实现亚毫秒级数据访问的应用缓存
+* 与开源 Redis 和 Memcached 完全兼容
+* 将缓存层迁移至云端，而无需更改任何代码
+
+---
+
+Google 的内容分发网络（Cloud CDN 和媒体 CDN）全面扩展，可将内容分发到更靠近全球受众的位置。
 
 ---
