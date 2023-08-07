@@ -51,7 +51,79 @@ Angular CLI 是开发 Angular 应用程序最快、最直接且推荐的方式�
 
 # 尝试 Angular
 ## 入门
+### 开始使用 Angular
+本教程将引导您构建一个包含目录、购物车和结账表单的电子商务网站，从而向您介绍 Angular 的基本知识。
+
+### 先决条件
+略
+
+### 浏览示例应用程序
+您可以使用组件构建 Angular 应用程序。组件定义 UI 中的责任区域，使您可以重用 UI 功能集。  
+一个组件由三部分组成：
+* 一个组件类：处理数据和功能。
+* 一个 HTML 模板：确定用户界面。
+* 组件特定样式：定义外观和感觉。
+
+### 创建示例项目
+略
+
+### 创建产品列表
+略
+
+### 将数据传递给子组件
+子组件使用 @Input() 装饰器定义属性。
+```
+import { Component, Input } from '@angular/core';
+import { Product } from '../products';
+
+export class ProductAlertsComponent {
+
+  @Input() product: Product | undefined;
+
+}
+```
+
+使用属性绑定将数据传递给子组件。
+```
+<app-product-alerts
+  [product]="product">
+</app-product-alerts>
+```
+
+### 将数据传递给父组件
+子组件:
+```
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Product } from '../products';
+
+export class ProductAlertsComponent {
+  @Output() notify = new EventEmitter();
+}
+```
+```
+<p *ngIf="product && product.price > 700">
+  <button type="button" (click)="notify.emit()">Notify Me</button>
+</p>
+```
+
+父组件:
+```
+export class ProductListComponent {
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
+}
+```
+```
+<app-product-alerts
+  [product]="product" 
+  (notify)="onNotify()">
+</app-product-alerts>
+```
+
 ## 添加导航
+
+
 ## 管理数据
 ## 使用表单进行用户输入
 ## 部署应用程序
