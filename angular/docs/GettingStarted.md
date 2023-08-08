@@ -122,10 +122,156 @@ export class ProductListComponent {
 ```
 
 ## 添加导航
+### 将 URL 路径与组件关联
+在 app.module.ts 中，添加产品详细信息的路由，其中​​ path 为 products/:productId ， ProductDetailsComponent 为 component 。
+```
+@NgModule({
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+    ])
+  ],
+  declarations: [
+    AppComponent,
+    TopBarComponent,
+    ProductListComponent,
+    ProductAlertsComponent,
+    ProductDetailsComponent,
+  ],
+```
 
+修改产品名称锚点以包含 routerLink 和 product.id 作为参数。
+```
+<div *ngFor="let product of products">
+
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <!-- . . . -->
+
+</div>
+```
+
+### 查看产品详情
+```
+import { ActivatedRoute } from '@angular/router';
+```
+```
+export class ProductDetailsComponent implements OnInit {
+
+  constructor(private route: ActivatedRoute) { }
+
+}
+```
+```
+ngOnInit() {
+  const routeParams = this.route.snapshot.paramMap;
+  const productIdFromRoute = Number(routeParams.get('productId'));
+}
+```
 
 ## 管理数据
+### 创建购物车服务
+在 Angular 中，服务是类的实例，您可以使用 Angular 的依赖注入系统将其提供给应用程序的任何部分。  
+
+### 定义购物车服务
+```
+import { Product } from './products';
+import { Injectable } from '@angular/core';
+/* . . . */
+@Injectable({
+  providedIn: 'root',
+})
+export class CartService {
+  items: Product[] = [];
+  /* . . . */
+
+  addToCart(product: Product) {
+    this.items.push(product);
+  }
+
+  getItems() {
+    return this.items;
+  }
+
+  clearCart() {
+    this.items = [];
+    return this.items;
+  }
+  /* . . . */
+}
+```
+
+### 使用购物车服务
+```
+import { CartService } from '../cart.service';
+
+export class ProductDetailsComponent implements OnInit {
+
+  constructor(
+    private cartService: CartService
+  ) { }
+
+  addToCart(product: Product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
+}
+```
+
+### 创建购物车视图
+略
+
+### 显示购物车商品
+略
+
+### 检索运费
+配置 AppModule 以使用 HttpClient：要使用 Angular 的 HttpClient ，您必须将应用程序配置为使用 HttpClientModule 。  
+配置 CartService 以使用 HttpClient
+```
+@Injectable({
+  providedIn: 'root'
+})
+export class CartService {
+  items: Product[] = [];
+
+  constructor(
+    private http: HttpClient
+  ) {}
+
+  getShippingPrices() {
+    return this.http.get<{type: string, price: number}[]>('/assets/shipping.json');
+  }
+
+/* . . . */
+}
+```
+
+### 创建运输组件
+配置 ShippingComponent 以使用 CartService
+```
+export class ShippingComponent implements OnInit {
+
+  shippingCosts!: Observable<{ type: string, price: number }[]>;
+
+  ngOnInit(): void {
+    this.shippingCosts =  this.cartService.getShippingPrices();
+  }
+
+}
+```
+
 ## 使用表单进行用户输入
+
+
 ## 部署应用程序
 
 # 设置
