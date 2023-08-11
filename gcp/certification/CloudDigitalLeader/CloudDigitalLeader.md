@@ -32,6 +32,5 @@ Cloud Digital Leader 考试评估您在以下领域的知识：
 查看考试条款和条件以及数据共享政策。
 
 ## 步骤 5. 考试准备
-### [用语集](./Glossary.md)  
 ### [知识点](./KnowledgePoint.md)  
 ### [博客](./Blog.md)
