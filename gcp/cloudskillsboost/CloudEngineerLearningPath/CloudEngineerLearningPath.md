@@ -5,7 +5,7 @@ Cloud Engineer 负责规划、配置、搭建和部署云解决方案。此学�
 ### [Qwiklabs 和 Google Cloud 导览](../GoogleCloudComputingFoundations/CloudComputingFundamentals.md#qwiklabs-和-google-cloud-导览-gsp282)
 作为首个实操实验，此实验将引导您访问 Qwiklabs 以及 Google Cloud Platform Console 并使用 GCP 的以下基本功能：项目、资源、IAM 用户、角色、权限、API 和 Cloud Shell。
 
-### 为您的助理云工程师之旅做好准备
+### [为您的助理云工程师之旅做好准备](./PreparingYourAssociateCloudEngineer.md)
 本课程帮助您为助理云工程师考试做好准备。 您将了解考试涵盖的 Google Cloud 领域，以及如何制定学习计划来提高您的领域知识。
 
 ### Google Cloud 基础知识：核心基础设施
@@ -40,3 +40,5 @@ Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的�
 
 ### 使用 Terraform 自动化 Google Cloud 上的基础设施
 通过完成使用 Terraform 在 Google Cloud 上实现基础设施自动化任务来获得技能徽章，您将在其中学习如何使用 Terraform 编写基础设施即代码。 在这个任务中，您将获得构建、更改和销毁基础设施、管理本地和远程状态、导入基础设施以及构建您自己的模块的实践经验。
+
+## [知识点](./KnowledgePoint.md)
