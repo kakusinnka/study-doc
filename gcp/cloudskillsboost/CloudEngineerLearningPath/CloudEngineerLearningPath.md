@@ -8,7 +8,7 @@ Cloud Engineer 负责规划、配置、搭建和部署云解决方案。此学�
 ### [为您的助理云工程师之旅做好准备](./PreparingYourAssociateCloudEngineer.md)
 本课程帮助您为助理云工程师考试做好准备。 您将了解考试涵盖的 Google Cloud 领域，以及如何制定学习计划来提高您的领域知识。
 
-### Google Cloud 基础知识：核心基础设施
+### [Google Cloud 基础知识：核心基础设施](./GoogleCloudFundamentals_CoreInfrastructure.md)
 Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的重要概念和术语。 本课程通过视频和动手实验，展示并比较了许多 Google Cloud 的计算和存储服务，以及重要的资源和策略管理工具。
 
 ### 基本的 Google Cloud 基础设施：基础

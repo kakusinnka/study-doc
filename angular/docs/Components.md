@@ -135,22 +135,101 @@ Angular 应用使用标准的 CSS 来设置样式。
 组件样式中有一些从影子（Shadow） DOM 样式范围领域引入的特殊选择器：
 
 ### :host
-:host 选择器是用于在 Web 组件的 Shadow DOM 内部样式中选择 Web 组件自身的伪类选择器。  
-:host 选择器使开发人员可以在 Shadow DOM 内部为 Web 组件自身定义样式，而不会影响外部样式或其他 Shadow DOM 内部的部分。
+:host 代表当前组件的唯一属性标识。
 
 ### :host-context
-### 已弃用 /deep/、>>> 和 ::ng-deep
-## 把样式加载进组件中
-### 元数据中的样式
-### 组件元数据中的样式文件
-### 模板内联样式
-### 模板中的 link 标签
-### CSS @imports 语法
-### 外部以及全局样式文件
-### 非 CSS 样式文件
+用法不明
 
-# Sharing data between child and parent directives and components
+### 已弃用 /deep/、>>> 和 ::ng-deep
+任何前面带有 ::ng-deep 的样式都会变成全局样式。
+
+## 把样式加载进组件中
+有几种方式把样式加入组件：
+* 设置 styles 或 styleUrls 元数据
+* 内联在模板的 HTML 中
+* 通过 CSS 文件导入
+
+### 元数据中的样式
+给 @Component 装饰器添加一个 styles 数组型属性。
+
+### 组件元数据中的样式文件
+把外部 CSS 文件添加到 @Component 的 styleUrls 属性中以加载外部样式。
+
+### 模板内联样式
+可以直接在组件的 HTML 模板中写 <style> 标签来内嵌 CSS 样式。
+
+### 模板中的 link 标签
+你也可以在组件的 HTML 模板中写 <link> 标签。
+
+### CSS @imports 语法
+可以利用标准的 CSS @import 规则来把其它 CSS 文件导入到 CSS 文件中。URL 是相对于你正在导入的 CSS 文件的。
+
+### 外部以及全局样式文件
+angular.json 文件中的 styles 数组负责管理外部样式表。
+
+### 非 CSS 样式文件
+如果使用 CLI 进行构建，那么你可以用 sass 或 less 来编写样式，并使用相应的扩展名（.scss、.less）把它们指定到 @Component.styleUrls 元数据中。
+
 # 在子指令和父指令和组件之间共享数据
-# Content projection 内容投影
-# Dynamic components 动态组件
-# Angular elements 角元素
+## 把数据发送到子组件  
+![父组件把数据发送到子组件结构图](./images/fater-to-child.png)
+### 配置子组件
+略
+
+### 配置父组件
+略
+
+### 监视 @Input() 的变更
+略
+
+## 把数据发送到父组件
+略
+
+### 配置子组件
+略
+
+### 配置子组件的模板
+略
+
+### 配置父组件
+略
+
+### 配置父组件的模板
+略
+
+## 同时使用 @Input() 和 @Output()
+![同时使用 @Input() 和 @Output()结构图](./images/fater-to-child-and-child-to-father.png)
+
+# 内容投影
+## 单插槽内容投影
+略
+
+## 多插槽内容投影
+略
+
+## 有条件的内容投影
+用法不明
+
+## 在更复杂的环境中投影内容
+用法不明
+
+# 动态组件
+用法不明
+
+## 动态组件加载
+## 指令
+## 加载组件
+## 解析组件
+## 公共的 AdComponent 接口
+## 最终的广告栏
+
+# Angular 元素
+用法不明
+
+## 使用自定义元素
+### 工作原理
+## 把组件转换成自定义元素
+### 映射
+## 自定义元素的浏览器支持
+## 范例：弹窗服务
+## 为自定义元素添加类型支持
