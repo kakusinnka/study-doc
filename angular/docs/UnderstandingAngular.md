@@ -3,4 +3,4 @@
 * [Components 组件](./Components.md)
 * [Templates 模板](./Templates.md)
 * [Directives 指令](./Directives.md)
-* Dependency injection 依赖注入
+* [Dependency injection 依赖注入](./DependencyInjection.md)
