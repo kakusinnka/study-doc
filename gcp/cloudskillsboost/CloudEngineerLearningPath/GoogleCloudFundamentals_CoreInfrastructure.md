@@ -301,5 +301,42 @@ Bigtable 可处理海量工作负载，同时确保始终如一的低延迟和�
 略
 
 ## Google Cloud 基础知识：Cloud Storage 和 Cloud SQL 使用入门
+### 概览
+在本实验中，您将创建一个 Cloud Storage 存储桶并将一个图片保存在该存储桶中。您还需要将一个在 Compute Engine 中运行的应用配置为使用一个由 Cloud SQL 代管的数据库。  
+您还需要将该 Web 服务器配置为引用 Cloud Storage 存储桶中的这个图片。
+
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 创建一个 Cloud Storage 存储桶并将一个图片保存在该存储桶中。
+* 创建一个 Cloud SQL 实例并对其进行配置。
+* 从一个 Web 服务器连接到该 Cloud SQL 实例。
+* 在一个网页上使用 Cloud Storage 存储桶中的这张图片。
+
+### 任务 1. 登录 Google Cloud 控制台
+略
+
+### 任务 2. 部署一个 Web 服务器虚拟机实例
+略
+
+### 任务 3. 使用 gsutil 命令行创建一个 Cloud Storage 存储桶
+略
+
+### 任务 4. 创建 Cloud SQL 实例
+略
+
+### 任务 5. 将 Compute Engine 实例中的一个应用配置为使用 Cloud SQL
+略
+
+### 任务 6. 将 Compute Engine 实例中的一个应用配置为使用一个 Cloud Storage 对象
+略
+
+### 恭喜！
+略
+
+### 结束实验
+略
+
+### 其他资源
+略
 
 ## Quiz: Storage in the Cloud
