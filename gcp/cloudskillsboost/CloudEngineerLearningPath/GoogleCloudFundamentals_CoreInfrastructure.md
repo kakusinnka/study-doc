@@ -340,3 +340,69 @@ Bigtable 可处理海量工作负载，同时确保始终如一的低延迟和�
 略
 
 ## Quiz: Storage in the Cloud
+略
+
+# 云中的容器
+本课程的这一部分将探讨容器以及如何使用 Kubernetes 和 Google Kubernetes Engine 管理容器。
+
+## 容器简介
+略
+
+## Kubernetes
+Kubernetes 是一个用于管理容器化工作负载和服务的开源平台。  
+通过使用一个或多个容器的包装器在节点上部署容器，这就是 Pod 的定义。Pod 是您创建或部署的 Kubernetes 中的最小单元。  
+Deployment 代表同一 Pod 的一组副本，即使运行的节点发生故障，Pod 仍能保持运行。  
+服务是一个抽象，它定义了一组逻辑 Pod 以及访问它们的策略。
+
+## Google Kubernetes Engine
+GKE 是 Google 在云中托管的托管 Kubernetes 服务。
+
+## 混合云和多云
+利用混合架构或多云架构，你可以将部分系统基础架构保留在本地，同时将其他部分迁移到云端。从而创建能够满足公司独特需求的环境。
+
+## Anthos
+Anthos 是一个混合和多云解决方案。Anthos 框架建立在 Kubernetes 和 GKE On-Prem 的基础上,这为完全集成的架构提供了基础,并对一个中央控制平面进行集中管理.该控制平面支持跨混合和多云环境的，基于政策的应用生命周期交付。Anthos 还提供一组丰富的工具用于监控和维护应用，在所有网络中的一致性，无论是在本地、云端还是多云环境中。
+![Anthos](../images/anthos-001.png)
+
+## 实验：Google Cloud 基础知识：GKE 使用入门
+### 概览
+略
+
+### 目标
+略
+
+### 任务 1. 登录 Google Cloud
+略
+
+### 任务 2 确认已启用所需的 API
+略
+
+### 任务 3. 启动 Kubernetes Engine 集群
+略
+
+### 任务 4. 运行和部署容器
+略
+
+### 恭喜！
+略
+
+### 结束实验
+略
+
+## 测验: 云中的容器
+略
+
+# 云中的应用程序
+本课程这一部分的重点是在云中开发应用程序。 我们将在这里探索 App Engine、两个 API 管理工具（Apigee Edge 和 Cloud Endpoints）以及 Cloud Run。
+
+## App Engine
+
+## App Engine 环境
+
+## Google Cloud API 管理工具
+
+## Cloud Run
+
+## 实验：Hello Cloud Run
+
+## 测验：云中的应用程序
