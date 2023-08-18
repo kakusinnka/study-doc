@@ -396,13 +396,117 @@ Anthos 是一个混合和多云解决方案。Anthos 框架建立在 Kubernetes 
 本课程这一部分的重点是在云中开发应用程序。 我们将在这里探索 App Engine、两个 API 管理工具（Apigee Edge 和 Cloud Endpoints）以及 Cloud Run。
 
 ## App Engine
+App Engine 是一个全代管式的无服务器平台，用于大规模开发和托管 Web 应用。  
+借助 App Engine 你可以自由选择各种热门的编码语言，代码库和框架。使用熟悉的工具开发应用，然后根据需求自动预配服务器和扩缩应用实例。  
+App Engine 提供多种内置服务和API：例如 NoSQL 数据存储、内存缓存、负载均衡、健康检查、应用日志记录和用户身份验证 API。  
+App Engine 还提供软件开发套件，也称SDK，帮助你开发，部署和管理本地计算机上的应用。  
+可以使用 Security Command Center 自动扫描和检测Web应用的常见安全漏洞。
 
 ## App Engine 环境
+App Engine 环境有两种类型标准环境和柔性环境。  
 
 ## Google Cloud API 管理工具
+应用程序开发人员构建他们编写的软件，以便提供一个干净、定义良好的界面，隐藏不必要的细节，然后他们记录该界面。这是一个应用程序编程接口。  
+Google Cloud 提供了三种 API 管理工具：Cloud Endpoints、API Gateway 和 Apigee API Management。
+* Cloud Endpoints 是一个分布式 API 管理系统，它使用分布式可扩展服务代理，该代理是在自己的 Docker 容器中运行的服务代理。目标是帮助您创建和维护低延迟和高性能的最苛刻的 API。Cloud Endpoints 提供 API 控制台、托管、日志记录、监控和其他功能，帮助您创建、共享、维护和保护 API。
+* API网关是另一个API管理工具。API Gateway 使您能够通过定义明确的 REST API 提供对后端服务的安全访问，无论服务实现如何，该 API 在所有服务中都是一致的。
+* 另一个可用于开发和管理 API 代理的 Google Cloud 平台是 Apigee API Management。与 Cloud Endpoints 不同，Apigee API Management 特别关注业务问题，例如速率限制、配额和分析。
 
 ## Cloud Run
+Cloud Run 这是一个代管式计算平台，让你可以通过 Web 请求或 Pub/Sub 事件运行无状态容器。Cloud Run 是无服务器的，因此无需任何基础架构管理任务，你可以专注于开发应用。  
+Cloud Run 开发者工作流 是一个简单直接的三步流程：
+* 首先，使用你喜欢的编程语言编写应用，这个应用需要启动一个监听 Web 请求的服务器
+* 其次，构建应用并将其打包到容器映像中
+* 第三，容器映像被推送到 Artifact Registry
+* 最后，将映像部署到 Cloud Run
 
-## 实验：Hello Cloud Run
+## 实验：Hello Cloud Run (CBL333)
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 启用 Cloud Run API。
+* 创建一个能够部署为无服务器的无状态容器的简单 Node.js 应用。
+* 容器化该应用并将其上传到 Container Registry（即现在的“Artifact Registry”）。
+* 在 Cloud Run 上部署容器化应用。
 
-## 测验：云中的应用程序
+### 概览
+Cloud Run 是一个代管式计算平台，供您运行可通过 HTTP 请求调用的无状态容器。Cloud Run 采用无服务器设计：您不用管理基础架构，因此可全力专注于最重要的工作，即构建出色的应用。
+
+### 设置和要求
+略
+
+### 参考文档
+略
+
+### 任务 1. 启用 Cloud Run API 并配置 Shell 环境
+略
+
+### 任务 2. 编写示例应用
+略
+
+### 任务 3. 容器化该应用并将其上传到 Artifact Registry
+略
+
+### 任务 4. 部署到 Cloud Run
+略
+
+### 任务 5. 清理
+略
+
+### 结束实验
+略
+
+# 在云中开发和部署
+本部分探讨在云中进行开发的 Google Cloud 方法，其中包括 Cloud Source Repositories、Cloud Functions 和 Terraform。 本节还探讨了基础设施即代码的部署。
+
+## 云端开发
+Cloud Source Repositories 提供托管在 Google Cloud 上的功能齐全的 Git 存储库，支持任何应用程序或服务的协作开发，包括在 App Engine 和 Compute Engine 上运行的应用程序或服务。
+
+---
+
+Cloud Functions 是一种轻量级、基于事件的异步计算解决方案，允许您创建响应云事件的小型单一用途函数，而无需管理服务器或运行时环境。
+
+## 部署：基础架构即代码
+使用模板会更加高效，使用模板可以像编写配置文件一样为应用环境编写规范，然后你可以将模板部署在规模较大的环境中，以便根据需要快速创建任意多个相同的应用环境，你可以通过 Terraform 来实现。你可以在 Cloud Source Repositories 中存储 Terraform 模板，并控制其版本。
+
+## 实验：使用 Terraform 自动部署基础架构
+### 概览
+Terraform 可让您以安全、可预测的方式创建、更改和改进基础架构。它是一个开源工具，可将 API 编码为声明式配置文件。您可以将这些文件分享给团队成员，将它们作为代码进行处理、修改、审核和版本控制。
+
+### 任务 1. 设置 Terraform 和 Cloud Shell
+略
+
+### 任务 2. 创建 mynetwork 及其资源
+略
+
+### 任务 3. 验证您的部署
+略
+
+### 任务 4. 回顾
+略
+
+### 结束实验
+在本实验中，您创建了包含自动部署 Google Cloud 基础架构的模块的 Terraform 配置。当您的配置发生变化时，Terraform 可以创建增量执行方案，让您逐步建立整体配置。
+
+该实例模块让您可以将同一个资源配置重复用于多个资源，同时提供属性作为输入变量。您可以将您创建的配置和模块用作未来部署的基础。
+
+## 测验：在云中开发和部署
+略
+
+# 云端记录和监控
+本节强调监控与产品可靠性相关的性能的重要性，然后继续定义服务级别指标 (SLI)、服务级别目标 (SLO) 和服务级别协议 (SLA)。 它还检查了集成监视、日志记录、警报和调试的目的。
+
+## 监控的重要性
+
+## 衡量性能和可靠性
+
+## 理解 SLI、SLO 和 SLA
+
+## 集成的可观测性工具
+
+## 监控工具
+
+## 日志记录工具
+
+## 错误报告和调试工具
+
+## 测验：云中的日志记录和监控
