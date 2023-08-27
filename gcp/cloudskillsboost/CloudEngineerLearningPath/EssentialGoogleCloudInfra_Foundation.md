@@ -5,7 +5,7 @@
 ## 目标
 * 与 Google Cloud 控制台和 Cloud Shell 交互
 * 使用 Google Cloud Marketplace 部署解决方案
-* 实施VPC网络和防火墙规则
+* 实施 VPC 网络和防火墙规则
 * 使用 Compute Engine 创建和自定义虚拟机实例
 
 # 介绍
