@@ -390,11 +390,88 @@ Memorystore 为需要微秒响应时间或流量高峰的工作负载（如游�
 略
 
 ## 实验：Cloud SQL
+### 概览
+在此实验中，您将配置一个 Cloud SQL 服务器，并学习如何通过外部连接使用代理将应用连接到该服务器。 您还将配置通过专用 IP 链路的连接，以提供性能和安全方面的优势。 
+![](../images/cloud-sql-lab.png)
 
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 创建 Cloud SQL 数据库
+* 配置虚拟机以运行代理
+* 在应用和 Cloud SQL 之间创建连接
+* 使用专用 IP 地址将应用连接到 Cloud SQL
 
+### 任务 1：创建 Cloud SQL 数据库
+略
+
+### 任务 2：在虚拟机上配置代理
+略
+
+### 任务 3：将应用连接到 Cloud SQL 实例
+略
+
+### 任务 4：通过内部 IP 地址连接到 Cloud SQL
+略
+
+### 任务 5：回顾
+在此实验中，您创建了一个 Cloud SQL 数据库，并将其配置为同时使用通过安全代理的外部连接和通过专用 IP 地址的连接，后者更为安全且性能更好。 请注意，只有当应用和 Cloud SQL 服务器位于同一个区域并且属于同一个 VPC 网络时，才能通过专用 IP 地址进行连接。如果应用托管在其他区域、VPC 网络甚至不同的项目中，可以使用代理来确保应用通过外部连接的连接安全性。
+
+## 实验回顾：Cloud SQL
+略
+
+## Cloud Spanner
+### Cloud Spanner 将关系数据库结构的优点与非关系水平扩展相结合
+Cloud Spanner 是专门为云构建的服务，旨在将关系数据库结构的优势与非关系水平扩展相结合。  
+该服务可以提供 PB 级的容量，并提供全球范围内的事务一致性、模式、SQL 和自动同步复制以实现高可用性。使用案例包括传统上由关系数据库技术提供服务的财务应用程序和库存应用程序。  
+与关系数据库一样，Cloud Spanner 具有架构、SQL 和强一致性。此外，与非关系数据库一样，Cloud Spanner 提供高可用性、水平可扩展性和可配置的复制。
+
+### Cloud Spanner 构架
+一个Cloud Spanner实例在N个云区域中复制数据，这些区域可以在一个区域内，也可以跨多个区域。数据库放置是可配置的，这意味着您可以选择将数据库放置在哪个区域。此架构可实现高可用性和全局放置。
+使用 Google 的全球光纤网络跨区域同步数据复制。
+![](../images/spanner-architecture.png)
+
+### 选择 Cloud Spanner
+如果您已经无法满足任何关系数据库的需求，正在对数据库进行分片以获得高性能吞吐量，需要事务一致性、全局数据和强一致性，或者只是想整合数据库，请考虑使用 Cloud Spanner。
+![](../images/choosing-spanner.png)
+
+## Firestore
+Firestore 是一种快速、完全托管、无服务器、云原生 NoSQL 文档数据库，可简化全球范围内的移动、Web 和 IoT 应用程序的数据存储、同步和查询。其客户端库提供实时同步和离线支持，其安全功能以及与 Firebase 和 Google Cloud 的集成可加速构建真正的无服务器应用程序。  
+Firestore还支持ACID事务，因此如果事务中的任何操作失败并且无法重试，则整个事务将失败。  
+此外，凭借自动多区域复制和强一致性，即使在灾难发生时，您的数据也安全可用。 Firestore 甚至允许您对 NoSQL 数据运行复杂的查询，而不会降低性能。这使您可以更加灵活地构建数据。  
+
+### 选择 Firestore
+如果您的架构可能会发生变化并且您需要一个适应性强的数据库，您需要扩展到零，或者您希望以较低的维护开销扩展到 TB，请考虑使用 Firestore。
+![](../images/choosing-firestore.png)
+
+## Cloud Bigtable
+### Cloud Bigtable 是一项 NoSQL 大数据数据库服务
+Cloud Bigtable 是一个完全托管的 NoSQL 数据库，具有 PB 级和非常低的延迟。它可以无缝扩展吞吐量，并学习调整以适应特定的访问模式。  
+Cloud Bigtable 是操作和分析应用程序（包括物联网、用户分析和财务数据分析）的绝佳选择，因为它支持低延迟的高读写吞吐量。它也是机器学习应用程序的一个出色的存储引擎。  
+
+### 处理与存储分离
+该图显示了 Cloud Bigtable 整体架构的简化版本。它说明了通过前端服务器池和节点完成的处理与存储分开处理。  
+Cloud Bigtable 表被分为连续行块（称为“片”），以帮助平衡查询工作负载。
+![](../images/bigtable-001.png)
+
+### 选择 Cloud Bigtable
+如果您需要存储超过1TB的结构化数据，写入量非常大，需要读写延迟小于10毫秒且强一致性，或者需要兼容HBase API的存储服务，考虑使用 Cloud Bigtable。
+![](../images/choosing-bigtable.png)
+
+## Memorystore
+### Memorystore 是一个完全托管的 Redis 服务
+Memorystore for Redis 提供完全托管的内存数据存储服务，该服务构建在由 Google 管理的可扩展、安全且高度可用的基础设施之上。在 Google Cloud 上运行的应用程序可以利用高度可扩展、可用且安全的 Redis 服务实现极致性能，而无需管理复杂的 Redis 部署。这使您可以花更多时间编写代码，从而可以专注于构建出色的应用程序。
+
+## 测验
+略
+
+## 模块回顾
+在本模块中，我们介绍了 Google Cloud 提供的不同存储和数据库服务。具体来说，您了解了 Cloud Storage，这是一个完全托管的对象存储； Cloud SQL，完全托管的 MySQL 和 PostgreSQL 数据库服务； Cloud Spanner，一种具有事务一致性、全球规模和高可用性的关系数据库服务； Firestore，一个完全托管的 NoSQL 文档数据库； Cloud Bigtable，完全托管的 NoSQL 宽列数据库； Memorystore，一种完全托管的 Redis 内存数据存储服务。
 
 # 资源管理
 管理和检查 Google Cloud 资源的结算
+
+## 模块概述
+
 
 # 资源监控
 使用 Google Cloud 操作套件监控资源
