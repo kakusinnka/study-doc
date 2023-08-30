@@ -17,7 +17,7 @@ Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的�
 ### [基本的 Google Cloud 基础设施：核心服务](./EssentialGoogleCloudInfra_CoreServices.md)
 此加速点播课程向参与者介绍 Google Cloud 提供的全面且灵活的基础设施和平台服务，重点是 Compute Engine。 通过视频讲座、演示和实践实验室的结合，参与者探索和部署解决方案元素，包括网络、系统和应用服务等基础设施组件。 本课程还涵盖部署实用解决方案，包括客户提供的加密密钥、安全和访问管理、配额和计费以及资源监控。
 
-### 弹性 Google Cloud 基础设施：扩展和自动化
+### [弹性 Google Cloud 基础设施：扩展和自动化](./ElasticGoogleCloudInfra_ScalingAndAutomation.md)
 此加速点播课程向参与者介绍 Google Cloud 提供的全面且灵活的基础设施和平台服务。 通过视频讲座、演示和实践实验室的结合，参与者探索和部署解决方案元素，包括安全互连网络、负载平衡、自动扩展、基础设施自动化和托管服务。
 
 ### Google Kubernetes Engine 入门
