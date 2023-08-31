@@ -20,4 +20,31 @@
 ## 模块概览
 在本单元中，我们将重点介绍 GCP 的混合连接产品，即 Cloud VPN、Cloud Interconnect 和 Peering。我们还将研究在 GCP 内共享 VPC 网络的选项。
 
+## Cloud VPN
+## Cloud VPN 将您的本地网络安全地连接到 Google Cloud VPC 网络
+Cloud VPN 通过 IPsec VPN 隧道将您的本地网络安全地连接到 Google Cloud VPC 网络。两个网络之间传输的流量由一个 VPN 网关加密，然后由另一个 VPN 网关解密。这可以在您的数据通过公共互联网传输时对其进行保护，这就是 Cloud VPN 对于低容量数据连接非常有用的原因。
+
+作为一项托管服务，Cloud VPN 提供 99.9% 服务可用性的 SLA，并支持站点到站点 VPN、静态和动态路由以及 IKEv1 和 IKEv2 密码。 Cloud VPN 不支持客户端计算机需要使用客户端 VPN 软件“拨入”VPN 的用例。此外，动态路由是通过 Cloud Router 配置的。
+
+### 经典 VPN 拓扑
+为了在两个 VPN 网关之间创建连接，您必须建立两个 VPN 隧道。每个隧道从其网关的角度定义连接，只有当隧道对建立后，流量才能通过。
+![](../images/classic-vpn-topology.png)
+> 使用 Cloud VPN 时要记住的一件事是，本地 VPN 网关的最大传输单元 (MTU) 不能大于 1460 字节。
+
+### 高可用性 VPN
+高可用性 VPN 到对等 VPN 网关拓扑
+![](../images/ha-vpn-to-peer-vpn-gateway-topology.png)
+
+高可用性 VPN 到 AWS 对等网关拓扑
+![](../images/ha-vpn-to-aws-peer-gateway-topology.png)
+
+Google Cloud 网络拓扑之间的高可用性 VPN
+![](../images/ha-vpn-between-gcp-network-toplogy.png)
+
+要使用动态路由，您需要配置云端路由器。 Cloud Router 可以使用边界网关协议 (BGP) 管理 Cloud VPN 隧道的路由。这种路由方法允许在不更改隧道配置的情况下更新和交换路由。
+![](../images/dynamic-routing-with-cloud-router.png)
+
+## 实验室介绍：配置 Google Cloud 高可用性 VPN
+略
+
 ## 
