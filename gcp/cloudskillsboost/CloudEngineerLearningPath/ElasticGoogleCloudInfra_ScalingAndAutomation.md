@@ -113,6 +113,38 @@ Google Cloud 网络拓扑之间的高可用性 VPN
 > 为了使用专用互连，您的网络必须在受支持的托管设施中与 Google 网络进行物理连接。“我根本不靠近这些地点之一”这时您就需要考虑合作伙伴互连。
 
 ### 合作伙伴互连
-
 ![](../images/Partner-Interconnect-02.png)
 ![](../images/Partner-Interconnect.png)
+
+### 互连选项比较
+![](../images/comparison-interconnect-option.png)
+
+## 对等互联
+![](../images/comparison-peering-options.png)
+
+## 选择连接
+![](../images/choosing-network-connection-option.png)
+![](../images/choosing-network-connection-option-01.png)
+
+## 共享 VPC 网络
+### 共享 VPC，它允许您在 GCP 组织中的多个项目之间共享网络
+共享 VPC 允许组织将多个项目的资源连接到公共 VPC 网络。这允许资源使用来自该网络的内部 IP 安全有效地相互通信。  
+当您使用共享 VPC 时，您可以将一个项目指定为宿主项目，并将一个或多个其他服务项目附加到该项目。
+![](../images/shared-vpc.png)
+
+### VPC 网络对等互连，它允许您在相同或不同组织中的项目之间配置私有通信
+VPC 网络对等互连允许跨两个 VPC 网络进行私有 RFC 1918 连接，无论它们是否属于同一项目或同一组织。而且每个 VPC 网络都将具有防火墙规则，用于定义网络之间允许或拒绝哪些流量。  
+VPC 网络对等互连是一种去中心化或分布式的多项目网络方法，因为每个 VPC 网络可能仍处于单独管理员组的控制之下，并维护自己的全局防火墙和路由表。  
+VPC 网络对等互连不会产生使用外部 IP 地址或 VPN 时存在的网络延迟、安全性和成本缺陷。
+![](../images/vpc-peering.png)
+
+### 共享 VPC 与 VPC 对等互连
+如果您想在不同组织的 VPC 网络之间配置私有通信，则必须使用 VPC 网络对等互连。共享 VPC 仅在同一组织内工作。  
+![](../images/shared-vpc-vs-vpc-peering.png)
+
+两种配置之间最大的区别在于网络管理模型。共享 VPC 是多项目网络的集中式方法，因为安全和网络策略发生在单个指定的 VPC 网络中。相比之下，VPC 网络对等互连是一种去中心化方法，因为每个 VPC 网络都可以处于单独管理员组的控制之下，并维护自己的全局防火墙和路由表。
+![](../images/shared-vpc-vs-vpc-peering-01.png)
+
+## 模块回顾
+在本模块中，我们研究了将基础设施连接到 GCP 的五种不同方式，它们是专用互连、合作伙伴互连、云 VPN、直接对等互连和运营商对等互连。我还为您提供了一些有关如何在不同服务之间进行选择的指导。  
+我还简要概述了共享 VPC 和 VPC 网络对等互连，这是跨 GCP 项目共享 VPC 网络的两种配置。
