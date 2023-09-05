@@ -345,3 +345,17 @@ Google Cloud 为基于 TCP/UDP 的流量提供内部负载均衡功能。借助�
 
 ### 任务 5：测试内部负载均衡器
 * 多次访问内部负载均衡器
+
+## 实验回顾：配置内部负载均衡器
+略
+
+## IPv6 终止于负载平衡
+![IPv6 终止于负载平衡](../images/ipv6-termination-for-load-balancing.png)
+不同 Google Cloud 负载均衡器之间的区别之一是对 IPv6 客户端的支持。仅HTTP(S)、SSL代理和TCP代理负载均衡服务支持IPv6客户端。这些负载均衡器的 IPv6 终止使您能够处理来自用户的 IPv6 请求，并通过 IPv4 将它们代理到后端。  
+在反向路径上，负载均衡器从后端接收 IPv4 响应，并将其放入返回原始客户端的 IPv6 连接中。
+
+![](../images/deployment-mode-available-lb.png)
+![](../images/summary-lb.png)
+
+## 回顾：负载均衡和自动缩放
+略
