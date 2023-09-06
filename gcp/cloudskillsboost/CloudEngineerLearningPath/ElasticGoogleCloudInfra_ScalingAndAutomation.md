@@ -359,3 +359,73 @@ Google Cloud 为基于 TCP/UDP 的流量提供内部负载均衡功能。借助�
 
 ## 回顾：负载均衡和自动缩放
 略
+
+# 基础设施自动化
+## 模块概览
+在本模块中，我们将介绍如何使用 Terraform 自动化基础设施部署以及如何使用 Google Cloud Marketplace 启动基础设施解决方案。  
+您将在本模块的实验室中使用 Terraform 部署 VPC 网络、防火墙规则和虚拟机实例。
+
+## Terraform
+### 基础设施即代码 (IaC) 允许快速配置和删除基础设施
+![](../images/iac-001.png)
+
+> Terraform 是一种基础设施自动化工具
+> Terraform 可在多个公共云和私有云上使用
+
+## 实验介绍：使用 Terraform 自动部署基础架构
+略
+
+## 使用 Terraform 自动部署基础架构
+### 概览
+### 任务 1. 设置 Terraform 和 Cloud Shell
+### 任务 2. 创建 mynetwork 及其资源
+### 任务 3. 验证您的部署
+
+## 实验回顾：使用 Terraform 自动部署基础架构
+略
+
+## 谷歌云市场
+Google Cloud Marketplace 可让您快速部署在 Google Cloud 上运行的功能软件包。本质上，Cloud Marketplace 提供来自第三方供应商的生产级解决方案，这些供应商已经基于 Terraform 创建了自己的部署配置。这些解决方案与您项目的所有 Google Cloud 服务一起计费。如果您已经拥有第三方服务的许可证，您也许可以使用自带许可证解决方案。
+
+您可以立即部署软件包，并在以后当您的应用程序需要额外容量时扩展该部署。 Google Cloud 甚至会更新这些软件包的映像来修复关键问题和漏洞，但不会更新您已部署的软件。您甚至可以直接获得合作伙伴支持。
+
+## 在GCP Marketplace上启动基础架构解决方案
+略
+
+## 模块回顾
+在本模块中，我们使用 Terraform 自动化了基础设施的部署，并研究了 Cloud Marketplace 中的基础设施解决方案。
+
+# 托管服务
+托管服务是作为服务提供的部分或完整解决方案。它们存在于平台即服务和软件即服务之间的连续体上，具体取决于公开的内部方法和控件的数量。如果您的应用程序需求符合服务产品的要求，那么使用托管服务可以让您将大量管理和维护开销外包给 Google。
+
+## 模块概览
+在本模块中，我们将向您概述 BigQuery、Cloud Dataflow、Trifacta 的 Cloud Dataprep 和 Cloud Dataproc。
+
+## BigQuery
+BigQuery 是 Google Cloud 的无服务器、高度可扩展且经济高效的云数据仓库。
+
+它是一个 PB 级数据仓库，允许使用 Google 基础设施的处理能力进行超快速查询。由于没有可供您管理的基础设施，因此您可以使用熟悉的 SQL 专注于发现有意义的见解，而无需数据库管理员。
+
+## Cloud Dataflow
+数据流是一种用于执行各种数据处理模式的托管服务。它本质上是一种完全托管的服务，用于以流和批处理模式转换和丰富数据。
+![](../images/cloud-dataflow.png)
+
+## Cloud Dataprep
+Cloud Dataprep 是一项智能数据服务，用于直观地探索、清理和准备结构化和非结构化数据以进行分析、报告和机器学习。
+
+以下是 Cloud Dataprep 架构的示例。如您所见，可以利用 Cloud Dataprep 准备来自 BigQuery、Cloud Storage 或文件上传的原始数据，然后将其提取到 Cloud Dataflow 等转换管道中。然后，可以将精炼后的数据导出到 BigQuery 或 Cloud Storage 进行分析和机器学习。
+![](../images/cloud-dataprep-architecture.png)
+
+## Cloud Dataproc
+Cloud Dataproc 是一种快速、易于使用、完全托管的云服务，用于以更简单的方式运行 Apache Spark 和 Apache Hadoop 集群。
+
+Cloud Dataproc 内置了与其他 GCP 服务的集成，例如 BigQuery、Cloud Storage、Cloud Bigtable、Stackdriver Logging 和 Stackdriver Monitoring。这为您提供了一个完整的数据平台，而不仅仅是 Spark 或 Hadoop 集群。
+
+### Dataflow 与 Dataproc
+![](../images/dataflow-vs-dataproc.png)
+
+## 演示：Dataproc
+展示如何创建 Cloud Dataproc 集群、修改集群中的工作线程数量以及提交简单的 Apache Spark 作业。
+
+## 模块回顾
+在本单元中，我们向您概述了 Google Cloud 中用于数据处理的托管服务，即 BigQuery、Dataflow、Dataprep 和 Dataproc。
