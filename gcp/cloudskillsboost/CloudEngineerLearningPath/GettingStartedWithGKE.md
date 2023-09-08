@@ -118,11 +118,24 @@ IAM 策略的“可以做什么”部分由角色定义。IAM 角色是权限的
 ## GCP 和 Qwiklabs 入门
 略
 
-## 
+## 访问 Google Cloud 控制台和 Cloud Shell
 ### 概览
+略
+
 ### 目标
+略
+
 ### 实验设置
+略
+
 ### 任务 1. 探索 Google Cloud 控制台
+略
+
 ### 任务 2. 了解 Cloud Shell
+略
+
 ### 任务 3. 在 Cloud Shell 中使用 Cloud Storage
+略
+
 ### 任务 4. 探索 Cloud Shell 代码编辑器
+略
