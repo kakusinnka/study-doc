@@ -50,6 +50,7 @@ IndexedDB 鼓励使用的基本模式如下所示：
 * 对结果进行一些操作（可以在 request 对象中找到）
 
 ### 生成和构建一个对象存储
+* 打开数据库
 
 
 > https://developer.chrome.com/docs/devtools/storage/indexeddb/?utm_source=devtools
