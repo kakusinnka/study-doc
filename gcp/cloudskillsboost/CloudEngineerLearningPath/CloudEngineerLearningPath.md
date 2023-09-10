@@ -23,7 +23,7 @@ Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的�
 ### [Google Kubernetes Engine 入门](./GettingStartedWithGKE.md)
 在本课程中，每个模块都旨在增强您与 GKE 交互的能力，并包括实践实验室，供您亲身体验功能。 在第一个模块中，我们将向您介绍一系列 Google Cloud 服务和功能，以帮助您选择合适的 Google Cloud 服务来创建您自己的云解决方案。 您将了解如何使用 Cloud Build 创建容器，以及如何将容器存储在 Container Registry 中。 您还将比较和对比 Kubernetes 和 Google Kubernetes Engine（也称为 GKE）的功能。 除了概念化 Kubernetes 架构之外，您还将使用 GKE 部署 Kubernetes 集群、将 Pod 部署到 GKE 集群以及查看和管理 Kubernetes 对象。
 
-### Google Cloud 中的日志记录、监控和可观察性
+### [Google Cloud 中的日志记录、监控和可观察性](./LoggingMonitoringObservabilityInGoogleCloud.md)
 了解如何监控、排除故障以及改进基础架构和应用程序性能。 本课程以站点可靠性工程 (SRE) 原则为指导，结合了讲座、演示、动手实验室和实际案例研究。 在本课程中，您将获得全堆栈监控、实时日志管理和分析、生产中调试代码以及分析 CPU 和内存使用情况的经验。
 
 ### 适用于 Google Cloud 的 Terraform 入门
