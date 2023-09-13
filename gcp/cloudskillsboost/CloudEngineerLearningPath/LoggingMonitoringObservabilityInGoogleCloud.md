@@ -325,35 +325,72 @@ Google 对在虚拟机操作系统级别创建的日志几乎没有可见性。�
 将其映像创建过程视为标准 DevOps 管道。致力于代码库触发器构建作业，该作业创建/测试/部署带有所有必需的内置软件和应用程序的映像，包括日志记录和监控代理。
 ![](../images/basic-image-mng-scheme.png)
 
-
 HashiCorp 的 Packer 是一个用于创建虚拟机映像的开源工具。它与 Google Cloud 完美集成，并且可以与 Cloud Build 结合使用来为 Compute Engine 创建映像。它确实在帮助自动化图像构建方面做得很好。
 ![](../images/packert-auto-images.png)
 
+## 非虚拟机资源
+* App Engine 日志可在 GAE 应用程序资源下查看。
+* GKE 可以启用系统和工作负载监控和日志记录。
+* Cloud Functions 监控是自动的，您可以在 Cloud Console 中访问调用、执行时间、内存使用情况和活动​​实例。这些指标也可在 Cloud Monitoring 中使用，您可以在其中为这些指标设置自定义提醒和信息中心。
+* Cloud Run 会自动与 Cloud Monitoring 集成，运行时无需自动进行设置或配置。
 
+> Prometheus是一个开源监控工具，常用于扩展Kubernete的监控能力。如果您的集群启用了标准 Kubernetes Engine Monitoring，您可以通过安装 Prometheus 服务器和收集器来添加 Prometheus 支持。 Prometheus 服务器会抓取您的指标，然后通过收集器以 Prometheus 展示格式导出它们，然后导出到 Google Cloud Monitoring。
 
+## 公开自定义指标
+除了 Google 自动收集的 1,000 多个指标之外，您还可以使用代码来创建自己的指标。  
+为 Cloud Monitoring 创建自定义指标有两种基本方法：您可以使用经典的 Cloud Monitoring API。或者您可以使用 OpenCensus 开源监控和跟踪库。
 
+> OpenCensus 是一个开源库，可帮助捕获、操作和导出跟踪和指标。它适用于微服务和单体应用。
 
+## 实验室介绍：计算日志记录和监控
+Google Cloud 拥有许多与计算相关的资源，包括 Compute Engine、Kubernetes 和 Cloud Run 等。在本实验中，您将把日志记录和监控代理安装到运行 NGINX 服务器的虚拟机中，以最大化我们可以轻松查看的指标。您还将设置一个 GKE 集群并监控部署到其中的应用程序。
 
+## 实验：计算日志记录和监控
+### 概述
+在本实验中，您将创建一个计算引擎来安装和配置 Ops Agent。 您将在预定义的 Apache 仪表板上生成流量并查看指标，并创建警报策略。
 
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 创建一个 Compute Engine 虚拟机实例。
+* 安装 Apache Web 服务器。
+* 安装并配置 Apache Web 服务器的 Ops Agent。
+* 在预定义的 Apache 仪表板上生成流量并查看指标。
+* 创建警报策略。
 
+### 创建 Compute Engine 虚拟机实例
+略
 
+### 安装 Apache Web 服务器
+略
 
+### 安装和配置 Ops Agent
+略
 
+### 生成流量并查看指标
+略
 
+### 创建警报策略
+略
 
-
-
-
-
-
-
-
-
-
-
+### 测试警报策略
+略
 
 # 高级记录和分析
 在本模块中，我们将研究 Google Cloud 的一些高级日志记录和分析功能。 具体来说，在本模块中，您将学习识别和选择资源标记方法、定义日志接收器、根据日志条目创建监控指标、使用错误报告将应用程序错误链接到日志记录和其他操作工具，以及将日志长期导出到 BigQuery 存储和基于 SQL 的分析。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 监控网络安全和审核日志
 在本模块中，我们将研究两个关键主题：与 VPC 网络相关的监控，以及如何使用 Google 的 Cloud Audit 日志。 您将学习收集和分析 VPC 流、防火墙规则和 Cloud NAT 日志，启用数据包镜像，解释网络智能中心的功能，并使用 Cloud Audit 日志来回答“谁、何时、做了什么？ ” 我们还将介绍审核日志记录的最佳实践。
