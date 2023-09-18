@@ -26,8 +26,8 @@ Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的�
 ### [Google Cloud 中的日志记录、监控和可观察性](./LoggingMonitoringObservabilityInGoogleCloud.md)
 了解如何监控、排除故障以及改进基础架构和应用程序性能。 本课程以站点可靠性工程 (SRE) 原则为指导，结合了讲座、演示、动手实验室和实际案例研究。 在本课程中，您将获得全堆栈监控、实时日志管理和分析、生产中调试代码以及分析 CPU 和内存使用情况的经验。
 
-### 适用于 Google Cloud 的 Terraform 入门
-本课程介绍如何使用 Terraform for Google Cloud。 它使学习者能够描述如何使用 Terraform 来实现基础设施即代码，并应用其一些关键特性和功能来创建和管理 Google Cloud 基础设施。学习者将获得使用 Terraform 构建和管理 Google Cloud 资源的实践练习。
+### [适用于 Google Cloud 的 Terraform 入门](./GettingStartedTerraform.md)
+本课程介绍如何使用 Terraform for Google Cloud。它使学习者能够描述如何使用 Terraform 来实现基础设施即代码，并应用其一些关键特性和功能来创建和管理 Google Cloud 基础设施。学习者将获得使用 Terraform 构建和管理 Google Cloud 资源的实践练习。
 
 ### GCP 基础
 在此入门级挑战任务中，您可以使用 Google Cloud Platform 的基本工具和服务，开展真枪实弹的操作实训。“GCP 基本功能”是我们为 Google Cloud 学员推荐的第一项挑战任务。云知识储备微乎其微甚至零基础？不用担心！这项挑战任务会为您提供真枪实弹的实操经验，助您快速上手 GCP 项目。无论是要编写 Cloud Shell 命令还是部署您的第一台虚拟机，亦或是通过负载平衡机制或在 Kubernetes Engine 上运行应用，都可以通过“GCP 基本功能”了解该平台的基本功能之精要。点此观看 1 分钟视频，了解每个实验涉及的主要概念。
