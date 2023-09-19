@@ -133,16 +133,92 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 参数化资源参数以消除对其值的硬编码。
 * 在运行时或集中在扩展名为 .tfvars 的文件中定义资源属性。
 
+### 输出值
+![](../images/output-values.png)
+* 输出值存储在outputs.tf 文件中。
+* 输出值公开资源属性的值。
 
+### 状态
+![](../images/terraform-state.png)
+* Terraform 将其管理的资源状态保存在状态文件中。
+* 状态文件可以存储：
+  * 本地（默认）
+  * 远程在共享位置
+> 您不修改此文件
 
+### 模块
+![](../images/terraform-module.png)
+* Terraform 模块是单个目录中的一组 Terraform 配置文件
+* 它是 Terraform 中代码重用的主要方法。
+* 有2种来源：
+  * 本地：您目录中的源
+  * 远程：目录之外的源
 
+## Terraform 命令
+![](../images/terraform-commands.png)
+* terraform init 命令将自动下载并安装任何提供程序二进制文件，供提供程序在配置中使用，在本例中为 Google 提供程序。执行 terraform init 后，会在当前工作目录下创建一个名为 .terraform 的隐藏目录。运行该命令时，您将看到一条“正在初始化提供程序插件”消息，这表明 Terraform 将从 URL 中查找最新的插件并下载关联的文件。在此命令的输出中，您还可以看到 Terraform 已安装的提供程序版本。
+* terraform plan 命令实际上并不创建或更改任何基础架构资源，而是为您提供了在应用基础架构之前预览对基础架构所做的更改的机会。例如，您可能会在提交版本控制更改之前运行此命令，以确保其按预期运行。
+* Terraform apply 执行 Terraform plan 中建议的操作、创建资源并建立依赖关系。
+* Terraform fmt - 自动更新配置以提高可读性和一致性。在模块和代码上运行 terraform fmt 会自动应用所有格式规则和推荐的样式。
+* terraform destroy 命令销毁资源，该命令与 terraform apply 类似，但其行为就像所有资源已从配置中删除一样。
 
+## Terraform 验证器
+![](../images/terraform-validate-phase.png)
+在 Terraform 计划阶段之后，您可以选择包含一个验证阶段，该阶段根据组织策略运行部署前检查。 Terraform 验证器是一种用于强制策略合规性的工具，作为基础设施 CI/CD 管道的一部分。这在基础设施即代码环境中非常有用，因为它有助于减少可能导致安全和治理违规的配置错误。 terraform 验证器通过执行 gcloud beta terraform vet 命令来运行。
 
+> 请注意，该工具与命令“terraform validate”完全不同。我们在本课程中尚未介绍此命令。命令“terraform validate”用于测试配置的语法和结构，而无需部署任何资源。但 gcloud beta terraform vet 命令用于确保配置遵守一组约束。这些约束自动执行组织策略。
 
+### Terraform 验证器使用
+1. 平台团队可以向基础设施 CI/CD 管道添加护栏，以确保所有更改都得到验证。
+2. 应用程序团队和开发人员可以使用组织的中央策略库验证 Terraform 配置。
+3. 安全团队可以创建一个集中的策略库来识别并防止违反政策的行为。
 
+## 演示 Terraform 工作流程
+此演示将帮助您熟悉用于创建 Compute Engine 实例的 Terraform 配置。我们将向您展示如何创建配置文件并使用 Terraform CLI 执行一些 Terraform 命令，例如 terraform init、terraform plan、terraform apply 和 terraform destroy。
 
+## 实验室简介：使用 Terraform 进行基础设施即代码
+在本实验中，您将使用 Terraform 创建、更新和销毁 Google Cloud 资源。  
+* 您首先将 Google Cloud 定义为提供商。
+* 然后，您将创建一个不提及网络的虚拟机实例，以查看 terraform 如何解析配置代码。
+* 然后，您将编辑代码以添加网络并在 Google Cloud 上创建虚拟机实例。您将探索如何更新虚拟机实例。
+* 您将编辑现有配置以添加标签，然后编辑机器类型。
+* 然后，您将执行 terraform 命令来销毁创建的资源。
 
+## 实验：使用 Terraform 进行基础设施即代码
+### 概述
+略
 
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 验证 Terraform 安装
+* 将 Google Cloud 定义为提供商
+* 使用 Terraform 创建、更改和销毁 Google Cloud 资源
+
+### 任务 1. 登录 Cloud Console
+略
+
+### 任务 2. 检查 Terraform 安装
+略
+
+### 任务 3. 添加 Google Cloud 提供商
+略
+
+### 任务 4. 建设基础设施
+略
+
+### 任务 5. 改变基础设施
+略
+
+### 任务 6. 摧毁基础设施
+略
+
+## 模块回顾
+该模块描述了与 Terraform 工作流程每个阶段相关的术语和概念。  
+您学习了如何在 Terraform 中创建基本配置文件，以及如何描述 Terraform 提供程序。  
+该模块还解释了一些重要的 Terraform 命令的用途。  
+此外，您还了解了 Terraform 工作流程中称为验证的可选阶段。  
+您还了解了如何创建、更新和销毁 Google Cloud 资源。  
+查看下一个模块，了解有关编写基础设施代码的更多信息。
 
 # 为 Google Cloud 编写基础架构代码
 在本模块中，您将探索有关资源、变量和输出资源的更多信息。
@@ -150,6 +226,18 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 虽然我们一直在介绍如何使用硬编码资源参数创建资源，但我们将探讨如何使用变量对给定配置进行参数化。我们将探索在您的配置中声明、定义和使用它们的语法。
 * 然后，我们将讨论如何使用输出值将资源属性导出到资源声明之外。
 * 然后，我们将通过发现如何使用 Terraform 注册表和 Cloud Foundation Toolkit 简化代码创作来总结该模块。
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 使用 Terraform 模块组织和重用配置
 您将探索什么是模块、如何从公共注册表使用它们、如何使用模块重用配置以及使用输入变量参数化配置。您还将探索如何使用输出值来访问模块外部的资源属性。
