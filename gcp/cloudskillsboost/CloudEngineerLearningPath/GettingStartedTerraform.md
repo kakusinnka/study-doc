@@ -227,11 +227,55 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 然后，我们将讨论如何使用输出值将资源属性导出到资源声明之外。
 * 然后，我们将通过发现如何使用 Terraform 注册表和 Cloud Foundation Toolkit 简化代码创作来总结该模块。
 
+## 模块概览
+略
 
+## 介绍资源
+### 什么是资源？
+* 资源是您可以使用Terraform 配置的基础设施元素。
+* Terraform 使用每个Google Cloud 服务的底层API 来部署您的资源。
 
+### 声明资源的语法
+![](../images/terraform-resource-syntax.png)
+* 资源在 .tf 文件中定义。
+* 资源块代表单个基础设施对象。
+* 资源类型标识正在创建的资源类型。
+* 资源类型取决于 terraform 模块中声明的提供者。
+* 并非所有资源参数都必须定义。
 
+![](../images/terraform-resource-example-block.png)
+您可以在同一个 Terraform 配置文件中包含相同类型的多个资源或不同资源类型的多个资源。这些资源甚至可以跨越多个提供商。
 
+![](../images/terraform-resource-ref-attr.png)
+每当您必须从另一个资源块访问资源属性时，请使用格式 <resource_type>.<resource_name>.<attribute> 。
+> 请注意，仅当资源在同一根配置中定义时才能使用此方法。
 
+### 定义资源块的注意事项
+* 给定资源类型的资源名称在模块内必须是唯一的。
+* 资源类型不是用户定义的，而是基于提供者。
+* 所有配置参数必须包含在资源块内。
+* 必须定义所有必需的资源参数。
+
+## 资源的元参数
+![](../images/terraform-resources-meta-args.png)
+![](../images/terraform-resources-meta-args-count.png)
+![](../images/terraform-resources-meta-args-for_each.png)
+
+## 资源依赖
+![](../images/terraform-dependency-graph.png)
+在构建基础设施时，您可能更喜欢以可视化方式表示基础设施如何连接和相互依赖。 Terraform 有一个称为依赖图的功能，可以满足这个确切的目的。它添加了一个层来在实际部署之前了解您的基础设施的外观。 Terraform 从 Terraform 配置构建依赖关系图，并遍历该图以生成计划和刷新状态。属性在运行时进行插值，变量、输出值和提供程序等基元在依赖树中连接。执行操作时，Terraform 会创建依赖图来确定正确的操作顺序。在具有多个资源的更复杂的情况下，Terraform 将在安全的情况下并行执行操作。
+
+![](../images/terraform-resources-dependency.png)
+Terraform 可以处理其管理的资源之间的两种依赖关系。它们是隐式依赖和显式依赖。  
+简而言之，隐式依赖是 Terraform 已知的依赖，而显式依赖是 Terraform 未知的依赖。
+
+![](../images/terraform-resources-dependency-auto.png)
+执行terraform apply命令时可以查看资源创建的顺序。默认情况下，Terraform 知道资源的创建顺序。由于隐式依赖关系，Terraform 能够推断依赖关系并知道它必须在创建实例之前创建网络。
+
+![](../images/terraform-resources-dependency-explicit.png)
+资源之间存在 Terraform 不可见的依赖关系。可以使用 dependent_on 参数强制执行此序列。
+
+## 变量
 
 
 
