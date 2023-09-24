@@ -478,3 +478,88 @@ Terraform 可让您以安全、可预测的方式创建、更改和改进基础�
 
 # Terraform 状态简介
 该模块首先介绍 Terraform 状态。然后，您将了解存储 Terraform 状态的不同方法。在本模块的后面部分，您将探索将状态文件存储在远程位置的好处。虽然您可以在许多远程位置存储状态文件，但本模块描述了如何将其存储在 Google 云存储桶中。您将通过学习使用状态文件的最佳实践来结束本模块。
+
+## 模块概览
+略
+
+## Terraform 状态概述
+* 状态是基础设施配置的元数据存储库。
+* 状态文件默认存储在名为 terraform.tfstate 的本地文件中。
+* Terraform 状态存储远程系统中的对象与资源实例之间的绑定。
+* 状态文件记录实例的身份并更新或删除以响应配置更改。
+![](../images/terraform-states-flow.png)
+
+## 存储状态文件的不同方式
+### 本地存储 Terraform 状态的问题
+* 没有共享访问权限：对于基础设施的任何更新，团队的每个成员都需要访问相同的状态文件。
+* 无锁定：当团队成员同时运行 Terraform 时，他们会遇到访问冲突，从而导致数据损坏和数据丢失。
+* 没有保密性：状态文件暴露了所有敏感数据，例如数据库的用户名和密码。
+
+### 将状态文件存储在远程位置的好处
+* 自动更新：远程状态支持状态文件的自动更新。
+* 锁定：Cloud Storage 存储桶本身支持状态锁定。
+* 安全访问：Google Cloud Storage 存储桶支持加密和 IAM 策略。
+
+### 将 Terraform 状态远程存储在 Cloud Storage 存储桶中
+![](../images/terraform-statas-storage.png)
+
+## Terraform 状态最佳实践
+* 团队工作时使用远程状态：远程状态支持锁定和版本控制。
+* 加密状态：使用客户提供的加密密钥来添加一层保护。
+* 不要将机密存储在状态文件中：避免以状态存储秘密，因为 Terraform 以明文形式存储秘密值。
+* 不要手动修改状态：当您需要修改状态时，请使用 terraform state 命令。
+
+## 实验：创建远程后端
+### 概述
+在本实验中，您将创建一个本地后端，然后创建一个 Cloud Storage 存储桶以将状态迁移到远程后端
+
+### 目标
+在本实验中，您将学习如何执行以下任务：
+* 创建本地后端。
+* 创建云存储后端。
+* 刷新您的 Terraform 状态。
+
+### 任务 1. 登录 Cloud Console
+略
+
+### 任务 2. 验证 Terraform 是否已安装
+略
+
+### 任务 3. 添加本地后端
+main.tf
+```terraform
+terraform {
+  backend "local" {
+    path = "terraform/state/terraform.tfstate"
+  }
+}
+```
+### 任务 4. 添加 Cloud Storage 后端
+main.tf
+```teffaform
+terraform {
+  backend "gcs" {
+    bucket  = "Project ID"
+    prefix  = "terraform/state"
+  }
+}
+```
+
+执行 Terraform 项目的初始化，并在必要时执行状态的迁移。
+```terrafform
+terraform init -migrate-state
+```
+
+### 任务 5. 刷新状态
+terraform refresh 命令的主要目的是从实际的云服务提供商或基础设施平台中获取最新的资源状态，并将这些信息更新到 Terraform 的状态文件中。
+```terraform
+terraform refresh
+```
+
+### 任务 6. 清理工作区
+```terraform
+terraform destroy
+```
+
+## 模块回顾
+这个简短的模块涵盖了 Terraform 状态，并列出了将状态存储在远程位置（包括 Google 云存储桶中）的好处。  
