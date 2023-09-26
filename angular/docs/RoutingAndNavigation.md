@@ -58,7 +58,24 @@ ng generate component second
 ## [延迟加载](https://angular.io/guide/lazy-loading-ngmodules)
 您可以将路由配置为延迟加载模块，这意味着 Angular 仅根据需要加载模块，而不是在应用程序启动时加载所有模块。此外，在后台预加载应用程序的某些部分以改善用户体验。
 
-## 防止未经授权的访问
+## [防止未经授权的访问](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)
 使用路由防护来防止用户未经授权导航到应用程序的某些部分。
 
-## 
+## 链接参数数组
+```html
+    <li>
+      <!-- 动态路由绑定 带一个变量 -->
+      <a [routerLink]="[dynamicRouterLink]" routerLinkActive="hzh-active3">Second Component</a>
+    </li>
+    <li>
+      <!-- 动态路由绑定 带多个变量 -->
+      <a [routerLink]="[dynamicRouterLink, '1', '2' ]" routerLinkActive="hzh-active4">Second Component</a>
+    </li>
+    <li>
+      <!-- 动态路由绑定 带参数 -->
+      <a [routerLink]="[dynamicRouterLink + '/param', { foo1: 'abc', foo2: 'def' } ]"
+        routerLinkActive="hzh-active5">Second Component</a>
+    </li>
+```
+
+## LocationStrategy 和浏览器 URL 样式
