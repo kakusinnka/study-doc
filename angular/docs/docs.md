@@ -11,8 +11,8 @@ Angular 是一个应用程序设计框架和开发平台，用于创建高效且
 ## [入门](./GettingStarted.md)
 ## [理解 Angular](./UnderstandingAngular.md)
 ## [开发者指南](./DeveloperGuide.md)
-## 最佳实践
-## 角度工具
+## [最佳实践](./BestPracticy.md)
+## [Angular 工具](./AngularTools.md)
 ## 教程
 ## 更新和发布
 ## 参考
