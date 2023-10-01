@@ -162,9 +162,16 @@
 * 注入到组件中的是 HeroService 使用另一个注入的服务 MessageService.
 
 ## 使用路由添加导航
+* 您添加了 Angular 路由器以在不同组件之间导航
+* 您将 AppComponent 变成了带有 <a> 链接和 <router-outlet> 的导航 shell
+* 您在 AppRoutingModule 中配置了路由器
+* 您定义了路由、重定向路由和参数化路由
+* 您在锚元素中使用了 routerLink 指令
+* 您将紧密耦合的主/详细视图重构为路由详细视图
+* 您使用路由器链接参数导航到用户选择的英雄的详细视图
+* 您与其他组件共享了 HeroService
 
-
-
+## 从服务器获取数据
 
 
 
