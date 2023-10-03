@@ -1,12 +1,14 @@
+<base target="_blank">
+
 # 助理云工程师
 助理云工程师负责部署应用程序、监控运营和管理企业解决方案。他们使用 Google Cloud Console 和命令行界面来执行基于平台的常见任务，以维护一个或多个部署的解决方案，这些解决方案利用 Google Cloud 上的 Google 管理或自我管理的服务。
 
 助理云工程师考试评估您的以下能力：
-* 设置云解决方案环境
-* 规划和配置云解决方案
-* 部署和实施云解决方案
-* 确保云解决方案的成功运行
-* 配置访问和安全
+* 设置云解决方案环境 (设置)
+* 规划和配置云解决方案 (规划)
+* 部署和实施云解决方案 (部署)
+* 确保云解决方案的成功运行 (确保)
+* 配置访问和安全 (IAM)
 
 # 考试概述
 ## 第 1 步：获得真实世界的经验
@@ -22,10 +24,10 @@
 ### 参加网络研讨会
 略
 
-### 检查考试准备情况
+### [检查考试准备情况](../../cloudskillsboost/CloudEngineerLearningPath/PreparingYourAssociateCloudEngineer.md)
 略
 
-## 第 4 步：查看示例问题
+## 第 4 步：[查看示例问题](https://docs.google.com/forms/d/e/1FAIpQLSfexWKtXT2OSFJ-obA4iT3GmzgiOCGvjrT9OfxilWC1yPtmfQ/viewform)
 略
 
 ## 第 5 步：安排考试
