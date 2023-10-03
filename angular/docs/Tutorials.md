@@ -163,7 +163,7 @@
 
 ## 使用路由添加导航
 * 您添加了 Angular 路由器以在不同组件之间导航
-* 您将 AppComponent 变成了带有 <a> 链接和 <router-outlet> 的导航 shell
+* 您将 AppComponent 变成了带有 a 链接和 <router-outlet> 的导航 shell
 * 您在 AppRoutingModule 中配置了路由器
 * 您定义了路由、重定向路由和参数化路由
 * 您在锚元素中使用了 routerLink 指令
@@ -172,8 +172,20 @@
 * 您与其他组件共享了 HeroService
 
 ## 从服务器获取数据
-
-
-
+* 您添加了在应用程序中使用 HTTP 所需的依赖项
+* 你重构为 HeroService 从 Web API 加载英雄
+* 您扩展到 HeroService 支持 post() 、 put() 和 delete() 方法
+* 您更新了组件以允许添加、编辑和删除英雄
+* 您配置了内存中 Web API
+* 您学习了如何使用可观察量
 
 # 构建模板驱动表单
+* 一个有角度的 HTML 表单模板
+* 带有 @Component 修饰器的窗体组件类
+* 通过绑定到 NgForm.ngSubmit 事件属性来处理表单提交
+* 模板引用变量，例如 #heroForm 和 #name
+* [(ngModel)] 双向数据绑定的语法
+* 使用 name 属性进行验证和表单元素更改跟踪
+* 使用 name 属性进行验证和表单元素更改跟踪
+* 通过绑定到 NgForm 有效性来控制“提交”按钮的启用状态
+* 自定义 CSS 类，向用户提供有关无效控件的视觉反馈
