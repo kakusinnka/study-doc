@@ -1,5 +1,7 @@
 # Cloud Engineer Learning Path
-Cloud Engineer 负责规划、配置、搭建和部署云解决方案。此学习路线将指引您完成一系列精选点播课程和实验并赢取技能徽章，您可以从中获得对 Cloud Engineering 角色至关重要的 Google Cloud 技术实操经验。完成此路线后，请查看 Google Cloud Associate Cloud Engineer 认证，迈出专业发展历程的下一步。
+Cloud Engineer 负责规划、配置、搭建和部署云解决方案。  
+此学习路线将指引您完成一系列精选点播课程和实验并赢取技能徽章，您可以从中获得对 Cloud Engineering 角色至关重要的 Google Cloud 技术实操经验。  
+完成此路线后，请查看 Google Cloud Associate Cloud Engineer 认证，迈出专业发展历程的下一步。
 
 ## 学习路径活动
 ### [Qwiklabs 和 Google Cloud 导览](../GoogleCloudComputingFoundations/CloudComputingFundamentals.md#qwiklabs-和-google-cloud-导览-gsp282)
