@@ -57,13 +57,34 @@ BigQuery 提供两种类型的价格模式：按需价格和基于容量的价�
 * kubectl top nodes 命令用于查看 Kubernetes 集群中各个节点的性能指标。输出结果包括每个节点的 CPU 和内存使用情况，以及节点的名称。这个命令通常用于监视集群节点的性能，以识别潜在的性能问题或瓶颈。
 
 ---
+
 ### APP Engine
 在配置 Google Cloud Platform（GCP）的 App Engine 时，min_idle_instances 是一个与自动缩放相关的配置参数。这个参数用于指定 App Engine 实例的最小闲置数量，也就是在没有请求时仍然保持运行状态的实例数量。
+
+---
+
+### Cloud Functions
+Cloud Functions 是 GCP 中的一项无服务器计算服务，它使开发人员能够编写、部署和运行事件驱动的小型计算函数，而无需管理底层的服务器基础设施。Cloud Functions 可以响应各种云事件和外部事件，并以高度可伸缩的方式运行，以满足不同的应用场景。
+
+---
+
+Cloud Function 是一个无服务器计算服务，用于编写、部署和运行事件驱动的小型计算函数。它的主要目的是响应和处理事件，例如 HTTP 请求、Cloud Storage 存储桶中的文件上传、Pub/Sub 主题中的消息等。Cloud Function 的代码通常包含特定的业务逻辑，用于处理特定类型的事件。
+
+---
+
+### Cloud Pub/Sub
+Cloud Pub/Sub 是 Google Cloud 的一项完全托管的消息传递服务，用于构建分布式、可扩展和高度可靠的应用程序，以处理实时数据流和事件驱动的架构。它允许不同组件、服务或系统之间以异步方式进行通信，以实现松耦合的应用程序架构。
+
+---
+
+Cloud Pub/Sub 是一项消息传递服务，用于可靠地传递消息和事件。它用于解耦应用程序组件、构建事件驱动的架构、实现异步通信等。Cloud Pub/Sub 负责消息的发布和订阅，以及确保消息的可靠传递。
+
+---
 
 ### IAM
 gcloud iam roles copy 是 Google Cloud SDK (gcloud) 中的一个命令，用于复制一个现有的自定义 Identity and Access Management (IAM) 角色。这个命令可以将一个已有角色的权限配置复制到一个新的自定义角色中，从而简化了创建自定义角色的过程。
 
-
+--- 
 
 ## 其他
 
