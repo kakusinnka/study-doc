@@ -35,6 +35,19 @@ Cloud Shell 提供容器化命令行界面，允许您运行命令并使用脚�
 
 ---
 
+### BigQuery
+BigQuery 提供两种类型的价格模式：按需价格和基于容量的价格。  
+按需价格：您需要为查询扫描的数据付费。  
+对于希望每月支付稳定的查询费用，而不是根据处理的数据量（TB 数）支付按需计费价格的客户，BigQuery 为其提供了统一费率价格方案。
+
+---
+
+### Compute Engine
+使用 RDP 连接到 Windows 虚拟机
+![](../../cloudskillsboost/images/connecting-to-windows-instances.png)
+
+---
+
 ### GKE
 * kubectl config view 命令用于查看当前用户的 Kubernetes 配置文件的内容。输出结果通常以 YAML 或 JSON 格式显示，包括配置文件中定义的上下文、集群、用户和命名空间等信息。
 * kubectl cluster-info 命令用于查看当前连接的 Kubernetes 集群的信息。输出结果包括 Kubernetes 控制平面的地址、服务和 API 服务器的地址等信息。这个命令通常用于获取有关集群的基本信息，以确保你正在与正确的集群进行交互。
