@@ -131,32 +131,7 @@ IAM 中有三种角色：基本角色、预定义角色和自定义角色。
 * 访问 Google Cloud 的第三种方式是通过应用程序编程接口 (API)。以便您编写的代码可以控制它们。
 * 最后，访问 Google Cloud 并与之交互的第四种方式是使用 Cloud Console 移动应用程序，该应用程序可用于执行一些简单的任务。
 
-## Google Cloud 基础知识：Cloud Marketplace 使用入门
-Google Cloud Marketplace 可让您快速部署在 Google Cloud 上运行的功能软件包。即使您不熟悉 Compute Engine 或 Cloud Storage 等服务，也可以启动一个熟悉的软件包，而无需手动配置软件、虚拟机 (VM) 实例、存储空间或网络设置。您可以立即部署软件包，稍后在应用需要额外容量时扩缩该部署。
-
-### 概览
-在本实验中，您将使用 Cloud Marketplace 轻松快速地在 Compute Engine 实例中部署 LAMP 技术栈。
-
-### 目标
-在此实验中，您将学习如何使用 Cloud Marketplace 启动一个解决方案。
-
-### 任务 1. 登录 Google Cloud Platform (GCP) 控制台
-略
-
-### 任务 2. 使用 Cloud Marketplace 部署一个 LAMP 技术栈
-略
-
-### 任务 3. 验证您的部署
-略
-
-### 恭喜！
-略
-
-### 结束实验
-略
-
-### 其他资源
-略
+## 实验：[Google Cloud 基础知识：Cloud Marketplace 使用入门](../labs/384327.md)
 
 ## 测验：Google Cloud 中的资源和访问
 
@@ -210,27 +185,7 @@ Google Cloud 提供 Cloud DNS 来帮助全世界找到它们。它是一项托�
 * 专用互连是不错的解决方案。这种方案支持与 Google 建立一条或多条不公开的直接连接通道。（建立直通地铁隧道）
 * 合作伙伴互连是通过受支持的服务提供商实现本地网络与 VPC 网络之间的连接。（通过运营商的网络进行传输）
 
-## VPC 网络和 Google Compute Engine 使用入门
-### 概览
-VPC 网络类似于物理网络，区别是前者在 Google Cloud 中进行了虚拟化。VPC 网络是一种全球性资源，它由数据中心内的一系列区域级虚拟子网组成，所有子网通过全球广域网 (WAN) 连接。在 Google Cloud 中，VPC 网络在逻辑上彼此隔离。  
-
-### 设置和要求
-略
-
-### 任务 1. 探索默认网络
-略
-
-### 任务 2. 创建 VPC 网络和虚拟机实例
-略
-
-### 任务 3. 探索虚拟机实例的连接情况
-略
-
-### 任务 4. 回顾
-在本实验中，您探索了默认网络及其子网、路由和防火墙规则。之后，您删除了默认网络，并确定了如果没有 VPC 网络，便无法创建任何虚拟机实例。因此，您重新创建了一个具有子网、路由、防火墙规则和两个虚拟机实例的新自动模式 VPC 网络。接下来，您测试了虚拟机实例的连接情况，并就防火墙规则对连接的影响进行了探索。
-
-### 结束实验
-略
+## 实验：[VPC 网络和 Google Compute Engine 使用入门](../labs/384336.md)
 
 ## Quiz: 云中的虚拟机和网络
 略
@@ -300,44 +255,7 @@ Bigtable 可处理海量工作负载，同时确保始终如一的低延迟和�
 ## Comparing storage options
 略
 
-## Google Cloud 基础知识：Cloud Storage 和 Cloud SQL 使用入门
-### 概览
-在本实验中，您将创建一个 Cloud Storage 存储桶并将一个图片保存在该存储桶中。您还需要将一个在 Compute Engine 中运行的应用配置为使用一个由 Cloud SQL 代管的数据库。  
-您还需要将该 Web 服务器配置为引用 Cloud Storage 存储桶中的这个图片。
-
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 创建一个 Cloud Storage 存储桶并将一个图片保存在该存储桶中。
-* 创建一个 Cloud SQL 实例并对其进行配置。
-* 从一个 Web 服务器连接到该 Cloud SQL 实例。
-* 在一个网页上使用 Cloud Storage 存储桶中的这张图片。
-
-### 任务 1. 登录 Google Cloud 控制台
-略
-
-### 任务 2. 部署一个 Web 服务器虚拟机实例
-略
-
-### 任务 3. 使用 gsutil 命令行创建一个 Cloud Storage 存储桶
-略
-
-### 任务 4. 创建 Cloud SQL 实例
-略
-
-### 任务 5. 将 Compute Engine 实例中的一个应用配置为使用 Cloud SQL
-略
-
-### 任务 6. 将 Compute Engine 实例中的一个应用配置为使用一个 Cloud Storage 对象
-略
-
-### 恭喜！
-略
-
-### 结束实验
-略
-
-### 其他资源
-略
+## 实验：[Google Cloud 基础知识：Cloud Storage 和 Cloud SQL 使用入门](../labs/384346.md)
 
 ## Quiz: Storage in the Cloud
 略
@@ -364,30 +282,7 @@ GKE 是 Google 在云中托管的托管 Kubernetes 服务。
 Anthos 是一个混合和多云解决方案。Anthos 框架建立在 Kubernetes 和 GKE On-Prem 的基础上,这为完全集成的架构提供了基础,并对一个中央控制平面进行集中管理.该控制平面支持跨混合和多云环境的，基于政策的应用生命周期交付。Anthos 还提供一组丰富的工具用于监控和维护应用，在所有网络中的一致性，无论是在本地、云端还是多云环境中。
 ![Anthos](../images/anthos-001.png)
 
-## 实验：Google Cloud 基础知识：GKE 使用入门
-### 概览
-略
-
-### 目标
-略
-
-### 任务 1. 登录 Google Cloud
-略
-
-### 任务 2 确认已启用所需的 API
-略
-
-### 任务 3. 启动 Kubernetes Engine 集群
-略
-
-### 任务 4. 运行和部署容器
-略
-
-### 恭喜！
-略
-
-### 结束实验
-略
+## 实验：[Google Cloud 基础知识：GKE 使用入门](../labs/384353.md)
 
 ## 测验: 云中的容器
 略
@@ -420,40 +315,7 @@ Cloud Run 开发者工作流 是一个简单直接的三步流程：
 * 第三，容器映像被推送到 Artifact Registry
 * 最后，将映像部署到 Cloud Run
 
-## 实验：Hello Cloud Run (CBL333)
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 启用 Cloud Run API。
-* 创建一个能够部署为无服务器的无状态容器的简单 Node.js 应用。
-* 容器化该应用并将其上传到 Container Registry（即现在的“Artifact Registry”）。
-* 在 Cloud Run 上部署容器化应用。
-
-### 概览
-Cloud Run 是一个代管式计算平台，供您运行可通过 HTTP 请求调用的无状态容器。Cloud Run 采用无服务器设计：您不用管理基础架构，因此可全力专注于最重要的工作，即构建出色的应用。
-
-### 设置和要求
-略
-
-### 参考文档
-略
-
-### 任务 1. 启用 Cloud Run API 并配置 Shell 环境
-略
-
-### 任务 2. 编写示例应用
-略
-
-### 任务 3. 容器化该应用并将其上传到 Artifact Registry
-略
-
-### 任务 4. 部署到 Cloud Run
-略
-
-### 任务 5. 清理
-略
-
-### 结束实验
-略
+## 实验：[Hello Cloud Run (CBL333)](../labs/CBL333.md)
 
 # 在云中开发和部署
 本部分探讨在云中进行开发的 Google Cloud 方法，其中包括 Cloud Source Repositories、Cloud Functions 和 Terraform。 本节还探讨了基础设施即代码的部署。
@@ -468,26 +330,7 @@ Cloud Functions 是一种轻量级、基于事件的异步计算解决方案，�
 ## 部署：基础架构即代码
 使用模板会更加高效，使用模板可以像编写配置文件一样为应用环境编写规范，然后你可以将模板部署在规模较大的环境中，以便根据需要快速创建任意多个相同的应用环境，你可以通过 Terraform 来实现。你可以在 Cloud Source Repositories 中存储 Terraform 模板，并控制其版本。
 
-## 实验：使用 Terraform 自动部署基础架构
-### 概览
-Terraform 可让您以安全、可预测的方式创建、更改和改进基础架构。它是一个开源工具，可将 API 编码为声明式配置文件。您可以将这些文件分享给团队成员，将它们作为代码进行处理、修改、审核和版本控制。
-
-### 任务 1. 设置 Terraform 和 Cloud Shell
-略
-
-### 任务 2. 创建 mynetwork 及其资源
-略
-
-### 任务 3. 验证您的部署
-略
-
-### 任务 4. 回顾
-略
-
-### 结束实验
-在本实验中，您创建了包含自动部署 Google Cloud 基础架构的模块的 Terraform 配置。当您的配置发生变化时，Terraform 可以创建增量执行方案，让您逐步建立整体配置。
-
-该实例模块让您可以将同一个资源配置重复用于多个资源，同时提供属性作为输入变量。您可以将您创建的配置和模块用作未来部署的基础。
+## 实验：[使用 Terraform 自动部署基础架构](../labs/384363.md)
 
 ## 测验：在云中开发和部署
 略

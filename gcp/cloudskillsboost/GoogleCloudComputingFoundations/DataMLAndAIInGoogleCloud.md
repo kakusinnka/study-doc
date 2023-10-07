@@ -44,116 +44,17 @@ Dataproc 是一项托管 Spark 和 Hadoop 服务，可让您使用开源数据�
 * 映像版本控制
 * 内置集成
 
-## 实验室简介：Dataproc：Qwik Start - 控制台
-您将创建一个 Dataproc 集群，在集群中运行一个简单的 Apache Spark 作业，并使用 Google Cloud 控制台修改集群中的工作线程数量。
+## 实验：[Dataproc：Qwik Start - 控制台 (GSP103)](../labs/GSP103.md)
 
-## Dataproc：Qwik Start - 控制台 (GSP103)
-### 概览
-Cloud Dataproc 是一项快速、简单易用的全托管式云服务，为您提供了一种更简单、更经济实惠的方式来运行 Apache Spark 和 Apache Hadoop 集群。过去需要数小时或数天才能完成的操作现在只需几秒钟或几分钟就可以完成。您可以快速创建 Cloud Dataproc 集群并随时调整其规模，而不必担心您不断增长的数据流水线负载超过集群处理能力。
-
-本实验向您介绍如何使用 Google Cloud Console 创建 Google Cloud Dataproc 集群，在该集群中运行简单的 Apache Spark 作业，然后修改该集群中的工作器数量。
-
-### 设置和要求
-略
-
-### 创建集群
-略
-
-### 提交作业
-略
-
-### 查看作业的输出结果
-略
-
-### 检验您的掌握情况
-略
-
-### 恭喜！
-略
-
-## 实验室简介：Dataproc：Qwik Start - 命令行
-略
-
-## Dataproc：Qwik Start - 命令行 (GSP104)
-### 概述
-略
-
-### 设置和要求
-略
-
-### 任务 1. 创建集群
-略
-
-### 任务 2. 提交作业
-略
-
-### 任务 3. 更新集群
-略
-
-### 任务 4. 测试您的理解程度
-略
-
-### 恭喜！
-略
+## 实验：[Dataproc：Qwik Start - 命令行 (GSP104)](../labs/GSP104.md)
 
 ## 使用 Dataflow 构建提取、转换和加载管道
 使用 Dataflow 执行提取、转换和加载操作。  
 Dataflow 是 Google 提供的一项托管服务，针对大规模批处理或长时间运行的流处理进行了优化。Dataflow 创建一个管道来处理流数据和批数据。  
 
-## 实验室简介：Dataflow：Qwik Start - 模板
-在本实验中，我们将使用 Google 提供的 Pub/Sub to BigQuery 模板在 Dataflow 中创建流式处理管道。  
-您将学习如何使用 Cloud Shell 和/或 Google Cloud 控制台创建 BigQuery 数据集和表、运行管道并提交查询。  
+## 实验：[Dataflow：Qwik Start - 模板 (GSP192)](../labs/GSP192.md)
 
-## Dataflow：Qwik Start - 模板 (GSP192)
-### 概述
-您将学习如何使用 Google 的 Cloud Dataflow 模板之一创建流式处理管道。更具体地说，您将使用 Cloud Pub/Sub to BigQuery 模板，该模板从 Pub/Sub 主题读取以 JSON 编写的消息并将其推送到 BigQuery 表。您可以在 Google 提供的模板入门指南中找到此模板的文档。  
-
-### 设置
-略
-
-### 任务 1. 使用 Cloud Shell 创建 Cloud BigQuery 数据集和表
-略
-
-### 任务 2. 使用 Cloud Console 创建 Cloud BigQuery 数据集和表
-略
-
-### 任务 3. 运行管道
-略
-
-### 任务 4. 提交查询
-略
-
-### 任务 5. 测试您的理解程度
-略
-
-### 恭喜！
-略
-
-
-## 实验室简介：Dataflow：Qwik Start - Python
-您将学习如何设置 Python 开发环境、获取适用于 Python 的 Dataflow SDK 以及使用 Google Cloud 控制台运行示例管道。
-
-## Dataflow：Qwik Start - Python
-### 概览
-在本实验中，您将设置自己的 Python 开发环境，获取 Python 版 Cloud Dataflow SDK，并使用 Cloud Console 运行示例流水线。
-
-### 设置和要求
-略
-
-### 任务 1. 创建 Cloud Storage 存储桶
-略
-
-### 任务 2. 安装 pip 和 Cloud Dataflow SDK
-略
-
-### 任务 3. 远程运行示例流水线
-略
-
-### 任务 4. 检查您的运行结果是否成功
-略
-
-### 任务 5. 检验您的掌握情况
-略
+## 实验：[Dataflow：Qwik Start - Python (GSP207)](../labs/GSP207.md)
 
 ## BigQuery，Google 的企业数据仓库
 BigQuery 是一个完全托管的无服务器数据仓库。数据仓库是一个大型存储，包含从组织内的各种来源收集的 TB 和 PB 数据，用于指导管理决策。  
@@ -177,43 +78,7 @@ BigQuery 可以从各种来源提取数据集，包括：
 * 流式传输：连续流式传输较小批次的数据，以便数据可用于近乎实时的查询。
 * 生成数据：SQL 语句用于将行插入现有表或将查询结果写入表。
 
-## 实验室简介: Dataprep: Qwik Start
-您将使用 Dataprep 导入数据集并创建配方以将数据解释为有意义的结果。
-
-## Dataprep: Start (GSP105)
-### 概述
-Trifacta 的 Cloud Dataprep 是一项智能数据服务，用于直观地探索、清理和准备数据以进行分析。 Cloud Dataprep 是无服务器的，可以在任何规模下使用。没有可供部署或管理的基础设施。只需点击几下即可轻松准备数据，无需任何代码！  
-在本实验中，您将使用 Dataprep 来操作数据集。您导入数据集、更正不匹配的数据、转换数据和连接数据。
-
-### 设置和要求
-略
-
-### 任务 1. 在您的项目中创建 Cloud Storage 存储桶
-略
-
-### 任务 2.初始化 Cloud Dataprep
-略
-
-### 任务 3. 创建流
-略
-
-### 任务 4. 导入数据集
-略
-
-### 任务 5. 准备候选文件
-略
-
-### 任务 6.整理贡献文件并将其加入候选人文件
-略
-
-### 任务 7. 数据摘要
-略
-
-### 任务 8. 重命名列
-略
-
-### 恭喜！
-略
+## 实验：[Dataprep: Start (GSP105)](../labs/GSP105.md)
 
 ## 测验
 略
@@ -264,43 +129,7 @@ Vertex AI，这是一个统一平台，将机器学习生态系统和工作流�
 * 可持续的。使用 Vertex AI 创建的所有工件和功能都可以重复使用和共享。
 * 速度很快。Vertex AI 生成的模型的代码行数比竞争对手少 80%。
 
-## 实验室简介：Vertex AI：Qwik Start
-在本实验中，您将：
-* 在托管的 Vertex Notebook 中本地训练 TensorFlow 模型。
-* 创建用于实验跟踪的托管表格数据集工件。
-* 使用 Cloud Build 将您的训练代码容器化，并将其推送到 ArtifactRegistry。
-* 使用自定义模型容器运行 Vertex AI 自定义训练作业。
-* 使用 Vertex TensorBoard 可视化模型性能。
-* 将经过训练的模型部署到 Vertex Online Prediction Endpoint 以提供预测服务。
-* 请求在线预测和解释并查看回复。
-
-## Vertex AI：Qwik Start (GSP917)
-### 概述
-略
-
-### 你将学到什么
-略
-
-### 设置和要求
-略
-
-### 任务 1.启用 Google Cloud 服务
-略
-
-### 任务 2. 为 Vertex Tensorboard 集成创建 Vertex AI 自定义服务帐户
-略
-
-### 任务 3.启动 Vertex AI Workbench 笔记本
-略
-
-### 任务 4. 克隆实验室存储库
-略
-
-### 任务 5. 安装实验室依赖项
-略
-
-### 恭喜！
-略
+## 实验：[Vertex AI：Qwik Start (GSP917)](../labs/GSP917.md)
 
 ## AutoML：无代码机器学习
 AutoML 是一种通过 Vertex AI 构建 ML 模型的无代码解决方案。它允许用户以最少的努力或机器学习专业知识来训练高质量的定制机器学习模型。  
@@ -324,75 +153,9 @@ ML 训练代码使用的环境有两种：预构建容器或自定义容器。
 * Vision API 可处理并识别静态图像中的内容。
 * Video Intelligence API 可识别视频中的运动和动作。
 
-## 实验室简介：Cloud Natural Language API：Qwik Start
-您将应用分析实体方法来要求 Cloud Natural Language API 从文本片段中提取“实体”，例如人物、地点和事件 。
+## 实验：[Cloud Natural Language API：Qwik Start (GSP097)](../labs/GSP097.md)
 
-## Cloud Natural Language API：Qwik Start (GSP097)
-### 概览
-Cloud Natural Language API 可用于提取文本文档、新闻报道或博文中提及的人物、地点、事件等实体的相关信息。您也可以使用该 API 了解社交媒体上的用户对您产品的感受，或者解析呼叫中心或即时通讯应用中发生的客户对话所体现的意图。您甚至可以上传文本文档进行分析。
-
-### 设置和要求
-略
-
-### 创建 API 密钥
-略
-
-### 发出实体分析请求
-略
-
-### 恭喜！
-略
-
-## 实验室简介：Google Cloud Speech API：Qwik Start
-您将使用预先录制的文件来创建和调用语音转文本 API 请求。
-
-## Google Cloud Speech API：Qwik Start (GSP119)
-### 概览
-借助 Google Cloud Speech API，可以轻松将 Google 语音识别技术集成到开发者应用中。向 Speech API 服务发送音频，即可收到文字转录结果。  
-您将执行的操作：
-* 创建 API 密钥
-* 创建 Speech API 请求
-* 调用 Speech API 请求
-
-### 设置和要求
-略
-
-### 创建 API 密钥
-略
-
-### 创建 Speech API 请求
-略
-
-### 调用 Speech API 请求
-略
-
-### 恭喜！
-略
-
-## 实验室简介：Video Intelligence：Qwik Start
-您将使用 Video Intelligence API 发出带注释的视频请求。
-
-## Video Intelligence：Qwik Start (GSP154)
-### 概览
-Google Cloud Video Intelligence 助您通过简单易用的 REST API 提取元数据，让视频更容易被搜索和发现。您现在可以搜索目录中每个视频文件的每个时刻。该 API 可快速为存储在 Cloud Storage 中的视频添加注释，并帮助您找到视频中的重要实体（名词），以及这些实体在视频中出现的时间。该 API 还可以在整个视频内检索相关信息，精确到一个镜头或一帧，从而将信号与杂讯相分离。
-
-### 设置和要求
-略
-
-### 启用 Video Intelligence API
-略
-
-### 设置授权
-略
-
-### 发出视频注释请求
-略
-
-### 恭喜！
-略
-
-## 测试
-略
+## 实验：[Video Intelligence：Qwik Start (GSP154)](../labs/GSP154.md)
 
 ## 总结
 * 您首先探索机器学习。您将机器学习定义为一个术语，探索了所使用的术语，并确定了价值主张。
@@ -402,12 +165,12 @@ Google Cloud Video Intelligence 助您通过简单易用的 REST API 提取元�
 
 # Course review 课程回顾
 本课程最后回顾了每个部分所涵盖的要点。
-* 在第 1 单元中，您首先探索了云是什么，以及为什么它能够改变技术和商业游戏规则。
+* 在模块 1 中，您首先探索了云是什么，以及为什么它能够改变技术和商业游戏规则。
 * 在模块 2 中，您研究了用户与 Google Cloud 交互的不同方式。
-* 模块 3 介绍了如何使用 Google Cloud 资源和无服务器托管服务来构建应用程序。
-* 模块 4，解决如何实现各种结构化和非结构化存储模型。
+* 在模块 3 中，介绍了如何使用 Google Cloud 资源和无服务器托管服务来构建应用程序。
+* 在模块 4 中，解决如何实现各种结构化和非结构化存储模型。
 * 在模块 5 中，您了解了云中存在的不同应用程序托管服务选项。
-* 模块 6 中，您了解了如何在 Google Cloud 中管理安全性。
+* 在模块 6 中，您了解了如何在 Google Cloud 中管理安全性。
 * 在模块 7 中，您探索了如何在云中构建安全网络。
 * 在模块 8 中，您确定了支持云自动化和管理的不同工具。
 * 在模块 9 中，您研究了云中的各种托管大数据服务。

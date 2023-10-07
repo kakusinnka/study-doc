@@ -176,41 +176,7 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 ## 演示 Terraform 工作流程
 此演示将帮助您熟悉用于创建 Compute Engine 实例的 Terraform 配置。我们将向您展示如何创建配置文件并使用 Terraform CLI 执行一些 Terraform 命令，例如 terraform init、terraform plan、terraform apply 和 terraform destroy。
 
-## 实验室简介：使用 Terraform 进行基础设施即代码
-在本实验中，您将使用 Terraform 创建、更新和销毁 Google Cloud 资源。  
-* 您首先将 Google Cloud 定义为提供商。
-* 然后，您将创建一个不提及网络的虚拟机实例，以查看 terraform 如何解析配置代码。
-* 然后，您将编辑代码以添加网络并在 Google Cloud 上创建虚拟机实例。您将探索如何更新虚拟机实例。
-* 您将编辑现有配置以添加标签，然后编辑机器类型。
-* 然后，您将执行 terraform 命令来销毁创建的资源。
-
-## 实验：使用 Terraform 进行基础设施即代码
-### 概述
-略
-
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 验证 Terraform 安装
-* 将 Google Cloud 定义为提供商
-* 使用 Terraform 创建、更改和销毁 Google Cloud 资源
-
-### 任务 1. 登录 Cloud Console
-略
-
-### 任务 2. 检查 Terraform 安装
-略
-
-### 任务 3. 添加 Google Cloud 提供商
-略
-
-### 任务 4. 建设基础设施
-略
-
-### 任务 5. 改变基础设施
-略
-
-### 任务 6. 摧毁基础设施
-略
+## 实验：[使用 Terraform 进行基础设施即代码](../labs/357050.md)
 
 ## 模块回顾
 该模块描述了与 Terraform 工作流程每个阶段相关的术语和概念。  
@@ -367,38 +333,7 @@ Terraform 注册表是一个交互式资源，用于发现与 Terraform 一起�
 * CFT模块无需修改即可快速使用，在 Google Cloud 中构建可重复的企业级基础。
 * CFT 模块也称为Terraform 蓝图。
 
-## 实验室简介：创建资源依赖关系
-在本实验中，您将在默认网络中创建两个虚拟机。  
-您将使用变量在运行时定义虚拟机的属性，并使用输出值打印一些资源属性。  
-然后，您将向第一个虚拟机添加静态 IP 地址，以检查 terraform 如何处理隐式依赖关系。  
-最后，您将通过提及对虚拟机的显式依赖关系来创建 Google Cloud Storage 存储桶，以检查 terraform 如何处理显式依赖关系。  
-
-## 实验：创建资源依赖关系
-### 概述
-略
-
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 使用变量和输出值
-* 观察隐式依赖
-* 创建显式资源依赖
-
-### 任务 1. 登录 Cloud Console
-略
-
-### 任务 2. 初始化 Terraform
-略
-
-### 任务 3.查看隐式资源依赖关系
-略
-
-### 任务 4. 创建显式依赖项
-略
-
-### 任务 6. 查看依赖关系图
-```
-terraform graph | dot -Tsvg > graph.svg
-```
+## 实验：[创建资源依赖关系](../labs/357062.md)
 
 ## 模块回顾
 在本模块中，您学习了如何声明资源：可以使用 Terraform 配置的基础设施元素。  
@@ -442,35 +377,7 @@ source 是一个元参数，其值提供配置代码的路径。
 4. 使用公共 Terraform 注册表查找有用的模块。
 5. 与您的团队发布和共享模块。
 
-## 实验室简介：使用 Terraform 自动化基础设施部署
-略
-
-## 实验：使用 Terraform 自动化基础设施部署
-### 概览
-Terraform 可让您以安全、可预测的方式创建、更改和改进基础架构。它是一个开源工具，可将 API 编码为声明式配置文件。您可以将这些文件分享给团队成员，将它们作为代码进行处理、修改、审核和版本控制。
-
-在本实验中，您将创建一项包含自动部署 Google Cloud 基础架构的模块的 Terraform 配置。具体而言，您需要部署一个设有防火墙规则的自动模式网络和两个虚拟机实例，如下图所示：
-![](../images/terraform-module-lab.png)
-
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 为自动模式网络创建配置
-* 为防火墙规则创建配置
-* 为虚拟机实例创建模块
-* 创建和部署配置
-* 验证配置的部署情况
-
-### 任务 1. 设置 Terraform 和 Cloud Shell
-略
-
-### 任务 2. 创建 mynetwork 及其资源
-略
-
-### 任务 3. 验证您的部署
-略
-
-### 任务 4. 回顾
-略
+## 实验：[使用 Terraform 自动化基础设施部署](../labs/357072.md)
 
 ## 模块回顾
 * 您了解了模块的定义，查看了一些示例，并了解了如何使用它们来重用配置。
@@ -509,57 +416,7 @@ Terraform 可让您以安全、可预测的方式创建、更改和改进基础�
 * 不要将机密存储在状态文件中：避免以状态存储秘密，因为 Terraform 以明文形式存储秘密值。
 * 不要手动修改状态：当您需要修改状态时，请使用 terraform state 命令。
 
-## 实验：创建远程后端
-### 概述
-在本实验中，您将创建一个本地后端，然后创建一个 Cloud Storage 存储桶以将状态迁移到远程后端
-
-### 目标
-在本实验中，您将学习如何执行以下任务：
-* 创建本地后端。
-* 创建云存储后端。
-* 刷新您的 Terraform 状态。
-
-### 任务 1. 登录 Cloud Console
-略
-
-### 任务 2. 验证 Terraform 是否已安装
-略
-
-### 任务 3. 添加本地后端
-main.tf
-```terraform
-terraform {
-  backend "local" {
-    path = "terraform/state/terraform.tfstate"
-  }
-}
-```
-### 任务 4. 添加 Cloud Storage 后端
-main.tf
-```teffaform
-terraform {
-  backend "gcs" {
-    bucket  = "Project ID"
-    prefix  = "terraform/state"
-  }
-}
-```
-
-执行 Terraform 项目的初始化，并在必要时执行状态的迁移。
-```terrafform
-terraform init -migrate-state
-```
-
-### 任务 5. 刷新状态
-terraform refresh 命令的主要目的是从实际的云服务提供商或基础设施平台中获取最新的资源状态，并将这些信息更新到 Terraform 的状态文件中。
-```terraform
-terraform refresh
-```
-
-### 任务 6. 清理工作区
-```terraform
-terraform destroy
-```
+## 实验：[创建远程后端](../labs/357080.md)
 
 ## 模块回顾
 这个简短的模块涵盖了 Terraform 状态，并列出了将状态存储在远程位置（包括 Google 云存储桶中）的好处。  

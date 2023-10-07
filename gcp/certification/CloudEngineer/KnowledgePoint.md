@@ -49,12 +49,14 @@ BigQuery 提供两种类型的价格模式：按需价格和基于容量的价�
 ---
 
 ### GKE
+* gcloud container clusters get-credentials 用于获取 Google Kubernetes Engine（GKE）集群的凭据并配置 kubectl 工具，以便与 GKE 集群进行交互。
 * kubectl config view 命令用于查看当前用户的 Kubernetes 配置文件的内容。输出结果通常以 YAML 或 JSON 格式显示，包括配置文件中定义的上下文、集群、用户和命名空间等信息。
 * kubectl cluster-info 命令用于查看当前连接的 Kubernetes 集群的信息。输出结果包括 Kubernetes 控制平面的地址、服务和 API 服务器的地址等信息。这个命令通常用于获取有关集群的基本信息，以确保你正在与正确的集群进行交互。
 * kubectl config current-context 命令用于查看当前活动的 Kubernetes 上下文的名称。输出结果是当前活动上下文的名称，它确定了你与哪个集群和命名空间进行交互。这个命令通常用于确认当前工作环境。
 * kubectl config get-contexts 命令用于获取和列出 Kubernetes 配置文件中定义的上下文的列表。输出结果是一个表格，包含了上下文的名称、关联的集群、用户、命名空间以及上下文的状态（活动或非活动）。这个命令通常用于查看可用的上下文，并确定当前正在使用的上下文。你可以通过切换上下文来更改工作环境，以便与不同的集群或命名空间进行交互。
 * kubectl config use-context CONTEXT_NAME 命令用于切换当前活动的 Kubernetes 上下文。CONTEXT_NAME 是要切换到的上下文的名称。运行此命令后，当前上下文将更改为指定的上下文，你将在该上下文中执行后续的 kubectl 命令。这允许你切换工作环境以便与不同的集群或命名空间进行交互。
 * kubectl top nodes 命令用于查看 Kubernetes 集群中各个节点的性能指标。输出结果包括每个节点的 CPU 和内存使用情况，以及节点的名称。这个命令通常用于监视集群节点的性能，以识别潜在的性能问题或瓶颈。
+
 
 ---
 
