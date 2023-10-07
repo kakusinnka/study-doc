@@ -4,7 +4,7 @@ Cloud Engineer 负责规划、配置、搭建和部署云解决方案。
 完成此路线后，请查看 Google Cloud Associate Cloud Engineer 认证，迈出专业发展历程的下一步。
 
 ## 学习路径活动
-### [Qwiklabs 和 Google Cloud 导览](../GoogleCloudComputingFoundations/CloudComputingFundamentals.md#qwiklabs-和-google-cloud-导览-gsp282)
+### [Qwiklabs 和 Google Cloud 导览](../labs/GSP282.md)
 作为首个实操实验，此实验将引导您访问 Qwiklabs 以及 Google Cloud Platform Console 并使用 GCP 的以下基本功能：项目、资源、IAM 用户、角色、权限、API 和 Cloud Shell。
 
 ### [为您的助理云工程师之旅做好准备](./PreparingYourAssociateCloudEngineer.md)
