@@ -16,11 +16,6 @@
 助理云工程师负责部署和保护应用程序和基础设施、监控多个项目的运营并维护企业解决方案，以确保它们满足目标性能指标。此人拥有使用公共云和本地解决方案的经验。他们能够使用 Google Cloud Console 和命令行界面执行基于平台的常见任务，以维护和扩展一个或多个部署的解决方案，这些解决方案利用 Google Cloud 上 Google 管理或自我管理的服务。
 
 ## 认证价值和好处
-为什么要获得Google认证？
-* 获得行业认可！
-* 验证您的技术专长
-* 让您的职业生涯更上一层楼！
-
 助理级别主要关注技术要求和客户实施。
 ![助理与专家的区别](../images/diff-between-associate-professional.png)
 
@@ -46,7 +41,7 @@
 ![与 Google Cloud 交互](../images/interacting-with-google-cloud.png)  
 ![资源层次结构](../images/CS-resource-hierarchy.png)  
 ![计费帐户](../images/CS-billing-accounts.png)  
-![IAM](../images/preparing-ACE.png)  
+![IAM](../images/preparing-ACE-iam.png)  
 ![运营套件](../images/preparing-ACE-operations-suite.png)
 
 ## 简介：诊断问题
