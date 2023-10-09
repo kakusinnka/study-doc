@@ -17,6 +17,13 @@
 组织、项目、Cloud Billing 帐号和 Google 付款资料之间的 IAM 关系
 ![](../images/billing-access-relationships-between-resources.png)
 
+---
+
+Cloud Billing 帐号不支付 Google Workspace 帐号的费用。 Google Workspace 客户需要单独的 Google Workspace 结算信息。  
+重要提示：未链接到有效 Cloud Billing 帐号的项目无法使用 Google Cloud 或 Google Maps Platform 服务。即使您只使用免费服务也是如此。
+
+---
+
 
 ## IAM
 gcloud iam roles copy 是 Google Cloud SDK (gcloud) 中的一个命令，用于复制一个现有的自定义 Identity and Access Management (IAM) 角色。这个命令可以将一个已有角色的权限配置复制到一个新的自定义角色中，从而简化了创建自定义角色的过程。
@@ -26,6 +33,14 @@ gcloud iam roles copy 是 Google Cloud SDK (gcloud) 中的一个命令，用于�
 在一个项目中创建一个服务帐户，然后在其他项目中应用它。
 
 ---
+
+在 IAM 中，不会直接向最终用户授予资源访问权限，而是将权限分组为多个角色，然后将这些角色授予经过身份验证的主帐号。
+
+---
+
+权限以 service.resource.verb 的形式表示 (compute.addresses.get)  
+角色以 roles/service.roleName 格式指定 (roles/compute.admin)  
+
 
 ## 网络相关
 ### VPC
@@ -79,10 +94,18 @@ gsutil 并行复合上传可用于拆分大文件并并行上传。
 
 ---
 
+Cloud SQL 不支持在要迁移的数据库中使用的用户定义函数。
+
+---
+
 ### BigQuery
 BigQuery 提供两种类型的价格模式：按需价格和基于容量的价格。  
 按需价格：您需要为查询扫描的数据付费。  
 对于希望每月支付稳定的查询费用，而不是根据处理的数据量（TB 数）支付按需计费价格的客户，BigQuery 为其提供了统一费率价格方案。
+
+---
+
+BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最简单流程。它包含在一个命令中。它也是免费的。
 
 ---
 
@@ -107,12 +130,19 @@ Kubernetes（K8s）中的 DaemonSet 对象是一种控制器，用于确保在�
 
 ---
 
+在自动导航模式下创建的集群是区域性的 (Regional), 具有控制平面的多个副本，在给定区域 (region) 内的多个区域 (zone) 中运行。
+
+---
+
 ### APP Engine
 在配置 Google Cloud Platform（GCP）的 App Engine 时，min_idle_instances 是一个与自动缩放相关的配置参数。这个参数用于指定 App Engine 实例的最小闲置数量，也就是在没有请求时仍然保持运行状态的实例数量。
 
 ---
 
-重要提示：每个 Cloud 项目只能包含一个 App Engine 应用；创建此应用后，您将无法更改其位置。
+重要提示：
+* 每个 Cloud 项目只能包含一个 App Engine 应用；创建此应用后，您将无法更改其位置。
+* App Engine 灵活环境不会扩展到零。
+* App Engine 标准环境不允许自定义包。
 
 ---
 
@@ -122,6 +152,13 @@ Cloud Functions 是 GCP 中的一项无服务器计算服务，它使开发人�
 ---
 
 Cloud Function 是一个无服务器计算服务，用于编写、部署和运行事件驱动的小型计算函数。它的主要目的是响应和处理事件，例如 HTTP 请求、Cloud Storage 存储桶中的文件上传、Pub/Sub 主题中的消息等。Cloud Function 的代码通常包含特定的业务逻辑，用于处理特定类型的事件。
+
+---
+
+当写入 Cloud Storage 完成时 - 完成事件触发器被触发。
+```
+-- trigger-event google.storage.object.finalize
+```
 
 ---
 
