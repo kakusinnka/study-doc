@@ -48,7 +48,7 @@
 略
 
 ## 诊断问题
-[诊断问题](https://www.cloudskillsboost.google/course_sessions/4322739/quizzes/375741)
+[诊断问题](https://www.cloudskillsboost.google/course_sessions/5448985/quizzes/402592)
 
 ## 你的学习计划
 1. 设置云项目和帐户

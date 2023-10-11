@@ -20,7 +20,8 @@
 ---
 
 Cloud Billing 帐号不支付 Google Workspace 帐号的费用。 Google Workspace 客户需要单独的 Google Workspace 结算信息。  
-重要提示：未链接到有效 Cloud Billing 帐号的项目无法使用 Google Cloud 或 Google Maps Platform 服务。即使您只使用免费服务也是如此。
+重要提示：未链接到有效 Cloud Billing 帐号的项目无法使用 Google Cloud 或 Google Maps Platform 服务。即使您只使用免费服务也是如此。  
+无法删除 Cloud Billing 帐号。
 
 ---
 
@@ -112,6 +113,10 @@ BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最�
 ### Compute Engine
 使用 RDP 连接到 Windows 虚拟机
 ![](../../cloudskillsboost/images/connecting-to-windows-instances.png)
+
+---
+
+[OS Login 简介](https://cloud.google.com/compute/docs/oslogin?hl=zh-cn)
 
 ---
 
