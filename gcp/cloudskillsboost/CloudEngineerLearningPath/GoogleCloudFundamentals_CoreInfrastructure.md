@@ -257,7 +257,7 @@ Bigtable 可处理海量工作负载，同时确保始终如一的低延迟和�
 
 ## 实验：[Google Cloud 基础知识：Cloud Storage 和 Cloud SQL 使用入门](../labs/384346.md)
 
-## Quiz: Storage in the Cloud
+## 测验：云中的存储
 略
 
 # 云中的容器

@@ -42,6 +42,15 @@ gcloud iam roles copy 是 Google Cloud SDK (gcloud) 中的一个命令，用于�
 权限以 service.resource.verb 的形式表示 (compute.addresses.get)  
 角色以 roles/service.roleName 格式指定 (roles/compute.admin)  
 
+---
+
+A Policy 是 的 bindings 集合。A binding 将一个或多个 members 主体绑定到单个 role .主体可以是用户帐号、服务帐号、Google 群组和网域（例如 G Suite）。A role 是命名的权限列表;每个角色 role 可以是 IAM 预定义角色或用户创建的自定义角色。
+
+> 自定义角色只能应用于项目级别或组织级别。它们不能应用于文件夹级别。
+
+---
+
+
 
 ## 网络相关
 ### VPC
@@ -117,6 +126,10 @@ BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最�
 ---
 
 [OS Login 简介](https://cloud.google.com/compute/docs/oslogin?hl=zh-cn)
+
+---
+
+> 您必须启用二进制日志记录才能使用时间点恢复。
 
 ---
 
