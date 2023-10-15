@@ -453,4 +453,4 @@ Cloud Trace 是一个分布式跟踪系统，可从您的应用收集延迟数�
 我希望您更好地了解如何管理 IAM、在 GCP 中的不同数据存储服务之间进行选择、检查 GCP 资源的计费并监控这些资源。
 
 # 课程资源
-所有模块的 PDF 链接
+[所有模块的 PDF 链接](https://www.cloudskillsboost.google/course_sessions/5373246/documents/386504)

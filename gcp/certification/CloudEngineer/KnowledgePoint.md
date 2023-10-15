@@ -8,24 +8,6 @@
 
 ---
 
-## 计费帐户相关
-
-一个项目一次只能链接到一个计费帐户。一个计费帐户可以链接到一个或多个项目。
-
----
-
-组织、项目、Cloud Billing 帐号和 Google 付款资料之间的 IAM 关系
-![](../images/billing-access-relationships-between-resources.png)
-
----
-
-Cloud Billing 帐号不支付 Google Workspace 帐号的费用。 Google Workspace 客户需要单独的 Google Workspace 结算信息。  
-重要提示：未链接到有效 Cloud Billing 帐号的项目无法使用 Google Cloud 或 Google Maps Platform 服务。即使您只使用免费服务也是如此。  
-无法删除 Cloud Billing 帐号。
-
----
-
-
 ## IAM
 gcloud iam roles copy 是 Google Cloud SDK (gcloud) 中的一个命令，用于复制一个现有的自定义 Identity and Access Management (IAM) 角色。这个命令可以将一个已有角色的权限配置复制到一个新的自定义角色中，从而简化了创建自定义角色的过程。
 
@@ -50,7 +32,12 @@ A Policy 是 的 bindings 集合。A binding 将一个或多个 members 主体�
 
 ---
 
+```
+# 列出组织或项目的预定义角色或自定义角色
+gcloud iam roles list
+```
 
+---
 
 ## 网络相关
 ### VPC
@@ -79,14 +66,51 @@ VPC 网络具有内部 DNS 服务，允许您按 DNS 名称（而非内部 IP �
 
 ---
 
+[IP 地址](https://cloud.google.com/vpc/docs/ip-addresses?hl=zh-cn)
+
+---
+
 ## 产品相关
+### Cloud Billing
+
+一个项目一次只能链接到一个计费帐户。一个计费帐户可以链接到一个或多个项目。
+
+---
+
+组织、项目、Cloud Billing 帐号和 Google 付款资料之间的 IAM 关系
+![](../images/billing-access-relationships-between-resources.png)
+
+---
+
+Cloud Billing 帐号不支付 Google Workspace 帐号的费用。 Google Workspace 客户需要单独的 Google Workspace 结算信息。  
+重要提示：未链接到有效 Cloud Billing 帐号的项目无法使用 Google Cloud 或 Google Maps Platform 服务。即使您只使用免费服务也是如此。  
+无法删除 Cloud Billing 帐号。
+
+---
+
+[将 Cloud Billing 数据导出到 BigQuery](https://cloud.google.com/billing/docs/how-to/export-data-bigquery?hl=zh-cn)
+
+---
+
 ### Cloud Monitoring
 您最多可以设置 5 个 Cloud Monitoring 渠道来定义将接收预算提醒的电子邮件收件人。
 
 ---
 
+### Google Cloud 运维套件
+
+[Google Cloud 运维套件代理](https://cloud.google.com/logging/docs/agent?hl=zh-cn)
+
+---
+
 ### Cloud Shell
 Cloud Shell 提供容器化命令行界面，允许您运行命令并使用脚本自动执行这些命令。
+
+---
+
+### Cloud SDK
+
+[初始化 gcloud CLI](https://cloud.google.com/sdk/docs/initializing?hl=zh-cn)
 
 ---
 
@@ -96,6 +120,14 @@ Cloud Shell 提供容器化命令行界面，允许您运行命令并使用脚�
 ---
 
 gsutil 并行复合上传可用于拆分大文件并并行上传。
+
+---
+
+[并行复合上传](https://cloud.google.com/storage/docs/parallel-composite-uploads?hl=zh-cn)
+
+[存储类别](https://cloud.google.com/storage/docs/storage-classes?hl=zh-cn)
+
+[对象生命周期管理](https://cloud.google.com/storage/docs/lifecycle?hl=zh-cn)
 
 ---
 
@@ -119,17 +151,25 @@ BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最�
 
 ---
 
+### Bigtable
+
+[使用 IAM 控制访问权限](https://cloud.google.com/bigtable/docs/access-control?hl=zh-cn)
+
+---
+
 ### Compute Engine
 使用 RDP 连接到 Windows 虚拟机
 ![](../../cloudskillsboost/images/connecting-to-windows-instances.png)
 
 ---
 
-[OS Login 简介](https://cloud.google.com/compute/docs/oslogin?hl=zh-cn)
+> 您必须启用二进制日志记录才能使用时间点恢复。
 
 ---
 
-> 您必须启用二进制日志记录才能使用时间点恢复。
+[OS Login 简介](https://cloud.google.com/compute/docs/oslogin?hl=zh-cn)
+
+[增加永久性磁盘的大小](https://cloud.google.com/compute/docs/disks/resize-persistent-disk?hl=zh-cn)
 
 ---
 
@@ -152,6 +192,10 @@ Kubernetes（K8s）中的 DaemonSet 对象是一种控制器，用于确保在�
 
 ---
 
+[将工作负载迁移到其他机器类型](https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool?hl=zh-cn#step_4_migrate_the_workloads)
+
+---
+
 ### APP Engine
 在配置 Google Cloud Platform（GCP）的 App Engine 时，min_idle_instances 是一个与自动缩放相关的配置参数。这个参数用于指定 App Engine 实例的最小闲置数量，也就是在没有请求时仍然保持运行状态的实例数量。
 
@@ -163,6 +207,10 @@ Kubernetes（K8s）中的 DaemonSet 对象是一种控制器，用于确保在�
 * App Engine 标准环境不允许自定义包。
 
 ---
+
+[授予 App Engine 访问权限的角色](https://cloud.google.com/appengine/docs/standard/java-gen2/roles?hl=zh-cn)
+
+
 
 ### Cloud Functions
 Cloud Functions 是 GCP 中的一项无服务器计算服务，它使开发人员能够编写、部署和运行事件驱动的小型计算函数，而无需管理底层的服务器基础设施。Cloud Functions 可以响应各种云事件和外部事件，并以高度可伸缩的方式运行，以满足不同的应用场景。
@@ -177,6 +225,10 @@ Cloud Function 是一个无服务器计算服务，用于编写、部署和运�
 ```
 -- trigger-event google.storage.object.finalize
 ```
+
+---
+
+[Cloud Functions 触发器](https://cloud.google.com/functions/docs/calling?hl=zh-cn#2nd-gen-triggers)
 
 ---
 
