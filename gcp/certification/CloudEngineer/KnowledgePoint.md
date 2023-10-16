@@ -129,6 +129,8 @@ gsutil 并行复合上传可用于拆分大文件并并行上传。
 
 [对象生命周期管理](https://cloud.google.com/storage/docs/lifecycle?hl=zh-cn)
 
+[Cloud Storage 最佳做法](https://cloud.google.com/storage/docs/best-practices?hl=zh-cn)
+
 ---
 
 ### Cloud SQL
@@ -164,6 +166,8 @@ BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最�
 ---
 
 > 您必须启用二进制日志记录才能使用时间点恢复。
+
+> 对于单租户节点，只有来自同一项目的虚拟机在该节点上运行。 通过设置单租户节点，您可以在物理上将您的虚拟机与其他项目中的虚拟机分开。
 
 ---
 
