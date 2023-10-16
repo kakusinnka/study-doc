@@ -171,11 +171,11 @@ Kubernetes 对象有两个重要元素。第一个是正在创建的每个对象
 第二个是对象状态，它表示 Kubernetes 控制平面提供的对象的当前状态。
 
 Pod 是标准 Kubernetes 模型的基础构建块，它们是最小的可部署 Kubernetes 对象。Kubernetes 系统中每个正在运行的容器都在一个 Pod 中。Pod 创建容器所在的环境，该环境可以容纳一个或多个容器。  
-如果一个 Pod 中有多个容器，它们就会紧密耦合并共享资源，例如网络和存储。Kubernetes 为每个 Pod 分配一个唯一的 IP 地址，Pod 中的每个容器共享网络命名空间，包括 IP 地址和网络端口。同一 Pod 内的容器可以通过 localhost 127.0.0.1 进行通信。Pod 还可以指定一组将在其容器之间共享的存储卷。
+如果一个 Pod 中有多个容器，它们就会紧密耦合并共享资源，例如网络和存储。Kubernetes 为每个 Pod 分配一个唯一的 IP 地址，Pod 中的每个容器共享网络命名空间，包括 IP 地址和网络端口。同一 Pod 内的容器可以通过 localhost 127.0.0.1 进行通信。Pod 还可以指定一组将在其容器之间共享的存储卷。  
 ![Pod](../images/pod.png)
 
 ## Kubernetes 组件
-Kubernetes 控制面板是使 Kubernetes 集群工作的一组协作进程。首先，集群需要计算机，而这些计算机通常是虚拟机。它们始终位于 GKE 中，但它们也可以是物理计算机。一台计算机称为控制平面，其他计算机称为节点。节点的工作是运行 Pod，控制平面的工作是协调整个集群。
+Kubernetes 控制面板是使 Kubernetes 集群工作的一组协作进程。首先，集群需要计算机，而这些计算机通常是虚拟机。它们始终位于 GKE 中，但它们也可以是物理计算机。一台计算机称为控制平面，其他计算机称为节点。节点的工作是运行 Pod，控制平面的工作是协调整个集群。  
 ![集群](../images/cluster-001.png)
 
 几个关键的 Kubernetes 组件在控制平面上运行。  
@@ -203,7 +203,7 @@ GKE 标准模式具有与 Autopilot 相同的功能，但您负责集群的配�
 
 ## 对象管理
 所有 Kubernetes 对象都是通过唯一名称和唯一标识符来标识的。  
-您可以使用清单文件定义希望 Kubernetes 创建和维护的对象。这些是可以用 YAML 或 JSON 编写的普通文本文件。
+您可以使用清单文件定义希望 Kubernetes 创建和维护的对象。这些是可以用 YAML 或 JSON 编写的普通文本文件。  
 ![Pod 对象管理](../images/pod-yaml.png)
 此清单文件定义了 Pod 的所需状态：其名称和要运行的特定容器映像。必填字段包括：
 * apiversion，表示用于创建对象的 Kubernetes API 版本.
@@ -243,17 +243,17 @@ kubectl 的语法由四部分组成：命令、类型、名称和可选标志。
 * 命令指定您要执行的操作，例如 get、describe、logs 或 exec。
 * TYPE 定义了“命令”所作用的 Kubernetes 对象，例如 Pod、部署、节点或其他对象，包括集群本身。
 * NAME 指定在 TYPE 中定义的对象。
-* 末尾附加标志，您可以将其视为提出特殊请求的一种方式。
-![](../images/kubectl-command-syntax.png)
+* 末尾附加标志，您可以将其视为提出特殊请求的一种方式。  
+![](../images/kubectl-command-syntax.png)  
 ![](../images/kubectl-command-syntax2.png)
 
 ## 内省 (introspection)
-我们将从四个命令开始，用于收集有关您的应用程序的信息：get、describe、exec 和 log。
-![](../images/kubectl-cmd-get.png)
-![](../images/kubectl-cmd-describe.png)
-![](../images/kubectl-cmd-exec.png)
-![](../images/kubectl-cmd-logs.png)
-![](../images/kubectl-cmd-exec-it.png)
+我们将从四个命令开始，用于收集有关您的应用程序的信息：get、describe、exec 和 log。  
+![](../images/kubectl-cmd-get.png)  
+![](../images/kubectl-cmd-describe.png)  
+![](../images/kubectl-cmd-exec.png)  
+![](../images/kubectl-cmd-logs.png)  
+![](../images/kubectl-cmd-exec-it.png)  
 
 > 现在需要注意的是，将软件直接安装到容器中并不是最佳实践，因为容器对其文件系统所做的更改通常是短暂的。相反，请考虑构建包含您所需软件的容器映像，而不是在运行时临时修复它们。
 
