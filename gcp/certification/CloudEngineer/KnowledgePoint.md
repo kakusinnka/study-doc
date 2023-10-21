@@ -251,11 +251,37 @@ Cloud Pub/Sub 是一项消息传递服务，用于可靠地传递消息和事件
 
 ---
 
-我们刚刚了解到，标签（label）是用户定义的键值格式的字符串，用于组织资源，并且可以通过计费进行传播。  
-另一方面，标签（tags）是用户定义的字符串，仅应用于实例，主要用于网络，例如应用防火墙规则。
+标签（label）是用户定义的键值格式的字符串，用于组织资源，并且可以通过计费进行传播。  
+标签（tags）是用户定义的字符串，仅应用于实例，主要用于网络，例如应用防火墙规则。
 
 ---
 
 批量折扣（也称为持续使用折扣）会自动应用并包含在计算器估算值中。
 
 ---
+
+gcloud auth activate-service-account  
+授权使用服务帐户访问 Google Cloud。  
+要允许 gcloud （以及 Google Cloud CLI 中的其他工具）使用服务帐号凭据发出请求，请使用此命令从包含私有授权密钥的文件导入这些凭据，并激活它们。  
+gcloud auth activate-service-account 提供与 gcloud auth login 相同的功能，但使用服务帐户而不是 Google 用户凭据。
+
+---
+
+gcloud config configurations create  
+创建新的命名配置  
+
+---
+
+gcloud config configurations activate  
+激活现有的命名配置  
+
+---
+
+gcloud iam roles copy  
+从现有角色创建角色  
+
+---
+
+## 博客
+### [计算引擎说明：选择正确的机器系列和类型](https://cloud.google.com/blog/products/compute/choose-the-right-google-compute-engine-machine-type-for-you?hl=en)
+

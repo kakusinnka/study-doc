@@ -129,17 +129,17 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 您还可以为 required_providers 块中定义的每个提供程序分配一个版本。版本参数是可选的，但建议使用。它用于将提供程序限制为特定版本或一系列版本，以防止下载可能包含重大更改的新提供程序。如果未指定版本，Terraform 将在初始化期间自动下载最新的提供程序。
 
 ### 变量
-![](../images/variables.png)
+![](../images/variables.png)  
 * 参数化资源参数以消除对其值的硬编码。
 * 在运行时或集中在扩展名为 .tfvars 的文件中定义资源属性。
 
 ### 输出值
-![](../images/output-values.png)
+![](../images/output-values.png)  
 * 输出值存储在outputs.tf 文件中。
 * 输出值公开资源属性的值。
 
 ### 状态
-![](../images/terraform-state.png)
+![](../images/terraform-state.png)  
 * Terraform 将其管理的资源状态保存在状态文件中。
 * 状态文件可以存储：
   * 本地（默认）
@@ -147,7 +147,7 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 > 您不修改此文件
 
 ### 模块
-![](../images/terraform-module.png)
+![](../images/terraform-module.png)  
 * Terraform 模块是单个目录中的一组 Terraform 配置文件
 * 它是 Terraform 中代码重用的主要方法。
 * 有2种来源：
@@ -155,7 +155,7 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
   * 远程：目录之外的源
 
 ## Terraform 命令
-![](../images/terraform-commands.png)
+![](../images/terraform-commands.png)  
 * terraform init 命令将自动下载并安装任何提供程序二进制文件，供提供程序在配置中使用，在本例中为 Google 提供程序。执行 terraform init 后，会在当前工作目录下创建一个名为 .terraform 的隐藏目录。运行该命令时，您将看到一条“正在初始化提供程序插件”消息，这表明 Terraform 将从 URL 中查找最新的插件并下载关联的文件。在此命令的输出中，您还可以看到 Terraform 已安装的提供程序版本。
 * terraform plan 命令实际上并不创建或更改任何基础架构资源，而是为您提供了在应用基础架构之前预览对基础架构所做的更改的机会。例如，您可能会在提交版本控制更改之前运行此命令，以确保其按预期运行。
 * Terraform apply 执行 Terraform plan 中建议的操作、创建资源并建立依赖关系。
@@ -163,7 +163,7 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * terraform destroy 命令销毁资源，该命令与 terraform apply 类似，但其行为就像所有资源已从配置中删除一样。
 
 ## Terraform 验证器
-![](../images/terraform-validate-phase.png)
+![](../images/terraform-validate-phase.png)  
 在 Terraform 计划阶段之后，您可以选择包含一个验证阶段，该阶段根据组织策略运行部署前检查。 Terraform 验证器是一种用于强制策略合规性的工具，作为基础设施 CI/CD 管道的一部分。这在基础设施即代码环境中非常有用，因为它有助于减少可能导致安全和治理违规的配置错误。 terraform 验证器通过执行 gcloud beta terraform vet 命令来运行。
 
 > 请注意，该工具与命令“terraform validate”完全不同。我们在本课程中尚未介绍此命令。命令“terraform validate”用于测试配置的语法和结构，而无需部署任何资源。但 gcloud beta terraform vet 命令用于确保配置遵守一组约束。这些约束自动执行组织策略。
@@ -209,7 +209,7 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 资源类型取决于 terraform 模块中声明的提供者。
 * 并非所有资源参数都必须定义。
 
-![](../images/terraform-resource-example-block.png)
+![](../images/terraform-resource-example-block.png)  
 您可以在同一个 Terraform 配置文件中包含相同类型的多个资源或不同资源类型的多个资源。这些资源甚至可以跨越多个提供商。
 
 ![](../images/terraform-resource-ref-attr.png)
@@ -223,8 +223,8 @@ Terraform 允许基础设施以一种简单的、人类可读的语言（称为 
 * 必须定义所有必需的资源参数。
 
 ## 资源的元参数
-![](../images/terraform-resources-meta-args.png)
-![](../images/terraform-resources-meta-args-count.png)
+![](../images/terraform-resources-meta-args.png)  
+![](../images/terraform-resources-meta-args-count.png)  
 ![](../images/terraform-resources-meta-args-for_each.png)
 
 ## 资源依赖
