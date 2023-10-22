@@ -42,5 +42,3 @@ Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的�
 
 ### 使用 Terraform 自动化 Google Cloud 上的基础设施
 通过完成使用 Terraform 在 Google Cloud 上实现基础设施自动化任务来获得技能徽章，您将在其中学习如何使用 Terraform 编写基础设施即代码。 在这个任务中，您将获得构建、更改和销毁基础设施、管理本地和远程状态、导入基础设施以及构建您自己的模块的实践经验。
-
-## [知识点](./KnowledgePoint.md)
