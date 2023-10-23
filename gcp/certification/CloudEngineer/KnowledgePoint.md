@@ -282,6 +282,11 @@ gcloud iam roles copy
 
 ---
 
+gcloud app services set-traffic  
+此命令设置跨服务或项目的版本流量分配。  
+
+---
+
 ## 博客
 ### [计算引擎说明：选择正确的机器系列和类型](https://cloud.google.com/blog/products/compute/choose-the-right-google-compute-engine-machine-type-for-you?hl=en)
 

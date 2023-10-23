@@ -67,6 +67,10 @@
 ## 生僻词
 | 英语                 | 汉语         | 日语                         |
 | -------------------- | ------------ | ---------------------------- |
+| Architect            | 构架师       | アーキテクト                 |
+| solution             | 解决方案     | ソリューション               |
+| permission           | 允许         | パーミッション               |
+| secondary            | 次要的       | セカンダリ                   |
 | ephemeral            | 短暂的       | エフェメラル                 |
 | drain                | 排走         | ドレイン                     |
 | Compliance           | 合规性       | コンプライアンス             |
@@ -78,7 +82,6 @@
 | Algorithm            | 算法         | アルゴリズム                 |
 | Infrastructure       | 基础设施     | インフラストラクチャ         |
 | Approach             | 方法         | アプローチ                   |
-| Provisioning         | 供应         | プロビジョニング             |
 | Private              | 私人的       | プライベート                 |
 | Bare Metal           | 裸机         | ベアメタル                   |
 | Network Fabric       | 网络结构     | ネットワークファブリック     |

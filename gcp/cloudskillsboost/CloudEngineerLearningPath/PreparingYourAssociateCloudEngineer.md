@@ -234,7 +234,7 @@
 ## 你的学习计划
 * 管理 Compute Engine 资源
 * 管理 Google Kubernetes Engine 资源
-* 管理 Cloud RUn 资源
+* 管理 Cloud Run 资源
 * 管理存储和数据库解决方案
 * 管理网络资源
 * 监视和日志记录
