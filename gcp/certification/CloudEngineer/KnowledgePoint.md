@@ -294,3 +294,4 @@ gcloud app services set-traffic
 ## 博客
 ### [计算引擎说明：选择正确的机器系列和类型](https://cloud.google.com/blog/products/compute/choose-the-right-google-compute-engine-machine-type-for-you?hl=en)
 
+### [如何构建事件驱动型应用](https://cloud.google.com/blog/products/serverless/learn-about-cloud-functions-events-and-triggers)
