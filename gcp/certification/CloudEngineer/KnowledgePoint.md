@@ -97,6 +97,11 @@ Cloud Billing 帐号不支付 Google Workspace 帐号的费用。 Google Workspa
 
 ---
 
+### Cloud Logging
+接收器控制 Cloud Logging 路由日志的方式。通过接收器，您可以将部分或全部日志路由到支持的目标位置。
+
+---
+
 ### Google Cloud 运维套件
 
 [Google Cloud 运维套件代理](https://cloud.google.com/logging/docs/agent?hl=zh-cn)
@@ -150,6 +155,16 @@ BigQuery 提供两种类型的价格模式：按需价格和基于容量的价�
 ---
 
 BigQuery 传输服务是在 Cloud Storage 和 BigQuery 之间设置传输的最简单流程。它包含在一个命令中。它也是免费的。
+
+---
+
+BigQuery 价格包含两个主要组成部分：
+* 分析价格是处理查询的费用，其中包括 SQL 查询、用户定义的函数、脚本，以及可扫描表的某些数据操纵语言 (DML) 和数据定义语言 (DDL) 语句。
+* 存储价格是存储您加载到 BigQuery 中的数据的费用。
+
+---
+
+没有 bigquery.tables.read 的权限。
 
 ---
 
@@ -212,6 +227,15 @@ Kubernetes（K8s）中的 DaemonSet 对象是一种控制器，用于确保在�
 
 ---
 
+Roles/appengine.deployer 具有以下执行权限。
+
+- 列出所有服务/版本/实例
+- 查看应用程序/服务/版本/实例的所有设置
+- 查看运行时指标，例如资源使用情况/负载信息/错误信息
+- 删除版本
+
+---
+
 [授予 App Engine 访问权限的角色](https://cloud.google.com/appengine/docs/standard/java-gen2/roles?hl=zh-cn)
 
 
@@ -229,6 +253,10 @@ Cloud Function 是一个无服务器计算服务，用于编写、部署和运�
 ```
 -- trigger-event google.storage.object.finalize
 ```
+
+---
+
+Cloud Functions 是一项服务，允许您创建基于事件执行的无服务器应用程序。 Cloud Functions 支持 Cloud Storage、HTTP、Cloud Pub/Sub、Firebase、CloudLogging 等事件。
 
 ---
 
