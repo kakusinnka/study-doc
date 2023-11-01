@@ -46,6 +46,9 @@ Google Cloud 网络拓扑之间的高可用性 VPN
 ![](../images/ha-vpn-between-gcp-network-toplogy.png)
 
 要使用动态路由，您需要配置云端路由器。 Cloud Router 可以使用边界网关协议 (BGP) 管理 Cloud VPN 隧道的路由。这种路由方法允许在不更改隧道配置的情况下更新和交换路由。
+
+> BGP是互联网中最重要的路由协议之一，它负责控制全球互联网的路由信息，确保数据包能够正确传递到其目的地。BGP的灵活性和可配置性使其成为网络管理员在构建和管理复杂网络架构时的关键工具。
+
 ![](../images/dynamic-routing-with-cloud-router.png)
 
 ## 实验: [配置 Google Cloud 高可用性 VPN](../labs/386342.md)
