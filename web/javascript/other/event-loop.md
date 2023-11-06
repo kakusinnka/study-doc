@@ -40,3 +40,4 @@
 * [BlinkOn 会议上的一些演讲](https://www.youtube.com/watch?v=Y5Xa4H2wtVA)
 * [图层](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752/?gi=cd6271834cea)
 * [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+* [Blink 中的 CSS 样式计算](https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/renderer/core/css/style-calculation.md)
