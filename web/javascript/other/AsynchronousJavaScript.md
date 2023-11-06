@@ -25,6 +25,10 @@ JavaScript异步编程的历史经历了多个阶段，从最初的事件处理�
 
 这正是异步函数可以做到的。
 
+## 如何使用 promises
+Promise 是现代 JavaScript 中异步编程的基础。promise 是由异步函数返回的对象，它表示操作的当前状态。在将 promise 返回给调用方时，操作通常尚未完成，但 promise 对象提供了处理操作最终成功或失败的方法。
+
+
 
 ## 参照文献
 ### 1. [异步 JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
