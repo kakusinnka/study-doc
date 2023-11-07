@@ -29,6 +29,9 @@
   * 光栅 (栅格线程栅格化每个切片并将其存储在 GPU 内存中)
 * ......
 
+## 事件循环
+![事件循环](../../images/javascript-event-loop.png)
+
 ## 参考资料
 * [现代网络浏览器内部观察](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture)
 * [渲染阶段](https://cabulous.medium.com/how-does-browser-work-in-2019-part-iii-rendering-phase-i-850c8935958f)
