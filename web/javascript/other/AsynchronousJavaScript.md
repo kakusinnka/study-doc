@@ -33,7 +33,17 @@ Promise 是现代 JavaScript 中异步编程的基础。promise 是由异步函�
 
 > 使用 fetch() API 来练习 Promise 非常合适
 
+### async 和 await
+有点像 Promise 的语法糖
 
+## 如何实现基于 Promise 的 API
+讨论了 Promise 的构造函数
+
+## workers 简介
+需要注意 worker.postMessage() 和 postMessage() 函数的用法
+
+## 序列动画
+一个帮助你练习 Promise 的例子
 
 ## 参照文献
 ### 1. [异步 JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
