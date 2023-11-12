@@ -3,3 +3,6 @@ IndexedDB 是一种底层 API，用于在客户端存储大量的结构化数据
 
 ## [javascript](./javascript/javascript.md)
 JavaScript（JS）是一种具有函数优先特性的轻量级、解释型或者说即时编译型的编程语言。
+
+## [RxJS](./RxJS/RxJs.md)
+RxJS 是一个库，用于使用可观察序列来编写异步和基于事件的程序。
