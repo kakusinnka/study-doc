@@ -47,4 +47,5 @@ Promise 是现代 JavaScript 中异步编程的基础。promise 是由异步函�
 
 ## 参照文献
 ### 1. [异步 JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+### 2. [JavaScript 异步编程的演变](https://blog.logrocket.com/evolution-async-programming-javascript/)
 
