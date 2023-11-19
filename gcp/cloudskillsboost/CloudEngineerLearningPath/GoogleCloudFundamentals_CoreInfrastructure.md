@@ -1,4 +1,4 @@
-# Google Cloud 基础知识：核心基础设施
+# [Google Cloud 基础知识：核心基础设施](https://www.cloudskillsboost.google/paths/19/course_templates/60)
 Google Cloud 基础知识：核心基础设施介绍了使用 Google Cloud 的重要概念和术语。 本课程通过视频和动手实验，展示并比较了许多 Google Cloud 的计算和存储服务，以及重要的资源和策略管理工具。
 
 # 课程信息
