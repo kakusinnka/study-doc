@@ -155,22 +155,108 @@ Cloud Shell 是一台免费的管理计算机，可通过 Google Cloud Console �
 * 使用 Cloud Run Explorer 管理 Cloud Run 服务。
 
 ### 将模拟器用于 Google Cloud 服务
-* 使用 gcloud beta 版模拟器安装和管理模拟器。
+* 使用 gcloud beta emulators 安装和管理模拟器。
 * 从使用本地模拟器切换到使用 Google Cloud emulators 服务，而无需更改应用代码。
 * 在不消耗项目资源的情况下开发应用程序。
 
 ## 练习测验：Google Cloud 开发入门
+略
 
 ## Lab 搭建开发环境
+略
 
-## 应用程序开发 - 设置开发环境：Java 
+## 应用程序开发 - 设置开发环境：Java
+略
 
 ## 最终测验：Google Cloud 开发入门
+略
 
 ## 模块复习
+* Google Cloud API 为 Google Cloud 服务提供编程接口。
+* 在脚本或命令行中使用时，Google Cloud SDK 提供了更简单的界面。
+* 当您准备好编写应用程序时，请使用您选择的编程语言的 Cloud 客户端库来与 Google Cloud 服务交互。
+* Cloud Shell 提供免费的虚拟机，可用于管理您的 Google Cloud 项目和资源。
+* 使用 Cloud Code 在您最喜欢的 IDE 中开发应用程序。
 
 # 数据存储选项概述
 本模块介绍了 Google Cloud 中应用程序可用的各种数据存储选项。
+
+## Cloud Storage, Datastore, Cloud Bigtable, Cloud SQL, and Cloud Spanner
+### Cloud Storage
+Cloud Storage 是面向开发人员和企业的统一对象存储，可让您提供、分析和归档数据。对象通过 HTTP 请求访问，包括用于检索部分数据的范围 GET。唯一的键是对象名称。有对象元数据，但对象本身被视为没有结构的字节。该系统的规模允许提供静态内容或接受用户上传的内容，如照片和视频。
+
+Cloud Storage 专为可用性、持久性、可扩展性和一致性而构建。它是存储图像和视频、对象和 blob 以及任何非结构化数据的理想解决方案。
+
+### Firestore
+Firestore 是一个快速、完全托管的无服务器 NoSQL 文档数据库，专为自动扩展、高性能和易于应用程序开发而构建。
+
+### Datastore
+数据存储模式下的 Firestore（通常称为数据存储）是适用于应用程序的高度可扩展的 NoSQL 数据库。数据存储会自动处理分片和复制，为您提供一个高度可用且持久的数据库，该数据库可自动扩展以处理应用程序的负载。数据存储提供了无数的功能，例如 ACID 事务、类似 SQL 的查询、索引等等。数据存储可随数据无缝自动扩展，使应用程序在接收更多流量时保持高性能。
+
+### Cloud Bigtable
+Bigtable 是一种高性能的 NoSQL 数据库服务。这是一个稀疏填充的表，可以扩展到数十亿行和数千列。Bigtable 可以存储 TB 到 PB 的数据。Bigtable 专为在定义的键范围内快速键值查找和扫描而构建。它类似于电子表格，通过仅搜索第一列（键）中的值，您可以访问连续行中的任何一组列。对单个行的更新是原子的。由于 Bigtable 的快速查找和写入速度，它非常适合用户行为。
+
+### Cloud SQL
+Cloud SQL 是 Google Cloud 的关系数据库服务。这是一项托管服务，可让 Google 管理数据库的复制、故障转移和备份，以便您可以专注于 MySQL、PostgreSQL 或 SQL Server 兼容应用。借助 Cloud SQL，您可以轻松配置复制和备份，以保护您的数据。您可以将主实例复制到一个或多个只读副本。只读副本是主实例的副本，它几乎实时地反映对主实例的更改。您可以启用自动故障转移，使数据库具有高可用性。借助备份，您可以还原 Cloud SQL 实例，以恢复丢失的数据或从实例问题中恢复。您可以为包含需要防止丢失或损坏的数据的任何实例启用自动备份。
+
+Cloud SQL Proxy 的工作原理是在本地环境中运行一个称为代理的本地客户端。应用程序使用数据库使用的标准数据库协议与代理进行通信。代理使用安全隧道与服务器上运行的配套进程进行通信。借助 Cloud SQL Proxy，您可以安全地访问 Cloud SQL 第二代实例，而无需允许 IP 地址或配置 SSL。代理使用 Cloud SQL API 向 Google Cloud 进行身份验证。您必须在使用代理之前启用 API，并且必须为代理提供有效的用户帐户。
+
+### Cloud Spanner
+Cloud Spanner 是 Google Cloud 的完全托管式关系数据库服务，提供强大的一致性和水平可扩展性。它专为任务关键型 OLTP 应用程序而设计。Cloud Spanner 提供自动同步复制以实现高可用性。Spanner 专为多区域复制而构建，提供业界最高的 SLA 之一：99.999%。
+
+Spanner 非常适合具有关系、结构化和半结构化数据的应用程序，这些应用程序需要高可用性、强一致性和事务性读写。
+
+与 Cloud SQL 不同，Spanner 要求每个表都有一个主键。另一个区别是 Spanner 还支持交错表，其中子行插入到与父行相邻的表中。这样可以提高在父级和子级之间完成联接时的查询性能。
+
+## BigQuery, Microsoft SQL Server images on Google Cloud, and Firebase Storage Options
+### BigQuery
+BigQuery 是一种用于分析的低成本企业数据仓库。这是一项完全托管的服务，这意味着您无需担心数据仓库的管理。BigQuery 可以在几秒钟内扫描 TB 级数据，在几分钟内扫描 PB 级数据。
+
+### 在 Google Cloud 上运行 Microsoft SQL Server
+您可以在 Google Cloud 上运行 Microsoft SQL Server 部署。计算引擎虚拟机预装了 SQL Server，并自动包含来自 Microsoft 的许可。
+
+支持的版本包括 SQL Server Standard、SQL Server Web 和 SQL Server Enterprise。
+
+Google Cloud 上的 Microsoft SQL Server 不是像 Cloud SQL 或 Spanner 那样的托管服务。
+
+### 适用于移动设备的存储选项
+Firebase 是一个移动和 Web 应用开发平台，其中包含一些存储选项，可用于使用 Google Cloud 进行 Web 和移动开发。
+
+Cloud Storage for Firebase 将用户生成的数据和文件存储到 Google Cloud Storage 中。适用于 Cloud Storage 的 Firebase SDK 为开发者提供了简单直观的身份验证。理想的用例包括从您的移动或 Web 应用程序保存用户生成的图像、图片、视频、对象和博客。
+
+Firebase Realtime Database 允许您使用 Firebase 的 NoSQL 云数据库存储和同步数据。数据在所有客户端之间实时同步，以便在应用离线时保持可用。对于需要离线响应能力的移动和 Web 应用程序来说，它是一种理想的存储解决方案。Firebase 实时数据库是 Firebase 的原始数据库。对于大多数开始新项目的开发人员来说，现在建议使用 Firestore，而不是 Firebase Realtime Database。
+
+Firebase 托管是一种快速、安全地为您的网络应用托管静态资源的方式。它是 URL 重写、原子发布管理和 Web 或移动应用程序的 Firebase 集成的理想选择。
+
+### 缓存应用程序数据
+您在 Google Cloud 上运行的应用可以通过利用 Redis 或 Memcached 来实现高水平的性能，而无需管理复杂的部署。Memorystore 支持这两个高度可扩展、可用且安全的开源缓存引擎，并且与每个引擎完全协议兼容。
+
+Memorystore 是可扩展的 Web 应用程序、游戏和流处理的理想选择，在这些应用程序中，分布式内存数据存储允许快速、实时地处理数据。
+
+作为一项完全托管的服务，预配、复制、故障转移和修补都是自动化的。您还可以使用 Cloud Monitoring 监控实例并设置警报。
+
+通过使用 VPC 网络和私有 IP 地址，可以保护 Memorystore 免受 Internet 的侵害。Memorystore 还集成了 Cloud Identity and Access Management。
+
+### 存储一目了然
+![存储一目了然](../images/storage-glance-001.png)
+![存储一目了然](../images/storage-glance-002.png)
+
+## 演示：安全连接到 Cloud SQL 数据库
+1. 创建 Cloud SQL 实例
+2. 使用 gcloud sql 从 Cloud Shell 连接到 Cloud SQL
+3. 创建 Compute Engine 实例
+4. 使用 Cloud SQL 代理连接到 Cloud SQL
+
+## 最终测验：数据存储选项
+略
+
+## 模块复习
+* 将文件存储在 Cloud Storage 中。
+* Cloud Datastore（一个 NoSQL 数据库）很容易上手，用它来存储结构化应用程序数据。
+* Bigtable 是一个高性能宽列、NoSQL 数据库。Bigtable 非常适合处理大量平面数据，例如传感器读数以及来自物联网或 IoT 设备的数据。
+* Cloud SQL 是 MySQL 和 PostgreSQL 的托管服务。您可以使用 Cloud SQL 代理轻松、安全地连接您的 Cloud SQL 实例。
+* 如果您应用程序的关系数据将超出 Cloud SQL 中可以最佳处理的容量，或者您需要覆盖全球，请使用 Spanner。Spanner 是一种完全托管的关系数据库服务，提供强一致性和水平可扩展性。Spanner支持低延迟的全局自动同步复制。
+* BigQuery 是一个完全托管的数据仓库解决方案。使用 BigQuery 进行分析工作负载。
 
 # 使用数据存储的最佳实践
 本模块涵盖使用数据存储的最佳实践。
