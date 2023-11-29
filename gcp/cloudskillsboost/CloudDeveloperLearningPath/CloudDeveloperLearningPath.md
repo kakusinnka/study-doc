@@ -1,7 +1,7 @@
 # Cloud Developer Learning Path
 Cloud Developer 负责设计、构建、分析和维护云原生应用。此学习路线将指引您完成一系列精选点播课程和实验并赢取技能徽章，您可以借此获得对 Cloud Developer 角色至关重要的 Google Cloud 技术实操经验。完成此路线后，请查看 Google Cloud Developer 认证，迈出专业发展历程的下一步。
 
-# 01. [“Google Cloud 导览”实操实验](../labs/GSP282.md)
+# 01. [“Google Cloud 导览” 实操实验](../labs/GSP282.md)
 
 # 02. [Google Cloud Fundamentals: Core Infrastructure](../CloudEngineerLearningPath/GoogleCloudFundamentals_CoreInfrastructure.md)
 
