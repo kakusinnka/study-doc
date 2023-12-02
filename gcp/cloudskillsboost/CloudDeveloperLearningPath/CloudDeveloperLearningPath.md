@@ -5,5 +5,8 @@ Cloud Developer 负责设计、构建、分析和维护云原生应用。此学�
 
 # 02. [Google Cloud Fundamentals: Core Infrastructure](../CloudEngineerLearningPath/GoogleCloudFundamentals_CoreInfrastructure.md)
 
-# 03. [应用程序开发入门](GettingStarted_ApplicationDevelopment.md)
+# 03. [应用程序开发入门](./GettingStarted_ApplicationDevelopment.md)
 在本课程中，应用程序开发人员将学习如何设计和开发无缝集成 Google Cloud 托管服务的云原生应用程序。通过演示、演示和实践实验室的结合，参与者学习如何应用应用程序开发的最佳实践，以及如何使用适当的 Google Cloud 存储服务进行对象存储、关系数据、缓存和分析。
+
+# 04. [保护和集成应用程序的组件](./SecuringIntegratingComponents.md)
+在本课程中，应用程序开发人员将学习如何设计和开发无缝集成 Google Cloud 托管服务的云原生应用程序。通过演示、演示和实践实验室的结合，参与者学习如何开发更安全的应用程序、实施联合身份管理以及使用消息传递、事件驱动处理和 API 网关集成应用程序组件。
