@@ -261,5 +261,61 @@ Google Cloud 提供了多个预先训练的机器学习 （ML） 模型，您可
 * 在 Cloud Console 中，您可以查看与调用次数、执行时间和内存使用情况相关的函数指标。
 
 # 使用 Cloud Endpoints 管理 API
+假设您有一些功能希望作为 API 公开给消费者。自行部署和管理该 API 可能具有挑战性。借助 Cloud Endpoints，您可以在 Google Cloud 上部署和管理 API。在使用 Cloud Endpoints 管理 API 模块中，您将了解如何为 REST API 开发 OpenAPI 配置。您将学习保护和限制对 API 的访问、部署新版本的 API 以及将 API 部署到测试和生产环境的技术。您还将了解如何监控 API 的指标。
+
+## 云端点概念
+![](../images/endpoints-001.png)  
+API 网关使客户端能够通过单个请求从多个服务中检索数据。API 网关创建一个抽象层，并将客户端与分区为微服务的应用程序的详细信息隔离开来。  
+您可以使用 Cloud Endpoints 实现 API 网关。此外，应用的 API 可以在后端运行，例如 App Engine、Google Kubernetes Engine （GKE） 或 Compute Engine。  
+如果您的旧应用程序无法重构并迁移到云中，请考虑将 API 实现为适配器层或外观。然后，每个使用者都可以调用这些现代 API，而不是使用旧协议和不同的接口调用过时的 API。  
+使用 Apigee API 平台，您可以设计、保护、分析和扩展 API，同时无缝利用您的传统后端。  
+
+### 借助 Cloud Endpoints，您可以更轻松地部署和管理 API
+![](../images/endpoints-002.png)  
+Cloud Endpoints 提供部署和管理强大、安全且可扩展的 API 所需的基础架构支持。  
+Cloud Endpoints 支持 OpenAPI 规范和 gRPC API 规范。  
+Cloud Endpoints 支持使用 Firebase、Auth0 和 Google 身份验证进行服务到服务身份验证和用户身份验证。  
+可扩展服务代理、服务管理和服务控制 API 共同验证请求、记录数据和处理大量流量。  
+借助 Cloud Endpoints、Cloud Logging 和 Cloud Trace，您可以查看与流量、延迟、请求和响应大小以及错误相关的详细日志、跟踪列表和指标。
+
+### Cloud Endpoints 支持 REST API 和 gRPC API
+![](../images/endpoints-003.png)  
+基于 JSON HTTP 1.1 的 REST API 很受欢迎且易于使用。要为 REST API 启用 Cloud Endpoints，请根据 OpenAPI 规范在 YAML 文件中创建 API 配置。  
+gRPC 是一种更新、更快的技术。您可以为各种编程语言生成客户端库。然后，应用程序可以进行类型安全的远程服务器调用，就好像它们是本地调用一样。若要为 gRPC API 启用云端点，请使用协议缓冲区创建服务定义，然后使用 gRPC API 规范创建服务配置。  
+Cloud Endpoints 支持将 HTTP JSON 调用转码为 gRPC。客户端可以在使用普通的旧 HTTP JSON 调用时访问 gRPC API。
+
+## REST API 的云端点
+### 开发和部署 API 配置和 API 后端
+![](../images/endpoints-004.png)  
+开发 REST API 后端后，请创建一个描述 Cloud Endpoints API 的 API 配置文件。  
+使用“gcloud service management deploy”命令部署 API 配置。gcloud 命令返回服务配置 ID 和服务名称。在 API 的后端配置文件（例如 App Engine 灵活环境部署的“app.yaml”文件）中指定此服务配置 ID 和服务名称。  
+最后，部署 API 后端。
+
+### 使用 OpenAPI 规范作为接口定义语言
+创建描述云终结点 API 的 API 配置文件。API 配置是一个 YAML 文件，用于使用 OpenAPI 规范描述 API。OpenAPI 规范及其扩展使您能够描述 API 的表面和安全定义。您可以为用户身份验证和服务到服务身份验证指定安全定义。
+
+有各种工具可帮助您创建和管理 OpenAPI 规范。有关更多信息，请参阅有关 Swagger 编辑器、Swagger 工具和集成以及面向 API 开发人员的 OpenAPI Swagger 资源列表的文档。
+
+### 服务管理 API、服务控制 API 和可扩展服务代理构成了 Cloud Endpoints 的核心
+![](../images/endpoints-005.png)  
+部署 API 配置时，它将注册到服务管理 API，并与可扩展服务代理共享。  
+在运行时，Cloud Endpoints 可以接收来自任何来源的调用，例如移动应用程序、Web 应用程序和其他服务。  
+调用将进行负载平衡并路由到可扩展服务代理。可扩展服务代理与服务控制 API 配合使用，根据 API 配置检查请求，并验证请求是否可以传递到后端。  
+如果请求进行身份验证成功，可扩展服务代理会将其传递给 API 后端。  
+服务控制 API 记录有关传入请求的信息。可以使用 Cloud Console 查看这些日志消息和指标。
+
+### 启用用户身份验证和服务到服务身份验证
+
+
+## 实验室概述
+
+## 应用程序开发 - 为测验应用程序部署 API
+
+## 最终测验：使用云端点管理 API
+
+## 总结
+
+## 课程回顾
+
 
 # 
