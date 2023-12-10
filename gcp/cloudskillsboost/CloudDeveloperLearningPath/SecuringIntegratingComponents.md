@@ -305,17 +305,51 @@ Cloud Endpoints 支持将 HTTP JSON 调用转码为 gRPC。客户端可以在使
 服务控制 API 记录有关传入请求的信息。可以使用 Cloud Console 查看这些日志消息和指标。
 
 ### 启用用户身份验证和服务到服务身份验证
+借助 Cloud Endpoints API，您可以对尝试调用前端 API 的用户进行身份验证。Cloud Endpoints 支持使用 Firebase、Auth0 [auth zero]、Google 身份验证和其他自定义身份验证方法进行用户身份验证。用户登录后，身份验证提供商会向 Cloud Endpoints 发送已签名的 JSON Web 令牌（或 JWT，发音为“jot”）。Cloud Endpoints 会检查 JWT 是否由您在 API 配置中指定的提供商签名。
 
+### 您可以限制 API 访问
+要限制对 Cloud Endpoints API 的访问，您可以将身份和访问管理角色分配给特定用户。您可以授予对特定 API 或整个 Cloud 项目的访问权限。
+
+要使用户能够在自己的云项目中启用您的服务并调用其 API，请为他们分配服务使用者角色。这是最常见的用例。您可以分配“服务控制者”、“查看者”、“编辑者”或“所有者”角色，以授予用户查看和管理服务配置和项目的更大权限。
+
+### 您可以在生产环境中部署多个版本的 API
+您可以对 API 后端进行一些小的更改、错误修复和性能增强。这些更改通常是向后兼容的。在这种情况下，最好在 Cloud Endpoints API 配置中递增 version 属性，然后重新部署 API 配置和 API 后端。
+
+如果您所做的更改不向后兼容，并且会破坏 API 使用者的功能，请为每个版本创建单独的 API 配置，从而部署两个版本的 Cloud Endpoints API。“gcloud service management deploy”命令将为每个版本返回不同的服务配置 ID。使用对应的服务配置 ID 更新每个版本的 API 后端配置。
+
+### 您可以在多个环境中部署 API
+在开发和部署 API 时，您将拥有单独的环境来开发和暂存有限版本（例如私有 alpha 版本）和生产环境。
+
+您可以为每个环境创建单独的项目，并为使用者部署具有单独端点的 Cloud Endpoints API 和后端。
+
+### 可以从 Cloud Endpoints 仪表板查看错误日志和指标
+在 Cloud Endpoints 信息中心中，您可以查看与请求、4xx 和 5xx 错误以及延迟相关的指标。您还可以在 Cloud Logging 中查看日志，详细了解每个 API 的请求。
+
+### 您可以允许用户使用 Endpoint Developer Portal 测试和浏览您的 API
+您可以使用 Cloud Endpoints Portal 创建开发人员门户，即 Cloud Endpoints API 用户可以访问的网站，以探索和测试您的 API。在您的门户上，在自己的代码中使用您的 API 的开发人员可以找到您的 API 的 SmartDocs API 参考文档。
+
+SmartDocs 使用 Cloud Endpoints Frameworks 创建的 OpenAPI 文档来生成 API 参考文档。SmartDocs 包括一个“试用此 API”面板，因此开发人员可以在不离开文档的情况下与您的 API 进行交互。
+
+### 让我们看一下选择 Cloud Endpoints 的一些原因。
+![](../images/endpoints-006.png)
+
+### 为什么选择 API Gateway？
+![](../images/api-gateway-001.png)
+
+### Apigee API 平台
+![](../images/apigee-001.png)
 
 ## 实验室概述
+略
 
 ## 应用程序开发 - 为测验应用程序部署 API
+略
 
 ## 最终测验：使用云端点管理 API
+略
 
 ## 总结
+略
 
 ## 课程回顾
-
-
-# 
+略
