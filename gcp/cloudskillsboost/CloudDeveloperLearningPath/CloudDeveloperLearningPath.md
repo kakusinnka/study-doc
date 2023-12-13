@@ -13,3 +13,6 @@ Cloud Developer 负责设计、构建、分析和维护云原生应用。此学�
 
 # 05. [应用程序部署、调试和性能](./AppDeploymentDebuggingPerformance.md)
 在本课程中，应用程序开发人员将学习如何设计和开发无缝集成 Google Cloud 生态系统组件的云原生应用程序。通过演示、演示和动手实验室的结合，参与者学习如何通过将基础设施视为代码来创建可重复的部署，为应用程序选择适当的应用程序执行环境，以及监控应用程序性能。
+
+# 06. [在 Google Cloud 上开发容器化应用程序](./DevelopingContainerizedApplications.md)
+在本课程中，您将了解容器以及如何构建和打包容器映像。本课程的内容包括创建和保护容器的最佳实践，以及为应用程序开发人员介绍 Cloud Run 和 Google Kubernetes Engine。
