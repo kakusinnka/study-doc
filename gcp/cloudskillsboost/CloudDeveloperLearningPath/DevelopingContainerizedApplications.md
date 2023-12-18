@@ -208,5 +208,53 @@ FROM 指令后跟 COPY 指令，该指令将应用程序从先前暂存的映像
 * 如果发现具有指定严重性级别的漏洞，请退出生成。
 
 # Cloud Run 和 Google Kubernetes Engine 简介
+本模块介绍 Cloud Run、其功能以及开发和运行容器化应用程序的用例。它还介绍了 Google Kubernetes Engine。
+
+## 云跑简介
+### 什么是 Cloud Run？
+* 托管计算平台
+* 在 Google 的基础设施上运行
+* 支持基于源代码的部署，可为您构建容器
+* 使用其他 Google Cloud 服务构建功能齐全的应用
+
+### Cloud Run 开发者工作流程
+1. 首先，使用自己喜欢的编程语言编写应用程序。此应用程序应启动侦听 Web 请求的服务器。
+2. 其次，生成应用程序并将其打包到容器映像中。
+3. 最后，将容器映像部署到 Cloud Run。
+
+![](../images/cloud-run-develop-process.png)
+
+### Cloud Run 基于源代码的工作流
+如果使用基于源代码的方法，则部署的是源代码，而不是容器映像。然后，Cloud Run 会使用 Buildpack 构建您的源代码，并将应用及其依赖项打包到容器映像中。
+
+![](../images/cloud-run-develop-process-001.png)
+
+### Cloud Run 支持 HTTPS
+Cloud Run 支持向应用发出安全的 HTTPS 请求。在 Cloud Run 上，您的应用既可以作为服务持续运行，也可以作为作业持续运行。Cloud Run 服务会响应 Web 请求或事件，而作业会执行工作，并在工作完成后退出。
+
+> 预配有效的 TLS 证书和其他配置以支持 HTTPS 请求。
+> 处理传入的请求，解密这些请求，并将其转发到应用程序。
+
+![](../images/cloud-run-develop-https.png)
+
+### Cloud Run 上的应用必须处理 Web 请求
+略
+
+### 记得
+* Cloud Run 可按需运行容器并自动缩放容器
+* 基于容器的应用程序处理 Web 请求
+* 您可以使用基于源代码或基于容器的工作流
+* Cloud Run 负责处理向应用提供 HTTPS 请求的过程
+* 即用即付定价模式
+
+## 在 Cloud Run 上部署容器化应用程序
+![](../images/cloud-run-build-deploy-process.png)
+
+## Cloud Run 的功能和用例
+
+
+## Introduction to Google Kubernetes Engine
+
+## 容器优化的操作系统
 
 # 课程回顾
