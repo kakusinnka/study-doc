@@ -251,6 +251,33 @@ Cloud Run 支持向应用发出安全的 HTTPS 请求。在 Cloud Run 上，您�
 ![](../images/cloud-run-build-deploy-process.png)
 
 ## Cloud Run 的功能和用例
+### 使用 Cloud Run 提供 REST API
+![](../images/cloud-run-rest-api.png)
+
+### Cloud Run 上的电子商务网站
+![](../images/cloud-run-demo-001.png)  
+
+### Cloud Run 上的微服务
+![](../images/cloud-run-demo-002.png)
+
+### Cloud Run 上的事件处理
+![](../images/cloud-run-demo-003.png)
+
+### 使用 Cloud Scheduler 调度 Cloud Run 服务
+![](../images/cloud-run-demo-004.png)
+
+### 使用 Cloud Run 设计 HA 应用
+1. 增量应用程序更新，通过轻松回滚逐步切换流量。
+2. 自动缩放数量，容器来处理所有传入的请求。
+3. 跨可用区和区域的负载均衡。
+
+### 使用服务修订进行增量应用程序更新
+![](../images/cloud-run-build-demo-005.png)
+
+### 使用 Cloud Run 自动扩展
+![](../images/cloud-run-demo-006.png)
+
+### 区域和可用区
 
 
 ## Introduction to Google Kubernetes Engine
