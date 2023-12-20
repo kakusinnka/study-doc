@@ -278,10 +278,138 @@ Cloud Run 支持向应用发出安全的 HTTPS 请求。在 Cloud Run 上，您�
 ![](../images/cloud-run-demo-006.png)
 
 ### 区域和可用区
+![](../images/region-zone.png)  
+Cloud Run 是一项区域性服务，可让您选择部署容器的区域。区域是托管 Google Cloud 资源的特定地理位置。  
+一个区域由三个或更多可用区组成。区域和可用区是一个或多个数据中心中提供的底层物理资源的逻辑抽象。  
+可用区是地域内云资源的部署隔离。可用区被视为区域中的单个故障域。  
+为了实现高可用性，Cloud Run 会将您的容器分布在一个区域中的多个可用区中，从而使您的应用能够灵活应对某个可用区的故障。
 
+### 全局负载均衡
+![](../images/cloud-run-glb.png)  
+Cloud Run 与 Google Cloud 外部 HTTP（S） 全局负载均衡器 （GLB） 集成，可让您在多个区域性 Cloud Run 服务之前公开单个全局 IP 地址。  
+全局负载均衡器将请求从客户端路由到离客户端最近的区域。除了提高应用程序可用性外，GLB 还减少了全球客户端的延迟。
 
-## Introduction to Google Kubernetes Engine
+### 应用程序可移植性
+* 容器映像包含应用程序以及应用程序运行所需的所有内容。
+* 容器本质上是可移植的，可以在任何基于容器的环境中运行。
+* Cloud Run 平台与 Knative 兼容，后者实现了与 Cloud Run 相同的容器运行时合约。
+
+### 使用 Cloud Run 时的注意事项
+* 自动缩放成本
+* 与下游系统的扩展不匹配
+* 工作负载迁移
+
+### 记得
+* Cloud Run 会按需运行和自动扩展您的应用。
+* 将 Cloud Run 用于处理 Web 请求的应用，包括微服务、事件处理工作流以及计划任务或作业。
+* 自动扩展、增量应用程序更新和内置负载均衡可帮助您构建高度可用的应用程序。
+* Cloud Run 旨在提高开发人员的工作效率。
+
+## Google Kubernetes Engine 简介
+### 谷歌 Kubernetes 引擎 （GKE）
+Google Kubernetes Engine （GKE） 是一项完全托管的 Kubernetes 服务。Kubernetes 是一个开源容器编排系统，用于自动化软件部署、扩展和管理。该项目最初由谷歌设计，现在由云原生计算基金会（CNCF）维护。  
+Google Kubernetes Engine 提供了一个托管环境，用于在 Google 基础架构上部署、管理和扩展容器化应用。  
+GKE 环境由多台计算机或节点（具体而言是 Compute Engine 实例）组成，这些计算机或节点组合在一起形成一个集群。
+
+### Google Kubernetes Engine （GKE） 的优势
+管理像 Kubernetes 这样的容器编排系统需要做很多工作，从安装和配置到升级、扩展和满足服务级别协议 （SLA）。  
+借助 Google Kubernetes Engine，您可以享受高级集群管理功能的优势，其中包括：
+* 轻松创建和管理集群。
+* 负载均衡。
+* 自动缩放。
+* 自动升级群集节点软件。
+* 自动修复以保持节点运行状况和可用性。
+* 使用 Google Cloud 的运营套件进行日志记录和监控，以实现集群可见性。
+
+### GKE 集群架构 - 控制平面
+![](../images/gke-control-plane.png)
+
+GKE 集群由一个或多个控制平面和称为节点的工作机器组成。控制平面和节点构成了 Kubernetes 集群编排系统。GKE 负责管理集群的整个底层基础架构，包括控制平面、节点和所有系统组件。
+
+控制平面管理在集群的所有节点上运行的所有内容。控制平面计划容器工作负载并管理工作负载的生命周期、扩展和升级。控制平面还管理这些工作负载的网络和存储资源。控制平面和节点使用 Kubernetes API 相互通信。
+
+控制平面是集群的统一端点，运行 Kubernetes API 服务器进程 （kube-apiserver） 来处理 API 请求。要与控制平面交互，您可以使用以下命令进行 Kubernetes API 调用：
+* HTTP/gRPC 请求。
+* 命令行客户端，例如 kubectl 或 Google Cloud 控制台。
+
+API 服务器进程是集群所有通信的中心。所有内部集群组件（如节点、系统进程和应用程序控制器）都充当 API 服务器的客户端。
+
+### GKE 集群架构 - 节点
+![](../images/gke-nodes.png)
+
+ 节点是运行容器化应用和其他工作负载的 Compute Engine 虚拟机 （VM）。
+
+ 节点运行必要的服务，以支持构成集群工作负载的容器。其中包括运行时和 Kubernetes 节点代理 （kubelet），它与控制平面通信，并负责启动和运行在节点上调度的容器。
+
+ Pod 是可以在 Kubernetes 中创建和管理的最小可部署计算单元。Pod 是一组由一个或多个容器组成的容器，具有共享的存储和网络资源，以及有关如何运行容器的规范。
+
+ Pod 通常不是直接创建的，而是使用 Kubernetes 工作负载资源（如部署或作业）创建的。
+
+ Pod 是短暂的一次性实体。创建 Pod 时，它被安排在集群中的节点上运行。Pod 将保留在该节点上，直到它完成执行、Pod 对象被删除、Pod 因资源不足而被逐出或节点失败。
+
+### Kubernetes 部署
+![](../images/gke-deployment.png)
+
+使用 Kubernetes，您可以发出 API 请求，为集群中的对象指定所需的状态。Kubernetes 尝试持续保持该状态。
+
+Kubernetes 允许您以命令式或声明式方式在 API 中配置对象。
+
+部署是在 Kubernetes 中创建和管理 Pod 的声明性方式。它定义了一个 ReplicaSet，用于指定所需的 Pod 副本数。ReplicaSet 的目的是维护一组稳定的副本 Pod 在任何给定时间运行。
+
+Kubernetes 中的部署控制器以受控的速率将部署的实际状态更改为所需状态。
+
+部署是使用 YAML 文件定义的，该文件指定所需的 Pod 数量，并使用选择器标签来标识要包含在部署中的 Pod。它还包括一个规范，用于标识将在 Pod 中运行的容器。
+
+### Kubernetes 服务
+![](../images/gke-service.png)
+
+在 Kubernetes 中，服务是一种网络抽象，它定义了一组逻辑 Pod 以及用于访问它们的策略。
+
+服务所针对的 Pod 集通常由选择器确定。
+
+服务具有固定的 IP 地址，该地址在服务的生命周期内持续存在，即使其成员 Pod 的 IP 地址发生变化也是如此。
+
+由于 Pod 是临时的，因此其 IP 地址会随着删除和重新创建而更改。因此，直接使用 Pod IP 地址是没有意义的。
+
+客户端改为调用服务 IP 地址，并且其请求在作为服务成员的 Pod 之间进行负载均衡。
+
+该示例显示了在 Kubernetes 集群上运行的应用程序的前端服务和后端服务。前端服务的成员 Pod 使用其固定 IP 地址与后端服务中的 Pod 进行通信。
+
+### Kubernetes 服务清单
+![](../images/gke-service-manifest.png)
+
+### Kubernetes 卷
+![](../images/gke-volume.png)
+
+Kubernetes 卷是 Pod 中所有容器都可以访问的目录。要使用卷，Pod 需要指定要为 Pod 提供哪些卷，以及将这些卷挂载到容器中的位置。挂载卷后，Pod 中的容器将联机，其余的 Pod 初始化完成。
+
+Kubernetes 中有许多不同类型的卷。ConfigMap 和 Secret 是与 Pod 的生命周期耦合的卷类型，当 Pod 不复存在时，它们将不复存在。或者，PersistentVolume 有自己的生命周期，独立于 Pod。
+
+### 用 GKE 开发应用程序
+![](../images/gke-develop-app.png)
+
+### 开发和部署工作流
+![](../images/develop-workflow.png)
+
+### 记得
+* Google Kubernetes Engine 提供了一个托管环境，用于部署、管理和扩展容器化应用。
+* GKE 集群由一个或多个控制平面和称为节点的工作机器组成。
+* 控制平面调度容器工作负载，并管理节点上工作负载的生命周期。
+* Pod 是一组一个或多个容器，是 Kubernetes 中最小的可部署计算单元。
+* 在 Kubernetes 中，您可以命令式或声明式地在 API 中配置各种对象。
 
 ## 容器优化的操作系统
+### 容器优化操作系统
+除了 Cloud Run 和 Google Kubernetes Engine 之外，Google Cloud 还提供容器优化操作系统，这是一种可用于运行容器化应用的操作系统。
+
+容器优化型操作系统是针对 Compute Engine 虚拟机的映像，针对运行 Docker 容器进行了优化。
+
+容器优化操作系统由 Google 维护，基于开源 Chromium OS 项目。借助容器优化操作系统，您可以在 Google Cloud 上快速启动 Docker 容器，并高效、安全地运行它们。
+
+### 容器优化操作系统 - 优点和局限性
+![](../images/container-opeimized-os.png)
+
+### 何时使用容器优化操作系统
+![](../images/container-opeimized-os-use.png)
 
 # 课程回顾
