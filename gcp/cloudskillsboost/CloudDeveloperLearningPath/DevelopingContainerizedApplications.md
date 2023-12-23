@@ -413,3 +413,4 @@ Kubernetes 中有许多不同类型的卷。ConfigMap 和 Secret 是与 Pod 的�
 ![](../images/container-opeimized-os-use.png)
 
 # 课程回顾
+略
