@@ -374,13 +374,143 @@ Secret Manager 是一项 Google Cloud 服务，可让您存储、管理和访问
 了解如何开发和测试可在 Cloud Run 上运行的应用。在 Cloud Run 上管理服务部署和修订，并了解如何将您的 Cloud Run 服务与 Google Cloud 中的其他服务集成。
 
 ## 开发与测试
+### 您的应用是否适合 Cloud Run？
+如果满足以下条件，您的应用程序将非常合适：
+* 为通过 HTTP、HTTP/2、Websocket 或 gRPC 传递的请求、流或事件提供服务。
+* 不需要本地持久性文件系统，可与本地临时文件系统或网络文件系统配合使用。
+* 每个实例不需要超过 8 个 CPU 或 32 GiB 内存。
+* 容器化，或用 Go、Java、Node.js、Python 或 .NET 编写。
+
+### 容器运行时协定
+* 使用任何编程语言编写应用程序，并使用任何基础映像将其容器化。
+* 作为一项服务，容器必须在正确的端口上侦听请求。
+* 在配置的超时设置内从容器发送响应。
+* 作为一项作业，成功完成后，容器必须以退出代码 0 退出，如果失败，则必须使用非零退出代码退出。
+* 请勿实现任何传输层安全性，因为 Cloud Run 会透明地处理 HTTPS。
+
+### 文件系统和数据存储访问
+![](../images/cloud-run-data-store.png)
+
+### Cloud Code
+* 适用于 VS Code、IntelliJ 和 Cloud Shell 的插件
+* IDE 支持创建和部署 Kubernetes 和 Cloud Run 应用
+* 提供示例应用程序以及用于运行和调试的配置
+* 简化的体验，支持与 Google Cloud 工具轻松集成
+* 支持日志流式传输和查看
+
+### 本地检测
+Google Cloud CLI 包含一个用于模拟 Cloud Run 的本地开发环境，该环境可以从源代码构建容器，在本地计算机上运行容器，并在源代码更改后自动重新构建容器。
+
+### 记得
+* 使用 Cloud Run 运行以任何编程语言编写的容器化应用。
+* 借助基于源代码的方法，使用 Buildpack 构建源代码并部署到 Cloud Run。
+* 作为在 Cloud Run 上运行的服务，您的容器必须在配置的端口上侦听请求，并在指定时间内返回响应。
+* 将 Cloud Code 与常用的 IDE 结合使用，轻松创建、部署应用并将其与 Google Cloud 集成。
+* 在部署到 Cloud Run 之前，先使用 Cloud Code、gcloud CLI 或 Docker 在本地测试您的应用。
 
 ## 管理服务部署和修订
+### 构建容器
+![](../images/cloud-run-build-container.png)
+
+### 将容器部署到 Cloud Run
+![](../images/deploy-container-to-cloud-run.png)
+
+### 将容器部署到 Cloud Run - Artifact Registry
+![](../images/deploy-container-to-cloud-run-artifact-registry.png)
+
+### 将容器映像推送到 Artifact Registry
+![](../images/push-container-images-to-artifact-registry.png)
+
+### 从 Artifact Registry 拉取容器映像
+![](../images/pull-container-image-from-artifact-registry.png)
+
+### 创建或更新 Cloud Run 服务
+![](../images/cloud-run-create-update-service.png)
+
+### 部署新的服务修订
+1. 修改应用程序源代码。
+2. 生成应用程序并将其打包到容器映像中。
+3. 将容器映像推送到 Artifact Registry。
+4. 将容器映像重新部署到 Cloud Run 服务。
+
+### 更新服务
+![](../images/cloud-run-update-service.png)
+
+### 服务修订是不可变的
+![](../images/cloud-run-revision-immutable.png)
+
+### 提供流量
+![](../images/cloud-run-serving-traffic.png)
+
+![](../images/cloud-run-serving-traffic-001.png)
+
+### 固定流量
+![](../images/cloud-run-pinning-traffic.png)
+
+### 标记服务修订
+![](../images/cloud-run-tag-revision.png)
+
+### 拆分流量
+![](../images/cloud-run-split-traffic.png)
+
+### 记得
+* 部署到 Cloud Run 时，您可以使用存储在 Artifact Registry、Container Registry 或 Docker Hub 中的容器映像。Google 建议使用 Artifact Registry。
+* 为确保 Cloud Run 上的容器能够可靠、快速地启动，Cloud Run 会在本地复制并存储容器映像。
+* 首次部署容器映像时，Cloud Run 会创建服务及其第一个修订版本。每个服务只有一个容器映像。
+* 更改 Cloud Run 服务的任何配置设置都会导致创建新的修订版本。
+* 借助 Cloud Run，您可以根据服务收到的请求所占的百分比，在服务修订版之间分配流量。
 
 ## 与 Google Cloud 服务集成
+### 连接到 Google Cloud 服务
+![](../images/cloud-run-connect-gcp-services.png)
+
+### 将 Cloud Run 连接到 Memorystore
+![](../images/cloud-run-connect-memorystore.png)
+
+![](../images/cloud-run-connect-memorystore-001.png)
+
+### Cloud Run 集成
+1. 创建集成以将 Cloud Run 服务连接到 Memorystore for Redis 缓存。
+2. 系统会自动创建具有可配置内存大小的完全配置的 Redis 缓存。
+3. 系统会为该服务创建新的 Cloud Run 服务修订版。
+4. 还为服务配置了网络和环境变量，以访问 Redis 缓存。
+
+### 从 Pub/Sub 触发
+![](../images/cloud-run-trigger-from-pubsub.png)
+
+### Pub/Sub 集成
+1. 创建 Pub/Sub 主题。
+2. 在 Cloud Run 服务中添加代码，以从 HTTP 请求中提取消息。
+3. 代码应使用适当的成功或错误 HTTP 状态代码进行响应。
+4. 创建一个具有调用服务所需权限的服务帐户。
+5. 为主题创建 Pub/Sub 推送订阅，并使用服务帐户和服务的终结点 URL 对其进行配置。
+
+### 将 Cloud Run 连接到 Cloud SQL
+![](../images/cloud-run-connect-cloud-sql.png)
+
+### 从应用连接到 Cloud SQL
+* 使用私有 IP 地址通过无服务器 VPC 访问 Cloud SQL 进行连接。
+* Cloud Run 使用 Cloud SQL 身份验证代理通过公共 IP 地址连接到 Cloud SQL。
+* 从应用代码连接到 Cloud SQL 数据库时，使用 Secret Manager 存储敏感信息，例如数据库凭据。
+* 在应用代码中使用连接池来限制 Cloud Run 服务使用的最大连接数。
+
+### 记得
+* 使用客户端库从 Cloud Run 应用连接到受支持的 Google Cloud 服务。
+* 使用每个服务的身份来限制 Cloud Run 服务可以访问的 API 和资源。
+* 使用无服务器 VPC 访问从 Cloud Run 服务连接到 Memorystore for Redis 实例。
+* 发布/订阅消息会通过 HTTP 请求传送到 Cloud Run 中的容器。
+* 使用 Secret Manager 存储敏感的数据库凭据，并将其作为环境变量传递到您的服务，或作为卷挂载到 Cloud Run 中。
 
 ## 将 Cloud PubSub 与 Cloud Run 结合使用
+![](../images/cloud-run-lab-001.png)
 
 ## 模块回顾
+您了解了可以使用 Cloud Run 运行容器化应用，该应用可以用任何编程语言编写。
+
+我们讨论了将 Cloud Code 与常用的 IDE 结合使用，以便轻松创建、部署应用并将其与 Google Cloud 集成，以及如何使用 Cloud Code、gcloud CLI 或本地 Docker 测试应用。
+
+您了解了如何部署 Cloud Run 服务，以及如何在多个服务修订版之间拆分请求流量。
+
+最后，我们讨论了如何将 Cloud Run 上的应用与其他 Google Cloud 服务（例如 Memorystore、Pub/Sub 和 Cloud SQL）集成。
 
 # 课程回顾

@@ -19,3 +19,5 @@ Cloud Developer 负责设计、构建、分析和维护云原生应用。此学�
 
 # 07. [使用 Cloud Run on Google Cloud 开发应用程序：基础知识](./DevelopAppwithCloudRun.md)
 本课程介绍用于运行应用程序的 Cloud Run 无服务器平台。在本课程中，您将了解 Cloud Run 的基础知识、其资源模型和容器生命周期。您将了解服务标识、如何控制对服务的访问，以及如何开发和测试应用程序在本地部署到 Cloud Run。该课程还教您如何整合与 Google Cloud 上的其他服务一起使用，以便您可以构建功能齐全的应用程序。
+
+# 08. []
