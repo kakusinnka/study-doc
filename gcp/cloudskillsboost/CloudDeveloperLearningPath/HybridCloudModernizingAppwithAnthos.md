@@ -21,16 +21,16 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
 * 代码现代化包括使用云原生概念（如容器、微服务和 API 驱动的自动化）来重构旧工作负载。
 * 流程现代化是引入 DevOps 方法，包括新软件的持续集成和持续交付 （CI/CD）。
 
-## 实现现代基础设施的收益
+### 实现现代基础设施的收益
 * 加快开发速度，缩短上市时间。
 * 提高可靠性和服务质量。
 * 降低成本，同时提高安全性并降低风险。
 * 考虑其他因素，例如员工满意度。
 
-## 迁移策略和目标
+### 迁移策略和目标
 ![](../images/MigrationStrategiesDestinations.png)
 
-## 容器化和 Kubernetes 的业务驱动因素
+### 容器化和 Kubernetes 的业务驱动因素
 * 节省基础设施成本
   * 更高的密度（60-80%）：单个节点中有多个容器
   * 操作系统更新和内核补丁
@@ -41,7 +41,7 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
   * 使用 CI/CD 流水线进行现代应用生命周期管理
   * 快速部署，“一次编写，随处运行”
 
-## Migrate for Anthos 和 GKE 可自动实现容器化
+### Migrate for Anthos 和 GKE 可自动实现容器化
 * 消除应用重写开发成本。
 * 生成特定于应用程序的 CI/CD 项目，例如 Docker 映像、Dockerfile 和部署 yaml。
 * 将存储重构为支持 Kubernetes 的 PVC。
@@ -52,10 +52,11 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
 * 支持的工作负载操作系统类型：Linux 和 Windows 发行版
 * 可用的用户界面：Google Cloud Console、Google Cloud CLI、API
 
-## Migrate for Anthos 和 GKE 支持特定的操作系统和 GKE 版本
+## 工作负载发现和迁移评估
+### Migrate for Anthos 和 GKE 支持特定的操作系统和 GKE 版本
 如前所述，Migrate for Anthos 和 GKE 可自动执行工作负载的容器化和执行，并支持特定的操作系统和 GKE 版本。其中包括 CentOS、Debian、RHEL、SUSE、Ubuntu 和 Windows 操作系统。用于处理迁移的 GKE 集群必须使用 Ubuntu 容器优化操作系统，并且必须是 1.13 或更高版本。
 
-## 适合 Migrate for Anthos 的工作负载
+### 适合 Migrate for Anthos 的工作负载
 通常，如果支持容器化使用，并且提供了没有太多复杂性的容器化路径，则工作负载非常适合 Migrate for Anthos。某些工作负载是特别好的候选者。例如：
 * Web/应用程序服务器
 * 无状态 Web 前端
@@ -71,7 +72,7 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
 * 兼容许可（与操作系统、硬件、虚拟机管理程序无关）
 * 兼容的第三方供应商支持合同
 
-## 不适合 Migrate for Anthos 的工作负载
+### 不适合 Migrate for Anthos 的工作负载
 * 具有特殊内核驱动程序（例如内核模式 NFS）的 VM
 * 对特定硬件的依赖关系
 * 具有与某些硬件 ID 注册绑定的许可证的软件
@@ -82,8 +83,59 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
 * 需要整个节点容量的基于 VM 的工作负载，例如高性能、高内存数据库（如 SAP HANA）
 * 依靠 Compute Engine 实时迁移来满足高可用性要求的单实例工作负载
 
-## 使用 StratoZone 和适合性评估工具自动发现和评估工作负载
+### 使用 StratoZone 和适合性评估工具自动发现和评估工作负载
 略
+
+### StrataZone 收集数据
+略
+
+### 适合性评估工具可验证容器化的适用性
+略
+
+### 使用适合性评估工具评估工作负载的步骤
+略
+
+### 以 CSV、JSON 和 HTML 格式提供的适合性评估报告
+略
+
+### 适合评估报告，使工作负载符合迁移条件
+略
+
+## 将应用程序迁移到容器
+### 设置和规划
+1. 确定迁移的来源 让我们逐步了解迁移过程步骤。第一步是确定迁移的来源;也就是说，确定是要迁移 Linux 还是 Windows VM，以及源提供程序，例如 VMware、AWS、Azure 或 Compute Engine。源提供程序是要迁移到 GKE 或 Anthos 的虚拟机所在的位置。
+2. 在 VMware、AWS 或 Google Cloud 中创建处理集群 如果您的迁移源是 VMware 或 AWS，则可以使用同一位置的本地 Anthos 集群来迁移工作负载。如果您的目标是 Google Cloud，或者您是从其他来源迁移的，则必须在 Google Cloud 中设置 GKE 集群才能处理迁移。
+2. GKE 处理集群使用 Migrate for Compute Engine Migrate for Compute Engine 对于 VMware、AWS 和 Azure，当目标是 Google Cloud 时，需要安装 Migrate for Compute Engine 来促进工作负载传输到 Google Cloud。
+3. 添加迁移源 Migrate for Compute Engine 通过运行 migctl source create 命令或使用 Google Cloud Console 来定义要从中迁移的迁移源。此过程将添加从您指定的源迁移所需的详细信息：VMware、AWS、Azure、Compute Engine 或本地。
+4. 创建迁移计划 Migrate for Compute Engine 迁移计划是执行迁移操作以及使用 migctl 和 Google Cloud Console 监控迁移活动和状态的中心对象。迁移对象作为 Kubernetes 自定义资源定义 （CRD） 实现，并与其他资源（如 Kubernetes PersistentVolumeClaim）一起包含在迁移计划中。
+
+![](../images/anthos-002.png)
+
+![](../images/anthos-003.png)
+
+![](../images/anthos-004.png)
+
+![](../images/anthos-005.png)
+
+### 迁移和现代化
+5. 自定义迁移计划 Migrate for Compute Engine 使用 migctl migration get 命令获取迁移文件，以便在继续执行之前查看和自定义它们。迁移计划的详细信息用于从源 VM 中提取工作负载的容器项目，并生成可用于将容器映像部署到其他群集（例如生产群集）的 Kubernetes 部署文件。
+6. 生成容器工件 Migrate for Compute Engine 
+7. 将工作负载部署到 GKE 或 Anthos 集群 Migrate for Compute Engine
+
+![](../images/anthos-006.png)
+
+![](../images/anthos-007.png)
+
+![](../images/anthos-008.png)
+
+### 优化
+在此阶段，您可以使用 Istio 添加访问策略、加密和身份验证，并使用 Cloud Logging 和 Cloud Monitoring 进行监控和记录，所有这些都是通过更改配置而不是重新构建应用程序来实现的。您还可以使用 Cloud Build 等工具与 CI/CD 管道集成，以便实施第 2 天维护过程，例如软件包和版本更新。
+
+此类维护操作利用生成的 Dockerfile 和捕获的系统映像层。当这些文件与 Migrate for Anthos 和 GKE 运行时层结合使用时，可以将这些文件构建到可执行容器映像中。
+
+此外，您还可以更改源代码。进行所需的更新后，必须创建应用程序二进制文件（在本例中，它是一个新的 jar 文件，因为它是一个 Java 应用程序），并将它们添加到 Dockerfile 的末尾。
+
+您还可以重新构建容器平台，并在 GKE Autopilot 或 Cloud Run 等无服务器产品中运行它，只需稍作更改。例如，将迁移的容器部署到 Cloud Run 时，只需将环境变量 HC_V2K_SERVICE_MANAGER设置为 true。
 
 ## 
 
