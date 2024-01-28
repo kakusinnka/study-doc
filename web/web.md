@@ -6,3 +6,6 @@ JavaScript（JS）是一种具有函数优先特性的轻量级、解释型或�
 
 ## [RxJS](./RxJS/RxJs.md)
 RxJS 是一个库，用于使用可观察序列来编写异步和基于事件的程序。
+
+## [Jest](./jest/jest.md)
+Jest 是一款优雅、简洁的 JavaScript 测试框架。
