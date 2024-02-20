@@ -5,7 +5,7 @@
 在参加 Cloud Developer 考试之前，建议您拥有 3 年以上 Google Cloud 产品和解决方案的实践经验。
 
 ## 第 2 步：了解考试内容
-[考试指南](https://cloud.google.com/learn/certification/guides/cloud-developer) 包含考试中可能包含的主题的完整列表。查看考试指南以确定您的技能是否与考试主题相符。
+[考试指南](./ExamGuide.md) 包含考试中可能包含的主题的完整列表。查看考试指南以确定您的技能是否与考试主题相符。
 
 ## 第 3 步：复习样题
 熟悉云开发人员考试中可能涵盖的考试问题格式和 [示例内容](https://docs.google.com/forms/d/e/1FAIpQLSfFeB8zBNi2q-ar0V7iIguhk2e6P-UkrJ8OJfg6n0k6HcYLDQ/viewform)。

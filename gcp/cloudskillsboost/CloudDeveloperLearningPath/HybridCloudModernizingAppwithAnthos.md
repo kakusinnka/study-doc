@@ -137,9 +137,50 @@ Anthos 上的无服务器 - 介绍了在 Google Cloud 和 Anthos 集群上使用
 
 您还可以重新构建容器平台，并在 GKE Autopilot 或 Cloud Run 等无服务器产品中运行它，只需稍作更改。例如，将迁移的容器部署到 Cloud Run 时，只需将环境变量 HC_V2K_SERVICE_MANAGER设置为 true。
 
-## 
-
 # 适用于 Anthos 的现代 CI/CD
+## 学习目标
+* 了解创建在混合环境中工作的现代、无服务器、持续集成和持续交付 （CI/CD） 管道的好处。
+* 了解实施 CI/CD 管道所需的托管服务，并将其部署到 Google Cloud 和 Anthos 集群上。
+* 保护您的软件供应链，确保仅构建可信、经过测试和验证的软件并将其部署到您的基础架构中。
+* 利用 Google Cloud Marketplace 中值得信赖的第三方软件在您的 Anthos 基础架构中运行。
+
+## Google Cloud 中的 CI/CD
+### 应用现代化：应用程序交付 CI/CD
+1. 通过现代应用程序堆栈、基础架构和流程释放公司的业务敏捷性。
+2. 完全托管、可扩展的基础架构，可帮助您专注于核心业务。
+3. 提供企业控制，例如正确执行 Kubernetes、提供适当的安全性等。
+
+### CI/CD 之旅中的挑战
+* 基础结构成本：CI/CD 听起来不错，但创建生产、暂存、开发等的固定副本的成本通常很高。
+* 目标环境之间的差异：任何环境都不会是生产的完美副本，因此变化会导致分歧和管道复杂性增加。
+* 大规模可见性：当您拥有数十个或数百个管道时，如何全面了解这些管道的运行状况或活动？
+* 开发人员入职：随着环境配置变得越来越复杂，开发人员入职会受到影响。
+* 职责和关注点的分离：当您需要根据角色拆分访问权限以符合合规性时，单个 CI/CD 工具会存在问题。
+* 可观测性集成：将 Ops 与日志记录和监控相结合，可以增加协调和依赖关系，这反过来又会导致更长的平均恢复时间和更困难的根本原因分析。
+
+### Google Cloud 中的 DevOps 和 CI/CD
+![](../images/DevOps-CICD-001.png)
+
+* Cloud Code 是一个用于集成代码环境（或 IDE）的插件，例如 Visual Studio Code 和 IntelliJ，可用于编写、调试和部署 Kubernetes 应用程序。它还具有预配置的示例，因此您可以在几秒钟内开始运行代码。
+* Cloud Source Repositories 是一项完全托管的 Git 服务，可用于存储代码并将触发器配置到 CI/CD 管道。
+* Cloud Build 是一个完全无服务器的 CI/CD 平台。在云中以任何规模构建、测试和部署应用程序。
+* Artifact Registry 存储、管理、扫描和保护容器映像和包。
+* Google Cloud Deploy 是一个声明性持续交付系统。
+* 最后，在您选择的平台上生产代码后，您可以使用 Cloud Logging 和 Cloud Monitoring 来观察您的应用。
+
+### Cloud Build 是一个不拘一格的持续自动化平台
+![](../images/DevOps-CICD-002.png)
+
+![](../images/DevOps-CICD-003.png)
+
+
+## 专用网络中的 CI/CD
+
+## 本地和多云环境中的 CI/CD
+
+## 保护软件供应链
+
+## 部署第三方软件
 
 # Anthos 上的无服务器
 
