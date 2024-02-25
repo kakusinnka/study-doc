@@ -25,3 +25,6 @@ Cloud Developer 负责设计、构建、分析和维护云原生应用。此学�
 
 # 09. [使用 Anthos 实现混合云应用程序现代化](./HybridCloudModernizingAppwithAnthos.md)
 Anthos 系列的第四门课程帮助学生考虑在 Anthos 环境中实现应用程序和服务现代化的多种方法。主题包括优化无服务器平台上的工作负载以及将工作负载迁移到 Anthos。本课程是第三门课程 Anthos on Bare Metal 的延续，并假设您对该课程所涵盖的主题有直接经验。
+
+# 10. [无服务器 Firebase 开发](./ServerlessFirebaseDevelopment.md)
+通过完成无服务器 Firebase 开发课程来获得技能徽章，您将在其中学习如何使用 Firebase 执行以下操作：构建无服务器 Web 应用、将数据导入 Firestore 数据库、使用 Cloud Build 创建构建管道以自动化部署、构建 Google助理应用程序。
