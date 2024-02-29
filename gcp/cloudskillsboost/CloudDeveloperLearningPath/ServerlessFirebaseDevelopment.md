@@ -39,6 +39,20 @@
 ![](../images/GSP747-001.png)
 
 # [无服务器 Firebase 开发：挑战实验室](https://www.cloudskillsboost.google/course_sessions/11793742/labs/451335)
+在本实验中，您将使用 Rest API 和 Firestore 数据库创建前端解决方案。Cloud Firestore 是一个 NoSQL 文档数据库，是 Firebase 平台的一部分，您可以在其中大规模存储、同步和查询移动应用和 Web 应用的数据。实验室内容基于通过使用 Google Cloud 无服务器基础架构解决真实场景。
 
+您将构建以下体系结构：  
 ![](../images/GSP334-001.png)
+
+## 任务 1.创建 Firestore 数据库
+使用 Cloud Console 创建
+
+## 任务 2.填充数据库
+![](../images/GSP334-002.png)
+
+### index.js
+[node index.js netflix_titles_original.csv](https://github.com/rosera/pet-theory/blob/main/lab06/firebase-import-csv/solution/index.js)
+
+## 任务 3.创建 REST API
+![](../images/GSP334-003.png)
 
