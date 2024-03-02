@@ -48,11 +48,15 @@
 使用 Cloud Console 创建
 
 ## 任务 2.填充数据库
-![](../images/GSP334-002.png)
-
-### index.js
-[node index.js netflix_titles_original.csv](https://github.com/rosera/pet-theory/blob/main/lab06/firebase-import-csv/solution/index.js)
+[![](../images/GSP334-002.png)](https://github.com/rosera/pet-theory/blob/main/lab06/firebase-import-csv/solution)
 
 ## 任务 3.创建 REST API
-![](../images/GSP334-003.png)
+[![](../images/GSP334-003.png)](https://github.com/rosera/pet-theory/tree/main/lab06/firebase-rest-api/solution-01)
 
+## [任务 4.Firestore API 访问权限](https://github.com/rosera/pet-theory/tree/main/lab06/firebase-rest-api/solution-02)
+
+## 任务 5.部署暂存前端
+[![](../images/GSP334-004.png)](https://github.com/rosera/pet-theory/tree/main/lab06/firebase-frontend)
+
+## 任务 6.部署生产前端
+[![](../images/GSP334-005.png)](https://github.com/rosera/pet-theory/tree/main/lab06/firebase-frontend/public)
