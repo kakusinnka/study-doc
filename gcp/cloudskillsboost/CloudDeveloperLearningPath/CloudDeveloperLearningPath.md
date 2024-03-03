@@ -31,3 +31,6 @@ Anthos 系列的第四门课程帮助学生考虑在 Anthos 环境中实现应�
 
 # 11. [在 Google Cloud 中部署到 Kubernetes](./DeployKubernetes.md)
 配置和构建映像以运行和调试 Docker 容器、构建 Kubernetes Engine 集群以及使用 kubectl 部署和持续交付技术部署 Kubernetes 应用程序来管理它们。
+
+# 12. [无服务器 Cloud Run 开发](./ServerlessCloudRunDevelopment.md)
+使用 Cloud Run 执行以下操作：连接和利用 Cloud Storage 中存储的数据，使用 Cloud Run 和 Pub/Sub 构建弹性异步系统，构建使用 Cloud Run 的 REST API 网关，使用 Cloud Run 构建和公开服务。
