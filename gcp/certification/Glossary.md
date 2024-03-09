@@ -65,85 +65,93 @@
 | Confidential Computing                        | 机密计算           | 利用机密虚拟机、机密 GKE、机密 Dataflow、机密 Dataproc 和 Confidential Space 保护使用中的数据。 |
 
 ## 生僻词
-| 英语                 | 汉语         | 日语                         |
-| -------------------- | ------------ | ---------------------------- |
-| activity             | 活动的       | アクティビティ               |
-| atomic               | 原子性       | アトミック                   |
-| processor            | 处理器       | プロセッサ                   |
-| scaling              | 缩放         | スケーリング                 |
-| sink                 | 接收器       | シンク                       |
-| volatility           | 波动性       | ボラティリティ               |
-| hybrid               | 混合         | ハイブリッド                 |
-| driver               | 驱动器       | ドライバ                     |
-| Architect            | 构架师       | アーキテクト                 |
-| solution             | 解决方案     | ソリューション               |
-| permission           | 允许         | パーミッション               |
-| secondary            | 次要的       | セカンダリ                   |
-| ephemeral            | 短暂的       | エフェメラル                 |
-| drain                | 排走         | ドレイン                     |
-| Compliance           | 合规性       | コンプライアンス             |
-| Archive              | 存档         | アーカイブ                   |
-| Latency              | 延迟         | レイテンシー                 |
-| Root Node            | 根节点       | ルートノード                 |
-| Policy               | 策略         | ポリシー                     |
-| Tenant               | 租户         | テナント                     |
-| Algorithm            | 算法         | アルゴリズム                 |
-| Infrastructure       | 基础设施     | インフラストラクチャ         |
-| Approach             | 方法         | アプローチ                   |
-| Private              | 私人的       | プライベート                 |
-| Bare Metal           | 裸机         | ベアメタル                   |
-| Network Fabric       | 网络结构     | ネットワークファブリック     |
-| On-Premises          | 本地         | オンプレミス                 |
-| Zero Trust           | 零信任       | ゼロトラスト                 |
-| Throughput           | 吞吐量       | スループット                 |
-| Collection           | 采集         | コレクション                 |
-| Driven               | 驱动的       | ドリブン                     |
-| Onboarding           | 入职         | オンボーディング             |
-| Onboarding Process   | 新手入门流程 | オンボーディングプロセス     |
-| Streaming            | 流式传输     | ストリーミング               |
-| Scalability          | 可扩展性     | スケーラビリティ             |
-| Preparation          | 准备         | プレパレーション             |
-| Section              | 部分         | セクション                   |
-| Chunk                | 块           | チャンク                     |
-| Scientist            | 科学家       | サイエンティスト             |
-| Variation            | 变化         | バリエーション               |
-| Flexible             | 灵活的       | フレキシブル                 |
-| Runtime              | 运行时       | ランタイム                   |
-| Thumbnail            | 缩略图       | サムネイル                   |
-| Orchestration        | 编排         | オーケストレーション         |
-| Inventory            | 清单         | インベントリ                 |
-| Asset                | 资产         | アセット                     |
-| Data Portal          | 数据门户     | データポータル               |
-| Preempt              | 抢占         | プリエンプト                 |
-| Parent               | 家长         | ペアレント                   |
-| Flex Slot            | 弹性插槽     | フレックススロット           |
-| Subscription         | 订阅         | サブスクリプション           |
-| Operation            | 操作         | オペレーション               |
-| Operating System     | 操作系统     | オペレーティングシステム     |
-| Personalization      | 个性化       | パーソナライズ               |
-| Recommendation       | 推荐         | レコメンデーション           |
-| Preload              | 预载         | プリロード                   |
-| Insight              | 洞察力       | インサイト                   |
-| Ecosystem            | 生态系统     | エコシステム                 |
-| Enterprise           | 企业         | エンタープライズ             |
-| Experience           | 经验         | エクスペリエンス             |
-| Metrics              | 指标         | メトリクス                   |
-| Conversion           | 转换         | コンバージョン               |
-| Quick Reference      | 快速参考     | クイック リファレンス        |
-| Web Traffic          | 网络流量     | ウェブ トラフィック          |
-| Overhead             | 开销         | オーバーヘッド               |
-| Premium              | 优质的       | プレミアム                   |
-| Enhanced             | 加强版       | エンハンスト                 |
-| Ingest               | 摄取         | インジェスト                 |
-| Preemptible          | 可抢占式     | プリエンプティブル           |
-| Ransomware           | 勒索软件     | ランサムウェア               |
-| Partition            | 分割         | パーティション               |
-| Edge Caching         | 边缘缓存     | エッジ キャッシング          |
-| Anycast              | 任意广播     | エニーキャスト               |
-| Transformation       | 转型         | トランスフォーメーション     |
-| Monolithic           | 整体式的     | モノリシック                 |
-| Disk Snapshot        | 磁盘快照     | ディスクスナップショット     |
-| Provisioning         | 配置         | プロビジョニング             |
-| Over Fit             | 过拟合       | オーバーフィット             |
-| Cross-site Scripting | 跨站脚本     | クロスサイトスクリプティング |
-| Privacy              | 隐私         | プライバシー                 |
+| 英语                 | 汉语                                                                             | 日语                         |
+| -------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
+| catch                | 捕获                                                                             | キャッチ                     |
+| widget               | 小部件                                                                           | ウィジェット                 |
+| rendering            | 渲染                                                                             | レンダリング                 |
+| architecture         | 基础构架                                                                         | アーキテクチャ               |
+| scalability          | 可扩展性                                                                         | スケーラビリティ             |
+| scale out            | 这是增加构成系统的服务器数量、通过分布式处理稳定运行、提高处理能力和可用性的方法 | スケールアウト               |
+| crash                | 应用程序软件或计算机在运行中出现不响应、异常终止等情况                           | クラッシュ                   |
+| time critical        | 时间关键的(重视速度、需要紧急处理的情况)                                         | タイムクリティカル           |
+| activity             | 活动的                                                                           | アクティビティ               |
+| atomic               | 原子性                                                                           | アトミック                   |
+| processor            | 处理器                                                                           | プロセッサ                   |
+| scaling              | 缩放                                                                             | スケーリング                 |
+| sink                 | 接收器                                                                           | シンク                       |
+| volatility           | 波动性                                                                           | ボラティリティ               |
+| hybrid               | 混合                                                                             | ハイブリッド                 |
+| driver               | 驱动器                                                                           | ドライバ                     |
+| Architect            | 构架师                                                                           | アーキテクト                 |
+| solution             | 解决方案                                                                         | ソリューション               |
+| permission           | 允许                                                                             | パーミッション               |
+| secondary            | 次要的                                                                           | セカンダリ                   |
+| ephemeral            | 短暂的                                                                           | エフェメラル                 |
+| drain                | 排走                                                                             | ドレイン                     |
+| Compliance           | 合规性                                                                           | コンプライアンス             |
+| Archive              | 存档                                                                             | アーカイブ                   |
+| Latency              | 延迟                                                                             | レイテンシー                 |
+| Root Node            | 根节点                                                                           | ルートノード                 |
+| Policy               | 策略                                                                             | ポリシー                     |
+| Tenant               | 租户                                                                             | テナント                     |
+| Algorithm            | 算法                                                                             | アルゴリズム                 |
+| Infrastructure       | 基础设施                                                                         | インフラストラクチャ         |
+| Approach             | 方法                                                                             | アプローチ                   |
+| Private              | 私人的                                                                           | プライベート                 |
+| Bare Metal           | 裸机                                                                             | ベアメタル                   |
+| Network Fabric       | 网络结构                                                                         | ネットワークファブリック     |
+| On-Premises          | 本地                                                                             | オンプレミス                 |
+| Zero Trust           | 零信任                                                                           | ゼロトラスト                 |
+| Throughput           | 吞吐量                                                                           | スループット                 |
+| Collection           | 采集                                                                             | コレクション                 |
+| Driven               | 驱动的                                                                           | ドリブン                     |
+| Onboarding           | 入职                                                                             | オンボーディング             |
+| Onboarding Process   | 新手入门流程                                                                     | オンボーディングプロセス     |
+| Streaming            | 流式传输                                                                         | ストリーミング               |
+| Scalability          | 可扩展性                                                                         | スケーラビリティ             |
+| Preparation          | 准备                                                                             | プレパレーション             |
+| Section              | 部分                                                                             | セクション                   |
+| Chunk                | 块                                                                               | チャンク                     |
+| Scientist            | 科学家                                                                           | サイエンティスト             |
+| Variation            | 变化                                                                             | バリエーション               |
+| Flexible             | 灵活的                                                                           | フレキシブル                 |
+| Runtime              | 运行时                                                                           | ランタイム                   |
+| Thumbnail            | 缩略图                                                                           | サムネイル                   |
+| Orchestration        | 编排                                                                             | オーケストレーション         |
+| Inventory            | 清单                                                                             | インベントリ                 |
+| Asset                | 资产                                                                             | アセット                     |
+| Data Portal          | 数据门户                                                                         | データポータル               |
+| Preempt              | 抢占                                                                             | プリエンプト                 |
+| Parent               | 家长                                                                             | ペアレント                   |
+| Flex Slot            | 弹性插槽                                                                         | フレックススロット           |
+| Subscription         | 订阅                                                                             | サブスクリプション           |
+| Operation            | 操作                                                                             | オペレーション               |
+| Operating System     | 操作系统                                                                         | オペレーティングシステム     |
+| Personalization      | 个性化                                                                           | パーソナライズ               |
+| Recommendation       | 推荐                                                                             | レコメンデーション           |
+| Preload              | 预载                                                                             | プリロード                   |
+| Insight              | 洞察力                                                                           | インサイト                   |
+| Ecosystem            | 生态系统                                                                         | エコシステム                 |
+| Enterprise           | 企业                                                                             | エンタープライズ             |
+| Experience           | 经验                                                                             | エクスペリエンス             |
+| Metrics              | 指标                                                                             | メトリクス                   |
+| Conversion           | 转换                                                                             | コンバージョン               |
+| Quick Reference      | 快速参考                                                                         | クイック リファレンス        |
+| Web Traffic          | 网络流量                                                                         | ウェブ トラフィック          |
+| Overhead             | 开销                                                                             | オーバーヘッド               |
+| Premium              | 优质的                                                                           | プレミアム                   |
+| Enhanced             | 加强版                                                                           | エンハンスト                 |
+| Ingest               | 摄取                                                                             | インジェスト                 |
+| Preemptible          | 可抢占式                                                                         | プリエンプティブル           |
+| Ransomware           | 勒索软件                                                                         | ランサムウェア               |
+| Partition            | 分割                                                                             | パーティション               |
+| Edge Caching         | 边缘缓存                                                                         | エッジ キャッシング          |
+| Anycast              | 任意广播                                                                         | エニーキャスト               |
+| Transformation       | 转型                                                                             | トランスフォーメーション     |
+| Monolithic           | 整体式的                                                                         | モノリシック                 |
+| Disk Snapshot        | 磁盘快照                                                                         | ディスクスナップショット     |
+| Provisioning         | 配置                                                                             | プロビジョニング             |
+| Over Fit             | 过拟合                                                                           | オーバーフィット             |
+| Cross-site Scripting | 跨站脚本                                                                         | クロスサイトスクリプティング |
+| Privacy              | 隐私                                                                             | プライバシー                 |
