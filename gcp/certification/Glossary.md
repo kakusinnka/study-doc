@@ -56,6 +56,7 @@
 | Cloud Asset Inventory                | 云资产清单                     | 元数据目录服务，让您可查看、监控和分析您在不同项目和服务中的所有 Google Cloud 和 Anthos 资产。                                                                                                                                                                                       | 略                                                                                                                                        |
 | Migrate to Containers                | 迁移到容器                     | 使用 Migrate to Containers 可以对传统应用进行现代化改造，将其从虚拟机 (VM) 实例迁移到在 Google Kubernetes Engine (GKE)、Anthos 集群或 Cloud Run 平台上运行的原生容器。您可以从在 VMware 或 Compute Engine 上运行的虚拟机迁移工作负载，这使您可以轻松灵活地实现现有工作负载的容器化。 | 略                                                                                                                                        |
 | Migrate for Compute Engine           | 略                             | 将虚拟机从本地数据中心迁移到 Google Cloud Compute Engine。                                                                                                                                                                                                                           | 略                                                                                                                                        |
+| OpenTelemetry                        | 略                             | OpenTelemetry 提供了一个开源标准和一组技术，用于捕获和导出云原生应用和基础架构中的指标、跟踪记录和日志。 Engine。                                                                                                                                                                    | 略                                                                                                                                        |
 
 ## 用语集
 | 英语                                          | 汉语               | 说明                                                                                            |
@@ -67,6 +68,7 @@
 ## 生僻词
 | 英语                 | 汉语                                                                             | 日语                         |
 | -------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
+| seamless             | 无缝衔接                                                                         | シームレス                   |
 | catch                | 捕获                                                                             | キャッチ                     |
 | widget               | 小部件                                                                           | ウィジェット                 |
 | rendering            | 渲染                                                                             | レンダリング                 |
