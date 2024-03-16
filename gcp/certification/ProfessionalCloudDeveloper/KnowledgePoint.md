@@ -155,3 +155,36 @@ readinessProbe：Kubernetesの設定項目で、アプリケーションが準�
 livenessProbe：Kubernetesの設定項目で、アプリケーションが稼働していることを確認し、問題がある場合には再起動するために使用します。
 
 ---
+
+Cloud Scheduler：Google Cloudのフルマネージドクロンジョブサービスです。
+
+---
+
+MQTTはメッセージングプロトコルで、通常はIoTソリューションに使用されます
+
+---
+
+Horizontal Pod Autoscaler（HPA）：Kubernetesの機能で、CPU使用率などのメトリクスに基づいてポッドの数を自動でスケールアップ/ダウンします。高負荷に迅速に対応するのに適しています。
+
+ClusterIP：Kubernetesサービスの一つで、クラスター内部からのみアクセス可能なIPアドレスを提供します。クラスター内からのアクセスのみを必要とするサービスに適しています。
+
+Vertical Pod Autoscaler（VPA）：Kubernetesの機能で、Podに必要なCPUやメモリの量を自動で調整します。
+
+NodePort Service：Kubernetesサービスの一つで、特定のポートを使用してクラスターの外部からアクセスするためのサービスです。
+
+---
+
+通过无服务器 VPC 访问通道，您可以从无服务器环境（例如 Cloud Run、App Engine 或 Cloud Functions）直接连接到 Virtual Private Cloud (VPC) 网络。通过配置无服务器 VPC 访问通道，无服务器环境可以使用内部 DNS 和内部 IP 地址（如 RFC 1918 和 RFC 6598 所定义）向 VPC 网络发送请求。对这些请求的响应也使用您的内部网络。  
+Serverless VPC Accessコネクタ：Google CloudのサーバーレスプラットフォームとGoogle Virtual Private Cloud（VPC）ネットワークとの間でネットワーク接続を可能にします。
+
+---
+
+RSS購読：Webページの更新情報を受け取るための技術です。定期的な自動更新は可能です
+
+---
+
+PII （Personal Identifiable Information）：個人を特定可能な情報のことで、厳密な保護が必要とされるデータです。
+
+---
+
+VPC Service Controls：适用于您的 Google Cloud 资源的代管式网络功能。
