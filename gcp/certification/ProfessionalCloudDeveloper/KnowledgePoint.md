@@ -188,3 +188,13 @@ PII （Personal Identifiable Information）：個人を特定可能な情報の�
 ---
 
 VPC Service Controls：适用于您的 Google Cloud 资源的代管式网络功能。
+
+---
+
+Fluent Bit：ロギングデータを集約し、解析し、転送する軽量なオープンソースツールです。しかし、CPUの使用状況の詳細な分析には適していません。
+
+---
+
+Quota是多用户功能，当多个用户共享特定计算机的磁盘时，为每个用户分配的磁盘容量上限。
+
+---
