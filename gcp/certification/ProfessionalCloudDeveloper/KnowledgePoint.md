@@ -198,3 +198,21 @@ Fluent Bit：ロギングデータを集約し、解析し、転送する軽量�
 Quota是多用户功能，当多个用户共享特定计算机的磁盘时，为每个用户分配的磁盘容量上限。
 
 ---
+
+Secret Manager 是一个安全便捷的存储系统，用于存储 API 密钥、密码、证书和其他敏感数据。Secret Manager 提供了一个集中、单一的数据源，便于您管理、访问和审核 Google Cloud 中的 Secret。
+
+---
+
+Kubernetes 服务账号是通过 Kubernetes API 创建和管理的 Kubernetes 资源，它们可供集群内 Kubernetes 创建的实体（例如 Pod）使用，以便对 Kubernetes API 服务器或外部服务进行身份验证。
+
+---
+
+Workload Identity是Google Cloud Platform（GCP）提供的一种身份验证解决方案，用于安全地将Google Kubernetes Engine（GKE）中的应用程序连接到Google Cloud服务。Workload Identity允许您为GKE集群中的每个应用程序分配单独的服务帐户，从而实现应用程序级别的最小特权原则。
+
+---
+
+借助 Cloud Key Management Service，您可以在一个集中的云服务中创建、导入和管理加密密钥并执行加密操作。您可以使用这些密钥并通过直接使用 Cloud KMS、使用 Cloud HSM 或 Cloud External Key Manager 或使用其他 Google Cloud 服务中的客户管理的加密密钥 (CMEK) 集成来执行这些操作。
+
+借助 Cloud KMS，您将成为您的数据的终极监管人，可以按照与本地部署时相同的方式在云中管理加密密钥，并且您对数据具有可证明且可监控的信任根。
+
+---
