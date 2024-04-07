@@ -32,3 +32,13 @@
 
 ## 09-Charle 抓取手机端 http 报文
 ![charles005](./images/charles005.png)
+
+## 11-charles 手机弱网测试及弱网测试背景和原理介绍
+略
+
+## 12-Charles 弱网各指标的讲解和演示
+![charles006](./images/charles006.png)
+
+## 13-六大抓包工具的对比和分析区别
+![charles007](./images/charles007.png)
+![charles008](./images/charles008.png)
