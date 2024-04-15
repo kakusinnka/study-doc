@@ -9,3 +9,7 @@
 ## [从集合创建 UI](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step2.pdf)
 打开本机移动应用程序并在移动设备上预览。
 使用 Volt MX Iris 为应用程序创建用户界面。
+
+## [添加身份验证](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step3.pdf)
+使用用户身份验证机制保护应用的数据。配置身份服务, 将 Identity Service 映射到应用的 UI 元素。
+
