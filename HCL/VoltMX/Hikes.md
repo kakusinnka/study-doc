@@ -13,3 +13,8 @@
 ## [添加身份验证](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step3.pdf)
 使用用户身份验证机制保护应用的数据。配置身份服务, 将 Identity Service 映射到应用的 UI 元素。
 
+## [为后端数据创建服务](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step4.pdf)
+创建和配置存储对象服务帐户和收件人。将 Project Services 发布到运行时服务器。
+
+## [将应用程序 UI 连接到数据](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step5.pdf)
+使用“帐户”窗体连接服务。将服务与“收件人”窗体连接。
