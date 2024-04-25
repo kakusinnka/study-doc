@@ -34,3 +34,8 @@ Volt MX Foundry 简化了将移动应用程序与后端企业软件应用程序�
 通过单击 Volt MX Iris 左侧导航工具栏上的 Hikes 图标，获取有关如何构建您的第一个移动或 Web 应用程序的完整指导教程。
 
 Hikes 是 Iris 中的一个学习工具，它提供分步交互式演练，帮助您了解使用 Iris 的基础知识。
+
+## 2.2 Volt MX App Viewer
+应用程序查看器可让您在移动设备上测试和预览应用程序。 应用程序查看器还使您能够与其他人共享您的应用程序，并提供在应用程序内提交反馈以进行协作的功能。
+
+### 2.2.1 [在 iOS 或 Android 设备中预览您的应用程序](https://opensource.hcltechsw.com/volt-mx-docs/docs/documentation/Iris/iris_app_viewer/Content/FunctionalPreviewEnterprise.html#preview-an-app-on-the-cloud)

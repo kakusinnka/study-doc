@@ -18,3 +18,6 @@
 
 ## [将应用程序 UI 连接到数据](https://www.hcljapan.co.jp/software/media/VoltMX/FirstStep/VoltMX-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AE%E4%B8%80%E6%AD%A9-Step5.pdf)
 使用“帐户”窗体连接服务。将服务与“收件人”窗体连接。
+
+## [创建详细信息屏幕并删除收件人]()
+创建收件人详细信息表单。使用服务为“收件人详细信息”窗体创建 UI。添加删除收件人的功能。
