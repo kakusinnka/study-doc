@@ -74,4 +74,39 @@ Marketplace提供了有用的代码模块，可以快速将常用代码添加到
 * 可以从市场库中下载组件并将其添加到应用程序中，类似于常规小部件。
 * 您可以更改和使用每个组件的属性和操作，以满足您的需求。
 
+### Network API HT
+这个教程介绍了Koni网络API的使用方法，包括发送HTTP请求、初始化请求对象、取消网络操作等。  
+使用Koni API构建的示例应用程序可以通过API密钥从pipl.com获取数据，并显示在应用程序中。  
+用户可以在应用中输入姓名，调用pipl.com的API，获取搜索结果并展示。
+
+### SFPipelineAppV2
+略
+
+### 使用 Marketplace 中的数据适配器
+略
+
+### Getting Started with Volt MX Iris
+这个视频教程将帮助你快速上手Visualizer 2.0，涵盖注册云帐户、安装软件、登录Visualizer以及介绍几个基本功能的内容。  
+从Koni网站注册云帐户并请求试用后，可下载Visualizer软件开始使用。  
+Visualizer具有项目面板、控件拖放和屏幕布局等功能，可进行UI设计和原型建设，适用于移动设备和web。
+
+### Configuration of an Offline Object
+在这个视频中，你将学习到离线对象的定义、离线对象服务的架构和配置以及离线对象的同步功能。离线对象是解决应用在离线工作时同步问题的解决方案，它通过在移动设备上下载对象的数据来实现数据的同步，并在设备重新连接网络时与后端进行同步。离线对象通过仅同步变化的数据而不是整个应用数据来优化数据传输，并提供本地数据库与后端数据库一致性的维护。
+
+![](../images/ConfigVoltMXMobileFoundry.png)
+
+![](../images/OfflineDataSync.png)
+
+![](../images/OfflineDataSync02.png)
+
+![](../images/config-offline-object-5-step.png)
+
+### Photoshop 转换扩展
+本教程介绍了如何使用Photoshop CC的iris扩展将现有的Photoshop设计转换为iris表单，并将所有图层和图层集转换为iris小部件和样式。  
+通过下载和安装Volt MX iris扩展，你可以在Photoshop中使用这一功能。  
+导出后的项目可以在iris中打开，并根据配置将Photoshop图层转换为容器或小部件。
+
+### Segment Widget – Introduction
+该视频介绍了Segment Widget，它是一个常用的UI组件，用于显示列表或数据页面，并提供容器和模板来定义每行的样式和数据。
+
 ### 
