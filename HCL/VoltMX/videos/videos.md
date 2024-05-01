@@ -109,4 +109,14 @@ Visualizer具有项目面板、控件拖放和屏幕布局等功能，可进行U
 ### Segment Widget – Introduction
 该视频介绍了Segment Widget，它是一个常用的UI组件，用于显示列表或数据页面，并提供容器和模板来定义每行的样式和数据。
 
-### 
+### Volt MX SAP JCo connector
+这是关于Volt MX SAP JCo连接器的视频，介绍了如何使用该连接器进行连接和系统支持以及数据连接等。  
+视频中还提到了使用USA Connect和Support for Java Connect进行数据连接的操作步骤。  
+此外，视频还介绍了一些相关的操作和服务细节。
+
+### Volt MX APIs – Touch ID
+这个视频介绍了如何在Volt MX应用中集成Touch ID身份验证，开发者可以使用Volt MX框架的两个API实现Touch ID功能，从而保护敏感数据。  
+在视频中展示了如何检查设备是否支持Touch ID，以及如何配置Touch ID的回调函数和按钮点击事件。  
+通过Touch ID进行身份验证后，用户可以成功登录并跳转到仪表盘界面。
+
+### 看不下去了
