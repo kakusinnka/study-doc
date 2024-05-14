@@ -15,4 +15,6 @@ Volt MX 产品、子产品及其功能的简要概述。我们还讨论了这些
 
 ## Installation Guides 安装指南
 
-## [Iris](./Iris.md)
+## [Iris](./Iris/Iris.md)
+
+## [Foundry](./Foundry/Foundry.md)
