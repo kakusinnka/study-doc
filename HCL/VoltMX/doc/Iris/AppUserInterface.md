@@ -20,3 +20,4 @@ Volt MX Iris 提供三种类型的小部件：容器、基本和高级。
 
 * [FlexContainer](./FlexContainer.md): 具有灵活属性的容器小部件。灵活的属性允许您将小部件放置在窗体中的任何位置，并配置对齐属性，例如“左”、“右”、“上”和“下”。您可以用三种度量单位设置 FlexContainer 的属性：dp（与设备无关的像素，dip = dp）;px（屏幕上的实际图片元素 [即像素] ）;和百分比。如果需要，可以将 FlexContainer 转换为 FlexScrollContainer。
 
+* 一个容器小部件，可用作 [FlexContainer](./FlexScrollContainer.md)，但可以水平或垂直滚动。
