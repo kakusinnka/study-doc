@@ -19,5 +19,5 @@ Volt MX Iris 提供三种类型的小部件：容器、基本和高级。
 容器小部件充当对其他小部件进行分组的容器。使用容器小部件，您可以将两个或多个小部件分组，以便可以将它们定位为一个单元。以下是 Volt MX Iris 中可用的容器小部件：
 
 * [FlexContainer](./FlexContainer.md): 具有灵活属性的容器小部件。灵活的属性允许您将小部件放置在窗体中的任何位置，并配置对齐属性，例如“左”、“右”、“上”和“下”。您可以用三种度量单位设置 FlexContainer 的属性：dp（与设备无关的像素，dip = dp）;px（屏幕上的实际图片元素 [即像素] ）;和百分比。如果需要，可以将 FlexContainer 转换为 FlexScrollContainer。
-
 * 一个容器小部件，可用作 [FlexContainer](./FlexScrollContainer.md)，但可以水平或垂直滚动。
+* [TabPane](./TabPane.md) 一个容器小组件，您可以在其中对小组件进行分组。每个选项卡都可以有自己的一组小组件，您可以使用选项卡小组件添加新选项卡。
