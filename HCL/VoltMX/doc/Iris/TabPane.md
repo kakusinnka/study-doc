@@ -20,3 +20,15 @@
 * Page：页面指示器的外观。仅当“视图类型”设置为“页面”，并且为“聚焦页面”和“非聚焦页面”图标指定了图像时，外观才适用。
 
 ## TabPane 属性
+### Active Tabs 活动选项卡
+指定 TabPane 中的选项卡是处于活动状态还是处于非活动状态。
+
+### Full Screen Widget 全屏小部件
+对于 VBox 窗体上的 TabPane，指定 TabPane 是否占用整个窗体。
+
+### View Type 视图类型
+指定每个平台的 TabPane 视图类型。若要指定视图类型，请单击“编辑”按钮打开“视图类型”对话框，选择一个平台，然后选择视图类型。
+* Tab
+* Collapsible 折叠式
+* Page（仅限 iPhone 和 Android）
+* Panorama（仅限 Windows）
