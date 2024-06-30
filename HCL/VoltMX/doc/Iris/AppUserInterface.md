@@ -34,3 +34,5 @@ Volt MX Iris 提供三种类型的小部件：容器、基本和高级。
 * “[Label 标签](./Label.md)小组件”在表单上显示不可编辑的文本，并且是非交互式的。
 * [列表框小组件](./ListBox.md)显示项目列表（如下拉框），并允许您一次选择一个项目。
 * [RadioButtonGroup](./RadioButtonGroup.md) 是一个小部件，允许您定义一组单选按钮，用户可以选择其中一个按钮作为选项。
+* [RichText](./RichText.md) 小部件在表单上显示不可编辑的格式化文本。RichText Widget 中的 HTML 格式标记，以显示带有样式（粗体、下划线等）、链接和图像的文本。
+* [Slider](./Slider.md) 滑块小部件允许您通过在水平方向上移动拇指（指示器）从定义的值范围内选择一个值。
