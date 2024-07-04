@@ -37,3 +37,12 @@ Volt MX Iris 提供三种类型的小部件：容器、基本和高级。
 * [RichText](./RichText.md) 小部件在表单上显示不可编辑的格式化文本。RichText Widget 中的 HTML 格式标记，以显示带有样式（粗体、下划线等）、链接和图像的文本。
 * [Slider](./Slider.md) 滑块小部件允许您通过在水平方向上移动拇指（指示器）从定义的值范围内选择一个值。
 * [TextArea2](./TextArea2.md) Widget 提供了一种用户可以输入文本的方法。
+* [TextBox2](./TextBox2.md) Widget 用于捕获用户的输入。
+
+### Advanced Widgets 高级小部件
+高级小部件使您能够实现应用程序中最常用的功能。这些小部件由 Volt MX Iris 开发。此外，还提供了配置小部件属性的选项。
+
+* 使用 [Browser](./Browser.md) 浏览器小组件显示应用程序的 HTML 内容，而无需离开应用程序或打开本机浏览器。
+* 使用 [Cordova](./Cordova.md) 浏览器小组件使用户可以访问 Cordova 应用程序的内容。有关详细信息，请参阅创建 Cordova 应用程序。
+* [Camera](./Camera.md) 照相机: 使用设备的本机摄像头及其功能进行图像和视频捕获。
+* [Map](./Map.md): “地图微件”在屏幕上的地图上显示由纬度和经度定义的位置。
