@@ -22,3 +22,24 @@ VoltMXwidgets 还包括对平台特定属性的支持。这些特定于平台的
 
 ## App Menu 应用菜单
 [App Menu](./AppMenu.md) 应用菜单：通常显示在应用程序表单底部的菜单栏。
+
+## ARRenderer
+[ARRenderer](./ARRenderer.md) 帮助您在应用中实现增强现实。
+
+## Browser 浏览器
+[Browser](./Browser.md) 在应用程序上下文中显示 HTML 内容，而无需离开应用程序或从应用程序打开本机浏览器
+
+## Button 按钮
+[Button](./Button.md) 矩形或圆角矩形，中心带有描述性标题。使用按钮触发操作，例如导航到窗体或与对话框交互。
+
+## Calendar 日历
+[Calendar](./Calendar.md) 向用户显示日历，以便用户可以选择一个或多个日期。
+
+## Camera 照相机
+[Camera](./Camera.md) 控制设备上的摄像头进行拍照和录像。
+
+## CheckBoxGroup
+[CheckBoxGroup](./CheckBoxGroup.md) 显示一组相关复选框，以便用户可以从组中选择一个或多个项目。
+
+## ComboBox 组合盒
+[ComboBox](./ComboBox.md) 向用户显示一个下拉列表，允许他们选择单个项目
