@@ -43,3 +43,15 @@ VoltMXwidgets 还包括对平台特定属性的支持。这些特定于平台的
 
 ## ComboBox 组合盒
 [ComboBox](./ComboBox.md) 向用户显示一个下拉列表，允许他们选择单个项目
+
+## CordovaBrowser 科尔多瓦浏览器
+在应用程序中显示 HTML 内容，而无需离开应用程序或打开本机浏览器。使用 [CordovaBrowser](./Cordova.md) 小组件将您的 Web 或 Apache Cordova （PhoneGap） 应用程序移植到 Volt MX Iris。
+
+## DataGrid 数据网格
+[DataGrid](./DataGrid.md) 数据网格：向用户显示数据的表格视图。
+
+## FlexContainer
+允许您按水平、垂直或自由形式的顺序排列多个小部件。您只能将 [FlexContainer](./FlexContainer.md) 添加到 Flex 表单中。
+
+## FlexForm 弹性表格
+[FlexForm](./FlexForm.md) 是最顶层的容器小部件，您可以在其上放置任意数量的小部件，在表单之间导航是构建应用程序功能的常用方法。
