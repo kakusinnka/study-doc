@@ -55,3 +55,17 @@ VoltMXwidgets 还包括对平台特定属性的支持。这些特定于平台的
 
 ## FlexForm 弹性表格
 [FlexForm](./FlexForm.md) 是最顶层的容器小部件，您可以在其上放置任意数量的小部件，在表单之间导航是构建应用程序功能的常用方法。
+
+## FlexScrollContainer
+[FlexScrollContainer](./FlexScrollContainer.md) 可滚动的 UI 容器窗体，允许在列表中显示的项目多于屏幕大小允许的项目。
+
+## Image 图像
+[Image](./Image2.md) 显示 PNG 文件中的图形（本地或远程）。
+
+## Label 标签
+[Label](./Label.md) 在窗体上显示不可编辑的文本。
+
+## ListBox 列表框
+[ListBox](./ListBox.md) 向用户显示下拉列表，并使用户能够选择一个或多个项目。
+
+## 略
