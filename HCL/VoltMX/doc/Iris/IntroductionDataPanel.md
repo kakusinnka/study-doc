@@ -47,3 +47,27 @@
 
 ### 禁用/启用 Project Services 的分类
 操作演示，请看原文。
+
+### 取消服务关联
+操作演示，请看原文。
+
+### 编辑服务
+操作演示，请看原文。
+
+## 对象服务相关功能
+您可以使用“数据与服务”面板执行以下与对象服务相关的操作：
+* 为响应式 Web 生成 Object Services UI
+* 为对象服务生成 CRUD 表单
+* 为对象服务创建数据表
+* 通过导入 Excel 文件配置对象数据模型
+* 自定义数据模型对象的生成
+
+### 为响应式 Web 生成 Object Services UI
+当您将服务操作从数据与服务面板拖放到响应式Web表单上时，可以生成以下类型的表单：
+* List and Details Using Response (for Get operations)
+* Grid Using Response (for Get operations)
+* Details Using Response (for Get operations)
+* Entry (for Create and Update operations)
+
+#### List and Details Using Response Form
+下面的先不看了
