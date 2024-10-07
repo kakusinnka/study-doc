@@ -12,4 +12,25 @@
 ## 下载并安装 Android Studio
 您必须安装 Android Studio 才能使用 Volt MX Iris 构建和测试 Android 应用程序。
 
-## 
+## 下载并解压缩 Android SDK 和支持包
+略
+
+## 配置 Volt MX Iris 以针对 Android 平台进行构建
+现在您已经安装了 Android SDK，您需要配置 Volt MX Iris 以识别 Android 平台。
+
+设置 Android SDK 包的路径。
+
+设置 SDK Minimum 和 Target Versions。
+
+## 设置 Android SDK Home 环境变量
+略
+
+## 在您的 Android 设备上启用 USB 调试
+略
+
+## 列出设备并查看日志
+运行 adb devices -l 以列出连接到 Windows 10 电脑的 Android 设备。
+
+## 配置 Android 模拟器
+您必须在计算机上安装 Android Studio 才能获得 GUI 来创建和使用 Android 模拟器。
+
