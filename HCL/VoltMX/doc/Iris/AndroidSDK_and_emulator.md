@@ -34,3 +34,14 @@
 ## 配置 Android 模拟器
 您必须在计算机上安装 Android Studio 才能获得 GUI 来创建和使用 Android 模拟器。
 
+## 使用 Run on My Device 或 Emulator 菜单启动应用程序
+略
+
+## 在成功构建后启动应用程序
+略
+
+## Limitations 局限性
+略
+
+## 遵循不同 Volt MX Iris 版本的 Gradle 相关变更
+略

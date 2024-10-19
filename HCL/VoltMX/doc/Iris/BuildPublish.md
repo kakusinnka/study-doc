@@ -19,3 +19,12 @@
 
 ## [使用仿真器](./UsingEmulators.md)
 熟悉要运行 Volt MX Iris 应用程序的平台的软件开发工具包 （SDK） 和仿真器的安装和配置过程。
+
+## [在 Volt MX 上调试应用程序](./Debug_apps_on_theVoltMX.md)
+了解如何查看在 Volt MX 应用程序中预览的子应用程序的调试日志。您还可以复制、下载、共享和清除日志。
+
+## [调试本机应用程序](./DebugNativeApps.md)
+调试在网络上远程运行的本机应用程序，以及在工作站上本地运行的应用程序。
+
+## [调试 Web 应用程序](./DebugWebApps.md)
+使用应用程序内调试器检测和诊断 Web 应用程序中的错误。可以使用最新的 Iris 调试器在 Iris Preview 窗口中调试自适应 Web 应用程序。
