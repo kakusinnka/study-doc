@@ -5,4 +5,4 @@
 
 ## [在 Macintosh 上安装 Volt Iris](./InstallingVoltIrisV9_on_Macintosh.md)
 
-## 在 Windows 上安装 Volt Iris
+## [在 Windows 上安装 Volt Iris](./InstallingVoltIris_on_Windows.md)

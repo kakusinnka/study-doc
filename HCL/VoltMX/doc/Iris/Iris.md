@@ -1,6 +1,6 @@
 ## [Fundamentals 基础知识](./Fundamentals.md)
 
-## [Installing Iris](./InstallingIris.md)
+## [Installing Iris](./InstallingIrisOverview.md)
 
 ## [Iris tutorials](./IrisTutorials.md)
 
