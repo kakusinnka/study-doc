@@ -80,3 +80,39 @@ Visualizer企业版还允许用户使用xcode、android和windows sdk的模拟�
 4. 在 Functional Preview 上运行应用程序
 
 ## Notes and Comments 注释和注解
+1. 在 Iris 中记录笔记
+2. 审稿人的观点 – 提供反馈
+3. 设计师的观点 – 接收反馈
+
+## 使用命名操作
+1. 创建命名操作
+2. 分配命名操作
+3. 调用命名操作
+
+## 使用浏览器 Widget
+1. 设置浏览器小部件以链接 Web URL
+2. 设置浏览器小部件以在富文本中嵌入静态 HTML 内容
+3. 在 Iris 应用程序预览上查看原型
+
+## 基于区域设置的布局
+略
+
+## 触控 ID API
+1. 将 Touch ID 功能链接到您的表单
+2. 使用 Touch ID API 实现 JavaScript 代码
+3. 调用身份验证 API 时的应用程序预览。
+
+## Package Web Content Locally
+1. 导入 Web 资产
+2. 编辑 HTML 内容
+3. 将 Source 分配给浏览器小部件
+
+## 原生混合通信
+1. 启用本机通信
+2. 在混合上下文中执行 JavaScript
+3. 将 Context 和 Data 传递到原生 Context
+
+## 嵌入 Cordova 应用程序
+1. 启用 Cordova 开发
+2. 导入 Cordova 资产
+3. 
