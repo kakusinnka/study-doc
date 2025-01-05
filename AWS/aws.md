@@ -8,3 +8,5 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 ## [AWS Sign-In](./Signin.md)
 
 ## [账户管理](./AccountManagement.md)
+
+## [常用术语](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html)
