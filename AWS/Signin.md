@@ -1,4 +1,4 @@
-# 什么是 AWS Sign-In？
+# [什么是 AWS Sign-In？](https://docs.aws.amazon.com/zh_cn/signin/latest/userguide/what-is-sign-in.html)
 本指南可帮助您了解登录 Amazon Web Services (AWS) 的不同方式，具体取决于您的用户类型。
 
 ##
@@ -73,8 +73,50 @@ IAM 身份中心也可以是身份提供商，管理员可以在其中创建用�
 无论身份提供商是谁，IAM 身份中心中的用户都使用 AWS 访问门户登录，这是其组织的特定登录 URL。  
 IAM 身份中心用户无法通过 AWS 管理控制台 URL 登录。
 
+### 联合身份
+联合身份是可以使用知名的外部身份提供商 (IdP) 登录的用户，例如使用 Amazon、Facebook、Google 或任何其他与 OpenID Connect (OIDC) 兼容的 IdP 登录。  
+借助 Web 身份联合，您可以接收身份验证令牌，然后将该令牌交换为 AWS 中的临时安全凭证，这些凭证映射到具有使用 AWS 账户中资源权限的 IAM 角色。  
+您无需使用 AWS 管理控制台或 AWS 访问门户登录。相反，所使用的外部身份决定了您的登录方式。
+
+### AWS Builder ID 用户
+
+
 ## 确定您的登录网址
+根据您属于哪种 AWS 用户，使用以下 URL 之一访问 AWS。
+
+### AWS 账户根用户登录 URL
+根用户从 [AWS 登录页面](https://console.aws.amazon.com/) 访问 AWS 管理控制台。此登录页面还提供以 IAM 用户身份登录的选项。
+
+### AWS 访问门户
+AWS 访问门户是 IAM Identity Center 中用户登录和访问您的帐户的特定登录 URL。  
+当管理员在 IAM Identity Center 中创建用户时，管理员可以选择用户是收到加入 IAM Identity Center 的电子邮件邀请，或是收到来自管理员或服务台员工的包含一次性密码和 AWS 访问门户 URL 的消息。
+
+### IAM 用户登录 URL
+IAM 用户可以使用特定的 IAM 用户登录 URL 访问 AWS 管理控制台。IAM 用户登录 URL 结合了您的 AWS 账户 ID 或别名以及 signin.aws.amazon.com/console
+
+### 联合身份 URL
+联合身份的登录 URL 各不相同。外部身份或外部身份提供商 (IdP) 决定联合身份的登录 URL。外部身份可以是 Windows Active Directory、使用 Amazon 登录、Facebook 或 Google。
+
+### AWS Builder ID URL
+您的 AWS Builder ID 配置文件的 URL 为 **https://profile.aws.amazon.com/** 。使用您的 AWS Builder ID 时，登录 URL 取决于您要访问的服务。例如，要登录 Amazon CodeCatalyst，请转到 **https://codecatalyst.aws/login** 。
+
 ## AWS 账户管理员的安全最佳实践
+如果您是创建了新 AWS 账户的账户管理员，我们建议您执行以下步骤以帮助您的用户在登录时遵循 AWS 安全最佳实践。
+
+1. 以根用户身份登录以启用多重身份验证 (MFA)，并在 IAM Identity Center 中创建 AWS 管理用户（如果您尚未这样做）。然后，保护您的根凭证，不要将它们用于日常任务。
+2. 以 AWS 账户管理员身份登录并设置以下身份：
+   1. 为其他人创建最低权限用户。
+   2. 为工作负载设置临时凭证。
+   3. 仅为需要长期凭证的用例创建访问密钥。
+3. 添加权限以授予这些身份的访问权限。您可以开始使用 AWS 托管策略，并转向最低权限。
+   1. 向 AWS IAM Identity Center（AW​​S Single Sign-On 的后继者）用户添加权限集。
+   2. 向用于工作负载的 IAM 角色添加基于身份的策略。
+   3. 为需要长期凭证的用例为 IAM 用户添加基于身份的策略。
+4. 保存并共享有关登录 AWS 管理控制台的信息。此信息会有所不同，具体取决于您创建的身份类型。
+5. 保持您的根用户电子邮件地址和主要帐户联系电话号码为最新，以确保您可以收到重要的帐户和安全相关通知。
+   1. 修改 AWS 帐户根用户的帐户名称电子邮件地址或密码。
+   2. 访问或更新主要帐户联系人。
+6. 查看 [IAM 中的安全最佳实践](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) ，了解更多身份和访问管理最佳实践。
 
 # 登录 AWS 管理控制台
 ## 以根用户身份登录 AWS 管理控制台
@@ -117,3 +159,22 @@ IAM 身份中心中的用户可以通过使用特定登录 URL 登录 AWS 访问
 > 默认情况下，用户可以登录 AWS 账户 8 小时。  
 > IAM 身份中心管理员可以指定不同的持续时间，从最短 15 分钟到最长 90 天。  
 > 会话结束后，您可以再次登录。
+
+### 通过 AWS 命令​​行界面登录
+如果您计划使用 AWS 命令​​行界面，我们建议您在 IAM Identity Center 中配置用户。  
+AWS 访问门户用户界面使 IAM Identity Center 用户可以轻松选择 AWS 账户并使用 AWS CLI 获取临时安全凭证。  
+您还可以直接配置 AWS CLI 以使用 IAM Identity Center 对用户进行身份验证。
+
+要使用 IAM Identity Center 凭证通过 AWS CLI 登录
+1. 请检查您是否已完成 [先决条件](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html#sso-configure-profile-prereqs)。
+2. 如果您是首次登录，请使用 [aws configure sso 向导](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html#sso-configure-profile-token-auto-sso) 配置您的配置文件。
+3. 配置配置文件后，运行以下命令，然后按照终端中的提示进行操作。
+```
+aws sso login --profile my-profile
+```
+
+### 以联合身份登录
+联合身份是可以使用外部身份访问安全 AWS 账户资源的用户。  
+外部身份可以来自企业身份存储（例如 LDAP 或 Windows Active Directory）或第三方（例如使用 Amazon、Facebook 或 Google 登录）。  
+联合身份不使用 AWS 管理控制台或 AWS 访问门户登录。  
+使用的外部身份类型决定了联合身份如何登录。
