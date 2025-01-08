@@ -1,53 +1,6 @@
 # [什么是 AWS Sign-In？](https://docs.aws.amazon.com/zh_cn/signin/latest/userguide/what-is-sign-in.html)
 本指南可帮助您了解登录 Amazon Web Services (AWS) 的不同方式，具体取决于您的用户类型。
 
-##
-管理员  
-也称为 AWS 账户管理员或 IAM 管理员。  
-管理员通常是信息技术 (IT) 人员，是负责监督 AWS 账户的个人。  
-管理员对 AWS 账户的权限级别高于其组织中的其他成员。  
-管理员为 AWS 账户建立和实施设置。  
-他们还创建 IAM 或 IAM Identity Center 用户。  
-管理员向这些用户提供访问凭证和登录 URL 以登录 AWS。
-
-##
-账户  
-标准 AWS 账户包含您的 AWS 资源以及可以访问这些资源的身份。  
-账户与账户所有者的电子邮件地址和密码相关联。
-
-##
-凭证  
-也称为访问凭证或安全凭证。  
-在身份验证和授权中，系统使用凭证来识别谁在拨打电话以及是否允许请求的访问。  
-凭证是用户向 AWS 提供的信息，用于登录并访问 AWS 资源。  
-人类用户的凭证可以包括电子邮件地址、用户名、用户定义的密码、账户 ID 或别名、验证码和一次性多重身份验证 (MFA) 代码。  
-对于编程访问，您还可以使用访问密钥。  
-我们建议尽可能使用短期访问密钥。
-
-##
-公司凭证  
-用户在访问公司网络和资源时提供的凭证。  
-您的公司管理员可以设置您的 AWS 账户，以使用您用于访问公司网络和资源的相同凭证。  
-这些凭证由您的管理员或服务台员工提供给您。
-
-##
-根用户凭证  
-根用户凭证是用于创建 AWS 账户的电子邮件地址和密码。  
-我们强烈建议将 MFA 添加到根用户凭证中，以提高安全性。  
-根用户凭证提供对账户中所有 AWS 服务和资源的完全访问权限。  
-
-##
-用户  
-用户是有权对 AWS 产品进行 API 调用或访问 AWS 资源的个人或应用程序。  
-每个用户都有一组独特的安全凭证，不会与其他用户共享。  
-这些凭证与 AWS 账户的安全凭证是分开的。
-
-##
-登录事件日志记录  
-CloudTrail 会自动在您的 AWS 账户上启用，并在活动发生时记录事件。  
-CloudTrail 记录登录 AWS 管理控制台的尝试。所有 IAM 用户、根用户和联合用户登录事件都会在 CloudTrail 日志文件中生成记录。  
-如果您使用区域终端节点登录 AWS 管理控制台，CloudTrail 会在终端节点的相应区域中记录 ConsoleLogin 事件。
-
 ## 确定您的用户类型
 登录方式取决于您的 AWS 用户类型。  
 您可以作为根用户、IAM 用户、IAM 身份中心中的用户或联合身份管理 AWS 账户。  
@@ -142,11 +95,11 @@ IAM 用户使用其账户 ID 或别名、用户名和密码登录。 IAM 用户�
 3. 选择登录。
 4. 如果为 IAM 用户启用了 MFA，AWS 会要求您使用身份验证器确认您的身份。有关更多信息，请参阅在 AWS 中使用多重身份验证 (MFA)。
 
-## 登录 AWS 访问门户
+# 登录 AWS 访问门户
 IAM 身份中心中的用户是 AWS 组织的成员。  
 IAM 身份中心中的用户可以通过使用特定登录 URL 登录 AWS 访问门户来访问多个 AWS 账户和业务应用程序。
 
-### 登录 AWS 访问门户
+## 登录 AWS 访问门户
 1. 在浏览器窗口中，粘贴通过电子邮件提供的登录 URL，例如 https://your_subdomain.awsapps.com/start。然后按 Enter。
 2. 使用您的公司凭证（如用户名和密码）登录。
 3. 如果系统要求您输入验证码，请检查您的电子邮件。然后将验证码复制并粘贴到登录页面。
@@ -160,7 +113,7 @@ IAM 身份中心中的用户可以通过使用特定登录 URL 登录 AWS 访问
 > IAM 身份中心管理员可以指定不同的持续时间，从最短 15 分钟到最长 90 天。  
 > 会话结束后，您可以再次登录。
 
-### 通过 AWS 命令​​行界面登录
+# 通过 AWS 命令​​行界面登录
 如果您计划使用 AWS 命令​​行界面，我们建议您在 IAM Identity Center 中配置用户。  
 AWS 访问门户用户界面使 IAM Identity Center 用户可以轻松选择 AWS 账户并使用 AWS CLI 获取临时安全凭证。  
 您还可以直接配置 AWS CLI 以使用 IAM Identity Center 对用户进行身份验证。
@@ -173,8 +126,83 @@ AWS 访问门户用户界面使 IAM Identity Center 用户可以轻松选择 AWS
 aws sso login --profile my-profile
 ```
 
-### 以联合身份登录
+# 以联合身份登录
 联合身份是可以使用外部身份访问安全 AWS 账户资源的用户。  
 外部身份可以来自企业身份存储（例如 LDAP 或 Windows Active Directory）或第三方（例如使用 Amazon、Facebook 或 Google 登录）。  
 联合身份不使用 AWS 管理控制台或 AWS 访问门户登录。  
 使用的外部身份类型决定了联合身份如何登录。
+
+# 使用 AWS Builder ID 登录
+AWS Builder ID 是一种个人资料，可供访问精选工具和服务，包括 Amazon CodeCatalyst、Amazon Q Developer 以及 AWS 培训和认证。  
+AWS Builder ID 代表您个人，独立于您现有 AWS 账户中可能拥有的任何凭证和数据。与其他个人资料一样，AWS Builder ID 会随着您实现个人、教育和职业目标而不断陪伴您。
+
+您的 AWS Builder ID 可以补充您可能已经拥有或想要创建的任何 AWS 账户。  
+虽然 AWS 账户充当您创建的 AWS 资源的容器并为这些资源提供安全边界，但您的 AWS Builder ID 代表您个人。
+
+## 创建您的 AWS Builder ID
+您可以在注册使用 AWS Builder ID 的 AWS 工具和服务时创建它。在注册 AWS 工具或服务的过程中，请使用您的电子邮件地址、姓名和密码进行注册。
+
+使用 AWS Builder ID 的工具和服务会在需要时指导您创建和使用您的 AWS Builder ID。
+
+## 使用 AWS Builder ID 的 AWS 工具和服务
+### AWS 云社区
+Community.aws 是一个由 AWS 构建者社区创建的平台，您可以使用 AWS 构建者 ID 访问该平台。  
+在这里，您可以发现教育内容、分享个人想法和项目、评论他人的帖子以及关注您最喜欢的构建者。
+
+### Amazon CodeCatalyst
+当您开始使用 Amazon CodeCatalyst 时，您将创建一个 AWS 构建者 ID，并选择一个与问题、代码提交和拉取请求等活动相关联的别名。  
+邀请其他人加入您的 Amazon CodeCatalyst 空间，该空间配备了您的团队构建下一个成功项目所需的工具、基础设施和环境。  
+您需要一个 AWS 账户才能将新项目部署到云中。
+
+### AWS 迁移中心
+使用您的 AWS 构建者 ID 访问 AWS 迁移中心 (Migration Hub)。  
+迁移中心提供了一个单一的位置来发现您现有的服务器、规划迁移并跟踪每个应用程序迁移的状态。
+
+### Amazon Q Developer
+Amazon Q Developer 是一款基于 AI 的生成式对话助手，可帮助您理解、构建、扩展和操作 AWS 应用程序。
+
+### AWS re:Post
+AWS re:Post 为您提供专家技术指导，以便您使用 AWS 服务更快地进行创新并提高运营效率。  
+您可以使用您的 AWS Builder ID 登录并加入 re:Post 社区，无需 AWS 账户或信用卡。
+
+### AWS 初创公司
+使用您的 AWS Builder ID 加入 AWS 初创公司，在那里您可以使用学习内容、工具、资源和支持通过 AWS 发展您的初创公司。
+
+### AWS 培训和认证
+您可以使用您的 AWS Builder ID 访问 AWS 培训和认证，在那里您可以使用 AWS Skill Builder 构建您的 AWS 云技能，向 AWS 专家学习，并使用行业认可的凭证验证您的云专业知识。
+
+### 网站注册门户 (WRP)
+您可以将您的 AWS Builder ID 用作 AWS 营销网站的持久客户身份和注册配置文件。  
+要注册新的网络研讨会并查看您已注册或参加过的所有网络研讨会，请参阅我的网络研讨会。
+
+## 编辑您的 AWS Builder ID 配置文件
+略
+
+## 更改您的 AWS Builder ID 密码
+略
+
+## 删除您的 AWS Builder ID 的所有活动会话
+在已登录的设备下，您可以查看您当前登录的所有设备。  
+如果您不认识某个设备，作为安全最佳实践，请先更改密码，然后从所有设备退出。  
+您可以通过在 AWS Builder ID 的安全页面上删除所有活动会话来从所有设备退出。
+
+## 删除您的 AWS Builder ID
+略
+
+## 管理 AWS Builder ID 多重身份验证 (MFA)
+略
+
+## AWS Builder ID 中的隐私和数据
+略
+
+## AWS Builder ID 和其他 AWS 凭证
+您的 AWS Builder ID 与任何 AWS 账户或登录凭证都是分开的。您可以将同一个电子邮件用作您的 AWS Builder ID 和 AWS 账户的根用户电子邮件。
+
+# 退出 AWS
+略
+
+# 解决 AWS 账户登录问题
+略
+
+# 排查 AWS Builder ID 问题
+略
