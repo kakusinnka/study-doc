@@ -90,6 +90,28 @@
 
 ## [AWS 数据库博客](https://aws.amazon.com/cn/blogs/database/how-to-determine-if-amazon-dynamodb-is-appropriate-for-your-needs-and-then-plan-your-migration/)
 
+## [Amazon CloudWatch](https://aws.amazon.com/cn/cloudwatch/)
+
+## [Amazon CloudWatch 用户指南](https://docs.aws.amazon.com/zh_cn/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+
+## [Elastic Load Balancing](https://aws.amazon.com/cn/elasticloadbalancing/?nc=sn&loc=0)
+
+## [Amazon EC2 Auto Scaling](https://aws.amazon.com/cn/ec2/autoscaling/)
+
+## [Amazon EC2 Auto Scaling 用户指南](https://docs.aws.amazon.com/zh_cn/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
+
+## [Amazon Q Developer 用户指南](https://docs.aws.amazon.com/zh_cn/amazonq/latest/qdeveloper-ug/what-is.html)
+
+## []()
+
+## []()
+
+## []()
+
+## []()
+
+## []()
+
 ## []()
 
 ## []()

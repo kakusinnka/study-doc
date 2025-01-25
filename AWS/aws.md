@@ -19,6 +19,8 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 
 ## [全球基础设施](https://aws.amazon.com/cn/about-aws/global-infrastructure/)
 
+## [服务自我理解](./Services.md)
+
 ## [计算](https://aws.amazon.com/cn/products/compute/)
 
 ## [常用术语](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html)
