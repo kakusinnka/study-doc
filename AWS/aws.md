@@ -13,7 +13,7 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 
 ## [课程](./Course/Course.md)
 
-## [白皮书 网页版](https://docs.aws.amazon.com/zh_cn/whitepapers/latest/aws-overview/security-and-compliance.html)
+## [白皮书 网页版](https://docs.aws.amazon.com/zh_cn/whitepapers/latest/aws-overview/introduction.html)
 
 ## [白皮书 PDF 版](https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
 

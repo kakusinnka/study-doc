@@ -74,6 +74,9 @@ AWS Migration Hub 是 AWS 提供的一项集中式服务，旨在 **帮助用户
 
 Migration Hub 的主要目标是简化迁移流程，为用户提供全面的可见性，帮助企业更高效地将本地数据中心迁移到 AWS 云。
 
+## AWS Cloud Adoption Framework (AWS CAF)
+AWS Cloud Adoption Framework (AWS CAF) 是 Amazon Web Services (AWS) **提供的一套全面的指导原则和最佳实践框架，旨在帮助组织规划、实施和优化云迁移及数字化转型**。AWS CAF 提供了一个结构化的方法，帮助企业在技术、运营和业务层面上实现高效的云计算采用，同时确保迁移过程中的安全性、合规性和成本优化。
+
 ## AWS Application Migration Service（AWS MGN）
 AWS Application Migration Service（AWS MGN） 是 AWS 提供的一项迁移服务，旨在 **帮助用户将本地数据中心、虚拟机或其他云平台上的应用程序迁移到 AWS 云** 。AWS MGN 通过自动化迁移流程，简化了迁移工作，并最大限度地减少了迁移中断时间。它支持将物理服务器、虚拟服务器（如 VMware、Hyper-V）和云端服务器迁移到 AWS，同时保持应用程序在迁移前后的运行状态一致。
 
@@ -112,3 +115,12 @@ AWS Well-Architected Framework 是由 AWS 提供的 **一套云架构最佳实�
 
 ## AWS Support
 AWS Support 是 Amazon Web Services 提供的 **一套支持服务，旨在帮助客户更好地使用 AWS 平台，解决技术问题，优化云架构，并确保工作负载的高效运行** 。AWS Support 服务涵盖从基础技术支持到高级架构建议的广泛范围，适用于各种规模的企业和不同的技术需求。
+
+## AWS Systems Manager（SSM）
+AWS Systems Manager（SSM） 是一个集成的管理工具，能够帮助您在 AWS 云环境和本地数据中心中集中管理基础设施资源。它 **提供了一套工具，用于自动化操作任务、监控系统状态、管理配置和应用补丁，从而提高操作效率、安全性和可见性** 。
+
+## Amazon EC2 Session Manager
+Amazon EC2 Session Manager 是 AWS Systems Manager 的一项功能，**提供了一种安全、无代理（Agentless）且无需打开端口的方式，用于直接管理 Amazon EC2 实例或本地服务器**。它允许用户通过 AWS 管理控制台、AWS CLI 或 AWS SDK 在浏览器或终端中直接访问实例，无需使用传统的 SSH 或 RDP 工具。
+
+## EC2 Instance Connect
+EC2 Instance Connect 是 AWS 提供的一种服务，**允许您通过 AWS 管理控制台或命令行界面（CLI）直接连接到 Amazon EC2 实例，无需使用传统的 SSH 客户端或管理密钥对**。它简化了实例访问流程，并增强了安全性。
