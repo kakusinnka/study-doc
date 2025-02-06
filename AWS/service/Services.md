@@ -224,3 +224,15 @@ Amazon CloudSearch 是 AWS 提供的一项 **全托管搜索服务**，允许用
 
 ## AWS WAF
 AWS WAF（Web Application Firewall，Web 应用防火墙）是 AWS 提供的一项托管服务，**用于保护 Web 应用程序或 API 免受常见的 Web 威胁，例如 SQL 注入、跨站脚本（XSS）攻击以及分布式拒绝服务（DDoS）攻击等**。AWS WAF 帮助用户在不影响应用程序性能的情况下，提高应用程序的安全性和可用性。
+
+## Amazon Cognito
+Amazon Cognito 是 AWS 提供的一项 **身份验证和用户管理服务** ，专为 Web 和移动应用程序设计。它帮助开发者快速、安全地添加用户注册、登录、访问控制以及身份验证功能，而无需自行开发复杂的身份管理系统。
+
+## AWS Certificate Manager
+AWS Certificate Manager (ACM) 是 AWS 提供的一项托管服务，用于轻松管理 SSL/TLS 证书，帮助用户保护其网站、应用程序及其他资源的通信安全。通过 ACM，用户可以快速申请、部署和管理证书，无需手动完成复杂的证书生成、续订和部署流程。
+
+## Amazon AppStream 2.0
+Amazon AppStream 2.0 是一项完全托管的 AWS End User Computing（EUC）服务，旨在流式传输软件即服务（SaaS）应用程序，并将桌面应用程序转换为 SaaS，而无需重写代码或重构应用程序。使用 AppStream 2.0，您可以快速将应用程序扩展到全球各地的用户，而无需管理任何基础架构。 AppStream 2.0 提供多会话功能，允许您在单个 AppStream 2.0 实例上预置多个用户会话。这使您能够优化资源利用率，并且有助于降低成本，在不进行过度预置的情况下支持多种用户类型。
+
+## AWS Cost and Usage Report
+AWS Cost and Usage Report (CUR) 是 AWS 提供的一项服务，用于生成详细的成本和使用情况报告，帮助用户深入了解其 AWS 服务的使用情况和费用明细。CUR 是 AWS 提供的最全面、最详细的计费数据来源，能够追踪每个 AWS 服务、每个账户、每个资源的使用情况和费用。
