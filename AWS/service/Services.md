@@ -1,16 +1,13 @@
 ## AWS Systems Manager OpsCenter
-OpsCenter 是一个专注于 **运维问题管理的工具** ，帮助团队快速识别、分析和解决问题，从而提升系统的可靠性和运维效率。
+OpsCenter 是一个专注于 **运维问题管理的工具，帮助团队快速识别、分析和解决问题，从而提升系统的可靠性和运维效率**。
 
 ## AWS Cloud Map
-AWS Cloud Map 是一项 **服务发现（Service Discovery）服务** ，专门用来帮助开发者在分布式系统或微服务架构中，轻松找到和连接动态变化的应用程序资源。
+AWS Cloud Map 是一项 **服务发现（Service Discovery）服务，专门用来帮助开发者在分布式系统或微服务架构中，轻松找到和连接动态变化的应用程序资源**。
 
 AWS Cloud Map 就像是一个动态的“资源目录”或“地址簿”，可以为你的应用程序提供资源的注册、命名和实时发现功能。
 
 ## Amazon Macie
 Amazon Macie 是 AWS 提供的一项 **数据安全和隐私保护服务** ，通过机器学习（ML）和模式匹配技术，帮助用户自动发现、分类和保护存储在 Amazon S3 中的敏感数据（如个人身份信息 PII、财务数据或知识产权）。它可以识别数据泄露风险并提供详细的可操作建议，从而帮助企业满足数据隐私法规（如 GDPR、CCPA）的要求。
-
-## Amazon GuardDuty
-Amazon GuardDuty 是一项 **威胁检测服务** ，可持续监控、分析和处理您 AWS 环境中的 AWS 数据源和日志。 GuardDuty 使用威胁情报源（例如恶意 IP 地址和域名列表、文件哈希和机器学习 (ML) 模型）来识别 AWS 环境中的可疑活动和潜在的恶意活动。
 
 ## AWS Client VPN
 AWS Client VPN 是一项 **完全托管的远程访问 VPN 服务** ，允许用户安全地连接到 AWS 和本地网络。它基于 OpenVPN 协议，使用户能够通过互联网从任何地方安全地访问 AWS 资源或本地资源。
@@ -120,6 +117,9 @@ Amazon Inspector 是 AWS 提供的一项 **自动化的安全评估服务，用�
 ## AWS Config
 AWS Config 是一项完全托管的服务，用于 **持续评估、审核和记录 AWS 资源的配置变化** 。通过 AWS Config，用户可以跟踪 AWS 资源的配置历史，了解资源的当前状态，以及资源配置是否符合指定的合规性要求（如安全性、成本控制等）。它帮助用户实现资源的可视化管理、合规性检查和配置变更的自动化审计。
 
+## Amazon GuardDuty
+Amazon GuardDuty 是一项 **威胁检测服务，来识别 AWS 环境中的可疑活动和潜在的恶意活动** 。可持续监控、分析和处理您 AWS 环境中的 AWS 数据源和日志。 GuardDuty 使用威胁情报源（例如恶意 IP 地址和域名列表、文件哈希和机器学习 (ML) 模型）来识别 AWS 环境中的可疑活动和潜在的恶意活动。
+
 ## AWS Service Catalog
 AWS Service Catalog 是一项服务，**帮助企业集中管理和部署经过批准的 IT 服务目录** 。通过 AWS Service Catalog，企业可以创建、管理和分发经过预定义的云资源集合（称为产品），这些产品可以包括虚拟机、数据库、应用程序部署模板等。它旨在帮助企业实现云资源的标准化、控制和高效部署，同时确保符合组织的治理和合规性要求。
 
@@ -163,6 +163,9 @@ Amazon EC2 Auto Scaling 是 AWS 提供的一项服务，用于 **根据应用程
 ## AWS Glue
 AWS Glue 是一项由 AWS 提供的无服务器（Serverless）数据集成服务，**专门用于简化数据的发现、准备、转换和加载（ETL：Extract, Transform, Load）流程** 。它可以帮助用户轻松地将数据从多个来源提取、清洗和转换后加载到目标数据存储中（如数据湖或数据仓库），以便进行分析和查询。
 
+## AWS Certificate Manager
+AWS Certificate Manager (ACM) 是 AWS 提供的一项托管服务，**用于轻松管理 SSL/TLS 证书，帮助用户保护其网站、应用程序及其他资源的通信安全**。通过 ACM，用户可以快速申请、部署和管理证书，无需手动完成复杂的证书生成、续订和部署流程。
+
 ## AWS Secrets Manager
 AWS Secrets Manager 是一项由 AWS 提供的托管服务，**用于安全地存储、管理和检索敏感信息（称为“密钥”或“秘密”）**，例如数据库凭据、API 密钥、密码和其他配置数据。它能够帮助开发者和企业避免将敏感信息硬编码到应用程序中，同时提供自动轮换、访问控制和审计功能，以提高安全性和合规性。
 
@@ -189,9 +192,6 @@ Amazon SageMaker 是 AWS 提供的一项完全托管的 **机器学习服务** �
 
 ## Amazon Lightsail
 Amazon Lightsail 是 AWS **提供的一种易于使用、经济实惠的云平台服务** ，专为那些需要简单云解决方案的用户设计。它提供了预配置的虚拟服务器（实例）、存储、数据库、网络和管理工具，使用户可以快速启动和运行小型应用程序、网站和开发环境，而无需深入了解复杂的云基础设施。
-
-## Amazon Kinesis
-Amazon Kinesis 是 AWS 提供的一套完全托管的 **实时数据流处理服务** ，旨在帮助开发者轻松收集、处理和分析大规模实时数据流。它能够以毫秒级的延迟处理来自数百万个数据源（如 IoT 设备、日志文件、应用程序、点击流等）的数据，使用户能够实时获取洞察并采取行动。
 
 ## AWS Artifact
 AWS Artifact 是 AWS 提供的一项自助式门户服务，专注于 **为用户提供与合规性和安全性相关的文档和报告** 。它是 AWS 合规性框架的一部分，帮助用户获取 AWS 的审计报告、认证和协议，以满足其自身的合规性需求。
@@ -228,9 +228,6 @@ AWS WAF（Web Application Firewall，Web 应用防火墙）是 AWS 提供的一�
 ## Amazon Cognito
 Amazon Cognito 是 AWS 提供的一项 **身份验证和用户管理服务，专为 Web 和移动应用程序设计** 。它帮助开发者快速、安全地添加用户注册、登录、访问控制以及身份验证功能，而无需自行开发复杂的身份管理系统。
 
-## AWS Certificate Manager
-AWS Certificate Manager (ACM) 是 AWS 提供的一项托管服务，用于轻松管理 SSL/TLS 证书，帮助用户保护其网站、应用程序及其他资源的通信安全。通过 ACM，用户可以快速申请、部署和管理证书，无需手动完成复杂的证书生成、续订和部署流程。
-
 ## Amazon AppStream 2.0
 Amazon AppStream 2.0 是一项完全托管的 AWS End User Computing（EUC）服务，旨在流式传输软件即服务（SaaS）应用程序，并将桌面应用程序转换为 SaaS，而无需重写代码或重构应用程序。使用 AppStream 2.0，您可以快速将应用程序扩展到全球各地的用户，而无需管理任何基础架构。 AppStream 2.0 提供多会话功能，允许您在单个 AppStream 2.0 实例上预置多个用户会话。这使您能够优化资源利用率，并且有助于降低成本，在不进行过度预置的情况下支持多种用户类型。
 
@@ -239,3 +236,57 @@ AWS Cost and Usage Report (CUR) 是 AWS 提供的一项服务，用于生成详�
 
 ## Amazon QuickSight
 Amazon QuickSight 是 AWS 提供的一项基于云的 **商业智能（BI）服务，旨在帮助用户快速创建可视化报表、分析数据并从数据中提取洞察** 。它支持从各种数据源（如 AWS 数据服务、第三方数据库、本地文件等）导入数据，通过直观的仪表板和交互式图表，帮助用户轻松实现数据分析和共享。
+
+## Amazon EMR
+Amazon EMR（Elastic MapReduce） 是 AWS 提供的一项托管服务，用于 **处理和分析大规模数据**。它基于流行的大数据框架（如 Apache Hadoop、Apache Spark、Presto 等），帮助用户快速、经济高效地运行分布式计算任务。Amazon EMR 可用于处理各种类型的数据，包括日志数据、事务数据、点击流数据、传感器数据等，适用于数据分析、机器学习、实时流处理和大数据应用开发。
+
+## AWS Directory Service
+AWS Directory Service 是 AWS 提供的一项托管服务，用于 **在云中设置和管理目录服务**。它允许用户将其现有的 Microsoft Active Directory (AD) 或其他目录服务扩展到 AWS 云中，或者直接在 AWS 中创建新的目录。AWS Directory Service 使企业能够轻松管理用户身份、认证、设备、组策略以及资源访问权限，同时减少了管理目录基础设施的复杂性。
+
+## Amazon Pinpoint
+Amazon Pinpoint 是 AWS 提供的一项灵活的、**多渠道营销和用户参与服务**，主要用于帮助企业与客户进行高效的沟通和互动。它允许用户通过多种渠道（如电子邮件、短信、推送通知、语音消息和社交媒体）向客户发送个性化的消息，同时提供详细的分析功能，用于监控和优化营销活动的效果。
+
+## AWS Fargate
+AWS Fargate 是 AWS 提供的一种 **无服务器容器运行服务，允许用户无需管理底层服务器或集群即可运行容器化应用程序** 。它与 Amazon ECS（Elastic Container Service） 和 Amazon EKS（Elastic Kubernetes Service） 集成，用户只需定义容器的资源需求和配置，Fargate 会自动处理容器的计算资源分配、启动和扩展。
+
+## Amazon Athena
+Amazon Athena 是 AWS 提供的一项 **交互式查询服务，用于直接在 Amazon S3 上运行 SQL 查询，无需加载或移动数据** 。它是一种 无服务器（Serverless） 的服务，用户无需管理基础设施，只需提供 SQL 查询，Athena 会自动处理底层的计算资源，返回查询结果。
+
+## Amazon Kinesis
+Amazon Kinesis 是 AWS 提供的一套完全托管的 **实时数据流处理服务，旨在帮助开发者轻松收集、处理和分析大规模实时数据流** 。它能够以毫秒级的延迟处理来自数百万个数据源（如 IoT 设备、日志文件、应用程序、点击流等）的数据，使用户能够实时获取洞察并采取行动。
+
+## AWS Step Functions
+AWS Step Functions 是 AWS 提供的一项 **可视化工作流编排服务，用于构建和运行分布式应用程序、自动化任务和微服务架构**。它通过定义状态机（State Machine），将多个 AWS 服务或自定义任务组织成一个有序的工作流，并支持复杂的逻辑控制（如条件分支、并行执行、错误处理和重试机制）。
+
+## AWS Cloud9
+AWS Cloud9 是 Amazon Web Services 提供的 **一款基于云的集成开发环境（IDE）**，允许开发者直接在浏览器中编写、运行和调试代码。它支持多种编程语言（如 JavaScript、Python、PHP 等），并且与 AWS 服务深度集成，使开发者可以快速构建、测试和部署应用程序。
+
+## AWS CodeStar
+AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
+
+## Amazon Forecast
+Amazon Forecast 是 AWS 提供的一项 **机器学习驱动的时间序列预测服务，用于帮助用户生成高精度的业务预测**。它利用 机器学习（ML）技术，结合历史数据和相关变量（如促销活动、天气条件等），生成针对特定用例的预测结果。
+
+## AWS Service Quotas
+Service Quotas 是 AWS 提供的一项服务，**用于管理和查看 AWS 服务的配额（也称为限制）**。每个 AWS 服务都有其默认的资源或操作限制，例如 API 调用次数、实例数量、存储容量等。通过 Service Quotas，用户可以方便地查看这些限制，并根据需要向 AWS 提交配额增加请求。
+
+## AWS Amplify
+AWS Amplify 是 Amazon Web Services 提供的一套工具和服务，专门用于帮助开发人员 **快速构建、部署和管理全栈 Web 和移动应用程序**。它简化了前端和后端的开发流程，提供了强大的工具链和托管服务，支持从前端框架到云后端的无缝集成。
+
+## AWS AppSync
+AWS AppSync 是 Amazon Web Services 提供的一项 **全托管的 GraphQL API 服务**，用于构建现代化的应用程序，支持实时数据查询、变更和订阅。它允许开发者通过一个单一的 GraphQL 接口访问和管理来自多个数据源的数据（如 Amazon DynamoDB、RDS、Lambda、HTTP API 等），从而简化数据访问和整合。
+
+## AWS IoT Greengrass
+AWS IoT Greengrass 是一项 **边缘计算服务，旨在将云计算的功能扩展到本地设备，使物联网（IoT）设备能够在边缘环境中运行 AWS Lambda 函数、与其他设备通信、处理数据、执行机器学习推理，并与 AWS 云服务无缝集成**。
+
+## AWS Outposts
+AWS Outposts 是 Amazon Web Services 提供的一项 **混合云解决方案，允许企业将 AWS 的基础设施、服务和工具扩展到本地数据中心或边缘位置**。通过 Outposts，用户可以在自己的本地环境中运行与 AWS 云中一致的服务、API 和工具，从而实现低延迟、本地数据处理和混合部署的需求。
+
+## Amazon Detective
+Amazon Detective 是亚马逊云服务（AWS）提供的 **一项安全分析服务，旨在帮助用户调查和分析潜在的安全问题或可疑活动**。通过自动化的数据收集和图形分析，Amazon Detective 可以快速识别、理解和解决安全事件的根本原因。
+
+## Amazon OpenSearch Service
+Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供的一项全托管服务，用于部署、操作和扩展 OpenSearch 和 Elasticsearch 集群。这项服务 **支持用户在 AWS 云中执行实时的日志分析、全文搜索、监控和可视化等任务**，无需管理底层的基础设施。
+
+## AWS Security Hub
+AWS Security Hub 是 Amazon Web Services 提供的一项 **全托管安全服务，旨在集中管理和分析来自多个 AWS 服务和第三方安全工具的安全警报和合规性状态**。它为用户提供统一的安全视图，帮助识别潜在的安全问题，简化合规性检查，并增强整体安全态势。
