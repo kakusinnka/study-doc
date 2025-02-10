@@ -172,6 +172,9 @@ AWS Secrets Manager 是一项由 AWS 提供的托管服务，**用于安全地�
 ## AWS Key Management Service
 AWS Key Management Service (AWS KMS) 是一项 **托管的加密密钥管理服务** ，用于创建和管理加密密钥，并控制其在各种 AWS 服务和应用程序中的使用。AWS KMS 提供了一个安全且高度可用的环境，用于生成、存储和保护密钥，同时支持对数据进行加密和解密操作。
 
+## AWS CloudHSM
+AWS CloudHSM 是 **一种基于云的硬件安全模块（HSM）服务，允许用户在 AWS 云中安全地生成和管理加密密钥**。CloudHSM 提供专用的硬件设备，帮助用户满足严格的安全性、合规性和数据主权要求，同时具备高性能和低延迟。
+
 | 特性                | **AWS KMS**                      | **AWS Secrets Manager**                  |
 | ------------------- | -------------------------------- | ---------------------------------------- |
 | **主要用途**        | 管理加密密钥，用于数据加密和解密 | 管理敏感信息（如密码、API 密钥）         |
@@ -180,6 +183,16 @@ AWS Key Management Service (AWS KMS) 是一项 **托管的加密密钥管理服�
 | **与 AWS 服务集成** | 深度集成（S3、EBS、RDS 等）      | 集成有限，主要用于检索敏感信息           |
 | **审计和监控**      | 支持（通过 CloudTrail）          | 支持（通过 CloudTrail）                  |
 | **成本**            | 按密钥数量和 API 调用计费        | 按存储的密钥数量和 API 调用计费          |
+
+| 特性           | AWS CloudHSM                     | AWS KMS                          |
+| -------------- | -------------------------------- | -------------------------------- |
+| **密钥控制权** | 用户完全控制密钥，AWS 无法访问   | AWS 管理密钥，但用户可以定义权限 |
+| **硬件安全性** | 使用专用 HSM 设备                | 使用共享 HSM 设备                |
+| **性能**       | 高性能，适合高吞吐量需求         | 性能适中，适合大多数通用场景     |
+| **合规性**     | 符合 FIPS 140-2 Level 3          | 符合 FIPS 140-2 Level 2          |
+| **管理复杂性** | 用户需自行管理密钥和 HSM         | AWS 负责大部分密钥管理工作       |
+| **成本**       | 较高，适合对安全性要求极高的场景 | 较低，适合一般场景               |
+
 
 ## Amazon Rekognition
 Amazon Rekognition 是 AWS 提供的一项 **基于机器学习的图像和视频分析服务** 。它能够帮助开发者轻松地从图像和视频中提取信息，例如对象检测、人脸识别、行为分析等。开发者无需具备机器学习经验，只需通过 API 就可以快速集成这些功能，用于各种应用场景，如安全监控、内容审核、用户身份验证等。
@@ -290,3 +303,9 @@ Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供
 
 ## AWS Security Hub
 AWS Security Hub 是 Amazon Web Services 提供的一项 **全托管安全服务，旨在集中管理和分析来自多个 AWS 服务和第三方安全工具的安全警报和合规性状态**。它为用户提供统一的安全视图，帮助识别潜在的安全问题，简化合规性检查，并增强整体安全态势。
+
+## AWS Compute Optimizer
+AWS Compute Optimizer 是 **一项基于机器学习的服务，旨在帮助用户优化 AWS 资源的使用，降低成本并提高性能**。它会分析用户的工作负载数据，并根据实际使用情况提供优化建议，帮助用户选择最适合的 Amazon EC2 实例、Amazon EBS 卷、Amazon Lambda 函数 和 Amazon ECS 任务 配置。
+
+## AWS Resource Access Manager
+AWS Resource Access Manager (RAM) 是一项 AWS 服务，用于 **帮助用户在多个 AWS 账户或 AWS 组织中的账户之间安全地共享 AWS 资源**。通过 RAM，用户可以避免为每个账户重复创建资源，从而简化管理并优化成本。
