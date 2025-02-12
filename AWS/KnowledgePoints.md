@@ -9,3 +9,5 @@
 ## [Amazon EC2 预留实例](https://aws.amazon.com/cn/ec2/pricing/reserved-instances/)
 
 ## [Savings Plans](https://aws.amazon.com/cn/savingsplans/?track=costma)
+
+## [Savings Plans FAQ](https://aws.amazon.com/cn/savingsplans/faq/)
