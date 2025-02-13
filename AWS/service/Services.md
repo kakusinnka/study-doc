@@ -17,7 +17,7 @@ AWS Client VPN 是一项 **完全托管的远程访问 VPN 服务** ，允许用
 ![Client VPN architecture](./images/client-vpn-001.png)
 
 ## AWS Site-to-Site VPN
-AWS Site-to-Site VPN 是一项 AWS 提供的 安全网络服务，用于在用户的本地网络（如数据中心、办公室）与 AWS 云之间建立加密的虚拟专用网络（VPN）连接。通过 Site-to-Site VPN，用户可以安全地将本地环境与 Amazon Virtual Private Cloud (VPC) 或 AWS Transit Gateway 连接起来，从而构建混合云架构，实现数据的安全传输。
+AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用户的本地网络（如数据中心、办公室）与 AWS 云之间建立加密的虚拟专用网络（VPN）连接**。通过 Site-to-Site VPN，用户可以安全地将本地环境与 Amazon Virtual Private Cloud (VPC) 或 AWS Transit Gateway 连接起来，从而构建混合云架构，实现数据的安全传输。
 
 ## AWS Client VPN 与 AWS Site-to-Site VPN 对比
 | **对比维度**   | **AWS Site-to-Site VPN**            | **AWS Client VPN**                           |
@@ -30,6 +30,8 @@ AWS Site-to-Site VPN 是一项 AWS 提供的 安全网络服务，用于在用�
 | **安全性**     | 使用 IPsec 协议加密。               | 使用 OpenVPN 协议加密，支持用户身份验证。    |
 | **典型用户**   | 企业 IT 团队、需要混合云的企业。    | 远程员工、分布式团队、需要灵活访问的用户。   |
 
+## AWS Transit Gateway
+AWS Transit Gateway 是 AWS 提供的 **一项网络服务，用于在一个中心化网关中连接多个 Amazon Virtual Private Cloud (VPC)、本地数据中心和其他网络资源**。它简化了大规模网络架构的管理，提供高效、安全和可扩展的网络互联方式。
 
 ## AWS Direct Connect
 AWS Direct Connect 是 **一种网络服务，允许用户通过专用网络连接将其本地数据中心、办公室或托管环境直接连接到 AWS 云** 。通过 Direct Connect，用户可以绕过公共互联网，建立一条私密、低延迟、高带宽的专用连接，从而实现更高的网络性能、安全性和稳定性。
@@ -89,6 +91,9 @@ AWS CodePipeline 是 AWS 提供的一项 **完全托管的持续集成与持续�
 
 ## AWS CodeDeploy
 AWS CodeDeploy 是一项由 AWS 提供的 **全托管部署服务**，用于自动化代码部署到各种计算服务上，如 Amazon EC2 实例、本地服务器、AWS Lambda 函数 或 Amazon ECS 服务。它帮助开发者快速、安全地将应用程序的新版本部署到目标环境中，同时最大限度地减少停机时间和部署失败的风险。
+
+## AWS CodeStar
+AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
 
 ## AWS CloudFormation
 AWS CloudFormation 是 AWS 提供的 **一项基础设施即代码（Infrastructure as Code, IaC）服务**，允许用户通过编写模板文件来定义和管理 AWS 资源。
@@ -242,7 +247,19 @@ AWS WAF（Web Application Firewall，Web 应用防火墙）是 AWS 提供的一�
 Amazon Cognito 是 AWS 提供的一项 **身份验证和用户管理服务，专为 Web 和移动应用程序设计** 。它帮助开发者快速、安全地添加用户注册、登录、访问控制以及身份验证功能，而无需自行开发复杂的身份管理系统。
 
 ## Amazon AppStream 2.0
-Amazon AppStream 2.0 是一项完全托管的 AWS End User Computing（EUC）服务，旨在流式传输软件即服务（SaaS）应用程序，并将桌面应用程序转换为 SaaS，而无需重写代码或重构应用程序。使用 AppStream 2.0，您可以快速将应用程序扩展到全球各地的用户，而无需管理任何基础架构。 AppStream 2.0 提供多会话功能，允许您在单个 AppStream 2.0 实例上预置多个用户会话。这使您能够优化资源利用率，并且有助于降低成本，在不进行过度预置的情况下支持多种用户类型。
+Amazon AppStream 2.0 是 **一项完全托管的 AWS End User Computing（EUC）服务，旨在流式传输软件即服务（SaaS）应用程序，并将桌面应用程序转换为 SaaS，而无需重写代码或重构应用程序**。使用 AppStream 2.0，您可以快速将应用程序扩展到全球各地的用户，而无需管理任何基础架构。 AppStream 2.0 提供多会话功能，允许您在单个 AppStream 2.0 实例上预置多个用户会话。这使您能够优化资源利用率，并且有助于降低成本，在不进行过度预置的情况下支持多种用户类型。
+
+# 服务定义与用途
+
+| **特性**     | **AWS WorkSpaces**                                                         | **Amazon AppStream 2.0**                                                                       |
+| ------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **服务类型** | 桌面即服务（DaaS）。提供完整的虚拟桌面环境。                               | 应用流服务。将单个应用程序流式传输到用户设备，而不是完整的桌面环境。                           |
+| **主要用途** | 为用户提供完整的虚拟桌面，适用于日常办公、远程工作或开发环境。             | 为用户提供特定的应用程序访问，适用于需要运行单个或一组应用程序的场景，例如设计工具或企业软件。 |
+| **使用场景** | - 远程办公、BYOD（自带设备）。<br>- 开发测试环境。<br>- 企业桌面替代方案。 | - 应用程序流式传输（如 CAD、3D 渲染、财务应用）。<br>- 教育和培训。<br>- SaaS 应用交付。       |
+
+
+## AWS WorkSpaces
+AWS WorkSpaces 是 Amazon 提供的一种完全托管的**桌面即服务（DaaS）**解决方案。它允许用户在云中创建虚拟桌面环境，提供安全、高性能且可扩展的桌面体验。通过 AWS WorkSpaces，用户可以在任意设备上访问个性化的虚拟桌面，而无需管理底层硬件或复杂的虚拟桌面基础设施。
 
 ## AWS Cost and Usage Report
 AWS Cost and Usage Report (CUR) 是 AWS 提供的一项服务，用于生成详细的成本和使用情况报告，帮助用户深入了解其 AWS 服务的使用情况和费用明细。CUR 是 AWS 提供的最全面、最详细的计费数据来源，能够追踪每个 AWS 服务、每个账户、每个资源的使用情况和费用。
@@ -273,9 +290,6 @@ AWS Step Functions 是 AWS 提供的一项 **可视化工作流编排服务，�
 
 ## AWS Cloud9
 AWS Cloud9 是 Amazon Web Services 提供的 **一款基于云的集成开发环境（IDE）**，允许开发者直接在浏览器中编写、运行和调试代码。它支持多种编程语言（如 JavaScript、Python、PHP 等），并且与 AWS 服务深度集成，使开发者可以快速构建、测试和部署应用程序。
-
-## AWS CodeStar
-AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
 
 ## Amazon Forecast
 Amazon Forecast 是 AWS 提供的一项 **机器学习驱动的时间序列预测服务，用于帮助用户生成高精度的业务预测**。它利用 机器学习（ML）技术，结合历史数据和相关变量（如促销活动、天气条件等），生成针对特定用例的预测结果。
@@ -335,3 +349,15 @@ AWS IAM Identity Center（原 AWS Single Sign-On, SSO） 是一项集中式身�
 购买预留实例时，预付金额越高，享受的折扣就越大。要最大程度地节省资金，您可以预付全部费用，从而享受最大折扣。部分预付预留实例所提供的折扣较低，但相应的预付费用也较低。最后，您可以选择不预付任何费用，但享受的折扣较小，不过这种模式可让您留出资金来开展其他项目。
 
 通过使用预留容量，您的组织可以最大程度地降低风险、更有预见性地管理预算并遵守需要长期执行的政策。
+
+## AWS Global Accelerator
+AWS Global Accelerator 是一项网络服务，旨在通过优化全球用户访问 AWS 应用程序的路径，提高应用程序的性能和可用性。它利用 AWS 全球基础设施（包括 AWS 的边缘网络）为用户提供低延迟、高可用性的网络访问体验。
+
+## Amazon Aurora
+Amazon Aurora 是 AWS 提供的 **一种高性能、企业级的关系型数据库服务，与 MySQL 和 PostgreSQL 兼容**。Aurora 结合了传统商业数据库的性能和可用性，同时具备开源数据库的简单性和经济性。它专为云环境设计，提供高吞吐量、低延迟、高可用性和自动扩展功能。
+
+## Amazon WorkDocs
+Amazon WorkDocs 是 AWS 提供的一种 **安全、完全托管的企业内容管理和协作服务**。它允许用户在云端存储、共享和协作处理文档、电子表格、演示文稿以及其他文件。WorkDocs 提供了类似于传统文件共享和协作工具的功能，但具备更高的安全性、可扩展性和与 AWS 服务的深度集成。
+
+## Amazon WorkMail
+Amazon WorkMail 是 AWS 提供的一种 **安全、托管的企业电子邮件和日历服务，旨在帮助企业用户轻松管理电子邮件、日历和联系人**。它支持与现有企业目录（如 Microsoft Active Directory）集成，并提供对企业级安全性和隐私的全面支持。用户可以通过常用的电子邮件客户端（如 Microsoft Outlook）或任何支持 IMAP 协议的客户端访问 WorkMail，同时也支持移动设备和 Web 浏览器。
