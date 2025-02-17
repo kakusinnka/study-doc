@@ -4,10 +4,10 @@
 
 ## [AWS 云财务管理服务](https://aws.amazon.com/cn/aws-cost-management/)
 
+## [Amazon EC2 定价](https://aws.amazon.com/cn/ec2/pricing/)
+
 ## [预留实例 (RI)](https://aws.amazon.com/cn/aws-cost-management/aws-cost-optimization/reserved-instances/?nc1=h_ls)
 
 ## [Amazon EC2 预留实例](https://aws.amazon.com/cn/ec2/pricing/reserved-instances/)
-
-## [Savings Plans](https://aws.amazon.com/cn/savingsplans/?track=costma)
 
 ## [Savings Plans FAQ](https://aws.amazon.com/cn/savingsplans/faq/)

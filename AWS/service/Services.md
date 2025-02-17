@@ -42,12 +42,12 @@ Amazon Connect 是 AWS 提供的一项 **云端联络中心服务** ，旨在帮
 Amazon Connect 的核心理念是简化联络中心的部署和运营，同时通过 AWS 的云服务提供高可用性、灵活性和智能化功能（如 AI 驱动的客户交互和分析）。它无需复杂的硬件或软件安装，用户可以快速启动并根据需求扩展。
 
 ## Amazon Transcribe
-Amazon Transcribe 是 AWS 提供的一项 **自动语音识别（ASR）服务** ，能够将语音转换为文本。它利用先进的机器学习技术，支持多种语言的语音转录，帮助用户快速、高效地将音频或视频内容转换为可用的文本数据。
+Amazon Transcribe 是 AWS 提供的一项 **自动语音识别（ASR）服务，能够将语音转换为文本** 。它利用先进的机器学习技术，支持多种语言的语音转录，帮助用户快速、高效地将音频或视频内容转换为可用的文本数据。
 
 该服务被广泛应用于各种场景，如客户服务记录转录、字幕生成、会议记录自动化等，为企业和开发者提供了一种经济高效且易于集成的语音转文本解决方案。
 
 ## Amazon Polly
-Amazon Polly 是 AWS 提供的一项 **文本转语音（Text-to-Speech, TTS）服务** ，能够将文本转换为自然流畅的语音。它使用先进的深度学习技术，支持多种语言和语音风格，帮助用户轻松构建语音驱动的应用程序。
+Amazon Polly 是 AWS 提供的一项 **文本转语音（Text-to-Speech, TTS）服务，能够将文本转换为自然流畅的语音** 。它使用先进的深度学习技术，支持多种语言和语音风格，帮助用户轻松构建语音驱动的应用程序。
 
 Amazon Polly 的目标是通过生成高质量、自然的语音输出，为用户提供沉浸式的交互体验。它广泛应用于语音助手、语音播报、教育内容、无障碍技术等场景。
 
@@ -55,10 +55,19 @@ Amazon Polly 的目标是通过生成高质量、自然的语音输出，为用�
 Amazon Translate 是 AWS 提供的一项 **基于神经网络机器翻译（Neural Machine Translation, NMT）技术的云端翻译服务** ，能够以高质量和高速度将文本从一种语言翻译为另一种语言。它支持多种语言和语言对，帮助企业和开发者快速实现多语言内容的翻译和本地化。
 
 ## Amazon Textract
-Amazon Textract 是 AWS 提供的一项 **基于机器学习的文档分析服务** ，能够自动从扫描的文档、图像或 PDF 文件中提取文本、表格、表单数据和其他结构化信息。与传统的光学字符识别（OCR）技术不同，Amazon Textract 不仅能够识别文本，还能理解文档的布局和内容结构，从而提取有意义的数据。
+Amazon Textract 是 AWS 提供的一项 **基于机器学习的文档分析服务，能够自动从扫描的文档、图像或 PDF 文件中提取文本、表格、表单数据和其他结构化信息** 。与传统的光学字符识别（OCR）技术不同，Amazon Textract 不仅能够识别文本，还能理解文档的布局和内容结构，从而提取有意义的数据。
+
+## Amazon Lex
+Amazon Lex 是 AWS 提供的 **一项对话式人工智能服务，用于构建聊天机器人和语音助手**。它支持自然语言处理（NLP）和自动语音识别（ASR），能够理解语音和文本输入，帮助开发者快速创建具备对话能力的应用程序。
 
 ## Amazon Comprehend
 Amazon Comprehend 是 AWS 提供的一项 **自然语言处理（Natural Language Processing, NLP）服务**，能够从非结构化文本中提取有意义的信息。它使用机器学习技术分析文本，识别情感、关键短语、实体、语言以及文本之间的主题关系，帮助用户将非结构化数据转化为可操作的洞察。
+
+## Amazon Personalize
+Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助开发者快速构建个性化推荐系统**，无需具备深厚的机器学习技能或经验。它可以用于创建推荐、个性化搜索结果以及动态内容个性化等功能，广泛应用于电子商务、媒体流服务、在线教育等领域。
+
+## Amazon Kendra
+Amazon Kendra 是 AWS 提供的 **一项智能企业搜索服务，利用机器学习技术，帮助用户从企业内部的各种数据源中快速找到准确的答案**。它能够理解自然语言查询（NLQ，Natural Language Query），并返回相关性高的搜索结果，而不仅仅是简单的关键字匹配。
 
 ## CloudFront
 CloudFront 是一种 **内容分发网络（CDN）服务** ，可以低延迟和高传输速度向全球客户安全地分发数据、视频、应用程序和 API。
@@ -102,7 +111,7 @@ AWS CloudFormation 是 AWS 提供的 **一项基础设施即代码（Infrastruct
 AWS Elastic Beanstalk 是一项由 Amazon Web Services (AWS) 提供的 **全托管平台即服务（PaaS），用于快速部署和管理应用程序** 。它支持多种开发语言和框架，允许开发者专注于代码，而无需担心底层基础设施的配置、管理和扩展。
 
 ## AWS OpsWorks
-AWS OpsWorks 是 AWS 提供的一项 **配置管理服务**，用于帮助用户在 AWS 上自动化和管理应用程序的部署、配置和操作。
+AWS OpsWorks 是 AWS 提供的一项 **配置管理服务，用于帮助用户在 AWS 上自动化和管理应用程序的部署、配置和操作**。
 
 ## AWS Trusted Advisor
 AWS Trusted Advisor 是 AWS 提供的一项 **实时建议服务，帮助用户优化其 AWS 环境的性能、成本、安全性、容错性和服务配额使用情况** 。它会根据 AWS 的最佳实践，自动分析用户的 AWS 资源，并提供优化建议，帮助用户更高效地使用 AWS 服务，同时降低成本并提高安全性。
@@ -206,7 +215,7 @@ Amazon Rekognition 是 AWS 提供的一项 **基于机器学习的图像和视�
 Amazon Neptune 是 AWS 提供的一种完全托管的 **图数据库服务** ，专为构建和运行基于图形的应用程序而设计。它支持两种主流的图查询语言：Apache TinkerPop Gremlin（用于属性图）和 W3C SPARQL（用于 RDF 图），使开发者能够高效地存储和查询复杂的关系数据。
 
 ## Amazon SageMaker
-Amazon SageMaker 是 AWS 提供的一项完全托管的 **机器学习服务** ，旨在帮助开发者和数据科学家快速构建、训练和部署机器学习（ML）模型。它覆盖了机器学习工作流的整个生命周期，从数据准备到模型训练、优化和部署，用户无需管理底层的基础设施。
+Amazon SageMaker 是 AWS 提供的一项完全托管的 **机器学习服务，旨在帮助开发者和数据科学家快速构建、训练和部署机器学习（ML）模型** 。它覆盖了机器学习工作流的整个生命周期，从数据准备到模型训练、优化和部署，用户无需管理底层的基础设施。
 
 ## Amazon Lightsail
 Amazon Lightsail 是 AWS **提供的一种易于使用、经济实惠的云平台服务** ，专为那些需要简单云解决方案的用户设计。它提供了预配置的虚拟服务器（实例）、存储、数据库、网络和管理工具，使用户可以快速启动和运行小型应用程序、网站和开发环境，而无需深入了解复杂的云基础设施。
@@ -361,3 +370,36 @@ Amazon WorkDocs 是 AWS 提供的一种 **安全、完全托管的企业内容�
 
 ## Amazon WorkMail
 Amazon WorkMail 是 AWS 提供的一种 **安全、托管的企业电子邮件和日历服务，旨在帮助企业用户轻松管理电子邮件、日历和联系人**。它支持与现有企业目录（如 Microsoft Active Directory）集成，并提供对企业级安全性和隐私的全面支持。用户可以通过常用的电子邮件客户端（如 Microsoft Outlook）或任何支持 IMAP 协议的客户端访问 WorkMail，同时也支持移动设备和 Web 浏览器。
+
+## AWS IoT Core
+AWS IoT Core 是 AWS 提供的一种托管服务，专门 **用于连接物联网（IoT）设备到云端，并实现设备之间、设备与云端的安全通信和交互**。它为开发者提供了一个强大的平台，用于构建、管理和扩展物联网应用，而无需管理底层基础设施。
+
+## AWS DataSync
+AWS DataSync 是一种托管的 **数据迁移服务，用于在本地存储、边缘设备和 AWS 存储服务之间自动化、快速、安全地传输数据**。它支持将数据迁移到 AWS 云中，或者在不同的 AWS 存储服务之间进行数据同步，例如 Amazon S3、Amazon EFS（Elastic File System）和 Amazon FSx。
+
+## Amazon S3 Transfer Acceleration
+Amazon S3 Transfer Acceleration 是 AWS 提供的一项服务，旨在 **通过优化的全球网络基础设施，加速用户上传到 Amazon S3 存储桶的数据传输速度**。它利用 AWS 全球边缘网络（Amazon CloudFront 的边缘位置） 来缩短传输路径，从而显著提高远距离、大文件上传的速度。
+
+## Amazon FSx for Windows File Server
+Amazon FSx for Windows File Server 是 AWS 提供的一种 **完全托管的文件存储服务，专为运行 Windows 应用程序的企业设计**。它支持 Windows 原生的 SMB（Server Message Block）协议 和 NTFS（New Technology File System）文件系统，为用户提供熟悉的 Windows 文件存储体验，同时具备高性能、可扩展性和与 AWS 生态系统的深度集成。
+
+## Amazon Elastic File System
+Amazon Elastic File System（Amazon EFS） 是 AWS 提供的一种 **完全托管的弹性网络文件系统，专为支持多个 AWS 云服务和本地资源的共享文件存储而设计**。EFS 提供简单、可扩展、高可用性和持久性的文件存储解决方案，能够自动扩展和收缩以适应工作负载的变化，从而无需预置存储容量。
+
+## Amazon FSx for Lustre
+Amazon FSx for Lustre 是 AWS 提供的一种 **完全托管的高性能文件存储服务，专为需要快速处理大规模数据集的计算密集型工作负载而设计**。它基于开源的 Lustre 文件系统，Lustre 是一种广泛用于高性能计算（HPC）和机器学习等领域的分布式文件系统，以其超低延迟、高吞吐量和高并发性能而闻名。
+
+## Amazon Elastic Block Store
+Amazon Elastic Block Store (Amazon EBS) 是 AWS 提供的一种 **高性能块存储服务，专为与 Amazon EC2 实例配合使用而设计**。EBS 提供低延迟、持久性、高可用性和可扩展性的存储解决方案，适用于各种工作负载，包括数据库、文件系统、容器化应用和分析等。
+
+## AWS re:Post
+AWS re:Post 是 AWS 提供的一个 **基于社区的问答平台，旨在帮助用户分享知识、解决问题并学习 AWS 服务和解决方案**。AWS re:Post 是 AWS Support 的一部分，作为 AWS 论坛的升级版，提供了更现代化的用户体验和功能，支持用户之间的互动与协作。
+
+## Amazon WorkSpaces
+Amazon WorkSpaces 是 AWS 提供的一项**托管桌面即服务（DaaS，Desktop as a Service）**解决方案，允许用户在云中创建、管理和访问虚拟桌面。通过 WorkSpaces，用户可以从任何设备（如 PC、Mac、平板电脑或智能手机）安全地访问其虚拟桌面，并获得与传统物理桌面类似的使用体验。
+
+## AWS Professional Services
+AWS Professional Services 是 AWS 提供的一项 **专业咨询服务，旨在帮助企业客户加速其云迁移、部署和优化过程**。该服务由 AWS 的专业团队提供支持，这些专家与客户的 IT 团队、合作伙伴及其他利益相关方协作，帮助客户设计、开发和实施基于 AWS 云的解决方案，以满足其独特的业务需求。
+
+## AWS Concierge Support Team
+是 AWS 针对企业支持（Enterprise Support）客户提供的一项专属支持服务。该团队由经验丰富的 AWS 专家组成，专注于为客户提供与账单和账户管理相关的高级支持。
