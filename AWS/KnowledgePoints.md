@@ -11,3 +11,5 @@
 ## [Amazon EC2 预留实例](https://aws.amazon.com/cn/ec2/pricing/reserved-instances/)
 
 ## [Savings Plans FAQ](https://aws.amazon.com/cn/savingsplans/faq/)
+
+## [AWS Well-Architected 框架](https://docs.aws.amazon.com/zh_cn/wellarchitected/latest/framework/the-pillars-of-the-framework.html)
