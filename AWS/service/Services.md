@@ -16,6 +16,12 @@ AWS Client VPN 是一项 **完全托管的远程访问 VPN 服务** ，允许用
 
 ![Client VPN architecture](./images/client-vpn-001.png)
 
+## AWS VPN
+AWS 虚拟私有网络解决方案可在您的本地网络、远程办公室、客户端设备和 AWS 全球网络之间建立安全的连接。  
+AWS VPN 由两种服务组成：AWS Site-to-Site VPN 和 AWS Client VPN。这两种服务一起，可提供高度可用且具有弹性的托管云 VPN 解决方案，以保护您的网络流量安全。
+
+AWS Site-to-Site VPN 可在您的网络与 Amazon Virtual Private Cloud 或 AWS Transit Gateway 之间建立加密隧道。要管理远程访问，AWS Client VPN 可使用 VPN 软件客户端将您的用户连接到 AWS 或本地资源。
+
 ## AWS Site-to-Site VPN
 AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用户的本地网络（如数据中心、办公室）与 AWS 云之间建立加密的虚拟专用网络（VPN）连接**。通过 Site-to-Site VPN，用户可以安全地将本地环境与 Amazon Virtual Private Cloud (VPC) 或 AWS Transit Gateway 连接起来，从而构建混合云架构，实现数据的安全传输。
 
@@ -30,7 +36,7 @@ AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用
 | **安全性**     | 使用 IPsec 协议加密。               | 使用 OpenVPN 协议加密，支持用户身份验证。    |
 | **典型用户**   | 企业 IT 团队、需要混合云的企业。    | 远程员工、分布式团队、需要灵活访问的用户。   |
 
-## AWS Transit Gateway
+## AWS Transit(过境) Gateway
 AWS Transit Gateway 是 AWS 提供的 **一项网络服务，用于在一个中心化网关中连接多个 Amazon Virtual Private Cloud (VPC)、本地数据中心和其他网络资源**。它简化了大规模网络架构的管理，提供高效、安全和可扩展的网络互联方式。
 
 ## AWS Direct Connect
@@ -77,7 +83,7 @@ AWS Migration Hub 是 AWS 提供的一项集中式服务，旨在 **帮助用户
 
 Migration Hub 的主要目标是简化迁移流程，为用户提供全面的可见性，帮助企业更高效地将本地数据中心迁移到 AWS 云。
 
-## AWS Cloud Adoption Framework (AWS CAF)
+## AWS Cloud Adoption(采用) Framework (AWS CAF)
 AWS Cloud Adoption Framework (AWS CAF) 是 Amazon Web Services (AWS) **提供的一套全面的指导原则和最佳实践框架，旨在帮助组织规划、实施和优化云迁移及数字化转型**。AWS CAF 提供了一个结构化的方法，帮助企业在技术、运营和业务层面上实现高效的云计算采用，同时确保迁移过程中的安全性、合规性和成本优化。
 
 ## AWS Application Migration Service（AWS MGN）
@@ -123,16 +129,16 @@ AWS Trusted Advisor 是 AWS 提供的一项 **实时建议服务，帮助用户�
 * 提高弹性：检查您的 AWS 环境，确定是否缺少冗余和资源过度使用。
 * 跟踪服务限制：检查您账户的使用情况，并在账户接近或超过服务限制时收到通知。
 
-## Amazon Inspector
+## Amazon Inspector(检查员)
 Amazon Inspector 是 AWS 提供的一项 **自动化的安全评估服务，用于帮助客户发现 AWS 环境中的安全漏洞和配置问题** 。它能够扫描运行在 AWS 上的资源（如 EC2 实例、容器镜像等），识别潜在的漏洞、暴露的网络访问权限以及不符合安全最佳实践的配置，并提供修复建议。
 
-在 Amazon Inspector 中，单词 "Inspector" 的意思是 检查员 或 审查员，表示这个服务的主要功能是对 AWS 环境中的资源进行 检查、审查和评估。它的职责类似于一个安全检查员，负责扫描和发现潜在的安全漏洞或配置问题。
-
-## AWS Config
-AWS Config 是一项完全托管的服务，用于 **持续评估、审核和记录 AWS 资源的配置变化** 。通过 AWS Config，用户可以跟踪 AWS 资源的配置历史，了解资源的当前状态，以及资源配置是否符合指定的合规性要求（如安全性、成本控制等）。它帮助用户实现资源的可视化管理、合规性检查和配置变更的自动化审计。
+在 Amazon Inspector 中，单词 "Inspector" 的意思是 检查员 或 审查员，表示这个服务的主要功能是对 AWS 环境中的资源进行 检查、审查和评估。**它的职责类似于一个安全检查员，负责扫描和发现潜在的安全漏洞或配置问题**。
 
 ## Amazon GuardDuty
 Amazon GuardDuty 是一项 **威胁检测服务，来识别 AWS 环境中的可疑活动和潜在的恶意活动** 。可持续监控、分析和处理您 AWS 环境中的 AWS 数据源和日志。 GuardDuty 使用威胁情报源（例如恶意 IP 地址和域名列表、文件哈希和机器学习 (ML) 模型）来识别 AWS 环境中的可疑活动和潜在的恶意活动。
+
+## AWS Shield
+AWS Shield 是 Amazon Web Services（AWS）提供的一种 **分布式拒绝服务（DDoS）防护服务**，旨在保护用户的应用程序和资源免受 DDoS 攻击。通过 AWS Shield，用户可以在不影响应用程序性能的情况下，获得实时检测和自动防护功能。
 
 ## AWS Service Catalog
 AWS Service Catalog 是一项服务，**帮助企业集中管理和部署经过批准的 IT 服务目录** 。通过 AWS Service Catalog，企业可以创建、管理和分发经过预定义的云资源集合（称为产品），这些产品可以包括虚拟机、数据库、应用程序部署模板等。它旨在帮助企业实现云资源的标准化、控制和高效部署，同时确保符合组织的治理和合规性要求。
@@ -142,6 +148,12 @@ Amazon CloudWatch 是 AWS 提供的一项 **监控和管理服务，用于收集
 
 ## AWS CloudTrail
 AWS CloudTrail 是 AWS 提供的一项 **日志记录和监控服务，用于跟踪和记录 AWS 账户中的操作事件** 。CloudTrail 会记录所有对 AWS 服务的 API 调用，包括通过 AWS 管理控制台、命令行工具、SDK 和其他服务发起的操作。通过这些记录，用户可以进行安全分析、合规性检查、资源变更审计以及问题排查。
+
+## AWS Config
+AWS Config 是一项完全托管的服务，用于 **持续评估、审核和记录 AWS 资源的配置变化** 。通过 AWS Config，用户可以跟踪 AWS 资源的配置历史，了解资源的当前状态，以及资源配置是否符合指定的合规性要求（如安全性、成本控制等）。它帮助用户实现资源的可视化管理、合规性检查和配置变更的自动化审计。
+
+## AWS Audit(审计) Manager
+AWS Audit Manager 是 Amazon Web Services（AWS）提供的一种自动化审计准备服务，旨在帮助用户简化和加速合规性评估流程。该服务通过自动收集和整理 AWS 服务使用情况的数据，生成与行业标准和法规（如 GDPR、HIPAA、ISO 27001 等）相关的审计证据，使用户能够更高效地管理合规性工作。**持续审计您的 AWS 使用情况，以简化风险与合规性的评估。**
 
 ## [AWS Well-Architected Framework](./Well-ArchitectedFramework.md)
 AWS Well-Architected Framework 是由 AWS 提供的 **一套云架构最佳实践指导原则，旨在帮助用户设计、构建和优化其在 AWS 云上的工作负载** 。通过 Well-Architected Framework，用户可以评估其架构的质量，识别潜在的改进点，并确保其架构能够满足业务需求，同时遵循高效、安全、可靠和经济的云架构设计原则。
@@ -285,6 +297,12 @@ AWS Directory Service 是 AWS 提供的一项托管服务，用于 **在云中�
 ## Amazon Pinpoint
 Amazon Pinpoint 是 AWS 提供的一项灵活的、**多渠道营销和用户参与服务**，主要用于帮助企业与客户进行高效的沟通和互动。它允许用户通过多种渠道（如电子邮件、短信、推送通知、语音消息和社交媒体）向客户发送个性化的消息，同时提供详细的分析功能，用于监控和优化营销活动的效果。
 
+## Amazon Elastic Container Service (ECS)
+Amazon Elastic Container Service (ECS) 是 Amazon Web Services (AWS) 提供的一项 **高性能、可扩展的容器管理服务，支持运行、停止和管理 Docker 容器化的应用程序**。ECS 消除了用户部署和管理容器编排软件的复杂性，能够让开发者专注于构建和运行容器化应用程序。
+
+## Amazon Elastic Kubernetes Service (EKS)
+Amazon Elastic Kubernetes Service (EKS) 是 Amazon Web Services (AWS) 提供的一项 **完全托管的 Kubernetes 服务，旨在帮助用户轻松部署、运行和扩展基于 Kubernetes 的容器化应用程序**。EKS 让用户无需自己安装、操作或维护 Kubernetes 控制平面，提供高可用性、安全性和自动化功能，使其成为运行容器化工作负载的理想选择。
+
 ## AWS Fargate
 AWS Fargate 是 AWS 提供的一种 **无服务器容器运行服务，允许用户无需管理底层服务器或集群即可运行容器化应用程序** 。它与 Amazon ECS（Elastic Container Service） 和 Amazon EKS（Elastic Kubernetes Service） 集成，用户只需定义容器的资源需求和配置，Fargate 会自动处理容器的计算资源分配、启动和扩展。
 
@@ -324,7 +342,7 @@ Amazon Detective 是亚马逊云服务（AWS）提供的 **一项安全分析服
 ## Amazon OpenSearch Service
 Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供的一项全托管服务，用于部署、操作和扩展 OpenSearch 和 Elasticsearch 集群。这项服务 **支持用户在 AWS 云中执行实时的日志分析、全文搜索、监控和可视化等任务**，无需管理底层的基础设施。
 
-## AWS Security Hub
+## AWS Security Hub(中心)
 AWS Security Hub 是 Amazon Web Services 提供的一项 **全托管安全服务，旨在集中管理和分析来自多个 AWS 服务和第三方安全工具的安全警报和合规性状态**。它为用户提供统一的安全视图，帮助识别潜在的安全问题，简化合规性检查，并增强整体安全态势。
 
 ## AWS Compute Optimizer
@@ -345,7 +363,7 @@ Amazon CodeGuru 包括两个主要组件：
 AWS Identity and Access Management（IAM） 是 AWS 提供的一项核心服务，用于安全地管理对 AWS 资源的访问权限。IAM 允许用户控制谁（身份）可以访问哪些 AWS 资源，以及可以执行哪些操作，从而帮助企业实现细粒度的访问控制和增强安全性。
 
 ## AWS IAM Identity Center
-AWS IAM Identity Center（原 AWS Single Sign-On, SSO） 是一项集中式身份管理服务，用于帮助用户轻松管理对多个 AWS 账户和业务应用程序的访问。通过 IAM Identity Center，用户可以使用单一的登录凭据访问 AWS 账户、AWS 服务以及支持 SAML 2.0 的第三方应用程序。
+AWS IAM Identity Center（原 AWS Single Sign-On, SSO） 是一项 **集中式身份管理服务，用于帮助用户轻松管理对多个 AWS 账户和业务应用程序的访问**。通过 IAM Identity Center，用户可以使用单一的登录凭据访问 AWS 账户、AWS 服务以及支持 SAML 2.0 的第三方应用程序。
 
 | **服务** | **AWS Identity and Access Management (IAM)**                                              | **AWS IAM Identity Center**                                                                                            |
 | -------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -359,8 +377,11 @@ AWS IAM Identity Center（原 AWS Single Sign-On, SSO） 是一项集中式身�
 
 通过使用预留容量，您的组织可以最大程度地降低风险、更有预见性地管理预算并遵守需要长期执行的政策。
 
-## AWS Global Accelerator
-AWS Global Accelerator 是一项网络服务，旨在通过优化全球用户访问 AWS 应用程序的路径，提高应用程序的性能和可用性。它利用 AWS 全球基础设施（包括 AWS 的边缘网络）为用户提供低延迟、高可用性的网络访问体验。
+## AWS Global Accelerator(加速器)
+AWS Global Accelerator 是一项 **网络服务，旨在通过优化全球用户访问 AWS 应用程序的路径，提高应用程序的性能和可用性**。它利用 AWS 全球基础设施（包括 AWS 的边缘网络）为用户提供低延迟、高可用性的网络访问体验。
+
+## Amazon CloudFront(云前面)
+Amazon CloudFront 是 Amazon Web Services（AWS）提供的 **内容分发网络（CDN）服务**，旨在帮助用户快速、安全地将内容（如网页、视频、图像和 API 数据）分发给全球用户。通过将内容缓存到靠近用户的边缘位置，CloudFront 提供低延迟、高吞吐量和高可用性的内容交付体验，同时内置了安全功能来保护内容和应用程序。
 
 ## Amazon Aurora
 Amazon Aurora 是 AWS 提供的 **一种高性能、企业级的关系型数据库服务，与 MySQL 和 PostgreSQL 兼容**。Aurora 结合了传统商业数据库的性能和可用性，同时具备开源数据库的简单性和经济性。它专为云环境设计，提供高吞吐量、低延迟、高可用性和自动扩展功能。
@@ -406,3 +427,18 @@ AWS Professional Services 是 AWS 提供的一项 **专业咨询服务，旨在�
 
 ## AWS Well-Architected Tool
 AWS Well-Architected Tool 是 Amazon Web Services（AWS）提供的 **一种云架构评估和优化工具**，帮助用户根据 AWS Well-Architected Framework 的最佳实践，评估其工作负载的架构设计，并识别潜在的改进机会。该工具旨在确保用户的云架构能够实现高效、安全、可靠和经济的目标。
+
+## AWS Local Zones
+AWS Local Zones 是 Amazon Web Services（AWS）提供的 **一种基础设施部署选项，旨在将计算、存储、数据库和其他 AWS 服务扩展到距离用户更近的地理位置**。通过 AWS Local Zones，用户可以在靠近最终用户或特定位置的地方运行延迟敏感的应用程序，从而实现低延迟和更高性能。
+
+## AWS Wavelength(波长)
+AWS Wavelength 是 Amazon Web Services（AWS）推出的一种专为超低延迟应用程序设计的服务，旨在将 AWS 的计算和存储服务嵌入到电信运营商的 5G 网络边缘。通过 AWS Wavelength，开发者可以在距离最终用户更近的地方运行延迟敏感的工作负载，充分利用 5G 网络的低延迟、高带宽和广泛覆盖的特性。
+
+### AWS Wavelength 与 AWS Local Zones 的区别
+
+| 特性         | **AWS Wavelength Zones**                 | **AWS Local Zones**                          |
+| ------------ | ---------------------------------------- | -------------------------------------------- |
+| **部署位置** | 嵌入到电信运营商的 5G 网络边缘。         | 部署在 AWS 定义的特定地理位置。              |
+| **延迟**     | 提供超低延迟（几毫秒），适用于实时应用。 | 提供低延迟，但通常高于 Wavelength。          |
+| **适用场景** | 需要 5G 网络支持的超低延迟应用。         | 需要靠近用户的低延迟应用，但不依赖 5G 网络。 |
+| **目标用户** | 5G 网络用户和延迟敏感型应用开发者。      | 需要靠近最终用户或特定地理位置的企业。       |
