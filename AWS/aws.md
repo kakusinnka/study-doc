@@ -21,6 +21,10 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 
 ## [服务自我理解](./service/Services.md)
 
+## [CLF-C02 服务简短介绍](./service/CLF-C02-Service001.md)
+
+## [CLF-C02 服务详细介绍](./service/CLF-C02-Service002.md)
+
 ## [计算](https://aws.amazon.com/cn/products/compute/)
 
 ## [常用术语](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html)

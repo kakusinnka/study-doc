@@ -16,12 +16,6 @@ AWS Client VPN 是一项 **完全托管的远程访问 VPN 服务** ，允许用
 
 ![Client VPN architecture](./images/client-vpn-001.png)
 
-## AWS VPN
-AWS 虚拟私有网络解决方案可在您的本地网络、远程办公室、客户端设备和 AWS 全球网络之间建立安全的连接。  
-AWS VPN 由两种服务组成：AWS Site-to-Site VPN 和 AWS Client VPN。这两种服务一起，可提供高度可用且具有弹性的托管云 VPN 解决方案，以保护您的网络流量安全。
-
-AWS Site-to-Site VPN 可在您的网络与 Amazon Virtual Private Cloud 或 AWS Transit Gateway 之间建立加密隧道。要管理远程访问，AWS Client VPN 可使用 VPN 软件客户端将您的用户连接到 AWS 或本地资源。
-
 ## AWS Site-to-Site VPN
 AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用户的本地网络（如数据中心、办公室）与 AWS 云之间建立加密的虚拟专用网络（VPN）连接**。通过 Site-to-Site VPN，用户可以安全地将本地环境与 Amazon Virtual Private Cloud (VPC) 或 AWS Transit Gateway 连接起来，从而构建混合云架构，实现数据的安全传输。
 
@@ -42,11 +36,7 @@ AWS Transit Gateway 是 AWS 提供的 **一项网络服务，用于在一个中�
 ## AWS Direct Connect
 AWS Direct Connect 是 **一种网络服务，允许用户通过专用网络连接将其本地数据中心、办公室或托管环境直接连接到 AWS 云** 。通过 Direct Connect，用户可以绕过公共互联网，建立一条私密、低延迟、高带宽的专用连接，从而实现更高的网络性能、安全性和稳定性。
 
-## Amazon Connect
-Amazon Connect 是 AWS 提供的一项 **云端联络中心服务** ，旨在帮助企业轻松建立和管理客户服务中心。它是一种高度可扩展、经济高效且易于使用的解决方案，允许企业通过语音、聊天和其他渠道与客户进行互动。
-
-Amazon Connect 的核心理念是简化联络中心的部署和运营，同时通过 AWS 的云服务提供高可用性、灵活性和智能化功能（如 AI 驱动的客户交互和分析）。它无需复杂的硬件或软件安装，用户可以快速启动并根据需求扩展。
-
+# 机器学习
 ## Amazon Transcribe
 Amazon Transcribe 是 AWS 提供的一项 **自动语音识别（ASR）服务，能够将语音转换为文本** 。它利用先进的机器学习技术，支持多种语言的语音转录，帮助用户快速、高效地将音频或视频内容转换为可用的文本数据。
 
@@ -75,9 +65,6 @@ Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助�
 ## Amazon Kendra
 Amazon Kendra 是 AWS 提供的 **一项智能企业搜索服务，利用机器学习技术，帮助用户从企业内部的各种数据源中快速找到准确的答案**。它能够理解自然语言查询（NLQ，Natural Language Query），并返回相关性高的搜索结果，而不仅仅是简单的关键字匹配。
 
-## CloudFront
-CloudFront 是一种 **内容分发网络（CDN）服务** ，可以低延迟和高传输速度向全球客户安全地分发数据、视频、应用程序和 API。
-
 ## AWS Migration Hub
 AWS Migration Hub 是 AWS 提供的一项集中式服务，旨在 **帮助用户规划、跟踪和管理应用程序迁移到 AWS 云的过程** 。通过 Migration Hub，用户可以在一个统一的界面中查看迁移进度，无论是使用 AWS 原生迁移工具还是第三方迁移工具，都能集中管理和监控。
 
@@ -91,30 +78,6 @@ AWS Application Migration Service（AWS MGN） 是 AWS 提供的一项迁移服�
 
 ## AWS Application Discovery Service
 AWS Application Discovery Service 通过收集有关本地服务器和数据库的使用情况和配置数据，帮助您规划向 AWS 云的迁移。
-
-## AWS CodeArtifact
-AWS CodeArtifact 是 AWS 提供的一项 **完全托管的依赖包管理服务** ，用于存储、发布和共享软件包。它支持多种编程语言和构建工具（如 npm、Maven、PyPI 和 NuGet），帮助开发团队集中管理项目中的依赖项和软件包，同时确保版本一致性和安全性。
-
-## AWS CodeCommit
-AWS CodeCommit 是 AWS 提供的一项 **完全托管的源代码控制服务** ，支持团队安全地存储和管理代码、二进制文件或其他资产。它是基于 Git 的源代码管理工具，开发者可以像使用其他 Git 仓库（如 GitHub、GitLab、Bitbucket 等）一样使用 CodeCommit，但 CodeCommit 提供了更高的安全性、可扩展性和与 AWS 服务的深度集成。
-
-## AWS CodeBuild
-AWS CodeBuild 是 AWS 提供的一项 **完全托管的持续集成（CI）服务，用于自动化代码的构建、测试和打包** 。它能够从代码存储库中获取源代码，执行编译、运行单元测试，并生成可部署的构建工件（如二进制文件或容器镜像）。CodeBuild 是无服务器的，用户无需管理构建服务器，AWS 会根据需要自动分配和扩展资源。
-
-## AWS CodePipeline
-AWS CodePipeline 是 AWS 提供的一项 **完全托管的持续集成与持续交付（CI/CD）服务** ，用于自动化代码的构建、测试和部署流程。通过 CodePipeline，开发团队可以快速实现从代码提交到生产环境的自动化发布，确保应用程序的高质量和快速交付。
-
-## AWS CodeDeploy
-AWS CodeDeploy 是一项由 AWS 提供的 **全托管部署服务**，用于自动化代码部署到各种计算服务上，如 Amazon EC2 实例、本地服务器、AWS Lambda 函数 或 Amazon ECS 服务。它帮助开发者快速、安全地将应用程序的新版本部署到目标环境中，同时最大限度地减少停机时间和部署失败的风险。
-
-## AWS CodeStar
-AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
-
-## AWS CloudFormation
-AWS CloudFormation 是 AWS 提供的 **一项基础设施即代码（Infrastructure as Code, IaC）服务**，允许用户通过编写模板文件来定义和管理 AWS 资源。
-
-## AWS Elastic Beanstalk
-AWS Elastic Beanstalk 是一项由 Amazon Web Services (AWS) 提供的 **全托管平台即服务（PaaS），用于快速部署和管理应用程序** 。它支持多种开发语言和框架，允许开发者专注于代码，而无需担心底层基础设施的配置、管理和扩展。
 
 ## AWS OpsWorks
 AWS OpsWorks 是 AWS 提供的一项 **配置管理服务，用于帮助用户在 AWS 上自动化和管理应用程序的部署、配置和操作**。
@@ -170,24 +133,41 @@ Amazon EC2 Session Manager 是 AWS Systems Manager 的一项功能，**提供了
 ## EC2 Instance Connect
 EC2 Instance Connect 是 AWS 提供的一种服务，**允许您通过 AWS 管理控制台或命令行界面（CLI）直接连接到 Amazon EC2 实例，无需使用传统的 SSH 客户端或管理密钥对**。它简化了实例访问流程，并增强了安全性。
 
-## AWS X-Ray
-AWS X-Ray 是一项分布式跟踪服务， **主要用于分析和调试分布式应用程序（如微服务架构）的性能问题** 。它帮助开发者和运维团队可视化应用程序的运行状况，识别性能瓶颈，并快速诊断故障。
-
-通过 AWS X-Ray，您可以查看请求在应用程序中的完整路径，跟踪每个服务、组件、数据库查询、外部 API 调用等的性能表现，从而深入了解系统的行为和性能。
-
 ## AWS Professional Services
 AWS Professional Services 是 AWS 提供的一项 **专业咨询服务，旨在帮助客户加速云采用、优化云使用，并实现业务目标** 。通过与客户的 IT 团队、开发团队以及合作伙伴协作，AWS Professional Services 提供技术指导、最佳实践和定制化的解决方案，帮助企业在 AWS 云上成功实施复杂的项目，包括迁移、现代化、创新和运营优化。
 
 AWS Professional Services 结合 AWS 的技术能力和深厚的行业经验，为客户提供从战略规划到执行落地的全方位支持，确保客户能够最大化地利用 AWS 云的优势。
 
+# 计算
 ## AWS Batch
 AWS Batch 是一项完全托管的 **批处理计算服务**，专门用于运行大规模的批处理任务。它可以帮助用户轻松、高效地运行数千甚至数百万个批处理任务，而无需管理底层的计算基础设施。AWS Batch 会根据任务的需求动态地配置计算资源（如 Amazon EC2 实例或 AWS Fargate），并优化资源的分配以降低成本。
 
+## AWS Elastic Beanstalk
+AWS Elastic Beanstalk 是一项由 Amazon Web Services (AWS) 提供的 **全托管平台即服务（PaaS），用于快速部署和管理应用程序** 。它支持多种开发语言和框架，允许开发者专注于代码，而无需担心底层基础设施的配置、管理和扩展。
+
+## Amazon Lightsail
+Amazon Lightsail 是 AWS **提供的一种易于使用、经济实惠的云平台服务** ，专为那些需要简单云解决方案的用户设计。它提供了预配置的虚拟服务器（实例）、存储、数据库、网络和管理工具，使用户可以快速启动和运行小型应用程序、网站和开发环境，而无需深入了解复杂的云基础设施。
+
+## AWS Outposts
+AWS Outposts 是 Amazon Web Services 提供的一项 **混合云解决方案，允许企业将 AWS 的基础设施、服务和工具扩展到本地数据中心或边缘位置**。通过 Outposts，用户可以在自己的本地环境中运行与 AWS 云中一致的服务、API 和工具，从而实现低延迟、本地数据处理和混合部署的需求。
+
+## AWS Local Zones
+AWS Local Zones 是 Amazon Web Services（AWS）提供的 **一种基础设施部署选项，旨在将计算、存储、数据库和其他 AWS 服务扩展到距离用户更近的地理位置**。通过 AWS Local Zones，用户可以在靠近最终用户或特定位置的地方运行延迟敏感的应用程序，从而实现低延迟和更高性能。
+
+## AWS Wavelength(波长)
+AWS Wavelength 是 Amazon Web Services（AWS）推出的一种专为超低延迟应用程序设计的服务，旨在将 AWS 的计算和存储服务嵌入到电信运营商的 5G 网络边缘。通过 AWS Wavelength，开发者可以在距离最终用户更近的地方运行延迟敏感的工作负载，充分利用 5G 网络的低延迟、高带宽和广泛覆盖的特性。
+
+### AWS Wavelength 与 AWS Local Zones 的区别
+
+| 特性         | **AWS Wavelength Zones**                 | **AWS Local Zones**                          |
+| ------------ | ---------------------------------------- | -------------------------------------------- |
+| **部署位置** | 嵌入到电信运营商的 5G 网络边缘。         | 部署在 AWS 定义的特定地理位置。              |
+| **延迟**     | 提供超低延迟（几毫秒），适用于实时应用。 | 提供低延迟，但通常高于 Wavelength。          |
+| **适用场景** | 需要 5G 网络支持的超低延迟应用。         | 需要靠近用户的低延迟应用，但不依赖 5G 网络。 |
+| **目标用户** | 5G 网络用户和延迟敏感型应用开发者。      | 需要靠近最终用户或特定地理位置的企业。       |
+
 ## Amazon EC2 Auto Scaling
 Amazon EC2 Auto Scaling 是 AWS 提供的一项服务，用于 **根据应用程序的需求动态地调整 Amazon EC2 实例的数量** 。它能够自动扩展或缩减 EC2 实例，以确保应用程序在负载增加时拥有足够的计算资源，同时在负载减少时节省成本。
-
-## AWS Glue
-AWS Glue 是一项由 AWS 提供的无服务器（Serverless）数据集成服务，**专门用于简化数据的发现、准备、转换和加载（ETL：Extract, Transform, Load）流程** 。它可以帮助用户轻松地将数据从多个来源提取、清洗和转换后加载到目标数据存储中（如数据湖或数据仓库），以便进行分析和查询。
 
 ## AWS Certificate Manager
 AWS Certificate Manager (ACM) 是 AWS 提供的一项托管服务，**用于轻松管理 SSL/TLS 证书，帮助用户保护其网站、应用程序及其他资源的通信安全**。通过 ACM，用户可以快速申请、部署和管理证书，无需手动完成复杂的证书生成、续订和部署流程。
@@ -223,14 +203,8 @@ AWS CloudHSM 是 **一种基于云的硬件安全模块（HSM）服务，允许�
 ## Amazon Rekognition
 Amazon Rekognition 是 AWS 提供的一项 **基于机器学习的图像和视频分析服务** 。它能够帮助开发者轻松地从图像和视频中提取信息，例如对象检测、人脸识别、行为分析等。开发者无需具备机器学习经验，只需通过 API 就可以快速集成这些功能，用于各种应用场景，如安全监控、内容审核、用户身份验证等。
 
-## Amazon Neptune
-Amazon Neptune 是 AWS 提供的一种完全托管的 **图数据库服务** ，专为构建和运行基于图形的应用程序而设计。它支持两种主流的图查询语言：Apache TinkerPop Gremlin（用于属性图）和 W3C SPARQL（用于 RDF 图），使开发者能够高效地存储和查询复杂的关系数据。
-
 ## Amazon SageMaker
 Amazon SageMaker 是 AWS 提供的一项完全托管的 **机器学习服务，旨在帮助开发者和数据科学家快速构建、训练和部署机器学习（ML）模型** 。它覆盖了机器学习工作流的整个生命周期，从数据准备到模型训练、优化和部署，用户无需管理底层的基础设施。
-
-## Amazon Lightsail
-Amazon Lightsail 是 AWS **提供的一种易于使用、经济实惠的云平台服务** ，专为那些需要简单云解决方案的用户设计。它提供了预配置的虚拟服务器（实例）、存储、数据库、网络和管理工具，使用户可以快速启动和运行小型应用程序、网站和开发环境，而无需深入了解复杂的云基础设施。
 
 ## AWS Artifact
 AWS Artifact 是 AWS 提供的一项自助式门户服务，专注于 **为用户提供与合规性和安全性相关的文档和报告** 。它是 AWS 合规性框架的一部分，帮助用户获取 AWS 的审计报告、认证和协议，以满足其自身的合规性需求。
@@ -239,7 +213,7 @@ AWS Artifact 是 AWS 提供的一项自助式门户服务，专注于 **为用�
 Amazon API Gateway 是 AWS 提供的一项完全托管的服务，**用于创建、发布、维护、监控和保护 API（应用程序编程接口）**。
 
 ## AWS Storage Gateway
-AWS Storage Gateway 是一项 **混合云存储服务**，旨在帮助企业将本地环境与 AWS 云存储无缝集成。通过 Storage Gateway，用户可以将本地数据存储扩展到 AWS 云中，同时继续以现有的方式访问和管理数据。这项服务适用于数据备份、归档、灾难恢复以及本地到云的存储扩展。
+AWS Storage Gateway 是一项 **混合云存储服务，旨在帮助企业将本地环境与 AWS 云存储无缝集成**。通过 Storage Gateway，用户可以将本地数据存储扩展到 AWS 云中，同时继续以现有的方式访问和管理数据。这项服务适用于数据备份、归档、灾难恢复以及本地到云的存储扩展。
 
 ## AWS Personal Health Dashboard (PHD) 
 AWS Personal Health Dashboard (PHD) 是 AWS 提供的一项服务，旨在 **为用户提供与其 AWS 资源相关的个性化运行状况信息和通知**。与 AWS 服务的整体运行状况页面（Service Health Dashboard）不同，Personal Health Dashboard 专注于用户账户下的具体资源，提供与用户资源直接相关的实时事件更新、潜在问题通知以及缓解建议。
@@ -267,11 +241,14 @@ AWS WAF（Web Application Firewall，Web 应用防火墙）是 AWS 提供的一�
 ## Amazon Cognito
 Amazon Cognito 是 AWS 提供的一项 **身份验证和用户管理服务，专为 Web 和移动应用程序设计** 。它帮助开发者快速、安全地添加用户注册、登录、访问控制以及身份验证功能，而无需自行开发复杂的身份管理系统。
 
+# 终端用户计算
 ## Amazon AppStream 2.0
 Amazon AppStream 2.0 是 **一项完全托管的 AWS End User Computing（EUC）服务，旨在流式传输软件即服务（SaaS）应用程序，并将桌面应用程序转换为 SaaS，而无需重写代码或重构应用程序**。使用 AppStream 2.0，您可以快速将应用程序扩展到全球各地的用户，而无需管理任何基础架构。 AppStream 2.0 提供多会话功能，允许您在单个 AppStream 2.0 实例上预置多个用户会话。这使您能够优化资源利用率，并且有助于降低成本，在不进行过度预置的情况下支持多种用户类型。
 
-# 服务定义与用途
+## AWS WorkSpaces
+AWS WorkSpaces 是 Amazon 提供的一种完全托管的**桌面即服务（DaaS）**解决方案。它允许用户在云中创建虚拟桌面环境，提供安全、高性能且可扩展的桌面体验。通过 AWS WorkSpaces，用户可以在任意设备上访问个性化的虚拟桌面，而无需管理底层硬件或复杂的虚拟桌面基础设施。
 
+### AWS WorkSpaces 与 Amazon AppStream 2.0 的区别
 | **特性**     | **AWS WorkSpaces**                                                         | **Amazon AppStream 2.0**                                                                       |
 | ------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | **服务类型** | 桌面即服务（DaaS）。提供完整的虚拟桌面环境。                               | 应用流服务。将单个应用程序流式传输到用户设备，而不是完整的桌面环境。                           |
@@ -279,23 +256,36 @@ Amazon AppStream 2.0 是 **一项完全托管的 AWS End User Computing（EUC）
 | **使用场景** | - 远程办公、BYOD（自带设备）。<br>- 开发测试环境。<br>- 企业桌面替代方案。 | - 应用程序流式传输（如 CAD、3D 渲染、财务应用）。<br>- 教育和培训。<br>- SaaS 应用交付。       |
 
 
-## AWS WorkSpaces
-AWS WorkSpaces 是 Amazon 提供的一种完全托管的**桌面即服务（DaaS）**解决方案。它允许用户在云中创建虚拟桌面环境，提供安全、高性能且可扩展的桌面体验。通过 AWS WorkSpaces，用户可以在任意设备上访问个性化的虚拟桌面，而无需管理底层硬件或复杂的虚拟桌面基础设施。
+## Amazon WorkSpaces Web
+Amazon WorkSpaces Web 是 Amazon Web Services (AWS) 提供的一项完全托管的服务，旨在 **为用户提供安全、低延迟的基于浏览器的访问方式，用于访问内部企业系统、SaaS 应用程序和敏感数据，而无需将数据直接暴露到用户设备上**。它通过虚拟化的浏览器会话，保护企业资源的安全，同时提升用户体验。
+
+### Amazon WorkSpaces 与 Amazon WorkSpaces Web 的区别
+| 特性               | **Amazon WorkSpaces**                                | **Amazon WorkSpaces Web**                          |
+| ------------------ | ---------------------------------------------------- | -------------------------------------------------- |
+| **使用场景**       | 提供完整的虚拟桌面环境，适合需要访问多种应用的用户。 | 提供安全的浏览器访问，适合仅需访问网页资源的用户。 |
+| **数据存储**       | 用户数据存储在虚拟桌面上。                           | 数据从不离开 AWS 云，用户设备上无数据存储。        |
+| **复杂性**         | 需要更多的配置和管理。                               | 完全托管，简单易用。                               |
+| **成本**           | 成本较高，按虚拟桌面资源收费。                       | 成本较低，按浏览器会话收费。                       |
+| **支持的应用类型** | 支持桌面应用程序和浏览器访问。                       | 仅支持基于浏览器的应用程序访问。                   |
+| **设备要求**       | 需要安装 WorkSpaces 客户端。                         | 无需安装客户端，通过现代浏览器即可访问。           |
+| **适用场景**       | 适合需要完整桌面体验的用户，例如开发者或设计师。     | 适合需要访问 SaaS 应用或企业内部网页的用户。       |
+| **管理复杂度**     | 需要管理虚拟桌面实例和存储。                         | AWS 完全托管，无需管理底层基础设施。               |
+| **安全性**         | 数据可以存储在虚拟桌面上，需额外保护。               | 数据从不离开 AWS 云，天然更安全。                  |
+| **资源使用**       | 占用更多计算和存储资源。                             | 占用较少资源，仅运行云端浏览器会话。               |
+
 
 ## AWS Cost and Usage Report
 AWS Cost and Usage Report (CUR) 是 AWS 提供的一项服务，用于生成详细的成本和使用情况报告，帮助用户深入了解其 AWS 服务的使用情况和费用明细。CUR 是 AWS 提供的最全面、最详细的计费数据来源，能够追踪每个 AWS 服务、每个账户、每个资源的使用情况和费用。
-
-## Amazon QuickSight
-Amazon QuickSight 是 AWS 提供的一项基于云的 **商业智能（BI）服务，旨在帮助用户快速创建可视化报表、分析数据并从数据中提取洞察** 。它支持从各种数据源（如 AWS 数据服务、第三方数据库、本地文件等）导入数据，通过直观的仪表板和交互式图表，帮助用户轻松实现数据分析和共享。
-
-## Amazon EMR
-Amazon EMR（Elastic MapReduce） 是 AWS 提供的一项托管服务，用于 **处理和分析大规模数据**。它基于流行的大数据框架（如 Apache Hadoop、Apache Spark、Presto 等），帮助用户快速、经济高效地运行分布式计算任务。Amazon EMR 可用于处理各种类型的数据，包括日志数据、事务数据、点击流数据、传感器数据等，适用于数据分析、机器学习、实时流处理和大数据应用开发。
 
 ## AWS Directory Service
 AWS Directory Service 是 AWS 提供的一项托管服务，用于 **在云中设置和管理目录服务**。它允许用户将其现有的 Microsoft Active Directory (AD) 或其他目录服务扩展到 AWS 云中，或者直接在 AWS 中创建新的目录。AWS Directory Service 使企业能够轻松管理用户身份、认证、设备、组策略以及资源访问权限，同时减少了管理目录基础设施的复杂性。
 
 ## Amazon Pinpoint
 Amazon Pinpoint 是 AWS 提供的一项灵活的、**多渠道营销和用户参与服务**，主要用于帮助企业与客户进行高效的沟通和互动。它允许用户通过多种渠道（如电子邮件、短信、推送通知、语音消息和社交媒体）向客户发送个性化的消息，同时提供详细的分析功能，用于监控和优化营销活动的效果。
+
+# 容器
+## Amazon Elastic Container Registry
+Amazon Elastic Container Registry (Amazon ECR) 是 Amazon Web Services (AWS) 提供的 **一项全托管的容器镜像存储服务，专为存储、管理和部署容器镜像而设计**。它与 Amazon ECS（Elastic Container Service）、Amazon EKS（Elastic Kubernetes Service）以及 Docker 等容器工具无缝集成，帮助开发者轻松管理容器化应用的镜像。
 
 ## Amazon Elastic Container Service (ECS)
 Amazon Elastic Container Service (ECS) 是 Amazon Web Services (AWS) 提供的一项 **高性能、可扩展的容器管理服务，支持运行、停止和管理 Docker 容器化的应用程序**。ECS 消除了用户部署和管理容器编排软件的复杂性，能够让开发者专注于构建和运行容器化应用程序。
@@ -306,17 +296,33 @@ Amazon Elastic Kubernetes Service (EKS) 是 Amazon Web Services (AWS) 提供的�
 ## AWS Fargate
 AWS Fargate 是 AWS 提供的一种 **无服务器容器运行服务，允许用户无需管理底层服务器或集群即可运行容器化应用程序** 。它与 Amazon ECS（Elastic Container Service） 和 Amazon EKS（Elastic Kubernetes Service） 集成，用户只需定义容器的资源需求和配置，Fargate 会自动处理容器的计算资源分配、启动和扩展。
 
+# 分析服务
 ## Amazon Athena
 Amazon Athena 是 AWS 提供的一项 **交互式查询服务，用于直接在 Amazon S3 上运行 SQL 查询，无需加载或移动数据** 。它是一种 无服务器（Serverless） 的服务，用户无需管理基础设施，只需提供 SQL 查询，Athena 会自动处理底层的计算资源，返回查询结果。
 
 ## Amazon Kinesis
 Amazon Kinesis 是 AWS 提供的一套完全托管的 **实时数据流处理服务，旨在帮助开发者轻松收集、处理和分析大规模实时数据流** 。它能够以毫秒级的延迟处理来自数百万个数据源（如 IoT 设备、日志文件、应用程序、点击流等）的数据，使用户能够实时获取洞察并采取行动。
 
-## AWS Step Functions
-AWS Step Functions 是 AWS 提供的一项 **可视化工作流编排服务，用于构建和运行分布式应用程序、自动化任务和微服务架构**。它通过定义状态机（State Machine），将多个 AWS 服务或自定义任务组织成一个有序的工作流，并支持复杂的逻辑控制（如条件分支、并行执行、错误处理和重试机制）。
+## Amazon Redshift
+Amazon Redshift 是亚马逊云服务（AWS）推出的一种 **完全托管的云端数据仓库服务，专为大规模数据存储和分析而设计**。它能够高效地处理 PB 级别的数据，支持复杂的查询和分析操作，帮助企业快速从海量数据中获取洞察。
 
-## AWS Cloud9
-AWS Cloud9 是 Amazon Web Services 提供的 **一款基于云的集成开发环境（IDE）**，允许开发者直接在浏览器中编写、运行和调试代码。它支持多种编程语言（如 JavaScript、Python、PHP 等），并且与 AWS 服务深度集成，使开发者可以快速构建、测试和部署应用程序。
+## AWS Data Exchange(交换)
+AWS Data Exchange 是 Amazon Web Services (AWS) 提供的一项 **数据共享服务，旨在让用户轻松查找、订阅和使用第三方数据集**。通过 AWS Data Exchange，用户可以访问来自各种数据提供商的高质量数据，用于分析、机器学习和业务决策，同时数据提供商也可以通过该平台安全地分发其数据产品。
+
+## Amazon EMR
+Amazon EMR（Elastic MapReduce） 是 AWS 提供的一项托管服务，用于 **处理和分析大规模数据**。它基于流行的大数据框架（如 Apache Hadoop、Apache Spark、Presto 等），帮助用户快速、经济高效地运行分布式计算任务。Amazon EMR 可用于处理各种类型的数据，包括日志数据、事务数据、点击流数据、传感器数据等，适用于数据分析、机器学习、实时流处理和大数据应用开发。
+
+## AWS Glue(胶水)
+AWS Glue 是一项由 AWS 提供的无服务器（Serverless）数据集成服务，**专门用于简化数据的发现、准备、转换和加载（ETL：Extract, Transform, Load）流程** 。它可以帮助用户轻松地将数据从多个来源提取、清洗和转换后加载到目标数据存储中（如数据湖或数据仓库），以便进行分析和查询。
+
+## Amazon Managed Streaming for Apache Kafka
+Amazon Managed Streaming for Apache Kafka (Amazon MSK) 是一项由 AWS 提供的全托管服务，专门用于运行和管理 Apache Kafka。Apache Kafka 是一种广泛使用的开源 **分布式事件流平台，用于构建实时数据流应用程序和数据管道**。Amazon MSK 让用户无需担心 Kafka 集群的设置、维护和扩展，专注于开发和运行应用程序。
+
+## Amazon OpenSearch Service
+Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供的一项全托管服务，用于部署、操作和扩展 OpenSearch 和 Elasticsearch 集群。这项服务 **支持用户在 AWS 云中执行实时的日志分析、全文搜索、监控和可视化等任务**，无需管理底层的基础设施。
+
+## Amazon QuickSight
+Amazon QuickSight 是 AWS 提供的一项基于云的 **商业智能（BI）服务，旨在帮助用户快速创建可视化报表、分析数据并从数据中提取洞察** 。它支持从各种数据源（如 AWS 数据服务、第三方数据库、本地文件等）导入数据，通过直观的仪表板和交互式图表，帮助用户轻松实现数据分析和共享。
 
 ## Amazon Forecast
 Amazon Forecast 是 AWS 提供的一项 **机器学习驱动的时间序列预测服务，用于帮助用户生成高精度的业务预测**。它利用 机器学习（ML）技术，结合历史数据和相关变量（如促销活动、天气条件等），生成针对特定用例的预测结果。
@@ -324,23 +330,25 @@ Amazon Forecast 是 AWS 提供的一项 **机器学习驱动的时间序列预�
 ## AWS Service Quotas
 Service Quotas 是 AWS 提供的一项服务，**用于管理和查看 AWS 服务的配额（也称为限制）**。每个 AWS 服务都有其默认的资源或操作限制，例如 API 调用次数、实例数量、存储容量等。通过 Service Quotas，用户可以方便地查看这些限制，并根据需要向 AWS 提交配额增加请求。
 
-## AWS Amplify
+# 前端 Web和移动
+## AWS Amplify(放大、增强)
 AWS Amplify 是 Amazon Web Services 提供的一套工具和服务，专门用于帮助开发人员 **快速构建、部署和管理全栈 Web 和移动应用程序**。它简化了前端和后端的开发流程，提供了强大的工具链和托管服务，支持从前端框架到云后端的无缝集成。
 
 ## AWS AppSync
-AWS AppSync 是 Amazon Web Services 提供的一项 **全托管的 GraphQL API 服务**，用于构建现代化的应用程序，支持实时数据查询、变更和订阅。它允许开发者通过一个单一的 GraphQL 接口访问和管理来自多个数据源的数据（如 Amazon DynamoDB、RDS、Lambda、HTTP API 等），从而简化数据访问和整合。
+AWS AppSync 是 Amazon Web Services 提供的一项 **全托管的 GraphQL API 服务，用于构建现代化的应用程序，支持实时数据查询、变更和订阅**。它允许开发者通过一个单一的 GraphQL 接口访问和管理来自多个数据源的数据（如 Amazon DynamoDB、RDS、Lambda、HTTP API 等），从而简化数据访问和整合。
 
+## AWS Device Farm(农场)
+AWS Device Farm 是 Amazon Web Services (AWS) 提供的 **一项应用测试服务，旨在帮助开发者在真实设备上测试其移动应用程序和网页应用程序**。通过 AWS Device Farm，开发者可以在云端访问各种真实设备（包括智能手机、平板电脑等），以便快速发现问题并优化用户体验，而无需构建和维护自己的测试基础设施。
+
+# 物联网 (IoT)
 ## AWS IoT Greengrass
 AWS IoT Greengrass 是一项 **边缘计算服务，旨在将云计算的功能扩展到本地设备，使物联网（IoT）设备能够在边缘环境中运行 AWS Lambda 函数、与其他设备通信、处理数据、执行机器学习推理，并与 AWS 云服务无缝集成**。
 
-## AWS Outposts
-AWS Outposts 是 Amazon Web Services 提供的一项 **混合云解决方案，允许企业将 AWS 的基础设施、服务和工具扩展到本地数据中心或边缘位置**。通过 Outposts，用户可以在自己的本地环境中运行与 AWS 云中一致的服务、API 和工具，从而实现低延迟、本地数据处理和混合部署的需求。
+## AWS IoT Core
+AWS IoT Core 是 AWS 提供的一种托管服务，专门 **用于连接物联网（IoT）设备到云端，并实现设备之间、设备与云端的安全通信和交互**。它为开发者提供了一个强大的平台，用于构建、管理和扩展物联网应用，而无需管理底层基础设施。
 
 ## Amazon Detective
 Amazon Detective 是亚马逊云服务（AWS）提供的 **一项安全分析服务，旨在帮助用户调查和分析潜在的安全问题或可疑活动**。通过自动化的数据收集和图形分析，Amazon Detective 可以快速识别、理解和解决安全事件的根本原因。
-
-## Amazon OpenSearch Service
-Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供的一项全托管服务，用于部署、操作和扩展 OpenSearch 和 Elasticsearch 集群。这项服务 **支持用户在 AWS 云中执行实时的日志分析、全文搜索、监控和可视化等任务**，无需管理底层的基础设施。
 
 ## AWS Security Hub(中心)
 AWS Security Hub 是 Amazon Web Services 提供的一项 **全托管安全服务，旨在集中管理和分析来自多个 AWS 服务和第三方安全工具的安全警报和合规性状态**。它为用户提供统一的安全视图，帮助识别潜在的安全问题，简化合规性检查，并增强整体安全态势。
@@ -383,8 +391,24 @@ AWS Global Accelerator 是一项 **网络服务，旨在通过优化全球用户
 ## Amazon CloudFront(云前面)
 Amazon CloudFront 是 Amazon Web Services（AWS）提供的 **内容分发网络（CDN）服务**，旨在帮助用户快速、安全地将内容（如网页、视频、图像和 API 数据）分发给全球用户。通过将内容缓存到靠近用户的边缘位置，CloudFront 提供低延迟、高吞吐量和高可用性的内容交付体验，同时内置了安全功能来保护内容和应用程序。
 
+## Amazon Relational Database Service (RDS)
+Amazon Relational Database Service (RDS) 是 Amazon Web Services (AWS) 提供的一项 **完全托管的关系型数据库服务**，旨在帮助用户轻松设置、操作和扩展关系型数据库。通过自动化的数据库管理任务（如硬件配置、数据库设置、补丁管理和备份），RDS 大幅简化了数据库的运维工作，让用户可以专注于应用程序开发。
+
+# 数据库
 ## Amazon Aurora
 Amazon Aurora 是 AWS 提供的 **一种高性能、企业级的关系型数据库服务，与 MySQL 和 PostgreSQL 兼容**。Aurora 结合了传统商业数据库的性能和可用性，同时具备开源数据库的简单性和经济性。它专为云环境设计，提供高吞吐量、低延迟、高可用性和自动扩展功能。
+
+## Amazon DynamoDB
+Amazon DynamoDB 是 Amazon Web Services (AWS) 提供的一项 **完全托管的 NoSQL 数据库服务**，专为需要低延迟、高吞吐量和高可用性的应用程序设计。DynamoDB 支持键值存储和文档存储，能够轻松处理任意规模的工作负载，适合多种实时、高性能场景。
+
+## Amazon Neptune
+Amazon Neptune 是 AWS 提供的一种完全托管的 **图数据库服务，专为构建和运行基于图形的应用程序而设计** 。它支持两种主流的图查询语言：Apache TinkerPop Gremlin（用于属性图）和 W3C SPARQL（用于 RDF 图），使开发者能够高效地存储和查询复杂的关系数据。
+
+## AWS Database Migration Service
+AWS Database Migration Service (DMS) 是 Amazon Web Services (AWS) 提供的一项 **完全托管的数据库迁移服务**，旨在帮助用户快速、安全地将数据库从本地或云环境迁移到 AWS。DMS 支持多种数据库引擎之间的迁移，包括关系型数据库、NoSQL 数据库和数据仓库，同时支持同构和异构数据库迁移。
+
+## AWS Schema Conversion(转换) Tool
+AWS Schema Conversion Tool (SCT) 是 Amazon Web Services (AWS) 提供的一款 **数据库架构转换工具**，旨在帮助用户将现有的数据库架构从一种数据库引擎迁移到另一种数据库引擎。它特别适用于异构数据库迁移，例如从商业数据库（如 Oracle、SQL Server）迁移到开源数据库（如 Amazon Aurora、PostgreSQL 或 MySQL）。
 
 ## Amazon WorkDocs
 Amazon WorkDocs 是 AWS 提供的一种 **安全、完全托管的企业内容管理和协作服务**。它允许用户在云端存储、共享和协作处理文档、电子表格、演示文稿以及其他文件。WorkDocs 提供了类似于传统文件共享和协作工具的功能，但具备更高的安全性、可扩展性和与 AWS 服务的深度集成。
@@ -392,29 +416,23 @@ Amazon WorkDocs 是 AWS 提供的一种 **安全、完全托管的企业内容�
 ## Amazon WorkMail
 Amazon WorkMail 是 AWS 提供的一种 **安全、托管的企业电子邮件和日历服务，旨在帮助企业用户轻松管理电子邮件、日历和联系人**。它支持与现有企业目录（如 Microsoft Active Directory）集成，并提供对企业级安全性和隐私的全面支持。用户可以通过常用的电子邮件客户端（如 Microsoft Outlook）或任何支持 IMAP 协议的客户端访问 WorkMail，同时也支持移动设备和 Web 浏览器。
 
-## AWS IoT Core
-AWS IoT Core 是 AWS 提供的一种托管服务，专门 **用于连接物联网（IoT）设备到云端，并实现设备之间、设备与云端的安全通信和交互**。它为开发者提供了一个强大的平台，用于构建、管理和扩展物联网应用，而无需管理底层基础设施。
-
 ## AWS DataSync
 AWS DataSync 是一种托管的 **数据迁移服务，用于在本地存储、边缘设备和 AWS 存储服务之间自动化、快速、安全地传输数据**。它支持将数据迁移到 AWS 云中，或者在不同的 AWS 存储服务之间进行数据同步，例如 Amazon S3、Amazon EFS（Elastic File System）和 Amazon FSx。
 
-## Amazon S3 Transfer Acceleration
+## Amazon S3 Transfer Acceleration(加速度)
 Amazon S3 Transfer Acceleration 是 AWS 提供的一项服务，旨在 **通过优化的全球网络基础设施，加速用户上传到 Amazon S3 存储桶的数据传输速度**。它利用 AWS 全球边缘网络（Amazon CloudFront 的边缘位置） 来缩短传输路径，从而显著提高远距离、大文件上传的速度。
-
-## Amazon FSx for Windows File Server
-Amazon FSx for Windows File Server 是 AWS 提供的一种 **完全托管的文件存储服务，专为运行 Windows 应用程序的企业设计**。它支持 Windows 原生的 SMB（Server Message Block）协议 和 NTFS（New Technology File System）文件系统，为用户提供熟悉的 Windows 文件存储体验，同时具备高性能、可扩展性和与 AWS 生态系统的深度集成。
 
 ## Amazon Elastic File System
 Amazon Elastic File System（Amazon EFS） 是 AWS 提供的一种 **完全托管的弹性网络文件系统，专为支持多个 AWS 云服务和本地资源的共享文件存储而设计**。EFS 提供简单、可扩展、高可用性和持久性的文件存储解决方案，能够自动扩展和收缩以适应工作负载的变化，从而无需预置存储容量。
+
+## Amazon FSx for Windows File Server
+Amazon FSx for Windows File Server 是 AWS 提供的一种 **完全托管的文件存储服务，专为运行 Windows 应用程序的企业设计**。它支持 Windows 原生的 SMB（Server Message Block）协议 和 NTFS（New Technology File System）文件系统，为用户提供熟悉的 Windows 文件存储体验，同时具备高性能、可扩展性和与 AWS 生态系统的深度集成。
 
 ## Amazon FSx for Lustre
 Amazon FSx for Lustre 是 AWS 提供的一种 **完全托管的高性能文件存储服务，专为需要快速处理大规模数据集的计算密集型工作负载而设计**。它基于开源的 Lustre 文件系统，Lustre 是一种广泛用于高性能计算（HPC）和机器学习等领域的分布式文件系统，以其超低延迟、高吞吐量和高并发性能而闻名。
 
 ## Amazon Elastic Block Store
 Amazon Elastic Block Store (Amazon EBS) 是 AWS 提供的一种 **高性能块存储服务，专为与 Amazon EC2 实例配合使用而设计**。EBS 提供低延迟、持久性、高可用性和可扩展性的存储解决方案，适用于各种工作负载，包括数据库、文件系统、容器化应用和分析等。
-
-## AWS re:Post
-AWS re:Post 是 AWS 提供的一个 **基于社区的问答平台，旨在帮助用户分享知识、解决问题并学习 AWS 服务和解决方案**。AWS re:Post 是 AWS Support 的一部分，作为 AWS 论坛的升级版，提供了更现代化的用户体验和功能，支持用户之间的互动与协作。
 
 ## Amazon WorkSpaces
 Amazon WorkSpaces 是 AWS 提供的一项**托管桌面即服务（DaaS，Desktop as a Service）**解决方案，允许用户在云中创建、管理和访问虚拟桌面。通过 WorkSpaces，用户可以从任何设备（如 PC、Mac、平板电脑或智能手机）安全地访问其虚拟桌面，并获得与传统物理桌面类似的使用体验。
@@ -428,17 +446,97 @@ AWS Professional Services 是 AWS 提供的一项 **专业咨询服务，旨在�
 ## AWS Well-Architected Tool
 AWS Well-Architected Tool 是 Amazon Web Services（AWS）提供的 **一种云架构评估和优化工具**，帮助用户根据 AWS Well-Architected Framework 的最佳实践，评估其工作负载的架构设计，并识别潜在的改进机会。该工具旨在确保用户的云架构能够实现高效、安全、可靠和经济的目标。
 
-## AWS Local Zones
-AWS Local Zones 是 Amazon Web Services（AWS）提供的 **一种基础设施部署选项，旨在将计算、存储、数据库和其他 AWS 服务扩展到距离用户更近的地理位置**。通过 AWS Local Zones，用户可以在靠近最终用户或特定位置的地方运行延迟敏感的应用程序，从而实现低延迟和更高性能。
+## AWS Backup
+AWS Backup 是 Amazon Web Services (AWS) 提供的一项 **集中式、完全托管的备份服务，旨在帮助用户简化和自动化 AWS 资源的备份和恢复操作**。通过 AWS Backup，用户可以轻松地为各种 AWS 服务（如 EC2、RDS、EFS 等）创建备份策略，集中管理备份任务，并确保数据的安全性和合规性。
 
-## AWS Wavelength(波长)
-AWS Wavelength 是 Amazon Web Services（AWS）推出的一种专为超低延迟应用程序设计的服务，旨在将 AWS 的计算和存储服务嵌入到电信运营商的 5G 网络边缘。通过 AWS Wavelength，开发者可以在距离最终用户更近的地方运行延迟敏感的工作负载，充分利用 5G 网络的低延迟、高带宽和广泛覆盖的特性。
+# 应用程序集成
+## Amazon EventBridge
+Amazon EventBridge 是 Amazon Web Services (AWS) 提供的 **一种无服务器事件总线服务，用于实现应用程序之间的事件驱动架构**。它可以从 AWS 服务、自定义应用程序或第三方 SaaS 应用程序中捕获事件，并将这些事件路由到目标服务，从而实现实时的事件处理和自动化工作流。
 
-### AWS Wavelength 与 AWS Local Zones 的区别
+EventBridge 的核心功能是事件路由和事件驱动架构的构建，用户可以基于事件模式定义规则，自动触发目标操作。
 
-| 特性         | **AWS Wavelength Zones**                 | **AWS Local Zones**                          |
-| ------------ | ---------------------------------------- | -------------------------------------------- |
-| **部署位置** | 嵌入到电信运营商的 5G 网络边缘。         | 部署在 AWS 定义的特定地理位置。              |
-| **延迟**     | 提供超低延迟（几毫秒），适用于实时应用。 | 提供低延迟，但通常高于 Wavelength。          |
-| **适用场景** | 需要 5G 网络支持的超低延迟应用。         | 需要靠近用户的低延迟应用，但不依赖 5G 网络。 |
-| **目标用户** | 5G 网络用户和延迟敏感型应用开发者。      | 需要靠近最终用户或特定地理位置的企业。       |
+## Amazon Simple Notification(通知) Service
+Amazon Simple Notification Service (Amazon SNS) 是 Amazon Web Services (AWS) 提供的一项 **完全托管的消息发布/订阅（Pub/Sub）服务，旨在帮助用户实现分布式系统、微服务和服务器无关架构中的异步通信**。通过 SNS，用户可以将消息从一个发布者发送到多个订阅者（如应用程序、终端用户或其他服务），实现高效的消息传递和通知功能。
+
+## Amazon Simple Queue Service
+Amazon Simple Queue Service (Amazon SQS) 是 Amazon Web Services (AWS) 提供的一种完全托管的消息队列服务，旨在帮助用户在分布式系统、微服务和无服务器架构中实现异步通信。通过 SQS，用户可以解耦应用程序的组件，确保消息的可靠传递，并提高系统的弹性和可扩展性。
+
+### 对比总结
+简单来说：
+* 如果需要点对点通信（生产者与消费者一对一），选择 Amazon SQS。
+* 如果需要一对多的广播消息（发布者与多个订阅者），选择 Amazon SNS。
+
+## AWS Step Functions
+AWS Step Functions 是 AWS 提供的一项 **可视化工作流编排服务，用于构建和运行分布式应用程序、自动化任务和微服务架构**。它通过定义状态机（State Machine），将多个 AWS 服务或自定义任务组织成一个有序的工作流，并支持复杂的逻辑控制（如条件分支、并行执行、错误处理和重试机制）。
+
+# 业务应用程序
+## Amazon Connect
+Amazon Connect 是 AWS 提供的一项 **云端联络中心服务，旨在帮助企业轻松建立和管理客户服务中心**。它是一种高度可扩展、经济高效且易于使用的解决方案，允许企业通过语音、聊天和其他渠道与客户进行互动。
+
+Amazon Connect 的核心理念是简化联络中心的部署和运营，同时通过 AWS 的云服务提供高可用性、灵活性和智能化功能（如 AI 驱动的客户交互和分析）。它无需复杂的硬件或软件安装，用户可以快速启动并根据需求扩展。
+
+## Amazon Simple Email Service
+Amazon Simple Email Service (Amazon SES) 是 Amazon Web Services (AWS) 提供的 **一种灵活、可扩展且经济高效的云电子邮件服务**，专为开发人员和企业设计。它支持发送事务性邮件、营销邮件和批量邮件，同时也能接收和监控电子邮件。
+
+# 客户参与
+## AWS Activate(激活)
+AWS Activate 是 Amazon Web Services (AWS) **专为初创公司设计的一项支持计划，旨在帮助初创公司快速启动和扩展其业务**。通过 AWS Activate，初创公司可以获得免费的 AWS 资源、技术支持、培训以及其他工具，以降低初期成本，加速产品开发，并实现快速增长。
+
+## AWS IQ
+AWS IQ 是 Amazon Web Services (AWS) 提供的一个平台，旨在 **帮助客户快速找到经过认证的 AWS 专家（包括个人和咨询公司），以获得技术支持、项目实施和解决方案开发服务**。通过 AWS IQ，客户可以直接与 AWS 认证专家进行协作，满足其在云计算上的各种需求。
+
+## AWS Managed Services
+AWS Managed Services (AMS) 是 Amazon Web Services 提供的一项托管服务，旨在 **帮助企业简化云环境的运营和管理**。AMS 通过自动化流程和专业支持，为客户提供安全、合规、高效的 AWS 环境管理服务，使企业能够专注于核心业务，而无需投入大量资源管理云基础设施。
+
+# 开发工具
+## AWS AppConfig
+AWS AppConfig 是 Amazon Web Services (AWS) 提供的一项服务，隶属于 AWS Systems Manager，用于 **帮助开发者和运维团队快速、安全地管理和部署应用程序的配置数据**。它特别适用于需要频繁更新配置的应用程序，例如动态调整功能开关、修改应用程序行为或更新运行时参数，而无需重新部署代码。
+
+## AWS Cloud9
+AWS Cloud9 是 Amazon Web Services 提供的 **一款基于云的集成开发环境（IDE）**，允许开发者直接在浏览器中编写、运行和调试代码。它支持多种编程语言（如 JavaScript、Python、PHP 等），并且与 AWS 服务深度集成，使开发者可以快速构建、测试和部署应用程序。
+
+## AWS CloudShell
+AWS CloudShell 是 Amazon Web Services (AWS) 提供的 **一项基于浏览器的命令行界面 (CLI) 服务，允许用户在 AWS 管理控制台中直接运行命令来管理 AWS 资源**。它为用户提供了一个预配置的、基于云的 Shell 环境，无需额外安装或配置工具，即可快速开始使用 AWS CLI 和其他常用开发工具。
+
+## AWS CodeCommit
+AWS CodeCommit 是 AWS 提供的一项 **完全托管的源代码控制服务** ，支持团队安全地存储和管理代码、二进制文件或其他资产。它是基于 Git 的源代码管理工具，开发者可以像使用其他 Git 仓库（如 GitHub、GitLab、Bitbucket 等）一样使用 CodeCommit，但 CodeCommit 提供了更高的安全性、可扩展性和与 AWS 服务的深度集成。
+
+## AWS CodeBuild
+AWS CodeBuild 是 AWS 提供的一项 **完全托管的持续集成（CI）服务，用于自动化代码的构建、测试和打包** 。它能够从代码存储库中获取源代码，执行编译、运行单元测试，并生成可部署的构建工件（如二进制文件或容器镜像）。CodeBuild 是无服务器的，用户无需管理构建服务器，AWS 会根据需要自动分配和扩展资源。
+
+## AWS CodePipeline
+AWS CodePipeline 是 AWS 提供的一项 **完全托管的持续集成与持续交付（CI/CD）服务** ，用于自动化代码的构建、测试和部署流程。通过 CodePipeline，开发团队可以快速实现从代码提交到生产环境的自动化发布，确保应用程序的高质量和快速交付。
+
+## AWS CodeDeploy
+AWS CodeDeploy 是一项由 AWS 提供的 **全托管部署服务**，用于自动化代码部署到各种计算服务上，如 Amazon EC2 实例、本地服务器、AWS Lambda 函数 或 Amazon ECS 服务。它帮助开发者快速、安全地将应用程序的新版本部署到目标环境中，同时最大限度地减少停机时间和部署失败的风险。
+
+## AWS CodeStar
+AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
+
+# 管理和监管
+## AWS CloudFormation
+AWS CloudFormation 是 AWS 提供的 **一项基础设施即代码（Infrastructure as Code, IaC）服务**，允许用户通过编写模板文件来定义和管理 AWS 资源。
+
+## AWS X-Ray
+AWS X-Ray 是一项分布式跟踪服务， **主要用于分析和调试分布式应用程序（如微服务架构）的性能问题** 。它帮助开发者和运维团队可视化应用程序的运行状况，识别性能瓶颈，并快速诊断故障。
+
+通过 AWS X-Ray，您可以查看请求在应用程序中的完整路径，跟踪每个服务、组件、数据库查询、外部 API 调用等的性能表现，从而深入了解系统的行为和性能。
+
+# 云财务管理
+## AWS Budgets(预算)
+AWS Budgets 是 Amazon Web Services (AWS) 提供的一项 **成本管理工具，旨在帮助用户设置、监控和控制其云服务的成本和使用情况**。通过 AWS Budgets，用户可以创建预算目标，与实际的成本或使用量进行对比，并在超出预算阈值或接近预算时收到通知。
+
+## AWS Cost Explorer
+AWS Cost Explorer 是 Amazon Web Services (AWS) 提供的一款 **成本分析和可视化工具，帮助用户深入了解其 AWS 服务的成本和使用情况**。通过 Cost Explorer，用户可以轻松生成定制化的报告，分析历史支出、预测未来成本，并识别潜在的节省机会。
+
+## AWS Billing Conductor(指挥)
+AWS Billing Conductor（AWS 账单指挥官） 是 AWS 提供的一项 **账单管理服务，专为需要为多个账户（如组织中的部门、团队或客户）定制账单的用户设计**。它允许用户创建自定义的账单模型，重新分摊和分配成本，以满足内部成本分配或外部客户计费的需求。
+
+## AWS Cost and Usage Report
+AWS 成本和使用情况报告（AWS Cost and Usage Report, CUR） 是 AWS 提供的一种 **全面的成本和使用情况分析工具。它可以帮助用户详细了解其 AWS 服务的使用情况和相关成本，支持从高层概览到细粒度的分析**。CUR 是 AWS 成本管理套件中的核心工具之一，通常用于优化成本、预算管理和财务分析。
+
+## AWS Knowledge Center
+AWS Knowledge Center 是 Amazon Web Services (AWS) 提供的 **一个在线知识库，旨在帮助用户快速解决常见问题、了解 AWS 服务的最佳实践，并获取技术支持的相关信息**。它是一个自助式资源中心，汇集了 AWS 客户支持团队整理的常见问题解答（FAQs）和解决方案。
+
+## AWS re:Post
+AWS re:Post 是 AWS 提供的一个 **基于社区的问答平台，旨在帮助用户分享知识、解决问题并学习 AWS 服务和解决方案**。AWS re:Post 是 AWS Support 的一部分，作为 AWS 论坛的升级版，提供了更现代化的用户体验和功能，支持用户之间的互动与协作。
