@@ -14,7 +14,7 @@ AWS Client VPN 是一项 **完全托管的远程访问 VPN 服务** ，允许用
 
 这项服务主要用于为远程员工、分布式团队或需要安全访问 AWS 环境的用户提供便捷、可靠的 VPN 解决方案，而无需自行部署和管理 VPN 基础设施。
 
-![Client VPN architecture](./images/client-vpn-001.png)
+![Client VPN architecture](../images/client-vpn-001.png)
 
 ## AWS Site-to-Site VPN
 AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用户的本地网络（如数据中心、办公室）与 AWS 云之间建立加密的虚拟专用网络（VPN）连接**。通过 Site-to-Site VPN，用户可以安全地将本地环境与 Amazon Virtual Private Cloud (VPC) 或 AWS Transit Gateway 连接起来，从而构建混合云架构，实现数据的安全传输。

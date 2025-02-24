@@ -13,3 +13,5 @@
 ## [Savings Plans FAQ](https://aws.amazon.com/cn/savingsplans/faq/)
 
 ## [AWS Well-Architected 框架](https://docs.aws.amazon.com/zh_cn/wellarchitected/latest/framework/the-pillars-of-the-framework.html)
+
+## [什么是人工智能](https://aws.amazon.com/what-is/artificial-intelligence/)
