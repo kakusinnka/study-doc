@@ -3,7 +3,6 @@ AWS Certified AI Practitioner 证书鉴定的是考生是否具备目前炙手�
 
 ## 了解考试
 ### 遵循 [四步计划](https://explore.skillbuilder.aws/learn/external-ecommerce;view=none;redirectURL=?ctldoc-catalog-0=l-_zh~field16-_28~field17-_44~field14-_5)
-
-
+* [Exam Prep Standard Course: AWS Certified AI Practitioner](./AIF-C01_ExamPrepStandardCourse.md)
 
 阅读 [考试指南](https://d1.awsstatic.com/zh_CN/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
