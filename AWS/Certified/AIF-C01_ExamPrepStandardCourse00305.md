@@ -322,5 +322,20 @@ AI 监管策略首先要确定您的责任范围。责任可能包括监管与�
 
 ## 领域 5 复习和练习
 ### 演练问题 9
+略
+
 ### 演练问题 10
+略
+
 ### 其他资源
+1. [责任共担模式](https://aws.amazon.com/cn/compliance/shared-responsibility-model/)
+2. [确保生成式 AI 安全：应用相关的安全控制措施](https://aws.amazon.com/blogs/security/securing-generative-ai-applying-relevant-security-controls/)
+3. [面向人工智能、机器学习和生成式 AI 的 AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html)
+4. [AWS 合规性](https://aws.amazon.com/compliance/)
+5. [Customer Compliance Center](https://aws.amazon.com/compliance/customer-center/)
+6. [NIST 人工智能风险管理框架](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf)
+7. [ISO 42001：一项新的基础性全球标准，用于推进响应式 AI](https://aws.amazon.com/blogs/machine-learning/iso-42001-a-new-foundational-global-standard-to-advance-responsible-ai/)
+8. [欧盟人工智能法案](https://artificialintelligenceact.eu/)
+9. [学习如何评估 AI 系统的风险](https://aws.amazon.com/blogs/machine-learning/learn-how-to-assess-risk-of-ai-systems/)
+10. [什么是数据监管？](https://aws.amazon.com/what-is/data-governance/)
+11. [生成式 AI 时代的数据监管](https://aws.amazon.com/blogs/big-data/data-governance-in-the-age-of-generative-ai/)
