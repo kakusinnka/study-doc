@@ -1,3 +1,3 @@
-## [Cloud Practitioner (云从业者)](./CloudPractitioner.md)
+## [Cloud Practitioner (云从业者)](./CloudPractitioner/CloudPractitioner.md)
 
-## [AI Practitioner (AI 从业者)](./AIPractitioner.md)
+## [AI Practitioner (AI 从业者)](./AIPractitioner/AIPractitioner.md)
