@@ -5,3 +5,5 @@
 ## [Fundamentals of Machine Learning and Artificial Intelligence (简体中文)](./Fundamentals_of_Machine_Learning_and_Artificial_Intelligence.md)
 
 ## [Exploring Artificial Intelligence Use Cases and Applications (简体中文)](./Exploring_Artificial_Intelligence_Use_Cases_and_Applications.md)
+
+## [Responsible Artificial Intelligence Practices (简体中文))](./Responsible_Artificial_Intelligence_Practices.md)
