@@ -6,4 +6,14 @@
 
 ## [Exploring Artificial Intelligence Use Cases and Applications (简体中文)](./Exploring_Artificial_Intelligence_Use_Cases_and_Applications.md)
 
-## [Responsible Artificial Intelligence Practices (简体中文))](./Responsible_Artificial_Intelligence_Practices.md)
+## [Responsible Artificial Intelligence Practices (简体中文)](./Responsible_Artificial_Intelligence_Practices.md)
+
+## [Developing Machine Learning Solutions (简体中文)](./Developing_Machine_Learning_Solutions.md)
+
+## [Developing Generative Artificial Intelligence Solutions (简体中文)](./Developing_Generative_Artificial_Intelligence_Solutions.md)
+
+## [Essentials of Prompt Engineering (简体中文)](./Essentials_of_Prompt_Engineering.md)
+
+## [Optimizing Foundation Models (简体中文)](./Optimizing_Foundation_Models.md)
+
+## [Security, Compliance, and Governance for AI Solutions (简体中文)](./Security_Compliance_and_Governance_for_AI_Solutions.md)
