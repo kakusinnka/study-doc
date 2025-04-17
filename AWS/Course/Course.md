@@ -17,3 +17,5 @@
 ## [Optimizing Foundation Models (简体中文)](./Optimizing_Foundation_Models.md)
 
 ## [Security, Compliance, and Governance for AI Solutions (简体中文)](./Security_Compliance_and_Governance_for_AI_Solutions.md)
+
+## [Amazon Q Business Getting Started (简体中文)](./Amazon_Q_Business_Getting_Started.md)
