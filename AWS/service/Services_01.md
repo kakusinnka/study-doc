@@ -540,3 +540,9 @@ AWS Knowledge Center 是 Amazon Web Services (AWS) 提供的 **一个在线知�
 
 ## AWS re:Post
 AWS re:Post 是 AWS 提供的一个 **基于社区的问答平台，旨在帮助用户分享知识、解决问题并学习 AWS 服务和解决方案**。AWS re:Post 是 AWS Support 的一部分，作为 AWS 论坛的升级版，提供了更现代化的用户体验和功能，支持用户之间的互动与协作。
+
+## AWS ParallelCluster
+AWS ParallelCluster 是由 Amazon Web Services 提供的一个开源工具，用于部署和管理高性能计算（HPC）集群。它简化了在 AWS 云环境中创建、配置和管理 HPC 集群的过程，使用户可以专注于计算任务，而无需花费大量时间在基础设施配置上。
+
+## Amazon EMR
+Amazon EMR 是 Amazon Web Services（AWS）提供的一种托管服务，专门用于大规模数据处理和分析。它支持分布式计算框架（如 Hadoop、Spark 等），能够快速、经济高效地处理海量数据，适用于大数据分析、机器学习、ETL（Extract, Transform, Load）流程和实时数据处理等场景。

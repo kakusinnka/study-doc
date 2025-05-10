@@ -31,7 +31,9 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 
 ## [常用术语](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html)
 
-## [我的常用术语](./glos-chap.md)
+## [AI 常用技术](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html)
+
+## [我的常用术语](./Certified/AIPractitioner/AI-glos-chap.md)
 
 ## [各种链接](./links.md)
 
