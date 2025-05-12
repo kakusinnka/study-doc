@@ -118,6 +118,9 @@ AWS Config 是一项完全托管的服务，用于 **持续评估、审核和记
 ## AWS Audit(审计) Manager
 AWS Audit Manager 是 Amazon Web Services（AWS）提供的一种自动化审计准备服务，旨在帮助用户简化和加速合规性评估流程。该服务通过自动收集和整理 AWS 服务使用情况的数据，生成与行业标准和法规（如 GDPR、HIPAA、ISO 27001 等）相关的审计证据，使用户能够更高效地管理合规性工作。**持续审计您的 AWS 使用情况，以简化风险与合规性的评估。**
 
+AWS Artifact 是一个用于访问和下载AWS合规性文件的平台，适合需要获取合规性证明的企业。  
+AWS Audit Manager 是一个用于自动化审计和合规性管理的工具，适合需要进行持续合规性监控和证据收集的企业。
+
 ## [AWS Well-Architected Framework](./Well-ArchitectedFramework.md)
 AWS Well-Architected Framework 是由 AWS 提供的 **一套云架构最佳实践指导原则，旨在帮助用户设计、构建和优化其在 AWS 云上的工作负载** 。通过 Well-Architected Framework，用户可以评估其架构的质量，识别潜在的改进点，并确保其架构能够满足业务需求，同时遵循高效、安全、可靠和经济的云架构设计原则。
 
@@ -234,6 +237,13 @@ Amazon Lumberyard 是由 AWS 开发并免费提供的 **一款跨平台 3D 游�
 
 ## Amazon CloudSearch
 Amazon CloudSearch 是 AWS 提供的一项 **全托管搜索服务**，允许用户轻松地为其网站或应用程序集成强大的搜索功能。
+
+Amazon CloudSearch 是 AWS（Amazon Web Services） 提供的一种全托管的搜索服务，用于在应用程序中轻松集成搜索功能。它允许开发者快速设置、管理和扩展搜索解决方案，而无需深入了解底层的搜索引擎技术。
+
+## Amazon OpenSearch Service
+Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 Amazon Web Services (AWS) 提供的一种全托管的分布式搜索和分析服务。它基于开源的 OpenSearch 和 Elasticsearch 引擎，允许用户轻松地在大规模数据集上执行搜索、日志分析、可视化、监控等任务。
+
+OpenSearch Service 适用于需要处理大量数据并快速执行复杂查询的场景，例如实时日志分析、应用性能监控、全文搜索等。
 
 ## AWS WAF
 AWS WAF（Web Application Firewall，Web 应用防火墙）是 AWS 提供的一项托管服务，**用于保护 Web 应用程序或 API 免受常见的 Web 威胁，例如 SQL 注入、跨站脚本（XSS）攻击以及分布式拒绝服务（DDoS）攻击等**。AWS WAF 帮助用户在不影响应用程序性能的情况下，提高应用程序的安全性和可用性。
@@ -546,3 +556,103 @@ AWS ParallelCluster 是由 Amazon Web Services 提供的一个开源工具，用
 
 ## Amazon EMR
 Amazon EMR 是 Amazon Web Services（AWS）提供的一种托管服务，专门用于大规模数据处理和分析。它支持分布式计算框架（如 Hadoop、Spark 等），能够快速、经济高效地处理海量数据，适用于大数据分析、机器学习、ETL（Extract, Transform, Load）流程和实时数据处理等场景。
+
+## Amazon SageMaker Model Cards
+Amazon SageMaker Model Cards 是 Amazon SageMaker 提供的一项功能，旨在帮助开发者和数据科学家更好地管理、记录和共享机器学习模型的关键信息。通过 Model Cards，用户可以轻松记录模型的开发细节、性能指标、训练参数以及相关的合规性信息，从而提高模型管理的透明度和效率。
+
+## Amazon SageMaker Canvas
+Amazon SageMaker Canvas 是一项无代码（No-Code）机器学习服务，旨在帮助企业用户（尤其是非技术人员）轻松构建、训练和部署机器学习模型。通过 SageMaker Canvas，用户无需编写代码即可使用直观的图形界面探索数据、构建预测模型，并生成业务洞察，从而实现机器学习的普及化。
+
+## Amazon SageMaker Studio
+Amazon SageMaker Studio 是 Amazon SageMaker 提供的一款集成开发环境（IDE），专为机器学习（ML）工作流设计。它将数据准备、模型开发、训练、调试、部署和监控等所有机器学习任务整合到一个统一的界面中，帮助开发者和数据科学家更高效地构建和管理机器学习模型。
+
+## Amazon SageMaker BlazingText
+Amazon SageMaker BlazingText 是 Amazon SageMaker 提供的一种高性能、易用的分布式文本处理和自然语言处理（NLP）算法。它专为快速训练文本嵌入模型（如 Word2Vec）而设计，能够高效地处理大规模文本数据，支持多种训练模式和分布式计算，适用于各种 NLP 任务。
+
+## Amazon SageMaker Neo
+Amazon SageMaker Neo 是一项强大的模型优化和部署服务，专注于提升机器学习模型的推理性能和资源利用率。它通过自动化的模型编译和硬件优化，使用户能够轻松地将高效模型部署到云端或边缘设备中。无论是需要高性能推理的实时应用，还是资源受限的边缘设备，SageMaker Neo 都能够提供高效、灵活的解决方案，帮助用户降低成本并提升模型性能。
+
+## Amazon Lookout for Equipment（设备）
+* **用途**：这是一个专门用于工业设备维护的服务，主要用于预测设备故障。
+* **适用场景**：监控工业设备的传感器数据，预测设备何时可能出现故障。
+
+## AWS Panorama Appliance（器具）
+* **用途**：这是一个边缘计算设备，主要用于计算机视觉任务，比如视频流分析。
+* **适用场景**：用于边缘设备中处理视频流，执行如安全监控、工厂质量检查等任务。
+
+## **Amazon Lookout for Metrics（指标）
+* **用途**：这是一个专门用于**检测时间序列数据中的异常**的服务。它能够自动分析各种指标（如销售数据、流量数据等），并检测其中的异常模式。
+* **适用场景**：适用于电商网站的销售数据、流量数据、用户行为数据等的异常检测。
+
+## **Amazon Lookout for Vision（视觉）
+* **用途**：这是一个用于检测图像或视频中异常的服务，主要用于工业质量控制。
+* **适用场景**：检测产品质量问题（如工厂生产线上的缺陷检测）。
+
+## Amazon SageMaker Pipelines
+Amazon SageMaker Pipelines 是一个专门用于构建、管理和自动化机器学习（ML）工作流的服务。它是 Amazon SageMaker 提供的一个端到端解决方案，旨在帮助开发者和数据科学家高效地管理机器学习项目的整个生命周期，包括数据准备、模型训练、模型评估和部署等步骤。
+
+## Amazon SageMaker Automatic Model Tuning（调优）
+Amazon SageMaker Automatic Model Tuning（也称为 Hyperparameter Optimization，HPO）是 Amazon SageMaker 提供的一项功能，用于自动优化机器学习模型的超参数。通过自动化搜索和优化超参数，SageMaker Automatic Model Tuning 能够帮助开发者快速找到最优的模型配置，从而提高模型的性能。
+
+## Amazon SageMaker Data Wrangler
+Amazon SageMaker Data Wrangler 是一个强大的数据准备工具，专注于简化数据清理、特征工程和数据分析的过程。通过直观的界面和丰富的功能，Data Wrangler 帮助用户快速为机器学习模型准备高质量的数据。
+
+记忆技巧：  
+把 “Data Wrangler” 想象成“数据牧人”，它的任务是整理、清理和优化数据，让你轻松驾驭混乱的数据世界！
+
+## Amazon SageMaker Ground Truth
+Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，用于创建高质量的标注数据集，帮助机器学习模型进行训练。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
+
+## Amazon Monitron (监控器)
+Amazon Monitron 是 AWS 提供的一种端到端的工业设备监控和预测性维护服务。它利用机器学习技术来检测工业设备中的异常振动和温度变化，从而预测设备故障，帮助企业减少非计划停机时间和维护成本。
+
+Amazon Monitron 提供了一整套硬件和软件解决方案，包括传感器、网关、机器学习模型和监控应用程序，用户无需具备机器学习或传感器数据处理的专业知识。
+
+## 主成分分析（PCA, Principal Component Analysis）
+主成分分析（PCA） 是一种常用的降维技术，用于在保持数据主要信息的同时，减少数据的维度。它通过将高维数据投影到一个低维空间中来实现降维，主要目标是去除冗余信息，并突出数据中最重要的特征。
+
+## Amazon SageMaker Clarify(阐明)
+Amazon SageMaker Clarify 是 Amazon SageMaker 提供的一项服务，用于帮助开发者检测和减少机器学习模型中的 偏差（Bias），并提高模型的 可解释性（Explainability）。它支持在数据准备、模型训练和推理阶段对模型进行分析，确保模型更加公平、透明和可信。
+
+## Amazon Bedrock Playground
+Amazon Bedrock Playground 是 Amazon Bedrock 提供的一种交互式工具，旨在帮助用户快速测试和优化提示（Prompt），以便更高效地使用基盘模型（Foundation Models, FM）。它为用户提供了一个直观的界面，可以轻松地设计、试验和调整提示，从而提高模型生成结果的质量和准确性。
+
+## Amazon Bedrock Agent
+Amazon Bedrock Agent 是一种用于自动化和管理生成 AI 模型的工具。
+
+## Guardrails （ガットレール）for Amazon Bedrock
+Guardrails for Amazon Bedrock 是 Amazon Bedrock 提供的一项服务，旨在帮助用户安全地构建和运行生成式人工智能应用。该功能通过多种机制对内容进行检测、过滤和治理，从而确保生成的内容符合企业政策和道德规范。
+
+## Amazon Bedrock Knowledge Base
+借助 Amazon Bedrock 知识库，您可以为基础模型和代理提供来自公司私有数据源的上下文信息，从而提供更相关、更准确和更个性化的响应。
+
+## Amazon Bedrock Model Distillation （蒸馏）
+Amazon Bedrock Model Distillation 是 Amazon Bedrock 提供的一项功能，旨在通过模型蒸馏技术创建更小、更高效的模型，同时尽可能保留大模型的性能。这一功能可以帮助用户在特定应用场景中实现更快的响应时间和更低的计算成本。
+
+* 模型蒸馏是一种机器学习技术，通过让一个较小的“学生模型”（Student Model）学习较大“教师模型”（Teacher Model）的行为，从而复制教师模型的能力。
+* 学生模型通过模仿教师模型的输出概率分布，能够在保持性能的同时显著减少计算资源需求。
+
+## Amazon Bedrock Prompt Cache
+Prompt Cache 是 Amazon Bedrock 提供的一项功能，用于优化模型推理性能，特别是在处理重复性提示（prompts）时。通过缓存提示的部分内容，Prompt Cache 能够显著降低响应延迟和输入令牌成本，从而提升整体效率。
+
+* Prompt Cache 会存储重复使用的提示或其部分内容。
+* 当新的请求中包含与缓存内容匹配的部分时，系统可以直接重用缓存结果，而无需重新推理。
+
+## Amazon Alexa
+Amazon Alexa 是由亚马逊（Amazon）开发的基于云的智能语音助手服务，最初于 2014 年随 Echo 智能音箱推出。它是一种人工智能驱动的语音交互系统，能够通过自然语言处理（NLP）与用户进行语音对话，并执行多种任务。Alexa 的核心目标是为用户提供便利的语音控制和智能服务。
+
+## Amazon Bedrock Custom Model Import
+Amazon Bedrock Custom Model Import 是一种功能，允许用户将自定义模型从其他环境（如 Amazon SageMaker）导入到 Amazon Bedrock 中，以便在 Bedrock 上进行管理和使用。
+
+## Amazon SageMaker Experiments（实验）
+Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户在机器学习模型开发过程中有效管理和追踪实验结果。它可以记录和分析多个方面，包括参数、指标、代码版本、训练数据集以及输出文件，这为机器学习实验提供了全面的支持 。
+
+## Amazon Titan
+来自 Amazon 的高性能基础型。Amazon Titan 是亚马逊推出的一种大规模语言模型（LLM），用于支持各种生成式AI应用。
+
+## 生成式人工智能安全范围矩阵 Generative AI Security Scoping Matrix 生成 AI セキュリティスコーピングマトリックス
+生成式人工智能安全范围矩阵是一个综合框架，旨在帮助组织在整个人工智能生命周期中评测并实施安全控制措施。该框架将安全考虑因素分解为特定类别，从而为保护人工智能应用程序提供了有针对性的方法。
+
+## Amazon SageMaker JumpStart
+Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
+Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用户快速启动和运行机器学习项目。
