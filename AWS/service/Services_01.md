@@ -600,6 +600,9 @@ Amazon SageMaker Data Wrangler 是一个强大的数据准备工具，专注于�
 记忆技巧：  
 把 “Data Wrangler” 想象成“数据牧人”，它的任务是整理、清理和优化数据，让你轻松驾驭混乱的数据世界！
 
+## Amazon SageMaker Processing
+Amazon SageMaker Processing 是 Amazon SageMaker 提供的一项功能，用于简化机器学习工作流中的数据处理和分析任务。它允许用户运行数据预处理、模型评估、特征工程以及其他与机器学习相关的任务，而无需管理底层的计算基础设施。
+
 ## Amazon SageMaker Ground Truth
 Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，用于创建高质量的标注数据集，帮助机器学习模型进行训练。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
 
@@ -659,3 +662,6 @@ Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用�
 
 ## Amazon MLOps
 Amazon MLOps（机器学习运维）是指在Amazon Web Services（AWS）平台上，使用工具和服务来管理和自动化机器学习模型的开发、部署、监控和维护的实践。自动化与管道管理, 模型监控与维护, 可扩展性, 持续集成与持续部署（CI/CD）, 安全与合规, 协作与版本控制。
+
+## Amazon Fraud Detector
+Amazon Fraud Detector 是一项由 AWS 提供的服务，用于帮助企业检测和预防在线欺诈活动。通过利用机器学习技术，Fraud Detector 可以自动识别潜在的欺诈行为，帮助企业降低风险和损失。

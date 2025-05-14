@@ -91,6 +91,9 @@
 ## 部分依存图（Partial Dependence Plots，PDPs）
 部分依存图（Partial Dependence Plots，简称 PDPs）是一种可视化技术，用于解释机器学习模型中某个或某些特定特征对模型预测结果的影响。PDP 能够帮助我们理解模型的行为，尤其是在复杂的非线性模型（如随机森林、梯度提升树）中，它是解释性机器学习的重要工具之一。
 
+## BERT
+BERT（Bidirectional Encoder Representations from Transformers）是由Google提出的一种用于自然语言处理（NLP）的预训练模型。它在多个NLP任务中取得了显著的效果提升。
+
 ## BERTScore
 BERTScore 是一种基于深度学习模型 BERT（Bidirectional Encoder Representations from Transformers）的文本评估指标，主要应用于自然语言处理（NLP）任务中，用于 **评估生成文本与参考文本之间的语义相似性**。与传统的基于词匹配的评估方法（如 BLEU、ROUGE 等）不同，BERTScore 利用 BERT 的上下文嵌入（contextual embeddings）来捕捉文本的深层语义信息，从而更精确地衡量文本之间的语义相似性。
 
@@ -238,3 +241,28 @@ LDA 由 David Blei 等人在 2003 年提出，其核心思想是认为文档是�
    - 走得太快（步长太大）可能会错过最低点；走得太慢（步长太小）可能会让你花费太多时间。因此，选择合适的步伐很重要，这类似于选择合适的学习率。
 
 通过这个例子，梯度可以被理解为一种指引方向和速度的工具，帮助我们在复杂的地形中找到最优路径。
+
+## 决定系数（R²）
+决定系数（R²）是统计学和数据分析中用于评估回归模型性能的重要指标。它反映了模型对数据的拟合程度，或者说模型解释因变量变化的能力。
+
+## 残差网络（ResNet, Residual Network）
+残差网络（ResNet）通过引入残差连接解决了深度网络训练中的梯度消失和退化问题，使得训练非常深的网络成为可能。它的设计简单而高效，推动了深度学习的发展，在图像分类、目标检测、语义分割等任务中取得了卓越的表现。
+
+## 检索增强生成（RAG, Retrieval-Augmented Generation）
+检索增强生成（RAG）是一种结合信息检索和生成模型的技术，旨在提高生成式任务（如文本生成、问答系统）的性能。RAG 将传统的检索方法与现代生成模型相结合，使得生成的内容更加丰富和准确。
+
+## Few-Shot Prompting
+Few-Shot Prompting 的核心思想是在给大型语言模型的输入文本（Prompt）中，包含少量（"Few-Shot"）针对特定任务的输入-输出示例对。通过这些示例，模型能够理解你想要它完成的任务的模式、格式或要求，然后根据你最终提供的输入，生成符合该模式的输出。
+
+## TensorFlow
+一个由 Google 开发的流行的开源机器学习框架，用于构建和训练各种机器学习模型。
+
+## PyTorch
+一个由 Facebook 开发的开源机器学习框架，以其灵活性和动态计算图而闻名。
+
+## Hugging Face
+Hugging Face 本身是一个公司和社区，以其在自然语言处理 (NLP) 领域的贡献而闻名，特别是其流行的 transformers 库和 Hugging Face Hub。
+
+transformers 库： 提供了大量预训练的、最先进的模型（如 BERT, GPT-2/3, T5, LLaMA 等），以及用于处理文本、音频、图像等的工具。这个库支持 PyTorch、TensorFlow 和 JAX 等多种深度学习框架。  
+Hugging Face Hub： 是一个集中的平台，用户可以发现、分享和使用模型、数据集、演示空间 (Spaces) 等资源。  
+Hugging Face on AWS 指的是在 Amazon Web Services (AWS) 云平台上使用和部署 Hugging Face 的工具、库和模型。结合 Hugging Face 的强大模型和易用性，以及 AWS 的可扩展、高性能的基础设施和托管服务，可以更高效地进行机器学习的开发、训练和部署。
