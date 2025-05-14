@@ -656,3 +656,6 @@ Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户在机
 ## Amazon SageMaker JumpStart
 Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
 Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用户快速启动和运行机器学习项目。
+
+## Amazon MLOps
+Amazon MLOps（机器学习运维）是指在Amazon Web Services（AWS）平台上，使用工具和服务来管理和自动化机器学习模型的开发、部署、监控和维护的实践。自动化与管道管理, 模型监控与维护, 可扩展性, 持续集成与持续部署（CI/CD）, 安全与合规, 协作与版本控制。
