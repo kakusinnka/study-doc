@@ -159,7 +159,7 @@ Community.aws 是一个由 AWS 构建者社区创建的平台，您可以使用 
 迁移中心提供了一个单一的位置来发现您现有的服务器、规划迁移并跟踪每个应用程序迁移的状态。
 
 ### Amazon Q Developer
-Amazon Q Developer 是一款基于 AI 的生成式对话助手，可帮助您理解、构建、扩展和操作 AWS 应用程序。
+Amazon Q Developer 是 Amazon 推出的生成式人工智能（Generative AI）驱动的开发者助手，旨在帮助开发者加速软件开发生命周期（SDLC）的各个阶段。它通过自然语言交互和智能化建议，支持构建、管理、优化和转换应用程序。
 
 ### AWS re:Post
 AWS re:Post 为您提供专家技术指导，以便您使用 AWS 服务更快地进行创新并提高运营效率。  

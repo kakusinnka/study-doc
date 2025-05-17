@@ -572,6 +572,9 @@ Amazon SageMaker BlazingText 是 Amazon SageMaker 提供的一种高性能、易
 ## Amazon SageMaker Neo
 Amazon SageMaker Neo 是一项强大的模型优化和部署服务，专注于提升机器学习模型的推理性能和资源利用率。它通过自动化的模型编译和硬件优化，使用户能够轻松地将高效模型部署到云端或边缘设备中。无论是需要高性能推理的实时应用，还是资源受限的边缘设备，SageMaker Neo 都能够提供高效、灵活的解决方案，帮助用户降低成本并提升模型性能。
 
+## Amazon SageMaker Model Monitor
+Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
+
 ## Amazon Lookout for Equipment（设备）
 * **用途**：这是一个专门用于工业设备维护的服务，主要用于预测设备故障。
 * **适用场景**：监控工业设备的传感器数据，预测设备何时可能出现故障。
@@ -588,11 +591,21 @@ Amazon SageMaker Neo 是一项强大的模型优化和部署服务，专注于�
 * **用途**：这是一个用于检测图像或视频中异常的服务，主要用于工业质量控制。
 * **适用场景**：检测产品质量问题（如工厂生产线上的缺陷检测）。
 
+## Amazon SageMaker JumpStart
+Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
+Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用户快速启动和运行机器学习项目。
+
 ## Amazon SageMaker Pipelines
 Amazon SageMaker Pipelines 是一个专门用于构建、管理和自动化机器学习（ML）工作流的服务。它是 Amazon SageMaker 提供的一个端到端解决方案，旨在帮助开发者和数据科学家高效地管理机器学习项目的整个生命周期，包括数据准备、模型训练、模型评估和部署等步骤。
 
+## Amazon SageMaker Model Registry
+Amazon SageMaker Model Registry 是一个用于管理和部署机器学习模型的服务。它提供了一个集中式的存储库，用于跟踪模型的版本、元数据、审批状态等信息。
+
 ## Amazon SageMaker Automatic Model Tuning（调优）
 Amazon SageMaker Automatic Model Tuning（也称为 Hyperparameter Optimization，HPO）是 Amazon SageMaker 提供的一项功能，用于自动优化机器学习模型的超参数。通过自动化搜索和优化超参数，SageMaker Automatic Model Tuning 能够帮助开发者快速找到最优的模型配置，从而提高模型的性能。
+
+## Amazon SageMaker Feature Store
+Amazon SageMaker Feature Store 是一项强大的特征存储和管理服务，旨在简化机器学习特征工程流程，确保模型训练和推理的一致性。它适合需要 集中管理特征、实时推理 和 批量处理特征 的场景，为开发者和数据科学家提供了高效、灵活的工具来加速机器学习项目的开发和部署。
 
 ## Amazon SageMaker Data Wrangler
 Amazon SageMaker Data Wrangler 是一个强大的数据准备工具，专注于简化数据清理、特征工程和数据分析的过程。通过直观的界面和丰富的功能，Data Wrangler 帮助用户快速为机器学习模型准备高质量的数据。
@@ -605,6 +618,9 @@ Amazon SageMaker Processing 是 Amazon SageMaker 提供的一项功能，用于�
 
 ## Amazon SageMaker Ground Truth
 Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，用于创建高质量的标注数据集，帮助机器学习模型进行训练。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
+
+## Amazon SageMaker Experiments（实验）
+Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户在机器学习模型开发过程中有效管理和追踪实验结果。它可以记录和分析多个方面，包括参数、指标、代码版本、训练数据集以及输出文件，这为机器学习实验提供了全面的支持 。
 
 ## Amazon Monitron (监控器)
 Amazon Monitron 是 AWS 提供的一种端到端的工业设备监控和预测性维护服务。它利用机器学习技术来检测工业设备中的异常振动和温度变化，从而预测设备故障，帮助企业减少非计划停机时间和维护成本。
@@ -641,27 +657,29 @@ Prompt Cache 是 Amazon Bedrock 提供的一项功能，用于优化模型推理
 * Prompt Cache 会存储重复使用的提示或其部分内容。
 * 当新的请求中包含与缓存内容匹配的部分时，系统可以直接重用缓存结果，而无需重新推理。
 
-## Amazon Alexa
-Amazon Alexa 是由亚马逊（Amazon）开发的基于云的智能语音助手服务，最初于 2014 年随 Echo 智能音箱推出。它是一种人工智能驱动的语音交互系统，能够通过自然语言处理（NLP）与用户进行语音对话，并执行多种任务。Alexa 的核心目标是为用户提供便利的语音控制和智能服务。
-
 ## Amazon Bedrock Custom Model Import
 Amazon Bedrock Custom Model Import 是一种功能，允许用户将自定义模型从其他环境（如 Amazon SageMaker）导入到 Amazon Bedrock 中，以便在 Bedrock 上进行管理和使用。
 
-## Amazon SageMaker Experiments（实验）
-Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户在机器学习模型开发过程中有效管理和追踪实验结果。它可以记录和分析多个方面，包括参数、指标、代码版本、训练数据集以及输出文件，这为机器学习实验提供了全面的支持 。
+## Amazon Bedrock Flows
+Amazon Bedrock Flows 专注于简化生成式 AI 应用的开发流程。它是 Amazon Bedrock 平台的一部分，旨在通过可视化的工作流和自动化工具，帮助开发者快速构建、测试和部署生成式 AI 模型的应用程序。
+
+## Amazon Bedrock Data Automation データオートメーション
+自动从非结构化多模态内容（例如文档、图像、音频和视频）中为人工智能驱动的应用程序生成实用的见解。
 
 ## Amazon Titan
 来自 Amazon 的高性能基础型。Amazon Titan 是亚马逊推出的一种大规模语言模型（LLM），用于支持各种生成式AI应用。
 
+## Amazon Alexa
+Amazon Alexa 是由亚马逊（Amazon）开发的基于云的智能语音助手服务，最初于 2014 年随 Echo 智能音箱推出。它是一种人工智能驱动的语音交互系统，能够通过自然语言处理（NLP）与用户进行语音对话，并执行多种任务。Alexa 的核心目标是为用户提供便利的语音控制和智能服务。
+
 ## 生成式人工智能安全范围矩阵 Generative AI Security Scoping Matrix 生成 AI セキュリティスコーピングマトリックス
 生成式人工智能安全范围矩阵是一个综合框架，旨在帮助组织在整个人工智能生命周期中评测并实施安全控制措施。该框架将安全考虑因素分解为特定类别，从而为保护人工智能应用程序提供了有针对性的方法。
-
-## Amazon SageMaker JumpStart
-Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
-Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用户快速启动和运行机器学习项目。
 
 ## Amazon MLOps
 Amazon MLOps（机器学习运维）是指在Amazon Web Services（AWS）平台上，使用工具和服务来管理和自动化机器学习模型的开发、部署、监控和维护的实践。自动化与管道管理, 模型监控与维护, 可扩展性, 持续集成与持续部署（CI/CD）, 安全与合规, 协作与版本控制。
 
 ## Amazon Fraud Detector
 Amazon Fraud Detector 是一项由 AWS 提供的服务，用于帮助企业检测和预防在线欺诈活动。通过利用机器学习技术，Fraud Detector 可以自动识别潜在的欺诈行为，帮助企业降低风险和损失。
+
+## Amazon Q Apps
+Amazon Q Apps 是 Amazon 提供的一项生成式人工智能服务，旨在帮助用户通过自然语言交互快速构建自定义的 AI 驱动应用程序。它通过捕捉用户的对话内容，将需求转化为具体的应用程序功能，适用于各种业务场景。
