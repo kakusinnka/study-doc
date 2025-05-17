@@ -1,4 +1,4 @@
-## 关于作者
+## 关于Vue作者
 * [X](https://x.com/youyuxi)
 * [github](https://github.com/yyx990803)
 * [个人网站](https://evanyou.me/)
@@ -12,13 +12,11 @@
 * [组件化](https://juejin.cn/post/7079948131852353567)
 * 命令式编码
 * 声明式编码
-
-### MVVM
-* View: 视图，表示用户界面，负责展示数据和响应用户交互。
-* ViewModel: 视图模型，负责连接 Model 和 View，处理数据的展示和交互逻辑。
-* Model: 数据模型，表示应用程序的数据和业务逻辑。
-* MVVM 模式的核心思想是将视图和数据模型分离，通过 ViewModel 进行数据绑定和交互处理，实现视图和数据的解耦。
-![MVVM](../images/mvvm-pattern.png)
+* 模板语法
+* 数据绑定
+* 数据代理
+* 事件绑定
+* 事件修饰符
 
 ---
 | **对比维度** | **命令式编码**                                   | **声明式编码**                   |
@@ -53,5 +51,13 @@
 * axios
 * promise
 
-## 知识点
+### MVVM
+* View: 视图，表示用户界面，负责展示数据和响应用户交互。
+* ViewModel: 视图模型，负责连接 Model 和 View，处理数据的展示和交互逻辑。
+* Model: 数据模型，表示应用程序的数据和业务逻辑。
+* MVVM 模式的核心思想是将视图和数据模型分离，通过 ViewModel 进行数据绑定和交互处理，实现视图和数据的解耦。
+![MVVM](../images/mvvm-pattern.png)
+
+## Vue 知识点
 * 容器和 Vue 实例一一对应
+* 冒号[:]是v-bind的简写形式。
