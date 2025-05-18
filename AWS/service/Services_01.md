@@ -575,6 +575,9 @@ Amazon SageMaker Neo 是一项强大的模型优化和部署服务，专注于�
 ## Amazon SageMaker Model Monitor
 Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
 
+## AWS AI Service Cards
+AWS AI Service Cards 是 AWS 提供的一种文档工具，旨在帮助用户深入了解 AWS 提供的 AI 服务，包括其设计目的、潜在风险、局限性以及推荐的使用方法。通过这些卡片，AWS 提供了透明性的信息，以便用户在使用 AI 服务时能够更好地评估其适用性和安全性。
+
 ## Amazon Lookout for Equipment（设备）
 * **用途**：这是一个专门用于工业设备维护的服务，主要用于预测设备故障。
 * **适用场景**：监控工业设备的传感器数据，预测设备何时可能出现故障。
@@ -683,3 +686,6 @@ Amazon Fraud Detector 是一项由 AWS 提供的服务，用于帮助企业检�
 
 ## Amazon Q Apps
 Amazon Q Apps 是 Amazon 提供的一项生成式人工智能服务，旨在帮助用户通过自然语言交互快速构建自定义的 AI 驱动应用程序。它通过捕捉用户的对话内容，将需求转化为具体的应用程序功能，适用于各种业务场景。
+
+## Amazon Augmented AI (A2I)
+Amazon Augmented AI (A2I) 是 AWS 提供的一项服务，用于在机器学习工作流中引入人工审查流程，以提高模型的准确性和可靠性。A2I 主要用于解决机器学习模型在某些情况下可能无法提供高置信度预测的问题，通过结合人工和机器的力量，确保高质量的结果。
