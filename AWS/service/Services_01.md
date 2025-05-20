@@ -30,12 +30,6 @@ AWS Site-to-Site VPN 是一项 AWS 提供的 **安全网络服务，用于在用
 | **安全性**     | 使用 IPsec 协议加密。               | 使用 OpenVPN 协议加密，支持用户身份验证。    |
 | **典型用户**   | 企业 IT 团队、需要混合云的企业。    | 远程员工、分布式团队、需要灵活访问的用户。   |
 
-## AWS Transit(过境) Gateway
-AWS Transit Gateway 是 AWS 提供的 **一项网络服务，用于在一个中心化网关中连接多个 Amazon Virtual Private Cloud (VPC)、本地数据中心和其他网络资源**。它简化了大规模网络架构的管理，提供高效、安全和可扩展的网络互联方式。
-
-## AWS Direct Connect
-AWS Direct Connect 是 **一种网络服务，允许用户通过专用网络连接将其本地数据中心、办公室或托管环境直接连接到 AWS 云** 。通过 Direct Connect，用户可以绕过公共互联网，建立一条私密、低延迟、高带宽的专用连接，从而实现更高的网络性能、安全性和稳定性。
-
 # 机器学习
 ## Amazon Transcribe
 Amazon Transcribe 是 AWS 提供的一项 **自动语音识别（ASR）服务，能够将语音转换为文本** 。它利用先进的机器学习技术，支持多种语言的语音转录，帮助用户快速、高效地将音频或视频内容转换为可用的文本数据。
@@ -217,6 +211,22 @@ Amazon API Gateway 是 AWS 提供的一项完全托管的服务，**用于创建
 
 ## AWS Storage Gateway
 AWS Storage Gateway 是一项 **混合云存储服务，旨在帮助企业将本地环境与 AWS 云存储无缝集成**。通过 Storage Gateway，用户可以将本地数据存储扩展到 AWS 云中，同时继续以现有的方式访问和管理数据。这项服务适用于数据备份、归档、灾难恢复以及本地到云的存储扩展。
+
+## VPC Endpoint VPCエンドポイント
+VPC端点是Amazon Virtual Private Cloud（VPC）中的一个重要组件，提供了VPC与其他服务之间的私有连接。它允许用户在其VPC中创建网络接口，从而实现与AWS服务的安全通信。具体来说，VPC端点有两种主要类型：网关型和接口型。网关型端点最初设计用于与Amazon S3和DynamoDB等服务的连接，而接口型端点则允许VPC与其他AWS服务之间的私有连接。
+
+创建VPC端点时，系统会在指定的每个子网内创建网络接口，并分配私有IP地址。这使得VPC内的资源能够直接访问这些服务，而无需通过公共互联网。
+
+## 互联网网关（Internet Gateway） インターネットゲートウェイ
+互联网网关（Internet Gateway）是一个重要的组件，用于在虚拟私有云（VPC）与互联网之间建立通信。这种网关提供了冗余性和高可用性，并支持水平扩展，使得VPC内的资源能够与外部网络进行双向连接。
+
+在AWS（亚马逊网络服务）中，互联网网关是VPC的组成部分，确保VPC内的实例能够访问互联网。如果没有互联网网关，这些实例将无法与外部进行通信。这种网关通常用于公共子网，以便将资源与互联网连接，支持各种应用和服务的运行。
+
+## AWS Transit(过境) Gateway
+AWS Transit Gateway 是 AWS 提供的 **一项网络服务，用于在一个中心化网关中连接多个 Amazon Virtual Private Cloud (VPC)、本地数据中心和其他网络资源**。它简化了大规模网络架构的管理，提供高效、安全和可扩展的网络互联方式。
+
+## AWS Direct Connect
+AWS Direct Connect 是 **一种网络服务，允许用户通过专用网络连接将其本地数据中心、办公室或托管环境直接连接到 AWS 云** 。通过 Direct Connect，用户可以绕过公共互联网，建立一条私密、低延迟、高带宽的专用连接，从而实现更高的网络性能、安全性和稳定性。
 
 ## AWS Personal Health Dashboard (PHD) 
 AWS Personal Health Dashboard (PHD) 是 AWS 提供的一项服务，旨在 **为用户提供与其 AWS 资源相关的个性化运行状况信息和通知**。与 AWS 服务的整体运行状况页面（Service Health Dashboard）不同，Personal Health Dashboard 专注于用户账户下的具体资源，提供与用户资源直接相关的实时事件更新、潜在问题通知以及缓解建议。
@@ -523,6 +533,12 @@ AWS CodeDeploy 是一项由 AWS 提供的 **全托管部署服务**，用于自�
 ## AWS CodeStar
 AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
 
+## Amazon CodeWhisperer
+Amazon CodeWhisperer 是一款由亚马逊推出的基于机器学习的代码生成工具，它能够实时提供代码建议和自动插入功能，旨在提高开发效率。该工具支持多种集成开发环境（IDE），用户可以通过输入注释（包括中文）来生成相应的代码。CodeWhisperer 不仅适用于初学者，也为软件开发者提供了强大的支持，特别是在微服务架构的设计和实现方面，它能够有效管理服务间的通信和数据处理。
+
+## Amazon CodeGuru
+Amazon CodeGuru 是一款基于机器学习的服务，旨在提供源代码审查和应用程序性能优化的建议。该工具分为两个主要组件：CodeGuru Reviewer 和 CodeGuru Profiler。CodeGuru Reviewer 通过深度语义分析来检测代码中的漏洞，能够高精度地识别安全问题，显著减少误报的数量。而 CodeGuru Profiler 则专注于优化实际运行中的应用程序性能，帮助开发人员识别成本最高的代码行。
+
 # 管理和监管
 ## AWS CloudFormation
 AWS CloudFormation 是 AWS 提供的 **一项基础设施即代码（Infrastructure as Code, IaC）服务**，允许用户通过编写模板文件来定义和管理 AWS 资源。
@@ -575,6 +591,9 @@ Amazon SageMaker Neo 是一项强大的模型优化和部署服务，专注于�
 ## Amazon SageMaker Model Monitor
 Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
 
+## Amazon SageMaker Model Dashboard
+Amazon SageMaker Model Dashboard 是 Amazon SageMaker 提供的一项功能，用于集中监控和管理机器学习模型的性能、部署和健康状态。它为开发者和数据科学家提供了一个统一的界面，帮助他们快速了解模型的运行状况、检测潜在问题并采取措施优化模型性能。
+
 ## AWS AI Service Cards
 AWS AI Service Cards 是 AWS 提供的一种文档工具，旨在帮助用户深入了解 AWS 提供的 AI 服务，包括其设计目的、潜在风险、局限性以及推荐的使用方法。通过这些卡片，AWS 提供了透明性的信息，以便用户在使用 AI 服务时能够更好地评估其适用性和安全性。
 
@@ -582,17 +601,27 @@ AWS AI Service Cards 是 AWS 提供的一种文档工具，旨在帮助用户深
 * **用途**：这是一个专门用于工业设备维护的服务，主要用于预测设备故障。
 * **适用场景**：监控工业设备的传感器数据，预测设备何时可能出现故障。
 
-## AWS Panorama Appliance（器具）
-* **用途**：这是一个边缘计算设备，主要用于计算机视觉任务，比如视频流分析。
-* **适用场景**：用于边缘设备中处理视频流，执行如安全监控、工厂质量检查等任务。
+## AWS Panorama 全景
+AWS Panorama 是一种由 Amazon Web Services 提供的边缘计算设备和服务，旨在帮助企业将计算机视觉（Computer Vision）功能集成到其现有的摄像头和视频流中。它可以在本地处理视频数据，而无需将数据传输到云端，从而实现实时分析和低延迟的应用场景。
 
 ## **Amazon Lookout for Metrics（指标）
 * **用途**：这是一个专门用于**检测时间序列数据中的异常**的服务。它能够自动分析各种指标（如销售数据、流量数据等），并检测其中的异常模式。
 * **适用场景**：适用于电商网站的销售数据、流量数据、用户行为数据等的异常检测。
 
 ## **Amazon Lookout for Vision（视觉）
-* **用途**：这是一个用于检测图像或视频中异常的服务，主要用于工业质量控制。
-* **适用场景**：检测产品质量问题（如工厂生产线上的缺陷检测）。
+Amazon Lookout for Vision 是 Amazon Web Services (AWS) 提供的一项基于**机器学习（Machine Learning）**的服务，专门用于检测工业产品中的缺陷或异常。它能够快速分析图像数据，识别产品、设备或流程中的问题，从而帮助企业提高产品质量并减少生产损失。
+
+### **Amazon Lookout for Vision 与 AWS Panorama 的区别：**
+
+| **功能**     | **Amazon Lookout for Vision** | **AWS Panorama**                             |
+| ------------ | ----------------------------- | -------------------------------------------- |
+| **目标场景** | 检测工业产品中的缺陷          | 在现有摄像头中添加计算机视觉功能             |
+| **适用领域** | 主要用于工业质量检测          | 适用于实时视频分析（如安全监控、客流分析等） |
+| **数据类型** | 静态图像                      | 视频流                                       |
+| **部署方式** | 云端或边缘设备                | 边缘设备                                     |
+| **主要功能** | 自动检测图像中的缺陷和异常    | 处理摄像头视频流，执行实时计算机视觉任务     |
+
+---
 
 ## Amazon SageMaker JumpStart
 Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
@@ -689,3 +718,15 @@ Amazon Q Apps 是 Amazon 提供的一项生成式人工智能服务，旨在帮�
 
 ## Amazon Augmented AI (A2I)
 Amazon Augmented AI (A2I) 是 AWS 提供的一项服务，用于在机器学习工作流中引入人工审查流程，以提高模型的准确性和可靠性。A2I 主要用于解决机器学习模型在某些情况下可能无法提供高置信度预测的问题，通过结合人工和机器的力量，确保高质量的结果。
+
+## SageMaker HyperPod
+SageMaker HyperPod 是亚马逊推出的一种专用基础设施，旨在为大规模AI模型的训练提供高效、可靠的环境。该系统能够自动检测、诊断和恢复基础设施故障，从而确保模型开发过程中的高可用性和韧性。HyperPod与Amazon EKS集成，使得长时间运行的计算集群能够支持大规模的分布式训练。
+
+## MLflow
+MLflow 是一个开源平台，旨在帮助机器学习从业者和团队管理机器学习过程中的复杂性。它提供了一套完整的 MLOps 解决方案，使得模型的开发、实验管理和部署变得更加高效。通过 MLflow，用户可以轻松跟踪实验、管理模型和参数，以及评估指标，从而提升模型的质量和可重复性。
+
+## IP Insights
+IP Insights 是亚马逊 SageMaker AI 提供的一种无监督学习算法，专门用于学习 IPv4 地址的使用模式。该算法利用神经网络技术，能够为实体（如用户 ID 或账户号码）和 IP 地址生成潜在的向量表示，从而识别和分析这些地址的使用情况。
+
+## DeepLab V3
+DeepLab V3是一个用于图像语义分割的深度学习模型系列，由Google Brain团队开发。它基于深度卷积神经网络（CNN）架构，旨在将输入图像中的每个像素分类为不同的语义类别。DeepLab V3通过引入深度可分离卷积和ASPP（Atrous Spatial Pyramid Pooling）模块，提高了模型的性能和效率。该模型在多个语义分割任务中取得了优异的成果，如图像分割、目标检测和实例分割等。

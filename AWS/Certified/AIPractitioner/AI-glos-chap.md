@@ -1,11 +1,3 @@
-## 卷积神经网络（Convolutional Neural Network, CNN）
-* [卷积神经网络](https://easyai.tech/ai-definition/cnn/)
-* 畳み込みニューラルネットワーク
-
-## 循环神经网络（Recurrent Neural Network, RNN）
-* [循环神经网络](https://easyai.tech/ai-definition/rnn/)
-* 再帰型ニューラルネットワーク
-
 ## 什么是数据正则化？
 数据正则化（Data Regularization） 是机器学习中一种用于防止模型过拟合（Overfitting）的技术。过拟合是指模型在训练数据上表现很好，但在测试数据或生产环境中的泛化能力较差。正则化通过对模型的复杂度施加约束，避免模型过于依赖训练数据中的噪声或细节，从而提升模型的泛化能力。
 
@@ -567,10 +559,10 @@ Q-Learning 是一种基于强化学习的算法，用于解决具有离散状态
 部分依存图（Partial Dependence Plots，简称 PDPs）是一种可视化技术，用于解释机器学习模型中某个或某些特定特征对模型预测结果的影响。PDP 能够帮助我们理解模型的行为，尤其是在复杂的非线性模型（如随机森林、梯度提升树）中，它是解释性机器学习的重要工具之一。
 
 ## BERT（双向编码器表示的变换模型）
-BERT（Bidirectional Encoder Representations from Transformers）是由Google提出的一种用于自然语言处理（NLP）的预训练模型。它在多个NLP任务中取得了显著的效果提升。BERT 是一种预训练的双向语言模型，能够理解上下文并进行文本补全。它的双向特性使其能够根据上下文预测缺失的单词或短语，非常适合处理需要补全缺失文本的任务。
+BERT（Bidirectional Encoder Representations from Transformers）是由Google提出的一种用于**自然语言处理（NLP）的预训练模型**。它在多个NLP任务中取得了显著的效果提升。BERT 是一种预训练的双向语言模型，能够理解上下文并进行文本补全。它的双向特性使其能够根据上下文预测缺失的单词或短语，非常适合处理需要补全缺失文本的任务。
 
 ## BERTScore
-BERTScore 是一种基于深度学习模型 BERT（Bidirectional Encoder Representations from Transformers）的文本评估指标，主要应用于自然语言处理（NLP）任务中，用于 **评估生成文本与参考文本之间的语义相似性**。与传统的基于词匹配的评估方法（如 BLEU、ROUGE 等）不同，BERTScore 利用 BERT 的上下文嵌入（contextual embeddings）来捕捉文本的深层语义信息，从而更精确地衡量文本之间的语义相似性。
+BERTScore 是一种基于深度学习模型 BERT（Bidirectional Encoder Representations from Transformers）的**文本评估指标**，主要应用于自然语言处理（NLP）任务中，用于 **评估生成文本与参考文本之间的语义相似性**。与传统的基于词匹配的评估方法（如 BLEU、ROUGE 等）不同，BERTScore 利用 BERT 的上下文嵌入（contextual embeddings）来捕捉文本的深层语义信息，从而更精确地衡量文本之间的语义相似性。
 
 ## ROUGE （Recall-Oriented Understudy for Gisting Evaluation）以回忆为导向的概要评估研究
 ROUGE（Recall-Oriented Understudy for Gisting Evaluation）是一组专门用于评估自动文本摘要和生成文本质量的指标，主要通过 **比较生成文本与参考文本之间的词或短语的重叠程度** 来衡量生成文本的质量。ROUGE 指标广泛用于自然语言处理（NLP）领域，尤其是在文本摘要、机器翻译和文本生成任务中。
@@ -595,9 +587,6 @@ WaveNet 是由 Google DeepMind 于 2016 年提出的一种生成模型，专门�
 
 ## GPT（生成式预训练变换器）
 GPT（生成式预训练变换器）是一种基于深度学习的自然语言处理（NLP）模型，由 OpenAI 开发。它通过生成式预训练和自回归结构，在文本生成、理解和处理方面表现出色，成为当前人工智能领域的核心技术之一。
-
-## Transformer
-Transformer 是一种基于注意力机制（Attention Mechanism）的深度学习模型架构，它彻底改变了自然语言处理（NLP）领域，成为现代语言模型（如 GPT、BERT 等）的基础。Transformer 以其高效的并行计算能力和强大的上下文建模能力，广泛应用于机器翻译、文本生成、语义理解等任务。
 
 ## LDA（潜在狄利克雷分配，Latent Dirichlet Allocation）
 LDA（Latent Dirichlet Allocation，潜在狄利克雷分配）是一种生成式概率模型，主要用于 **从非结构化文本数据中提取隐藏的主题**。它是一种常见的主题模型（Topic Model），被广泛应用于自然语言处理（NLP）领域，用于分析文档集合中的主题分布。
@@ -713,8 +702,18 @@ LDA 由 David Blei 等人在 2003 年提出，其核心思想是认为文档是�
 
 通过这个例子，梯度可以被理解为一种指引方向和速度的工具，帮助我们在复杂的地形中找到最优路径。
 
-## 决定系数（R²）
-决定系数（R²）是统计学和数据分析中用于评估回归模型性能的重要指标。它反映了模型对数据的拟合程度，或者说模型解释因变量变化的能力。
+## 回归分析（Regression Analysis） 回帰分析
+回归分析（Regression Analysis）是一种统计方法，用于研究变量之间的关系，尤其是一个或多个自变量（输入变量）与因变量（目标变量）之间的依赖关系。它是机器学习中监督学习的一个重要分支，主要用于预测连续型数据。
+
+## 决定系数（R²）決定係数 R²
+决定系数（R²）是统计学和数据分析中用于评估回归模型性能的重要指标。它反映了模型对数据的拟合程度，或者说模型解释因变量变化的能力。  
+* R² = 1：模型完全拟合数据，预测值与实际值完全一致。
+* R² = 0：模型的预测能力与简单使用均值预测的效果相同（即模型无法解释目标变量的变异）。
+* R² < 0：模型的预测效果甚至比简单使用均值预测还差，通常表示模型不适合当前数据。
+
+## 均方误差（Mean Squared Error, MSE）
+衡量模型预测值与实际值之间差异的一种方法。它计算的是每个预测值与实际值之间的差的平方的平均值。  
+均方误差（MSE） 是一种用于衡量模型预测值与实际值之间差异的指标，广泛应用于回归分析中。它通过计算预测误差的平方均值来评估模型的性能，误差越小，MSE 值越接近于零，模型的预测效果越好。
 
 ## 残差网络（ResNet, Residual Network）
 残差网络（ResNet）通过引入残差连接解决了深度网络训练中的梯度消失和退化问题，使得训练非常深的网络成为可能。它的设计简单而高效，推动了深度学习的发展，在图像分类、目标检测、语义分割等任务中取得了卓越的表现。
@@ -910,3 +909,37 @@ Amazon Web Services（AWS）提供许多其他服务来满足您的向量数据�
 | **响应长度（Response Length）** | レスポンスの長さ     | 控制生成内容的长度（字数或段落）。                                               | 需要限制回答长度（简短或详细）时使用。 |
 
 ---
+
+## 生成对抗网络（GAN）介绍 敵対的生成ネットワーク（GAN）
+**生成对抗网络（GAN）** 主要用于生成与真实数据相似的合成数据。GAN 在计算机视觉、图像生成、数据增强等领域有广泛应用。
+
+### **基本原理**
+GAN 由两个神经网络组成：生成器（Generator）和判别器（Discriminator）。这两个网络通过对抗过程进行训练：
+1. **生成器（Generator）**：
+   - 生成器接受随机噪声作为输入，并试图生成看似真实的数据。
+   - 目标是欺骗判别器，使其认为生成的数据是真实的。
+2. **判别器（Discriminator）**：
+   - 判别器的任务是区分真实数据和生成器生成的数据。
+   - 目标是尽可能准确地识别出假数据。
+
+这两个网络通过一种零和博弈的方式进行训练：生成器不断改进以生成更逼真的数据，而判别器不断提高以更好地区分真假数据。
+
+---
+
+## 卷积神经网络（Convolutional Neural Network, CNN）
+* [卷积神经网络](https://easyai.tech/ai-definition/cnn/)
+* 畳み込みニューラルネットワーク
+
+卷积神经网络（CNN）是一种专为处理图像数据设计的深度学习模型，能够自动提取数据中的空间特征。它通过卷积层、池化层和全连接层的协同作用，实现高效的特征提取和分类。CNN 在图像处理领域表现卓越，是现代计算机视觉的核心技术之一。
+
+## 循环神经网络（Recurrent Neural Network, RNN）
+* [循环神经网络](https://easyai.tech/ai-definition/rnn/)
+* 再帰型ニューラルネットワーク
+
+循环神经网络（Recurrent Neural Network, RNN） 是一种专门用于处理序列数据的神经网络模型。RNN 能够通过其循环结构捕捉序列中的时间依赖关系，因此广泛应用于自然语言处理、时间序列分析、语音识别等领域。
+
+## LSTM（Long Short Term Memory，长短期记忆网络）
+LSTM 是一种特殊的 循环神经网络（RNN, Recurrent Neural Network），旨在解决 RNN 在处理长序列数据时的 长期依赖问题。普通的 RNN 在处理长序列时，会遇到 梯度消失（vanishing gradient） 和 梯度爆炸（exploding gradient） 的问题。由于这些问题，普通 RNN 难以捕捉到序列中较远时间步的信息。而 LSTM 通过引入一种特殊的 记忆单元（memory cell） 和 门机制（gates），能够更好地捕捉长期依赖信息。
+
+## Transformer
+Transformer 是一种基于注意力机制（Attention Mechanism）的深度学习模型架构，它彻底改变了自然语言处理（NLP）领域，成为现代语言模型（如 GPT、BERT 等）的基础。Transformer 以其高效的并行计算能力和强大的上下文建模能力，广泛应用于机器翻译、文本生成、语义理解等任务。
