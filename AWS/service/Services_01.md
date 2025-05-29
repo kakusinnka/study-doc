@@ -54,7 +54,7 @@ Amazon Lex 是 AWS 提供的 **一项对话式人工智能服务，用于构建�
 Amazon Comprehend 是 AWS 提供的一项 **自然语言处理（Natural Language Processing, NLP）服务**，能够从非结构化文本中提取有意义的信息。它使用机器学习技术分析文本，识别情感、关键短语、实体、语言以及文本之间的主题关系，帮助用户将非结构化数据转化为可操作的洞察。
 
 ## Amazon Personalize
-Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助开发者快速构建个性化推荐系统**，无需具备深厚的机器学习技能或经验。它可以用于创建推荐、个性化搜索结果以及动态内容个性化等功能，广泛应用于电子商务、媒体流服务、在线教育等领域。
+Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助开发者快速构建个性化推荐系统**，无需具备深厚的机器学习技能或经验。它可以用于创建推荐、个性化搜索结果以及动态内容个性化，用户分群（Segmentation）等功能，广泛应用于电子商务、媒体流服务、在线教育等领域。
 
 ## AWS Migration Hub
 AWS Migration Hub 是 AWS 提供的一项集中式服务，旨在 **帮助用户规划、跟踪和管理应用程序迁移到 AWS 云的过程** 。通过 Migration Hub，用户可以在一个统一的界面中查看迁移进度，无论是使用 AWS 原生迁移工具还是第三方迁移工具，都能集中管理和监控。
@@ -210,12 +210,12 @@ Amazon API Gateway 是 AWS 提供的一项完全托管的服务，**用于创建
 AWS Storage Gateway 是一项 **混合云存储服务，旨在帮助企业将本地环境与 AWS 云存储无缝集成**。通过 Storage Gateway，用户可以将本地数据存储扩展到 AWS 云中，同时继续以现有的方式访问和管理数据。这项服务适用于数据备份、归档、灾难恢复以及本地到云的存储扩展。
 
 ## VPC Endpoint VPCエンドポイント
-VPC端点是Amazon Virtual Private Cloud（VPC）中的一个重要组件，提供了VPC与其他服务之间的私有连接。它允许用户在其VPC中创建网络接口，从而实现与AWS服务的安全通信。具体来说，VPC端点有两种主要类型：网关型和接口型。网关型端点最初设计用于与Amazon S3和DynamoDB等服务的连接，而接口型端点则允许VPC与其他AWS服务之间的私有连接。
+VPC端点是Amazon Virtual Private Cloud（VPC）中的一个重要组件，**提供了VPC与其他服务之间的私有连接**。它允许用户在其VPC中创建网络接口，从而实现与AWS服务的安全通信。具体来说，VPC端点有两种主要类型：网关型和接口型。网关型端点最初设计用于与Amazon S3和DynamoDB等服务的连接，而接口型端点则允许VPC与其他AWS服务之间的私有连接。
 
 创建VPC端点时，系统会在指定的每个子网内创建网络接口，并分配私有IP地址。这使得VPC内的资源能够直接访问这些服务，而无需通过公共互联网。
 
 ## 互联网网关（Internet Gateway） インターネットゲートウェイ
-互联网网关（Internet Gateway）是一个重要的组件，用于在虚拟私有云（VPC）与互联网之间建立通信。这种网关提供了冗余性和高可用性，并支持水平扩展，使得VPC内的资源能够与外部网络进行双向连接。
+互联网网关（Internet Gateway）是一个重要的组件，用于**在虚拟私有云（VPC）与互联网之间建立通信**。这种网关提供了冗余性和高可用性，并支持水平扩展，使得VPC内的资源能够与外部网络进行双向连接。
 
 在AWS（亚马逊网络服务）中，互联网网关是VPC的组成部分，确保VPC内的实例能够访问互联网。如果没有互联网网关，这些实例将无法与外部进行通信。这种网关通常用于公共子网，以便将资源与互联网连接，支持各种应用和服务的运行。
 
@@ -362,7 +362,7 @@ Amazon OpenSearch Service（原名 Amazon Elasticsearch Service）是 AWS 提供
 ## Amazon QuickSight
 Amazon QuickSight 是 AWS 提供的一项基于云的 **商业智能（BI）服务，旨在帮助用户快速创建可视化报表、分析数据并从数据中提取洞察** 。它支持从各种数据源（如 AWS 数据服务、第三方数据库、本地文件等）导入数据，通过直观的仪表板和交互式图表，帮助用户轻松实现数据分析和共享。
 
-## Amazon Forecast
+## Amazon Forecast（预测）
 Amazon Forecast 是 AWS 提供的一项 **机器学习驱动的时间序列预测服务，用于帮助用户生成高精度的业务预测**。它利用 机器学习（ML）技术，结合历史数据和相关变量（如促销活动、天气条件等），生成针对特定用例的预测结果。
 
 ## AWS Service Quotas
@@ -551,11 +551,11 @@ AWS CodeDeploy 是一项由 AWS 提供的 **全托管部署服务**，用于自�
 ## AWS CodeStar
 AWS CodeStar 是 Amazon Web Services 提供的一项 **集成开发服务，旨在帮助用户快速设置、管理和部署应用程序的开发项目**。它提供了一个统一的界面，整合了多种 AWS 开发工具（如 CodeCommit、CodeBuild、CodePipeline 和 CodeDeploy），使开发团队能够快速启动项目并实现持续集成与持续交付（CI/CD）。
 
-## Amazon CodeWhisperer
-Amazon CodeWhisperer 是一款由亚马逊推出的基于机器学习的代码生成工具，它能够实时提供代码建议和自动插入功能，旨在提高开发效率。该工具支持多种集成开发环境（IDE），用户可以通过输入注释（包括中文）来生成相应的代码。CodeWhisperer 不仅适用于初学者，也为软件开发者提供了强大的支持，特别是在微服务架构的设计和实现方面，它能够有效管理服务间的通信和数据处理。
+## Amazon CodeWhisperer Whisperer：低声细语者、耳语者、提示者 CodeWhisperer：提示写代码（AI助手）
+Amazon CodeWhisperer 是一款由亚马逊推出的**基于机器学习的代码生成工具，它能够实时提供代码建议和自动插入功能，旨在提高开发效率**。该工具支持多种集成开发环境（IDE），用户可以通过输入注释（包括中文）来生成相应的代码。CodeWhisperer 不仅适用于初学者，也为软件开发者提供了强大的支持，特别是在微服务架构的设计和实现方面，它能够有效管理服务间的通信和数据处理。
 
-## Amazon CodeGuru
-Amazon CodeGuru 是一款基于机器学习的服务，旨在提供源代码审查和应用程序性能优化的建议。该工具分为两个主要组件：CodeGuru Reviewer 和 CodeGuru Profiler。CodeGuru Reviewer 通过深度语义分析来检测代码中的漏洞，能够高精度地识别安全问题，显著减少误报的数量。而 CodeGuru Profiler 则专注于优化实际运行中的应用程序性能，帮助开发人员识别成本最高的代码行。
+## Amazon CodeGuru Guru：大师、专家、老师 CodeGuru：专家查代码（代码审查/优化）
+Amazon CodeGuru 是一款基于机器学习的服务，旨在**提供源代码审查和应用程序性能优化的建议**。该工具分为两个主要组件：CodeGuru Reviewer 和 CodeGuru Profiler。CodeGuru Reviewer 通过深度语义分析来检测代码中的漏洞，能够高精度地识别安全问题，显著减少误报的数量。而 CodeGuru Profiler 则专注于优化实际运行中的应用程序性能，帮助开发人员识别成本最高的代码行。
 
 # 管理和监管
 ## AWS CloudFormation
@@ -592,7 +592,7 @@ AWS ParallelCluster 是由 Amazon Web Services 提供的一个开源工具，用
 Amazon EMR 是 Amazon Web Services（AWS）提供的一种托管服务，专门用于大规模数据处理和分析。它支持分布式计算框架（如 Hadoop、Spark 等），能够快速、经济高效地处理海量数据，适用于大数据分析、机器学习、ETL（Extract, Transform, Load）流程和实时数据处理等场景。
 
 ## Amazon SageMaker Model Cards
-Amazon SageMaker Model Cards 是 Amazon SageMaker 提供的一项功能，旨在帮助开发者和数据科学家更好地管理、记录和共享机器学习模型的关键信息。通过 Model Cards，用户可以轻松记录模型的开发细节、性能指标、训练参数以及相关的合规性信息，从而提高模型管理的透明度和效率。
+Amazon SageMaker Model Cards 是 Amazon SageMaker 提供的一项功能，**旨在帮助开发者和数据科学家更好地管理、记录和共享机器学习模型的关键信息**。通过 Model Cards，用户可以轻松记录模型的开发细节、性能指标、训练参数以及相关的合规性信息，从而提高模型管理的透明度和效率。
 
 ## Amazon SageMaker Canvas
 Amazon SageMaker Canvas 是一项无代码（No-Code）机器学习服务，旨在帮助企业用户（尤其是非技术人员）轻松构建、训练和部署机器学习模型。通过 SageMaker Canvas，用户无需编写代码即可使用直观的图形界面探索数据、构建预测模型，并生成业务洞察，从而实现机器学习的普及化。
@@ -609,10 +609,10 @@ Amazon SageMaker BlazingText 是一种高效的 **自然语言处理（NLP）算
 Amazon SageMaker Neo 是一项强大的**模型优化和部署服务**，专注于提升机器学习模型的推理性能和资源利用率。它通过自动化的模型编译和硬件优化，使用户能够轻松地将高效模型部署到云端或边缘设备中。无论是需要高性能推理的实时应用，还是资源受限的边缘设备，SageMaker Neo 都能够提供高效、灵活的解决方案，帮助用户降低成本并提升模型性能。
 
 ## Amazon SageMaker Model Monitor
-Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
+Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，**用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期**。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
 
 ## Amazon SageMaker Model Dashboard
-Amazon SageMaker Model Dashboard 是 Amazon SageMaker 提供的一项功能，用于集中监控和管理机器学习模型的性能、部署和健康状态。它为开发者和数据科学家提供了一个统一的界面，帮助他们快速了解模型的运行状况、检测潜在问题并采取措施优化模型性能。
+Amazon SageMaker Model Dashboard 是 Amazon SageMaker 提供的一项功能，**用于集中监控和管理机器学习模型的性能、部署和健康状态**。它为开发者和数据科学家提供了一个统一的界面，帮助他们快速了解模型的运行状况、检测潜在问题并采取措施优化模型性能。
 
 ## AWS AI Service Cards
 AWS AI Service Cards 是 AWS 提供的一种文档工具，旨在帮助用户深入了解 AWS 提供的 AI 服务，包括其设计目的、潜在风险、局限性以及推荐的使用方法。通过这些卡片，AWS 提供了透明性的信息，以便用户在使用 AI 服务时能够更好地评估其适用性和安全性。
@@ -622,14 +622,14 @@ AWS AI Service Cards 是 AWS 提供的一种文档工具，旨在帮助用户深
 * **适用场景**：监控工业设备的传感器数据，预测设备何时可能出现故障。
 
 ## AWS Panorama 全景 （AWS Panorama Appliance）
-AWS Panorama 是一种由 Amazon Web Services 提供的边缘计算设备和服务，旨在帮助企业将计算机视觉（Computer Vision）功能集成到其现有的摄像头和视频流中。它可以在本地处理视频数据，而无需将数据传输到云端，从而实现实时分析和低延迟的应用场景。
+AWS Panorama 是一种由 Amazon Web Services 提供的边缘计算设备和服务，**旨在帮助企业将计算机视觉（Computer Vision）功能集成到其现有的摄像头和视频流中**。它可以在本地处理视频数据，而无需将数据传输到云端，从而实现实时分析和低延迟的应用场景。
 
 ## **Amazon Lookout for Metrics（指标）
 * **用途**：这是一个专门用于**检测时间序列数据中的异常**的服务。它能够自动分析各种指标（如销售数据、流量数据等），并检测其中的异常模式。
 * **适用场景**：适用于电商网站的销售数据、流量数据、用户行为数据等的异常检测。
 
 ## **Amazon Lookout for Vision（视觉）
-Amazon Lookout for Vision 是 Amazon Web Services (AWS) 提供的一项基于**机器学习（Machine Learning）**的服务，专门用于检测工业产品中的缺陷或异常。它能够快速分析图像数据，识别产品、设备或流程中的问题，从而帮助企业提高产品质量并减少生产损失。
+Amazon Lookout for Vision 是 Amazon Web Services (AWS) 提供的一项基于机器学习（Machine Learning）的服务，**专门用于检测工业产品中的缺陷或异常**。它能够快速分析图像数据，识别产品、设备或流程中的问题，从而帮助企业提高产品质量并减少生产损失。
 
 ### **Amazon Lookout for Vision 与 AWS Panorama 的区别：**
 
@@ -644,7 +644,7 @@ Amazon Lookout for Vision 是 Amazon Web Services (AWS) 提供的一项基于**�
 ---
 
 ## Amazon SageMaker JumpStart
-Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案。  
+Amazon SageMaker JumpStart 是一个机器学习（ML）中心，可以帮助您加速 ML 之旅。机器学习（ML）中心，包含只需**单击几下即可部署的基础模型、内置算法和预构建 ML 解决方案**。现成的直接拿来用。  
 Amazon SageMaker JumpStart 是一种机器学习解决方案，旨在帮助用户快速启动和运行机器学习项目。
 
 ## Amazon SageMaker Pipelines
@@ -654,7 +654,7 @@ Amazon SageMaker Pipelines 是一个专门用于构建、管理和自动化机�
 Amazon SageMaker Model Registry 是一个用于管理和部署机器学习模型的服务。它提供了一个集中式的存储库，用于跟踪模型的版本、元数据、审批状态等信息。
 
 ## Amazon SageMaker Automatic Model Tuning（调优）
-Amazon SageMaker Automatic Model Tuning（也称为 Hyperparameter Optimization，HPO）是 Amazon SageMaker 提供的一项功能，用于自动优化机器学习模型的超参数。通过自动化搜索和优化超参数，SageMaker Automatic Model Tuning 能够帮助开发者快速找到最优的模型配置，从而提高模型的性能。
+Amazon SageMaker Automatic Model Tuning（也称为 Hyperparameter Optimization，HPO）是 Amazon SageMaker 提供的一项功能，**用于自动优化机器学习模型的超参数**。通过自动化搜索和优化超参数，SageMaker Automatic Model Tuning 能够帮助开发者快速找到最优的模型配置，从而提高模型的性能。
 
 ## Amazon SageMaker Feature Store
 Amazon SageMaker Feature Store 是一项强大的特征存储和管理服务，旨在简化机器学习特征工程流程，确保模型训练和推理的一致性。它适合需要 集中管理特征、实时推理 和 批量处理特征 的场景，为开发者和数据科学家提供了高效、灵活的工具来加速机器学习项目的开发和部署。
@@ -669,13 +669,13 @@ Amazon SageMaker Data Wrangler 是一个强大的数据准备工具，专注于�
 Amazon SageMaker Processing 是 Amazon SageMaker 提供的一项功能，用于简化机器学习工作流中的数据处理和分析任务。它允许用户运行数据预处理、模型评估、特征工程以及其他与机器学习相关的任务，而无需管理底层的计算基础设施。
 
 ## Amazon SageMaker Ground Truth
-Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，用于创建高质量的标注数据集，帮助机器学习模型进行训练。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
+Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，**用于创建高质量的标注数据集，帮助机器学习模型进行训练**。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
 
 ## Amazon SageMaker Experiments（实验）
-Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户在机器学习模型开发过程中有效管理和追踪实验结果。它可以记录和分析多个方面，包括参数、指标、代码版本、训练数据集以及输出文件，这为机器学习实验提供了全面的支持 。
+Amazon SageMaker Experiments 是一项强大的功能，旨在帮助用户**在机器学习模型开发过程中有效管理和追踪实验结果**。它可以记录和分析多个方面，包括参数、指标、代码版本、训练数据集以及输出文件，这为机器学习实验提供了全面的支持 。
 
 ## Amazon Monitron (监控器)
-Amazon Monitron 是 AWS 提供的一种端到端的工业设备监控和预测性维护服务。它利用机器学习技术来检测工业设备中的异常振动和温度变化，从而预测设备故障，帮助企业减少非计划停机时间和维护成本。
+Amazon Monitron 是 AWS 提供的一种端到端的**工业设备监控和预测性维护服务**。它利用机器学习技术来检测工业设备中的异常振动和温度变化，从而预测设备故障，帮助企业减少非计划停机时间和维护成本。
 
 Amazon Monitron 提供了一整套硬件和软件解决方案，包括传感器、网关、机器学习模型和监控应用程序，用户无需具备机器学习或传感器数据处理的专业知识。
 
@@ -715,8 +715,8 @@ Amazon Bedrock Custom Model Import 是一种功能，允许用户将自定义模
 ## Amazon Bedrock Flows
 Amazon Bedrock Flows 专注于简化生成式 AI 应用的开发流程。它是 Amazon Bedrock 平台的一部分，旨在通过可视化的工作流和自动化工具，帮助开发者快速构建、测试和部署生成式 AI 模型的应用程序。
 
-## Amazon Bedrock Data Automation データオートメーション
-自动从非结构化多模态内容（例如文档、图像、音频和视频）中为人工智能驱动的应用程序生成实用的见解。
+## [Amazon Bedrock Data Automation データオートメーション](https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/bda.html)
+Bedrock Data Automation (BDA) 是一项基于云的服务，可简化从非结构化内容（例如文档、图像、视频和音频）中提取宝贵见解的过程。BDA 利用生成式 AI 将多模态数据自动转换为结构化格式，使开发人员能够以更快的速度和准确度构建应用程序并自动执行复杂的工作流程。
 
 ## Amazon Titan
 来自 Amazon 的高性能基础型。Amazon Titan 是亚马逊推出的一种大规模语言模型（LLM），用于支持各种生成式AI应用。
@@ -733,7 +733,7 @@ Amazon Polly 是 Amazon Web Services（AWS）提供的一项基于云的文本�
 ## Amazon MLOps
 Amazon MLOps（机器学习运维）是指在Amazon Web Services（AWS）平台上，使用工具和服务来管理和自动化机器学习模型的开发、部署、监控和维护的实践。自动化与管道管理, 模型监控与维护, 可扩展性, 持续集成与持续部署（CI/CD）, 安全与合规, 协作与版本控制。
 
-## Amazon Fraud Detector
+## Amazon Fraud Detector（欺诈检测器）
 Amazon Fraud Detector 是一项由 AWS 提供的服务，用于帮助企业检测和预防在线欺诈活动。通过利用机器学习技术，Fraud Detector 可以自动识别潜在的欺诈行为，帮助企业降低风险和损失。
 
 ## Amazon Q Apps
@@ -750,7 +750,7 @@ Amazon Augmented AI (A2I) 是 AWS 提供的一项服务，用于在机器学习�
 | A2I      | 通过人工审核提高预测结果的质量 | 强调模型预测结果的人工审核，确保模型生成的结果符合要求，可应用于多种机器学习任务。 |
 
 ## SageMaker HyperPod
-SageMaker HyperPod 是亚马逊推出的一种专用基础设施，旨在为大规模AI模型的训练提供高效、可靠的环境。该系统能够自动检测、诊断和恢复基础设施故障，从而确保模型开发过程中的高可用性和韧性。HyperPod与Amazon EKS集成，使得长时间运行的计算集群能够支持大规模的分布式训练。
+SageMaker HyperPod 是亚马逊推出的一种专用基础设施，旨在**为大规模AI模型的训练提供高效、可靠的环境**。该系统能够自动检测、诊断和恢复基础设施故障，从而确保模型开发过程中的高可用性和韧性。HyperPod与Amazon EKS集成，使得长时间运行的计算集群能够支持大规模的分布式训练。
 
 ## MLflow
 MLflow 是一个开源平台，旨在帮助机器学习从业者和团队管理机器学习过程中的复杂性。它提供了一套完整的 MLOps 解决方案，使得模型的开发、实验管理和部署变得更加高效。通过 MLflow，用户可以轻松跟踪实验、管理模型和参数，以及评估指标，从而提升模型的质量和可重复性。
@@ -759,7 +759,7 @@ MLflow 是一个开源平台，旨在帮助机器学习从业者和团队管理�
 IP Insights 是亚马逊 SageMaker AI 提供的一种无监督学习算法，专门用于学习 IPv4 地址的使用模式。该算法利用神经网络技术，能够为实体（如用户 ID 或账户号码）和 IP 地址生成潜在的向量表示，从而识别和分析这些地址的使用情况。
 
 ## DeepLab V3
-DeepLab V3是一个用于图像语义分割的深度学习模型系列，由Google Brain团队开发。它基于深度卷积神经网络（CNN）架构，旨在将输入图像中的每个像素分类为不同的语义类别。DeepLab V3通过引入深度可分离卷积和ASPP（Atrous Spatial Pyramid Pooling）模块，提高了模型的性能和效率。该模型在多个语义分割任务中取得了优异的成果，如图像分割、目标检测和实例分割等。
+DeepLab V3是一个**用于图像语义分割的深度学习模型系列**，由Google Brain团队开发。它基于深度卷积神经网络（CNN）架构，旨在将输入图像中的每个像素分类为不同的语义类别。DeepLab V3通过引入深度可分离卷积和ASPP（Atrous Spatial Pyramid Pooling）模块，提高了模型的性能和效率。该模型在多个语义分割任务中取得了优异的成果，如图像分割、目标检测和实例分割等。
 
 ## AWS Trainium
 AWS Trainium 是 Amazon Web Services（AWS）设计的一种专用芯片，专注于深度学习训练。它旨在为高性能和低成本的训练任务提供优化的解决方案。
@@ -786,3 +786,11 @@ AWS DeepRacer 是 Amazon 推出的一个平台，用于学习和实践 强化学
 | **多模态生成模型**   | マルチモーダル生成モデル       | Multimodal Generative Model   | 用于生成多模态数据，例如根据文本生成图像，或根据图像生成描述性文本。                       | 文本到图像生成、图像到文本生成等生成任务。 |
 | **单模态生成模型**   | シングルモーダル生成モデル     | Single-modal Generative Model | 专注于单一模态的数据生成，例如生成文本或生成图像。                                         | 单模态生成任务（如文本生成或图像生成）。   |
 | **单模态嵌入模型**   | シングルモーダル埋め込みモデル | Single-modal Embedding Model  | 只能处理单一模态的数据（如仅文本或仅图像），并将其映射到嵌入空间中，用于单模态相似性比较。 | 单模态搜索（如仅文本搜索或仅图像搜索）。   |
+
+## 什么是 SageMaker Studio Notebook？
+SageMaker Studio Notebook 是 Amazon SageMaker Studio 提供的一种基于云的交互式开发环境（IDE），专为数据科学家和机器学习工程师设计。它允许用户在浏览器中创建、编辑和运行 Jupyter Notebook，无需本地安装任何软件和依赖。
+
+## 自动生成查询过滤器
+Amazon Bedrock 的知识库最近引入了“自动生成查询过滤器”功能。过去，用户需要手动编写复杂的过滤条件来筛选相关文档。现在，这一功能可以根据查询内容自动生成最合适的过滤器，大幅提升检索效率和相关性。  
+
+Amazon Bedrock 最近推出了一项新的功能，允许自动生成查询过滤器，以提高检索的准确性和相关性。这项功能旨在扩展现有的手动元数据筛选功能，使客户能够更轻松地筛选检索到的文档，确保这些文档与查询内容更加相关。用户可以根据文档的元数据字段或属性应用这些过滤器，例如选择最近更新或修改时间较近的文档，从而进一步提升响应的精准度。
