@@ -11,6 +11,8 @@ Amazon Web Services（AWS）是全球最全面、应用最广泛的云，从全�
 
 ## [认证](./Certified/Certified.md)
 
+## [认证路径](https://d1.awsstatic.com/zh_CN/training-and-certification/docs/AWS_certification_paths.pdf)
+
 ## [课程](./Course/Course.md)
 
 ## [白皮书 网页版](https://docs.aws.amazon.com/zh_cn/whitepapers/latest/aws-overview/introduction.html)

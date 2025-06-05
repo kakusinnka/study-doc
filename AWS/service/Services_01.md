@@ -54,7 +54,7 @@ Amazon Lex 是 AWS 提供的 **一项对话式人工智能服务，用于构建�
 Amazon Comprehend 是 AWS 提供的一项 **自然语言处理（Natural Language Processing, NLP）服务**，能够从非结构化文本中提取有意义的信息。它使用机器学习技术分析文本，识别情感、关键短语、实体、语言以及文本之间的主题关系，帮助用户将非结构化数据转化为可操作的洞察。
 
 ## Amazon Personalize
-Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助开发者快速构建个性化推荐系统**，无需具备深厚的机器学习技能或经验。它可以用于创建推荐、个性化搜索结果以及动态内容个性化，用户分群（Segmentation）等功能，广泛应用于电子商务、媒体流服务、在线教育等领域。
+Amazon Personalize 是 AWS 提供的 **一项机器学习服务，旨在帮助开发者快速构建个性化推荐系统**，无需具备深厚的机器学习技能或经验。它可以用于**创建推荐、个性化搜索结果以及动态内容个性化，用户分群（Segmentation）等功能**，广泛应用于电子商务、媒体流服务、在线教育等领域。
 
 ## AWS Migration Hub
 AWS Migration Hub 是 AWS 提供的一项集中式服务，旨在 **帮助用户规划、跟踪和管理应用程序迁移到 AWS 云的过程** 。通过 Migration Hub，用户可以在一个统一的界面中查看迁移进度，无论是使用 AWS 原生迁移工具还是第三方迁移工具，都能集中管理和监控。
@@ -398,7 +398,7 @@ AWS Compute Optimizer 是 **一项基于机器学习的服务，旨在帮助用�
 AWS Resource Access Manager (RAM) 是一项 AWS 服务，用于 **帮助用户在多个 AWS 账户或 AWS 组织中的账户之间安全地共享 AWS 资源**。通过 RAM，用户可以避免为每个账户重复创建资源，从而简化管理并优化成本。
 
 ## Amazon CodeGuru
-Amazon CodeGuru 是一项基于机器学习的开发者工具，旨在帮助开发人员提高代码质量并优化应用程序性能。它通过分析代码和运行时行为，提供代码审查建议和性能优化建议，从而减少代码中的漏洞、提高应用程序效率并降低运行成本。
+Amazon CodeGuru 是一项基于机器学习的开发者工具，旨在**帮助开发人员提高代码质量并优化应用程序性能**。它通过分析代码和运行时行为，提供代码审查建议和性能优化建议，从而减少代码中的漏洞、提高应用程序效率并降低运行成本。
 
 Amazon CodeGuru 包括两个主要组件：
 
@@ -606,7 +606,7 @@ Amazon SageMaker BlazingText 是 Amazon SageMaker 提供的一种高性能、易
 Amazon SageMaker BlazingText 是一种高效的 **自然语言处理（NLP）算法**，专为大规模文本数据集设计，提供了快速生成词向量和文本分类的能力。
 
 ## Amazon SageMaker Neo
-Amazon SageMaker Neo 是一项强大的**模型优化和部署服务**，专注于提升机器学习模型的推理性能和资源利用率。它通过自动化的模型编译和硬件优化，使用户能够轻松地将高效模型部署到云端或边缘设备中。无论是需要高性能推理的实时应用，还是资源受限的边缘设备，SageMaker Neo 都能够提供高效、灵活的解决方案，帮助用户降低成本并提升模型性能。
+Amazon SageMaker Neo 是一项强大的**模型优化和部署服务，专注于提升机器学习模型的推理性能和资源利用率**。它通过自动化的模型编译和硬件优化，使用户能够轻松地将高效模型部署到云端或边缘设备中。**无论是需要高性能推理的实时应用，还是资源受限的边缘设备**，SageMaker Neo 都能够提供高效、灵活的解决方案，帮助用户降低成本并提升模型性能。
 
 ## Amazon SageMaker Model Monitor
 Amazon SageMaker Model Monitor 是 Amazon SageMaker 提供的一项服务，**用于持续监控机器学习模型的性能和行为，确保模型在生产环境中的运行质量符合预期**。它通过自动检测数据偏差、模型偏差或异常行为，帮助用户快速发现和解决问题，从而维护模型的可靠性和准确性。
@@ -666,7 +666,7 @@ Amazon SageMaker Data Wrangler 是一个强大的数据准备工具，专注于�
 把 “Data Wrangler” 想象成“数据牧人”，它的任务是整理、清理和优化数据，让你轻松驾驭混乱的数据世界！
 
 ## Amazon SageMaker Processing
-Amazon SageMaker Processing 是 Amazon SageMaker 提供的一项功能，用于简化机器学习工作流中的数据处理和分析任务。它允许用户运行数据预处理、模型评估、特征工程以及其他与机器学习相关的任务，而无需管理底层的计算基础设施。
+Amazon SageMaker Processing 是 Amazon SageMaker 提供的一项功能，**用于简化机器学习工作流中的数据处理和分析任务**。它允许用户运行数据预处理、模型评估、特征工程以及其他与机器学习相关的任务，而无需管理底层的计算基础设施。
 
 ## Amazon SageMaker Ground Truth
 Amazon SageMaker Ground Truth 是 Amazon 提供的一项服务，**用于创建高质量的标注数据集，帮助机器学习模型进行训练**。它通过自动化数据标注流程、提供多种标注选项和集成人工标注，显著降低了标注数据的时间和成本。
@@ -716,7 +716,7 @@ Amazon Bedrock Custom Model Import 是一种功能，允许用户将自定义模
 Amazon Bedrock Flows 专注于简化生成式 AI 应用的开发流程。它是 Amazon Bedrock 平台的一部分，旨在通过可视化的工作流和自动化工具，帮助开发者快速构建、测试和部署生成式 AI 模型的应用程序。
 
 ## [Amazon Bedrock Data Automation データオートメーション](https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/bda.html)
-Bedrock Data Automation (BDA) 是一项基于云的服务，可简化从非结构化内容（例如文档、图像、视频和音频）中提取宝贵见解的过程。BDA 利用生成式 AI 将多模态数据自动转换为结构化格式，使开发人员能够以更快的速度和准确度构建应用程序并自动执行复杂的工作流程。
+Bedrock Data Automation (BDA) 是一项基于云的服务，可简化**从非结构化内容（例如文档、图像、视频和音频）中提取宝贵见解的过程**。BDA 利用生成式 AI 将多模态数据自动转换为结构化格式，使开发人员能够以更快的速度和准确度构建应用程序并自动执行复杂的工作流程。
 
 ## Amazon Titan
 来自 Amazon 的高性能基础型。Amazon Titan 是亚马逊推出的一种大规模语言模型（LLM），用于支持各种生成式AI应用。
@@ -794,3 +794,9 @@ SageMaker Studio Notebook 是 Amazon SageMaker Studio 提供的一种基于云�
 Amazon Bedrock 的知识库最近引入了“自动生成查询过滤器”功能。过去，用户需要手动编写复杂的过滤条件来筛选相关文档。现在，这一功能可以根据查询内容自动生成最合适的过滤器，大幅提升检索效率和相关性。  
 
 Amazon Bedrock 最近推出了一项新的功能，允许自动生成查询过滤器，以提高检索的准确性和相关性。这项功能旨在扩展现有的手动元数据筛选功能，使客户能够更轻松地筛选检索到的文档，确保这些文档与查询内容更加相关。用户可以根据文档的元数据字段或属性应用这些过滤器，例如选择最近更新或修改时间较近的文档，从而进一步提升响应的精准度。
+
+## Amazon DataZone
+Amazon DataZone 是一项数据治理与数据管理服务，专为帮助企业安全、高效地发现、分类、管理、共享和协作使用数据而设计。它为企业的数据生产者、数据消费者提供了统一的数据门户，实现了数据资产的全生命周期管理。
+
+## Amazon Data Exchange
+Amazon Data Exchange（ADX） 是 AWS 推出的一项云端数据交换服务，主要**用于安全、便捷地查找、订阅和使用第三方或合作伙伴的数据集**。它为企业和开发者提供了一个平台，可以轻松获取和分发各种类型的数据资源，无需复杂的集成或数据传输流程。

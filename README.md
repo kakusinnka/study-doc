@@ -1,8 +1,9 @@
 # 日常学习笔记
+## [AWS](./AWS/aws.md)
 ## [GCP](./gcp/gcp.md)
-## [Angular](./angular/angular.md)
+## [Microsoft](./Microsoft/microsoft.md)
 ## [web](./web/web.md)
+## [Angular](./angular/angular.md)
+## [Vue](./Vue/vue.md)
 ## [tool](./tool/tool.md)
 ## [HCL](./HCL/hcl.md)
-## [AWS](./AWS/aws.md)
-## [Vue](./Vue/vue.md)
