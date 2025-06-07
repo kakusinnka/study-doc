@@ -4,9 +4,6 @@ Azure Arc 是一组有助于管理云环境的技术。 Azure Arc 可以帮助�
 ## [Azure VMware 解决方案](https://azure.microsoft.com/zh-cn/products/azure-vmware/)
 如果已经在私有云环境中使用 VMware，但想要迁移到公有云或混合云，该怎么办？ 利用 Azure VMware 解决方案，可以在 Azure 中运行 VMware 工作负载，实现无缝集成和可伸缩性。
 
-## [Microsoft 365 应用和服务](https://www.microsoft.com/zh-cn/microsoft-365/products-apps-services)
-一个跨功能笔记本，满足所有记笔记需求。
-
 ## [Word](https://www.microsoft.com/zh-cn/microsoft-365/word)
 微软Word是一款强大的文字处理软件，可以随时随地创建和编辑精美的文档。它可作为桌面应用（Windows和MacOS）、移动设备和平板电脑（iOS和Android）或在线使用。你可以实时与他人合作，通过这个多才多艺的工具提高写作技能。
 
@@ -16,7 +13,8 @@ Azure Arc 是一组有助于管理云环境的技术。 Azure Arc 可以帮助�
 ## [PowerPoint](https://www.microsoft.com/zh-cn/microsoft-365/powerpoint)
 微软 PowerPoint 是一款强大的演示软件，可以帮助你创建干净、有影响力的幻灯片。它具有丰富的主题和模板库，使得制作演示文稿变得前所未有地容易。你可以轻松地向幻灯片中添加文字、图像或图表。
 
-## [Onenote](https://www.onenote.com/)
+## [Onenote](https://www.microsoft.com/ja-jp/microsoft-365/onenote/digital-note-taking-app)
+Microsoft OneNote 是一款适用于 Windows 和 Mac 操作系统的自由格式笔记程序。
 
 ## [Outlook](https://www.microsoft.com/zh-cn/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook/)
 适用于日常电子邮件和日历管理的 Outlook 。一站式管理多个帐户的电子邮件、日历和联系人，尽在掌控之中。适用于桌面版、手机版和 Web 版。
@@ -55,6 +53,44 @@ Microsoft Teams是一个通信和协作软件，它集成了聊天、视频会�
 ## [Viva](https://www.microsoft.com/zh-cn/microsoft-viva)
 Microsoft Viva 是微软推出的一款整合式员工体验平台（Employee Experience Platform，简称 EXP），旨在通过连接员工、数据和技术，帮助企业提升员工的工作体验、生产力和幸福感。Viva 结合了微软的多种工具和技术，如 Microsoft Teams、SharePoint 和 AI，提供了一个全面的平台来支持员工的学习、协作、知识管理和健康发展。
 
+## [Viva Connections](https://www.microsoft.com/zh-cn/microsoft-viva/connections)
+Viva Connections 是您获得现代员工体验的入口。Viva Connections 为企业提供了一个品牌化的公司应用程序，让员工可以找到完成工作和保持联系所需的一切。  
+它是 Microsoft Teams 中的一个可定制应用程序，为每个人提供一个个性化的 "主页"，让他们发现相关新闻、对话，并快速访问成功所需的工具和资源。
+
+## [Viva Engage](https://www.microsoft.com/zh-cn/microsoft-viva/engage)
+Viva Engage 为 Microsoft Viva 和 Microsoft 365 的社交层提供动力。通过社区、全公司范围的活动和公开对话，Viva Engage 将领导者和员工联系在一起，进行公开分享、构思、解决问题和跨边界贡献。  
+Viva Engage 应用程序集成在 Microsoft Teams 中，可展示由 Yammer 服务支持的现有和新的员工体验。这些新的 Viva Engage 功能也将出现在 Yammer 网页、桌面和移动应用程序中。  
+Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻松创建吸引人的帖子、个性化信息、分析指标和推荐回复，以推动真实的社区互动。
+
+## [Viva Amplify](https://www.microsoft.com/zh-cn/microsoft-viva/amplify)
+Viva Amplify 是一款集中式活动管理、发布和报告应用程序，供企业传播人员使用多渠道发布来接触和吸引所有员工。用户可以在一个地方创建发布工作流，跟踪和衡量分析结果。
+
+## [Viva Insights](https://www.microsoft.com/zh-cn/microsoft-viva/insights)
+Viva Insights 提供以数据为导向、受隐私保护的洞察力和可行建议，帮助组织中的每个人更聪明地工作并实现平衡。  
+个人、管理者和领导者可通过 Microsoft Teams 中的 Viva Insights 应用程序或网络应用程序获得洞察力。  
+它使用定量和定性数据来增强个人、经理和领导者的能力，以提高组织的生产力和福祉。探索 Copilot 控制面板，深入了解贵组织如何利用 Microsoft 365 Copilot 以及如何最大限度地发挥其价值。
+
+## [Viva Glint](https://www.microsoft.com/zh-cn/microsoft-viva/glint)
+Viva Glint 是一个以人为本的平台，可提供组织健康状况的可见性并指导有效行动。  
+Viva Glint 可提高参与度并提供快速的人员洞察力，实现持续的反馈对话、预测性风险建模、成功驱动因素的数据驱动分析以及反馈进展和影响跟踪。  
+Viva Glint 中的 Microsoft 365 Copilot 可大规模总结和分析员工的反馈意见，使领导者能够通过自然语言提问来深入了解情况。
+
+## [Viva Pulse](https://www.microsoft.com/zh-cn/microsoft-viva/pulse)
+Viva Pulse 是面向管理人员和项目负责人的调查解决方案，有助于快速收集团队反馈，了解经验和建议。数据对经理和项目负责人保密。
+
+## [Viva Learning](https://www.microsoft.com/zh-cn/microsoft-viva/learning)
+Viva Learning 是 Microsoft Teams 中的一个集中式学习中心，可让您将学习和技能培养无缝整合到日常工作中。  
+Viva Learning 通过连接企业、学习管理系统、第三方提供商和微软的内容，将企业学习带入工作流程。  
+除了人工智能提供的聚合和推荐功能外，它还允许轻松共享、分配和跟踪功能。Viva Learning 中的 Microsoft 365 Copilot 可策划个性化的学习内容和简明的知识摘要，帮助领导者轻松开发技能和培训员工。
+
+## [Viva Topics](https://www.microsoft.com/zh-cn/microsoft-viva/pricing)
+Viva Topics 提供知识发现体验，帮助人们与整个组织的信息和专家建立联系。它利用人工智能（AI）将全公司的内容和专业知识自动组织成相关的主题卡。  
+点击卡片可打开包含相关文档、对话、视频和人员的主题页面。Viva Topics 在用户每天使用的 Microsoft 365 应用程序中为他们提供知识。  
+专家可以通过简单、高度可定制的网页快速整理和分享知识。Viva Topics 和 Answers 中的 Microsoft 365 Copilot 使用对话式人工智能帮助用户了解主题、提出智能问题，并使用相关参考资料和专家生成全面、引证充分的答案。
+
+## [Microsoft Stream](https://www.microsoft.com/zh-cn/microsoft-365/microsoft-stream)
+在 Microsoft 365 上无缝录制、共享和观看视频，以加强工作时的协作。
+
 ## [Microsoft Entra](https://www.microsoft.com/zh-cn/security/business/microsoft-entra)
 Microsoft Entra 是微软推出的一套全面的身份和访问管理（Identity and Access Management, IAM）解决方案，旨在帮助企业保护其数字资产，确保只有经过授权的用户能够访问合适的资源。
 
@@ -68,10 +104,25 @@ Microsoft Defender XDR 是微软推出的一款扩展检测和响应（Extended 
 Microsoft Purview 是微软推出的一套全面的数据治理和合规性解决方案，旨在帮助企业管理、保护和利用其数据资产，同时确保符合行业法规和隐私要求。它整合了数据治理、风险管理和合规性工具，为企业提供统一的平台来管理其数据生态系统。
 
 ## [Intune](https://www.microsoft.com/zh-cn/security/business/microsoft-Intune)
-Microsoft Intune 是 Microsoft 提供的一款基于云的端点管理解决方案，属于 Microsoft Endpoint Manager 的一部分。它旨在帮助企业管理和保护员工使用的设备（如手机、平板电脑、笔记本电脑）及其访问的应用程序和数据，从而实现对企业资源的安全访问，同时提升用户的生产力。
+Microsoft Intune 是一款基于云的端点管理解决方案，可管理用户对组织资源的访问，并简化对移动设备、台式电脑和虚拟端点等多种设备的应用程序和设备管理。
+
+| **服务名称**          | **主要作用**                                |
+| --------------------- | ------------------------------------------- |
+| Microsoft Intune      | 云端设备和应用管理。                        |
+| Configuration Manager | 本地设备和应用管理。                        |
+| Co-management         | 混合管理模式，结合 Intune 和 SCCM 的优势。  |
+| Tenant-attach         | 将 SCCM 设备连接到 Intune，扩展云管理能力。 |
+| Endpoint Analytics    | 提供设备性能和用户体验的分析洞察。          |
+| Windows Autopilot     | 简化设备的配置和部署过程。                  |
+| Windows Autopatch     | 自动化操作系统和应用程序的更新管理。        |
+| Intune Admin Center   | 集中管理设备、应用和策略的云端管理门户。    |
 
 ## [Graph](https://developer.microsoft.com/zh-cn/graph)
 Microsoft Graph 是一个强大的 API 平台，提供对 Microsoft 365 和其他服务的统一访问。通过其丰富的功能和集成能力，开发者可以构建增强用户生产力和协作的应用，满足各种业务需求。无论是企业应用开发、移动应用开发，还是数据分析和安全管理，Microsoft Graph 都能提供强大的支持和灵活性。
+
+Microsoft Graph 是 Microsoft 365 中以人为中心的丰富数据和智能的入口。Microsoft 365 通过 Microsoft Graph 分析用户在不同 Microsoft 产品和服务中的数据和活动，从而了解用户并收集见解。通过这些，Microsoft 365 可以提供增强的体验，随着时间的推移不断改进，并保护用户的安全。
+
+Microsoft Graph 在 Microsoft 365 Copilot 中发挥着重要作用，这是一款人工智能驱动的生产力工具，您可以在 Microsoft 365 中加以利用。Microsoft 365 Copilot 由大型语言模型（LLM）提供支持，利用 Microsoft Graph 中的数据，并与 Microsoft 365 应用程序和服务集成。这些组件使 Microsoft 365 Copilot 能够提供实时智能帮助和建议，使用户能够提高自己的创造力、生产力和技能。
 
 ## [Project](https://www.microsoft.com/zh-cn/microsoft-365/planner/microsoft-planner)
 Project 是一款功能强大的项目管理工具，专为任务多、资源多、依赖性强的复杂工作而设计。Project 提供先进的项目管理功能，可满足项目经理等业务专业人员的大部分需求。无论团队规模大小，项目经理和团队成员都可以使用 Project 计划和跟踪可能需要动态调度、预算、子任务和/或从属任务的工作。
@@ -130,3 +181,30 @@ Power Automate 是一项基于云的服务，允许用户在应用程序和服�
 ## [Power BI](https://www.microsoft.com/zh-cn/power-platform/products/power-bi/)
 Power BI 是一套基于云的业务分析工具，可让任何人连接、可视化和分析数据。利用数百种数据可视化、内置人工智能功能、紧密的 Excel 集成以及预建和自定义数据连接器，查找并分享有意义的见解。Power BI 中的 Microsoft 365 Copilot 可让您根据描述轻松生成具有交互式可视化功能的报告，从而无需专业技术知识并简化决策过程。
 
+## [Windows 365 Cloud PC](https://www.microsoft.com/windows-365)
+Windows 365 是一种基于云的虚拟桌面服务，提供了“云 PC”的概念，用户可以通过任意设备（如笔记本、平板或手机）访问完整的 Windows 桌面环境。它是一种简单、固定价格的桌面虚拟化解决方案，适合需要快速部署和易于管理的企业。
+
+## [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/)
+Azure Virtual Desktop 是一种更灵活、更全面的桌面虚拟化解决方案，允许企业在 Azure 云中运行虚拟桌面和应用程序。它提供了高度可定制的虚拟化环境，适合复杂的企业需求。
+
+| **特性**         | **Windows 365**                              | **Azure Virtual Desktop (AVD)**              |
+| ---------------- | -------------------------------------------- | -------------------------------------------- |
+| **定位**         | 简单的“云 PC”服务，固定成本，适用于中小企业  | 灵活的桌面虚拟化解决方案，适用于复杂企业需求 |
+| **部署和管理**   | 简单易用，无需专业技术知识                   | 需要 IT 专业知识，支持深度自定义             |
+| **计费模式**     | 固定订阅（按用户收费）                       | 按使用量计费（按需收费）                     |
+| **资源分配**     | 固定资源（每个用户分配专属云 PC）            | 动态资源分配（支持多用户共享虚拟机）         |
+| **使用场景**     | 标准化桌面需求、远程办公、BYOD               | 高级虚拟化场景、动态工作负载、高性能需求     |
+| **多会话支持**   | 不支持                                       | 支持多会话（单虚拟机支持多个用户）           |
+| **复杂性**       | 低，适合快速部署                             | 高，适合复杂和动态需求                       |
+| **成本**         | 固定成本，便于预算                           | 成本不固定，可能随使用量波动                 |
+| **集成**         | 深度集成到 Microsoft Endpoint Manager 和 365 | 深度集成到 Azure 生态系统                    |
+| **性能需求支持** | 适合普通办公场景                             | 支持高性能计算和 GPU 加速                    |
+
+## [Windows-as-a-Service (WaaS)]()
+Windows 客户端是一个全面的桌面操作系统，可让您高效、安全地工作。保持桌面操作系统的更新非常重要，因为它可以帮助设备高效运行并受到保护。  
+Windows 即服务 (WaaS) 是使用 Windows 桌面的一种新方式。WaaS 模式旨在通过简化 Windows 客户端计算机的部署和服务，使用户和 IT 专业人员的生活更加轻松。  
+WaaS 可为用户提供始终如一的最新 Windows 体验。
+
+Windows-as-a-Service (WaaS) 是微软自 Windows 10 开始引入的一种全新操作系统交付和更新模式。与传统的 Windows 版本发布模式（例如 Windows XP、Windows 7）不同，WaaS 通过持续的功能更新和质量更新来保持操作系统的最新状态，而无需等待几年发布一次全新版本的操作系统。
+
+这一模式的核心理念是将 Windows 看作一个“服务”，通过定期更新为用户提供新功能、安全补丁和改进，而不是像过去那样每隔几年推出一个全新的操作系统版本。

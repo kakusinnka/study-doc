@@ -4,6 +4,10 @@
 
 ## [认证准备](./credentials/credentials.md)
 
+## [训练](./training/training.md)
+
 ## [服务](./services/services.md)
 
-## [训练](./training/training.md)
+## [知识点](./KnowledgePoints/KnowledgePoints.md)
+
+## [其他](./other/other.md)
