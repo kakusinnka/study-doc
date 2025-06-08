@@ -237,10 +237,111 @@
 # [MS-900 Microsoft 365 简介：介绍 Microsoft 365 的安全性和合规性功能](https://learn.microsoft.com/en-us/training/paths/m365-security-compliance-capabilities/)
 
 ## [描述 Microsoft Entra ID 的功能和身份类型](https://learn.microsoft.com/en-us/training/modules/explore-basic-services-identity-types/)
+### 描述 Microsoft Entra ID
+* Identity Secure Score  身份安全得分
+* Basic terminology  基本术语
+  * Tenant - 租户 租户是 Microsoft Entra ID 中的一个逻辑单元，通常代表一个组织。
+  * Directory - 目录 目录是租户的数据存储库，包含用户、组和应用程序等信息。
+  * Multi-tenant - 多租户组织是指拥有一个以上 Microsoft Entra ID 实例的组织。
+* 谁使用 Microsoft Entra ID？
+* 
+
+### 描述身份类型
+* User 用户身份
+  * 内部成员：这些用户通常被视为企业的员工。
+  * 外部成员：这种情况在由多个租户组成的组织中很常见。
+  * 内部访客：当与分销商、供应商和销售商合作的组织为这些用户设置内部 Microsoft Entra 帐户。
+  * 外部客人：外部用户或访客（包括顾问、供应商和合作伙伴）通常属于这一类。
+* 工作负载身份
+* Device 设备身份
+  * Microsoft Entra 注册设备
+  * Microsoft Entra 已加入
+  * Microsoft Entra 混合连接设备
+* Groups  组别
+  * 安全组
+  * Microsoft 365 组(分发组)
+
+### 描述混合身份
+
+### 描述外部身份
+* Microsoft Entra External ID
+  * 结合强大的解决方案，支持与外部人员的协作。
+  * 允许外部身份安全访问应用程序和资源。
+  * 用户可以使用自己的身份（如企业账户或社交媒体账户）。
+* 与商务客人合作
+  * 允许员工与外部合作伙伴和客人协作。
+  * 使用B2B协作与客人共享公司应用程序，同时保持对公司数据的控制。
+* 保护消费者和企业客户的应用程序安全
+  * 为消费者应用快速添加身份验证和客户身份与访问管理（CIAM）。
+  * 包含自助服务注册、个性化登录体验和客户帐户管理。
+* 租户配置
+  * 劳动力租户配置：适用于员工和内部业务应用，可以邀请外部合作伙伴和客人。
+  * 外部租户配置：专门用于外部ID场景，发布应用给消费者或企业客户。
+* B2B 协作
+  * 允许商务客人通过其组织或身份提供商进行身份验证。
+  * 适用于需要让商务客人访问Office 365和SaaS应用的场景。
+* CIAM 功能
+  * 包含增强的安全性、合规性和可扩展性。
+  * 提供单点登录（SSO）功能。
 
 ## [描述 Microsoft Entra 的访问管理功能](https://learn.microsoft.com/en-us/training/modules/explore-access-management-capabilities/)
+### 描述有条件访问
+* 有条件访问政策组件（Conditional access policy components）
+  * 分配（Assignments）：创建有条件访问策略时，管理员可以通过分配来决定使用哪些信号。策略的分配部分控制着条件访问策略的 "谁"、"什么"、"哪里 "和 "何时"。
+  * Access controls  访问控制
+    * 阻止访问：完全拒绝用户的访问请求。
+    * 授予访问：在没有额外控制的情况下授予访问，或在授予访问时要求用户进行多因素身份验证、特定身份验证方法、设备合规性等。
+    * 会话控制：在特定云应用中启用有限体验，例如限制敏感文档的下载、剪切、复制和打印功能。
+
+### 描述 Microsoft Entra 中的全局安全访问
+* Microsoft Entra 的全局安全访问 (Global Secure Access)
+  * Microsoft Entra Internet Access：
+    * 该功能保护用户访问软件即服务 (SaaS) 应用程序（如 Microsoft 服务）和其他公共互联网应用的安全。
+    * 它通过安全 Web 网关 (SWG) 过滤互联网流量，防止网络威胁，确保用户、设备和数据的安全。
+  * Microsoft Entra Private Access：
+    * 提供对私有企业资源的安全访问，适用于办公室和远程工作的用户。
+    * 该功能通过替代传统 VPN，减少过度授权和横向攻击的风险，为用户提供安全的连接。
+  * 关键特点
+    * 零信任架构：全局安全访问采用零信任模型，结合身份、设备、位置和应用的实时风险评估，确保只有经过验证的用户才能访问资源。
+    * 安全服务边缘 (SSE)：作为一种新的网络安全类别，SSE 解决了 VPN 隧道风险、互联网资产保护等问题。
+    * 深度集成的条件访问控制：通过条件访问策略，实时评估风险并控制访问权限，保护任何应用或资源。
+    * 用户友好的管理界面：提供仪表板，帮助组织监控网络流量、用户和设备状态，并识别可疑活动。
+
+### 描述 Microsoft Entra 角色和基于角色的访问控制 (RBAC)
+* Built-in roles  内置角色
+  * 全局管理员 (Global Administrator)：
+    * 具有对 Microsoft Entra 中所有管理功能的访问权限。
+    * 注册 Microsoft Entra 租户的用户自动成为全局管理员。
+  * 用户管理员 (User Administrator)：
+    * 可以创建和管理用户和组的所有方面。
+    * 包括管理支持票单和监控服务健康状况的功能。
+  * 计费管理员 (Billing Administrator)：
+    * 负责进行购买、管理订阅和支持票单，并监控服务的健康状况。
+* Custom roles  自定义角色
+* 只授予用户所需的访问权限
+* Microsoft Entra 角色类别
+* Microsoft Entra RBAC 与 Azure RBAC 的区别
+  * Microsoft Entra RBAC - Microsoft Entra 角色控制对用户、组和应用程序等 Microsoft Entra 资源的访问。
+  * Azure RBAC - Azure 角色使用 Azure 资源管理控制对虚拟机或存储等 Azure 资源的访问。
 
 ## [使用 Microsoft Defender XDR 描述威胁防护](https://learn.microsoft.com/en-us/training/modules/describe-threat-protection-with-microsoft-365-defender/)
+### 描述 Microsoft Defender XDR 服务
+
+### 介绍 Office 365 的 Microsoft Defender
+
+### 说明 Microsoft Defender for Endpoint
+
+### 介绍适用于云应用程序的 Microsoft Defender
+
+### 描述 Microsoft Defender for Identity
+
+### 说明 Microsoft Defender 漏洞管理
+
+### 描述 Microsoft Defender 威胁情报
+
+### 描述 Microsoft Defender 门户
+
+### 说明 Copilot 与 Microsoft Defender XDR 的集成情况
 
 ## [描述 Microsoft Purview 的数据合规性解决方案](https://learn.microsoft.com/en-us/training/modules/describe-purview-risk-compliance-governance/)
 
