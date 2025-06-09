@@ -326,23 +326,192 @@
 
 ## [使用 Microsoft Defender XDR 描述威胁防护](https://learn.microsoft.com/en-us/training/modules/describe-threat-protection-with-microsoft-365-defender/)
 ### 描述 Microsoft Defender XDR 服务
+* Microsoft Defender for Endpoint 是一个统一的端点平台，用于预防性保护、入侵后检测、自动调查和响应。
+* Microsoft Defender Vulnerability Management 提供持续的资产可见性、基于风险的智能评估和内置修复工具，帮助您的安全和 IT 团队优先处理整个组织的关键漏洞和错误配置。
+* Defender for Office 365 可保护您的组织免受电子邮件、链接（URL）和协作工具带来的恶意威胁。
+* Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对组织的高级威胁、受损身份和内部恶意行为。
+* Microsoft Defender for Cloud Apps 为软件即服务 (SaaS) 应用程序提供全面保护。云应用程序卫士是一款云访问安全代理，可为您的云应用程序带来深入的可见性、强大的数据控制和增强的威胁防护。
 
 ### 介绍 Office 365 的 Microsoft Defender
+Microsoft Defender for Office 365 可无缝集成到您的 Office 365 订阅中，提供对威胁的防护，如通过电子邮件链接（URL）、附件或 SharePoint、Teams 和 Outlook 等协作工具发送的网络钓鱼和恶意软件。Defender for Office 365 提供威胁的实时视图。它还提供调查、追捕和修复功能，帮助安全团队识别威胁、确定优先级、进行调查并采取应对措施。
+
+* Prevent and detect  预防和检测
+* Investigate  调查
+* Respond  回应
+* Microsoft Defender 门户中的 Microsoft Defender for Office 365
 
 ### 说明 Microsoft Defender for Endpoint
+Microsoft Defender for Endpoint 是一个平台，旨在帮助企业网络保护端点，包括笔记本电脑、手机、平板电脑、个人电脑、接入点、路由器和防火墙。
+
+* Microsoft Defender 门户中的 Microsoft Defender for Endpoints
 
 ### 介绍适用于云应用程序的 Microsoft Defender
+软件即服务（SaaS）应用程序在混合工作环境中无处不在。保护 SaaS 应用程序及其存储的重要数据是企业面临的一项重大挑战。应用程序使用量的增加，加上员工在企业外围访问公司资源，也带来了新的攻击载体。为了有效打击这些攻击，安全团队需要一种方法，在云访问安全代理（CASB）的传统范围之外保护云应用程序中的数据。
+
+* 探索 SaaS 应用程序
+* Information protection  信息保护
+* SaaS 安全态势管理 (SSPM)
+* 高级威胁防护
+* 通过应用治理提供应用到应用的保护
+* Microsoft Defender 门户中的 Microsoft Defender for Cloud Apps
 
 ### 描述 Microsoft Defender for Identity
+Microsoft Defender for Identity 是一款基于云的安全解决方案，它使用企业内部身份基础架构服务器发出的信号来检测权限升级或高风险横向移动等威胁，并报告容易被利用的身份问题。
+
+* 主动评估身份态势
+* 利用实时分析和数据智能检测威胁
+* 调查警报和用户活动
+* 补救行动
+* Microsoft Defender 门户中的 Microsoft Defender for Identity
 
 ### 说明 Microsoft Defender 漏洞管理
+Defender 漏洞管理可为 Windows、macOS、Linux、Android、iOS 和网络设备提供资产可见性、智能评估和内置修复工具。
+
+* 持续发现和监测资产
+* 基于风险的智能优先级排序
+* 补救和跟踪
+* Microsoft Defender 门户中的 Microsoft Defender 漏洞管理
 
 ### 描述 Microsoft Defender 威胁情报
+威胁情报分析师既要广泛摄取威胁情报，又要分析哪些威胁情报对其组织和/或行业构成了最大威胁，他们在这两者之间难以取得平衡。同样，漏洞情报分析师也在努力将资产清单与常见漏洞和暴露（CVE）信息联系起来，以便优先调查和修复与组织相关的最关键漏洞。
+
+* 威胁分析
+* 英特尔简介
+* 英特尔资源管理器
+* 英特尔项目
+* Microsoft Defender 门户中的 Microsoft Defender 威胁情报
+* Microsoft Security Copilot 与 Microsoft Threat Intelligence 集成
 
 ### 描述 Microsoft Defender 门户
+统一的安全操作平台是一个完全集成的工具集，可供安全团队在整个环境中预防、检测、调查和应对威胁。对于微软来说，这意味着将 SIEM、XDR、态势管理和威胁情报与先进的生成式人工智能作为一个平台提供给客户。
+
+* Exposure management  曝光管理
+* Attack surface  攻击面
+* Security insights  安全见解
+* Secure score  安全得分
+* Data connectors  数据连接器
+* Investigation & response 调查与回应
+* Incidents and alerts  事件和警报
+* Hunting  狩猎
+* Actions and submissions  行动和呈件
+* Partner catalog  合作伙伴目录
+* Threat intelligence  威胁情报
+* Assets  资产
+* Microsoft Sentinel  微软哨兵
+* Identities  身份
+* Endpoints  终点
+* Email and collaboration  电子邮件与协作
+* Cloud apps  云应用程序
+* SOC Optimization  SOC 优化
+* Reports  报告
+* Learning hub  学习中心
+* System  系统
 
 ### 说明 Copilot 与 Microsoft Defender XDR 的集成情况
+Microsoft Defender XDR 与 Microsoft Security Copilot 集成。可通过独立和嵌入式体验体验与 Security Copilot 的集成。
+
+* 独立体验
+* The embedded experience  嵌入式体验
+* Summarize incidents  总结事件
+* Guided responses  指导性答复
+* Analyze scripts and codes 分析脚本和代码
+* enerate KQL queries  生成 KQL 查询
+* Create incident reports  创建事件报告
+* Analyze files  分析文件
+* Summarize devices and identities 总结设备和身份
+* Move to the Standalone experience 转向独立体验
 
 ## [描述 Microsoft Purview 的数据合规性解决方案](https://learn.microsoft.com/en-us/training/modules/describe-purview-risk-compliance-governance/)
+### 描述 Microsoft Purview 中的审计
+Microsoft Purview 中的审计解决方案可帮助企业有效应对安全事件、取证调查、内部调查和合规义务。在数十种 Microsoft 365 服务和解决方案以及 Security Copilot（如果启用）中执行的数千项用户和管理操作都会被捕获、记录并保留在组织的统一审计日志中。组织内的安全操作人员、IT 管理员、内部风险团队以及合规和法律调查人员都可以搜索这些事件的审计记录。该功能可提供对整个 Microsoft 365 组织内执行的活动的可见性。
+
+* Audit (Standard)  审计（标准）
+* Audit (Premium)  审计（高级）
+* Licensing  许可
+* Microsoft Purview for Security Copilot 中的审计日志
+
+### Describe eDiscovery  描述电子发现
+电子发现，或称 eDiscovery，是指识别和提供可在法律案件中用作证据的电子信息的过程。
+
+* eDiscovery workflow  电子取证工作流程
+* 电子发现功能和能力
+* 与 Microsoft Security Copilot 集成
+* 获取电子发现审查集所收集证据的背景摘要（预览）
+* 从自然语言到 KeyQL 查询
+
+### 描述合规经理
+Microsoft Purview 合规性管理器可帮助您自动评估和管理整个多云环境的合规性。从盘点数据保护风险到管理实施控制的复杂性、了解最新法规和认证以及向审计人员报告，合规性管理器可以在整个合规性过程中为您提供帮助。
+
+* Controls  控制装置
+* Assessments  评估
+* Regulations  条例
+* Improvement actions  改进行动
+* 合规经理的优势
+
+### 说明通信合规性
+Microsoft Purview Communication Compliance 是一款内部风险解决方案，可帮助您检测、捕获可能导致组织内潜在数据安全或合规性事件的不当消息，并采取相应措施。通信合规性可评估 Microsoft 和第三方应用程序（Teams、Viva Engage、Outlook、WhatsApp 等）中基于文本和图像的消息是否可能违反业务政策。包括不适当地共享敏感信息、威胁性或骚扰性语言以及潜在的违反法规行为。
+
+* 与 Microsoft Security Copilot 集成
+
+### 描述数据生命周期管理
+Microsoft Purview 数据生命周期管理为您提供了保留需要保留的内容和删除不需要保留的内容的工具和功能。保留和删除电子邮件、文档和信息通常是出于合规性和监管要求的需要。但是，删除不再具有业务价值的内容也会降低攻击面。
+
+* 保留政策和保留标签
+
+### 描述记录管理
+各种类型的组织都需要一个管理解决方案来管理其企业数据中的监管、法律和关键业务记录。Microsoft Purview Records Management 可以帮助企业履行其法律义务。它还有助于证明企业遵守法规，并通过定期处置不再需要保存、不再有价值或不再需要用于业务目的的项目来提高效率。
+
+* Microsoft Purview 记录管理的常见用例
 
 ## [描述 Microsoft 的服务信任门户和隐私功能](https://learn.microsoft.com/en-us/training/modules/describe-compliance-management-capabilities-microsoft/)
+### 介绍服务托管门户网站提供的服务
+Microsoft 服务信任门户网站提供各种内容、工具和其他资源，介绍 Microsoft 云服务如何保护您的数据，以及如何为您的组织管理云数据安全性和合规性。
+
+Service Trust Portal (STP) 是微软发布审计报告和其他与微软云服务相关的合规性信息的公共网站。STP 用户可以下载外部审计人员编制的审计报告，并从微软撰写的白皮书中获得见解，这些白皮书详细介绍了微软云服务如何保护您的数据，以及如何为您的组织管理云数据的安全性和合规性。
+
+* 访问服务托管门户网站
+* 服务托管门户网站内容类别
+* 认证、法规和标准
+* 报告、白皮书和成果物(Artifacts)
+* 行业和地区资源
+* 为您的组织提供资源
+* 我的图书馆
+
+### 描述微软的隐私原则
+微软的隐私保护方法基于以下六项原则：
+* 控制：通过简单易用的工具和明确的选择，让客户掌控自己的数据和隐私。
+* 透明度：对数据的收集和使用保持透明，以便每个人都能做出明智的决定。
+* 安全性：通过使用强大的安全性和加密技术来保护委托给 Microsoft 的数据。
+* 强有力的法律保护：尊重当地的隐私法律，并将隐私权作为一项基本人权争取法律保护。
+* 无基于内容的目标定位：不使用电子邮件、聊天、文件或其他个人内容进行广告定位。
+* 为您带来益处：当微软收集数据时，会将其用于为您--客户--带来益处，使您获得更好的体验。
+
+### 描述 Microsoft Priva
+Microsoft Priva 是一套全面的隐私解决方案，支持企业整个数字资产的隐私运营，使企业能够整合整个数据环境的隐私保护，简化法规合规性，降低隐私风险。
+
+* Priva 隐私风险管理
+  * 限制数据过度暴露。
+  * 查找并减少数据传输。
+  * 最小化存储数据。
+* 主体权利申请
+* 同意管理（预览）
+* 隐私评估（预览）
+* 跟踪器扫描（预览）
+* Priva portal (preview)  Priva 门户网站（预览）
+
+# [MS-900 Microsoft 365 简介：介绍 Microsoft 365 的定价、许可和支持](https://learn.microsoft.com/en-us/training/paths/m365-licensing-service-support/)
+## [说明 Microsoft 365 的定价、许可和计费选项](https://learn.microsoft.com/en-us/training/modules/identify-licensing-options-available-microsoft-365/)
+### 探索微软云服务的定价模式
+
+### 探索账单和账单管理选项
+
+### 探索可用的许可和管理选项
+
+## [介绍 Microsoft 365 服务的支持产品](https://learn.microsoft.com/en-us/training/modules/describe-support-offerings-for-microsoft-365-services/)
+### 探索 Microsoft 365 服务的支持选项
+
+### 解释服务水平协议 (SLA) 概念
+
+### 确定如何跟踪服务健康状况
+
+### 探讨企业如何分享对 Microsoft 365 服务的反馈意见
