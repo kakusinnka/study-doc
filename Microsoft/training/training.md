@@ -502,16 +502,96 @@ Microsoft Priva 是一套全面的隐私解决方案，支持企业整个数字�
 # [MS-900 Microsoft 365 简介：介绍 Microsoft 365 的定价、许可和支持](https://learn.microsoft.com/en-us/training/paths/m365-licensing-service-support/)
 ## [说明 Microsoft 365 的定价、许可和计费选项](https://learn.microsoft.com/en-us/training/modules/identify-licensing-options-available-microsoft-365/)
 ### 探索微软云服务的定价模式
+* Cloud Solution Provider  云解决方案提供商
+* Enterprise Agreement  企业协议
+* Direct Billing  直接结算
+* Trial  试用
 
 ### 探索账单和账单管理选项
+* Billing account options  账单账户选项
+  * Microsoft 在线服务计划(Microsoft Online Services Program)：当您直接注册 Microsoft 365 订阅时会创建此计费帐户。
+  * Microsoft 产品与服务协议 (MPSA) 计划(Microsoft Products & Services Agreement (MPSA) Program)：当贵组织签署 MPSA 批量许可协议以购买软件和在线服务时，将创建此计费帐户。
+  * 微软客户协议(Microsoft Customer Agreement)：当您的组织与 Microsoft 代表、授权合作伙伴合作或独立购买时，将创建此计费帐户。
+* Consumption and fixed cost models 消耗和固定成本模式
+* Bill management  账单管理
 
 ### 探索可用的许可和管理选项
+* Subscription plans  订阅计划
+* Microsoft 365 for home  家庭版 Microsoft 365
+* Microsoft 365 Education  微软 365 教育
+* Microsoft 365 Government  微软 365 政府
+* Microsoft 365 for business
+* Microsoft 365 Enterprise  微软 365 企业版
+* Licenses  许可证
+* Types of add-ons  附加组件类型
 
 ## [介绍 Microsoft 365 服务的支持产品](https://learn.microsoft.com/en-us/training/modules/describe-support-offerings-for-microsoft-365-services/)
 ### 探索 Microsoft 365 服务的支持选项
+* 探索 Microsoft 365 服务的支持选项
+* Create a support request  创建支持请求
 
 ### 解释服务水平协议 (SLA) 概念
+* Service level  服务水平
+* Incident  事件
+* Uptime  正常运行时间
+* Downtime  停机时间
+* downtime  计划停机
+* Claim  索赔
+* Applicable monthly service fees 适用的服务月费
+* Service credit  服务积分
+* Uptime agreement  正常运行时间协议
 
 ### 确定如何跟踪服务健康状况
+* 如何在 Microsoft 365 管理中心检查服务健康状况
+* 检查服务状态的其他方法
 
 ### 探讨企业如何分享对 Microsoft 365 服务的反馈意见
+* 在应用程序中发送反馈
+* 在社区反馈门户网站 "反馈 "中直接发送反馈。
+* 直接从 Windows 设备上的 Windows Feedback Hub 发送反馈。
+
+# [探索零信任安全模型](https://learn.microsoft.com/zh-cn/training/modules/explore-zero-trust-security-model/)
+## 研究零信任模式的原则和组成部分
+### Zero Trust principles  零信任原则
+零信任模式的基本原则包括：
+* 明确验证。
+* 使用最少权限访问。
+* 假设入侵。
+
+Zero Trust components  零信任组件：
+* 用零信任确保身份安全。
+* 通过零信任确保端点安全。
+* 通过零信任确保应用程序的安全。
+* 用零信任保护数据安全。
+* 用零信任保护基础架构。
+* 通过零信任确保网络安全。
+
+## 在组织中规划零信任安全模式
+为确保身份基础设施的安全，企业应遵循以下五个步骤：
+* 加强凭证。
+* 减少攻击面。
+* 自动应对威胁。
+* 提高警惕。
+* 实现用户自助。
+
+### 从隐性信任模式转向显性验证模式
+
+### 使用 Microsoft Entra 有条件访问实现零信任
+
+### 零信任评估工具
+
+## 研究微软的零信任网络战略
+### 利用 Microsoft 365 构建零信任网络
+
+### 网络零信任部署目标
+
+### 基于 Microsoft Entra 条件访问的零信任网络
+
+## 采用零信任方法
+### 1.身份：零信任方法的起点
+
+### 2.安全性：简化 "假设违规 "工具集
+
+### 3.合规性：由内而外的保护
+
+### 4.技能培训：通过安全技能培训为您的未来提供动力

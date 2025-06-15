@@ -44,7 +44,7 @@ Outlook 是用户用来访问和管理邮件的客户端工具，而 Exchange On
 ## [Access](https://www.microsoft.com/zh-cn/microsoft-365/access)
 Microsoft Access 是 Microsoft 365 提供的一款功能强大的关系型数据库管理系统（RDBMS），旨在帮助用户创建和管理数据库应用程序。它结合了用户友好的界面和强大的数据库功能，适合个人用户、小型企业以及开发者使用。Access 允许用户存储、组织和分析数据，并通过可视化工具快速创建表单、查询和报表，是一个高效的数据管理和分析解决方案。
 
-## [Publisher 出版商](https://www.microsoft.com/zh-cn/microsoft-365/publisher)
+## [Publisher 出版商，发行者](https://www.microsoft.com/zh-cn/microsoft-365/publisher)
 Microsoft Publisher 是 Microsoft Office 系列中的一款桌面出版（DTP）软件，专为创建专业的视觉设计和布局而设计。它主要用于制作各种印刷品和数字出版物，例如宣传册、名片、海报、贺卡、新闻稿和电子邮件模板。与 Microsoft Word 不同，Publisher 更注重页面布局和设计，适合需要高质量视觉效果的场景。
 
 ## [Teams](https://www.microsoft.com/zh-cn/microsoft-teams/group-chat-software/)
@@ -57,7 +57,7 @@ Microsoft Viva 是微软推出的一款整合式员工体验平台（Employee Ex
 Viva Connections 是您获得现代员工体验的入口。Viva Connections 为企业提供了一个品牌化的公司应用程序，让员工可以找到完成工作和保持联系所需的一切。  
 它是 Microsoft Teams 中的一个可定制应用程序，为每个人提供一个个性化的 "主页"，让他们发现相关新闻、对话，并快速访问成功所需的工具和资源。
 
-## [Viva Engage](https://www.microsoft.com/zh-cn/microsoft-viva/engage)
+## [Viva Engage 参与](https://www.microsoft.com/zh-cn/microsoft-viva/engage)
 Viva Engage 为 Microsoft Viva 和 Microsoft 365 的社交层提供动力。通过社区、全公司范围的活动和公开对话，Viva Engage 将领导者和员工联系在一起，进行公开分享、构思、解决问题和跨边界贡献。  
 Viva Engage 应用程序集成在 Microsoft Teams 中，可展示由 Yammer 服务支持的现有和新的员工体验。这些新的 Viva Engage 功能也将出现在 Yammer 网页、桌面和移动应用程序中。  
 Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻松创建吸引人的帖子、个性化信息、分析指标和推荐回复，以推动真实的社区互动。
@@ -102,6 +102,9 @@ Microsoft Defender XDR 是微软推出的一款扩展检测和响应（Extended 
 
 ## [Purview 范围](https://www.microsoft.com/zh-cn/security/business/microsoft-purview)
 Microsoft Purview 是微软推出的一套全面的数据治理和合规性解决方案，旨在帮助企业管理、保护和利用其数据资产，同时确保符合行业法规和隐私要求。它整合了数据治理、风险管理和合规性工具，为企业提供统一的平台来管理其数据生态系统。
+
+### [Microsoft Purview Insider Risk Management（内部风险管理） ](https://learn.microsoft.com/en-us/purview/insider-risk-management?view=o365-worldwide)
+Microsoft Purview Insider Risk Management 是一款合规性解决方案，可帮助您检测、调查组织内的恶意和非故意活动并采取相应行动，从而最大限度地降低内部风险。通过内部人员风险策略，您可以定义要在组织内识别和检测的风险类型，包括对案件采取行动，并在必要时将案件升级到 Microsoft eDiscovery（高级版）。您组织中的风险分析师可以快速采取适当行动，确保用户符合组织的合规标准。
 
 ## [Intune](https://www.microsoft.com/zh-cn/security/business/microsoft-Intune)
 Microsoft Intune 是一款基于云的端点管理解决方案，可管理用户对组织资源的访问，并简化对移动设备、台式电脑和虚拟端点等多种设备的应用程序和设备管理。
@@ -208,3 +211,6 @@ WaaS 可为用户提供始终如一的最新 Windows 体验。
 Windows-as-a-Service (WaaS) 是微软自 Windows 10 开始引入的一种全新操作系统交付和更新模式。与传统的 Windows 版本发布模式（例如 Windows XP、Windows 7）不同，WaaS 通过持续的功能更新和质量更新来保持操作系统的最新状态，而无需等待几年发布一次全新版本的操作系统。
 
 这一模式的核心理念是将 Windows 看作一个“服务”，通过定期更新为用户提供新功能、安全补丁和改进，而不是像过去那样每隔几年推出一个全新的操作系统版本。
+
+## Microsoft Service Trust Portal
+Microsoft服务信任门户提供有关Microsoft云服务如何保护数据以及如何管理组织的云数据安全性和合规性的各种内容、工具和其他资源。
