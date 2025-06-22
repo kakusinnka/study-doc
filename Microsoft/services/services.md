@@ -65,7 +65,7 @@ Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻�
 ## [Viva Amplify](https://www.microsoft.com/zh-cn/microsoft-viva/amplify)
 Viva Amplify 是一款集中式活动管理、发布和报告应用程序，供企业传播人员使用多渠道发布来接触和吸引所有员工。用户可以在一个地方创建发布工作流，跟踪和衡量分析结果。
 
-## [Viva Insights](https://www.microsoft.com/zh-cn/microsoft-viva/insights)
+## [Viva Insights 洞察](https://www.microsoft.com/zh-cn/microsoft-viva/insights)
 Viva Insights 提供以数据为导向、受隐私保护的洞察力和可行建议，帮助组织中的每个人更聪明地工作并实现平衡。  
 个人、管理者和领导者可通过 Microsoft Teams 中的 Viva Insights 应用程序或网络应用程序获得洞察力。  
 它使用定量和定性数据来增强个人、经理和领导者的能力，以提高组织的生产力和福祉。探索 Copilot 控制面板，深入了解贵组织如何利用 Microsoft 365 Copilot 以及如何最大限度地发挥其价值。
@@ -214,3 +214,11 @@ Windows-as-a-Service (WaaS) 是微软自 Windows 10 开始引入的一种全新�
 
 ## Microsoft Service Trust Portal
 Microsoft服务信任门户提供有关Microsoft云服务如何保护数据以及如何管理组织的云数据安全性和合规性的各种内容、工具和其他资源。
+
+## Microsoft Configuration Manager
+Microsoft Configuration Manager 是一个功能强大的 IT 管理工具，主要用于：
+* 部署和更新操作系统。
+* 分发和管理软件应用程序。
+* 管理设备的安全性和合规性。
+* 提供硬件和软件的资产报告。
+* 它支持管理各种设备，包括运行 Windows、macOS 和 Linux 操作系统的计算机，以及移动设备。
