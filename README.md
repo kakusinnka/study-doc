@@ -1,9 +1,18 @@
 # 日常学习笔记
-## [AWS](./AWS/aws.md)
-## [GCP](./gcp/gcp.md)
-## [Microsoft](./Microsoft/microsoft.md)
-## [web](./web/web.md)
-## [Angular](./angular/angular.md)
-## [Vue](./Vue/vue.md)
-## [tool](./tool/tool.md)
-## [HCL](./HCL/hcl.md)
+## 前端
+### [web](./web/web.md)
+### [Angular](./angular/angular.md)
+### [Vue](./Vue/vue.md)
+
+## 后端
+### [Python](./Python/Python.md)
+### [Django](./Django/Django.md)
+
+## 云系列
+### [AWS](./AWS/aws.md)
+### [GCP](./gcp/gcp.md)
+### [Microsoft](./Microsoft/microsoft.md)
+
+## 其他
+### [HCL](./HCL/hcl.md)
+### [tool](./tool/tool.md)
