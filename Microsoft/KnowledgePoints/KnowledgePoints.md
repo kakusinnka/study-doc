@@ -160,3 +160,5 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 * 微软客户协议 顧客契約 (MCA)：当您的组织与 Microsoft 代表、授权合作伙伴合作或独立购买时，将创建此计费帐户。
 
 ## [Microsoft 365 服务的支持选项](https://learn.microsoft.com/en-us/training/modules/describe-support-offerings-for-microsoft-365-services/2-explore-support-options)
+
+## [微软的端点管理](https://learn.microsoft.com/en-us/intune/endpoint-manager-overview)

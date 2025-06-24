@@ -62,7 +62,7 @@ Viva Engage 为 Microsoft Viva 和 Microsoft 365 的社交层提供动力。通�
 Viva Engage 应用程序集成在 Microsoft Teams 中，可展示由 Yammer 服务支持的现有和新的员工体验。这些新的 Viva Engage 功能也将出现在 Yammer 网页、桌面和移动应用程序中。  
 Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻松创建吸引人的帖子、个性化信息、分析指标和推荐回复，以推动真实的社区互动。
 
-## [Viva Amplify](https://www.microsoft.com/zh-cn/microsoft-viva/amplify)
+## [Viva Amplify 放大](https://www.microsoft.com/zh-cn/microsoft-viva/amplify)
 Viva Amplify 是一款集中式活动管理、发布和报告应用程序，供企业传播人员使用多渠道发布来接触和吸引所有员工。用户可以在一个地方创建发布工作流，跟踪和衡量分析结果。
 
 ## [Viva Insights 洞察](https://www.microsoft.com/zh-cn/microsoft-viva/insights)
@@ -70,12 +70,12 @@ Viva Insights 提供以数据为导向、受隐私保护的洞察力和可行建
 个人、管理者和领导者可通过 Microsoft Teams 中的 Viva Insights 应用程序或网络应用程序获得洞察力。  
 它使用定量和定性数据来增强个人、经理和领导者的能力，以提高组织的生产力和福祉。探索 Copilot 控制面板，深入了解贵组织如何利用 Microsoft 365 Copilot 以及如何最大限度地发挥其价值。
 
-## [Viva Glint](https://www.microsoft.com/zh-cn/microsoft-viva/glint)
+## [Viva Glint 闪烁](https://www.microsoft.com/zh-cn/microsoft-viva/glint)
 Viva Glint 是一个以人为本的平台，可提供组织健康状况的可见性并指导有效行动。  
 Viva Glint 可提高参与度并提供快速的人员洞察力，实现持续的反馈对话、预测性风险建模、成功驱动因素的数据驱动分析以及反馈进展和影响跟踪。  
 Viva Glint 中的 Microsoft 365 Copilot 可大规模总结和分析员工的反馈意见，使领导者能够通过自然语言提问来深入了解情况。
 
-## [Viva Pulse](https://www.microsoft.com/zh-cn/microsoft-viva/pulse)
+## [Viva Pulse 脉冲](https://www.microsoft.com/zh-cn/microsoft-viva/pulse)
 Viva Pulse 是面向管理人员和项目负责人的调查解决方案，有助于快速收集团队反馈，了解经验和建议。数据对经理和项目负责人保密。
 
 ## [Viva Learning](https://www.microsoft.com/zh-cn/microsoft-viva/learning)
@@ -119,6 +119,16 @@ Microsoft Intune 是一款基于云的端点管理解决方案，可管理用户
 | Windows Autopilot     | 简化设备的配置和部署过程。                  |
 | Windows Autopatch     | 自动化操作系统和应用程序的更新管理。        |
 | Intune Admin Center   | 集中管理设备、应用和策略的云端管理门户。    |
+
+### Microsoft Configuration Manager
+Microsoft Intune 系列产品是管理所有设备的集成解决方案。Microsoft 将 Configuration Manager 和 Intune 整合在一起，无需复杂的迁移，并简化了许可。您可以继续利用现有的配置管理器投资，同时以自己的节奏利用微软云的强大功能。
+
+配置管理器是 Microsoft Intune 系列产品的一部分。Microsoft Configuration Manager 是一个功能强大的 IT 管理工具，主要用于：
+* 部署和更新操作系统。
+* 分发和管理软件应用程序。
+* 管理设备的安全性和合规性。
+* 提供硬件和软件的资产报告。
+* 它支持管理各种设备，包括运行 Windows、macOS 和 Linux 操作系统的计算机，以及移动设备。
 
 ## [Graph](https://developer.microsoft.com/zh-cn/graph)
 Microsoft Graph 是一个强大的 API 平台，提供对 Microsoft 365 和其他服务的统一访问。通过其丰富的功能和集成能力，开发者可以构建增强用户生产力和协作的应用，满足各种业务需求。无论是企业应用开发、移动应用开发，还是数据分析和安全管理，Microsoft Graph 都能提供强大的支持和灵活性。
@@ -215,10 +225,5 @@ Windows-as-a-Service (WaaS) 是微软自 Windows 10 开始引入的一种全新�
 ## Microsoft Service Trust Portal
 Microsoft服务信任门户提供有关Microsoft云服务如何保护数据以及如何管理组织的云数据安全性和合规性的各种内容、工具和其他资源。
 
-## Microsoft Configuration Manager
-Microsoft Configuration Manager 是一个功能强大的 IT 管理工具，主要用于：
-* 部署和更新操作系统。
-* 分发和管理软件应用程序。
-* 管理设备的安全性和合规性。
-* 提供硬件和软件的资产报告。
-* 它支持管理各种设备，包括运行 Windows、macOS 和 Linux 操作系统的计算机，以及移动设备。
+## Microsoft Defender for Endpoint
+Microsoft Defender for Endpoint 是一个企业端点安全平台，旨在帮助企业网络预防、检测、调查和应对高级威胁。示例端点包括笔记本电脑、手机、平板电脑、个人电脑、接入点、路由器和防火墙。
