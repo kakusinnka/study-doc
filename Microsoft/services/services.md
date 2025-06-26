@@ -109,6 +109,8 @@ Microsoft Purview Insider Risk Management 是一款合规性解决方案，可�
 ## [Intune](https://www.microsoft.com/zh-cn/security/business/microsoft-Intune)
 Microsoft Intune 是一款基于云的端点管理解决方案，可管理用户对组织资源的访问，并简化对移动设备、台式电脑和虚拟端点等多种设备的应用程序和设备管理。
 
+Microsoft Intune 是一个产品和服务系列，提供基于云的统一端点管理解决方案。Intune 系列包括 Microsoft Intune 服务(Microsoft Intune service)、配置管理器(Configuration Manager)、协同管理(co-management)、端点分析(Endpoint Analytics)、Windows Autopilot 和 Intune 管理中心(Intune admin center)。
+
 | **服务名称**          | **主要作用**                                |
 | --------------------- | ------------------------------------------- |
 | Microsoft Intune      | 云端设备和应用管理。                        |
@@ -120,7 +122,7 @@ Microsoft Intune 是一款基于云的端点管理解决方案，可管理用户
 | Windows Autopatch     | 自动化操作系统和应用程序的更新管理。        |
 | Intune Admin Center   | 集中管理设备、应用和策略的云端管理门户。    |
 
-### Microsoft Configuration Manager
+### Configuration Manager
 Microsoft Intune 系列产品是管理所有设备的集成解决方案。Microsoft 将 Configuration Manager 和 Intune 整合在一起，无需复杂的迁移，并简化了许可。您可以继续利用现有的配置管理器投资，同时以自己的节奏利用微软云的强大功能。
 
 配置管理器是 Microsoft Intune 系列产品的一部分。Microsoft Configuration Manager 是一个功能强大的 IT 管理工具，主要用于：

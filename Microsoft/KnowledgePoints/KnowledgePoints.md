@@ -153,12 +153,28 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 * From SA USLs：SA USL 适用于希望过渡到云的内部部署软件保障客户。适用于从传统软件保障（Software Assurance, SA）模式转向订阅模式的用户。用户可以通过 From SA USL 将现有的永久许可证转为订阅许可证。
 * Step Up USLs：升级 USL 适用于希望提升服务级别的客户。允许用户从较低级别的订阅（如 Microsoft 365 E3）升级到更高级别的订阅（如 Microsoft 365 E5）。提供灵活的升级路径。
 
-## Microsoft 账单帐户类型
+## [Microsoft 账单帐户类型](https://learn.microsoft.com/en-us/microsoft-365/commerce/manage-billing-accounts?view=o365-worldwide#what-are-the-types-of-billing-accounts)
 当您注册试用或购买 Microsoft 产品时会创建一个账单帐户。您可以使用账单帐户管理帐户设置、发票、付款方式和购买。Microsoft 365 管理中心目前支持以下类型的账单帐户：
-* Microsoft 在线服务计划 オンライン サービス プログラム アカウント：当您直接注册 Microsoft 365 订阅时会创建此计费帐户。
-* Microsoft 产品与服务协议 (MPSA) 计划 製品およびサービス契約 (MPSA) プログラム アカウント：当贵组织签署 MPSA 批量许可协议以购买软件和在线服务时，将创建此计费帐户。
-* 微软客户协议 顧客契約 (MCA)：当您的组织与 Microsoft 代表、授权合作伙伴合作或独立购买时，将创建此计费帐户。
+* Microsoft Customer Agreement (MCA): Microsoft 客户协议 (MCA)：当您的组织与 Microsoft 代表、授权合作伙伴合作或独立购买产品和服务时，就会创建此计费帐户。
+* Microsoft Partner Agreement (MPA): 微软合作伙伴协议 (MPA)：此计费帐户是为云解决方案提供商 (CSP) 合作伙伴创建的，用于管理他们的客户。
+* Microsoft Online Subscription Agreement (MOSA): Microsoft 在线订购协议 (MOSA)：此计费帐户是在您直接注册 Microsoft 365 订阅时创建的。如果您的帐户尚未转入 Microsoft 客户协议，则可能拥有 MOSA 帐户。对于 MOSA 帐户，您会在帐户周年日收到每笔订单的发票。
 
 ## [Microsoft 365 服务的支持选项](https://learn.microsoft.com/en-us/training/modules/describe-support-offerings-for-microsoft-365-services/2-explore-support-options)
+
+### 支持类型与描述
+
+| 支持类型                         | 描述                                                                                                                                                                                     |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **社区支持**                     | 您的组织可以通过 [Microsoft 365 社区](https://answers.microsoft.com/) 或 [Microsoft 支持社区](https://community.microsoft.com/) 获取社区支持，与他人协作、提问并解决问题。               |
+| **自助支持**                     | 您的组织可以通过 Microsoft 365 管理中心的“帮助与支持”按钮或导航至 [联系 Microsoft 支持](https://support.microsoft.com/) 获取帮助。若推荐的指导或文章未能解决问题，可联系技术支持。       |
+| **网络聊天、电子邮件和电话支持** | 您的组织可以通过电子邮件、在线聊天或电话提交技术、账单和订阅支持问题。详情请参阅 [联系我们 - Microsoft 支持](https://support.microsoft.com/contactus)。                                  |
+| **问答论坛和在线帮助**           | 通过 [Microsoft Q&A](https://learn.microsoft.com/answers/) 或 [Microsoft Learn](https://learn.microsoft.com/) 获取有关 Microsoft 技术的准确答案和在线帮助。                              |
+| **售前支持**                     | 提供订阅功能、优势以及 Microsoft 365 服务购买决策方面的帮助。                                                                                                                            |
+| **FastTrack 服务**               | FastTrack 是 Microsoft 提供的服务，帮助客户快速上手 Microsoft 云解决方案并推动用户采用。适用于 Microsoft 365、Azure 或 Dynamics 365 的合格订阅客户。此服务在订阅期间免费提供。           |
+| **Microsoft Unified 支持**       | 提供全面支持服务，包括全天候技术支持、指定的客户成功经理、顾问支持、云协助、技术培训等。                                                                                                 |
+| **通过 Microsoft 合作伙伴支持**  | 如果您的组织通过云服务提供商 (CSP) 购买了 Microsoft 365 订阅，则可以直接通过认证的 Microsoft 365 合作伙伴获得支持。CSP 将作为第一线支持，并在无法解决问题时升级至 Microsoft。            |
+| **其他支持选项**                 | 您的组织可以安装 Microsoft 支持和恢复助手，通过运行测试来识别问题并提供最佳解决方案。目前可修复 Office、Microsoft 365 或 Outlook 问题。小型企业可以使用 Business Assist 获得全天候支持。 |
+
+--- 
 
 ## [微软的端点管理](https://learn.microsoft.com/en-us/intune/endpoint-manager-overview)
