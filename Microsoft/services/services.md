@@ -60,7 +60,8 @@ Viva Connections 是您获得现代员工体验的入口。Viva Connections 为�
 ## [Viva Engage 参与](https://www.microsoft.com/zh-cn/microsoft-viva/engage)
 Viva Engage 为 Microsoft Viva 和 Microsoft 365 的社交层提供动力。通过社区、全公司范围的活动和公开对话，Viva Engage 将领导者和员工联系在一起，进行公开分享、构思、解决问题和跨边界贡献。  
 Viva Engage 应用程序集成在 Microsoft Teams 中，可展示由 Yammer 服务支持的现有和新的员工体验。这些新的 Viva Engage 功能也将出现在 Yammer 网页、桌面和移动应用程序中。  
-Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻松创建吸引人的帖子、个性化信息、分析指标和推荐回复，以推动真实的社区互动。
+Viva Engage 中的 Microsoft 365 Copilot 帮助 Viva Engage 中的领导者轻松创建吸引人的帖子、个性化信息、分析指标和推荐回复，以推动真实的社区互动。  
+有点类似与微博发帖。
 
 ## [Viva Amplify 放大](https://www.microsoft.com/zh-cn/microsoft-viva/amplify)
 Viva Amplify 是一款集中式活动管理、发布和报告应用程序，供企业传播人员使用多渠道发布来接触和吸引所有员工。用户可以在一个地方创建发布工作流，跟踪和衡量分析结果。
