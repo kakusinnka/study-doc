@@ -178,3 +178,6 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 --- 
 
 ## [微软的端点管理](https://learn.microsoft.com/en-us/intune/endpoint-manager-overview)
+
+## [什么是高级认证？先進認証](https://learn.microsoft.com/ja-jp/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide#BKMK_WhatisModAuth)
+

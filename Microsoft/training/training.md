@@ -620,3 +620,84 @@ Zero Trust components  零信任组件：
 * Governance  管理
 * Risk  风险
 * Compliance  合规性
+
+# [PL-900: Microsoft Power Platform 基础](https://learn.microsoft.com/en-us/training/paths/power-plat-fundamentals/)
+## [描述 Microsoft Power Platform 的商业价值](https://learn.microsoft.com/en-us/training/modules/introduction-power-platform/)
+### 探索 Microsoft Power Platform
+Power Apps 提供了一个快速的低代码开发环境，可根据业务需求构建自定义应用程序。它是一套应用程序开发服务，具有可扩展的数据平台（Microsoft Dataverse），能够与云数据源和企业内部数据源进行交互。Power Apps 可以创建在所有设备上运行的网络和移动应用程序。
+
+* Microsoft Power Automate：可让用户在应用程序和服务之间创建自动工作流。
+* Microsoft Power BI：是一种业务分析服务，可为分析数据提供洞察力。
+* Microsoft Power Pages：是一个安全的企业级低代码软件即服务（SaaS）平台，可用于创建、托管和管理面向外部的现代商业网站。
+* Microsoft Copilot Studio：是一款低代码工具，汇集了从自定义 GPT（生成式预训练变换器）、生成式人工智能插件到手动主题等一系列强大的会话功能，可用于为 Microsoft 365 定制 Microsoft Copilot 和构建独立的 Copilot。
+* AI Builder：允许用户和开发人员将人工智能功能添加到他们创建和使用的工作流和 Power Apps 中。
+* Dataverse：是一个可扩展的数据服务和应用程序平台，用户可通过它安全地存储和管理来自多个来源的数据，并使用通用数据模型将这些数据集成到业务应用程序中，以确保用户使用的方便性和一致性。
+* Power FX：是贯穿 Power Platform 的低代码编程语言。
+* Managed Environments：是 Power Platform 中经过选择、安全且隔离的环境。托管环境允许企业构建、测试和部署应用程序，同时保持对数据和资源的控制。
+
+### 描述 Power Platform 的商业价值
+* 不断变化的员工期望
+* 定制应用程序开发成本增加
+* 需要更加敏捷
+* 需要高效地扩大开发规模
+
+### 探索 connectors 和 Microsoft Dataverse
+略
+
+### 利用人工智能提高生产力
+
+### 探索 Power Fx 的商业价值
+略
+
+### 说明 Power Platform 如何与 Microsoft 365 应用程序和服务协同工作
+略
+
+### 探索 Power Platform 如何与 Microsoft Teams 协同工作
+略
+
+### 说明 Power Platform 如何与 Microsoft Dynamics 365 应用程序配合使用
+略
+
+### 探索 Microsoft Power Platform apps 如何协同工作
+略
+
+### 说明 Power Platform 解决方案如何使用 Microsoft Azure 服务
+略
+
+## [识别 Microsoft Power Platform 的基础组件](https://learn.microsoft.com/en-us/training/modules/identify-foundational-components-microsoft-power-platfor/)
+### 描述 Power Platform administration 
+* Power Platform environments
+* Microsoft Power Platform admin center
+* 其他管理和制作门户网站
+* 探索不同的门户网站
+* 托管环境
+
+### 说明 Power Platform 的安全性和管理
+* Power Platform 数据的隐私性和可访问性
+* Data loss prevention policies 数据丢失预防政策
+* 合规和数据隐私
+* 数据保护
+* Microsoft Power Platform 中的无障碍功能
+
+### 探索 Microsoft Dataverse
+Microsoft Dataverse 是一种基于云的解决方案，可轻松构建各种数据和业务逻辑，以安全、合规的方式支持相互关联的应用程序和流程。Dataverse 由微软负责管理和维护，可在全球范围内使用，但也可按地理位置部署，以符合您潜在的数据居住地要求。它不是为在服务器上独立使用而设计的，因此您需要互联网连接才能访问和使用它。
+
+* 可扩展性
+* 微软 Dataverse 结构和优势
+  * 描述表格、列和关系
+  * 表格类型
+  * Columns
+* 了解各种关系
+* Microsoft Dataverse 中的业务逻辑
+* Working with dataflows  使用数据流
+* Common Data Model  通用数据模型
+
+### 检查 Power Platform 连接器
+Microsoft Power Platform 的强大之处在于它能够跨多个平台使用数据。为了跨多个数据平台工作，Microsoft Power Platform 的组件使用了连接器。您可以将连接器视为从数据源到应用程序或工作流之间的桥梁。通过这座桥梁，可以来回传递信息。通过连接器，您可以跨平台扩展业务解决方案，并为用户添加功能。
+
+* Data Sources  数据来源
+* Triggers and Actions  触发器和操作
+* 连接器类型
+  * Standard Connectors  标准连接器
+  * Premium Connectors  高级连接器
+  * Custom Connectors  定制连接器

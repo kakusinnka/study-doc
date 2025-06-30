@@ -54,7 +54,7 @@ Microsoft Teams是一个通信和协作软件，它集成了聊天、视频会�
 Microsoft Viva 是微软推出的一款整合式员工体验平台（Employee Experience Platform，简称 EXP），旨在通过连接员工、数据和技术，帮助企业提升员工的工作体验、生产力和幸福感。Viva 结合了微软的多种工具和技术，如 Microsoft Teams、SharePoint 和 AI，提供了一个全面的平台来支持员工的学习、协作、知识管理和健康发展。
 
 ## [Viva Connections](https://www.microsoft.com/zh-cn/microsoft-viva/connections)
-Viva Connections 是您获得现代员工体验的入口。Viva Connections 为企业提供了一个品牌化的公司应用程序，让员工可以找到完成工作和保持联系所需的一切。  
+Viva Connections 是您获得现代员工体验的入口。Viva Connections 为企业提供了一个 **品牌化的公司应用程序**，让员工可以找到完成工作和保持联系所需的一切。  
 它是 Microsoft Teams 中的一个可定制应用程序，为每个人提供一个个性化的 "主页"，让他们发现相关新闻、对话，并快速访问成功所需的工具和资源。
 
 ## [Viva Engage 参与](https://www.microsoft.com/zh-cn/microsoft-viva/engage)
