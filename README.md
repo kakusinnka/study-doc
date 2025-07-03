@@ -16,4 +16,4 @@
 ## 其他
 ### [HCL](./HCL/hcl.md)
 ### [tool](./tool/tool.md)
-### [炒股](./chaogu.md)
+### [炒股](./炒股/chaogu.md)
