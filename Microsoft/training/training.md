@@ -701,3 +701,27 @@ Microsoft Power Platform 的强大之处在于它能够跨多个平台使用数�
   * Standard Connectors  标准连接器
   * Premium Connectors  高级连接器
   * Custom Connectors  定制连接器
+
+## [说明如何使用 Microsoft Power Apps 构建应用程序](https://learn.microsoft.com/en-us/training/modules/introduction-power-apps/)
+### 描述 Power Apps
+Power Apps 是一个用于构建应用程序的无代码/低代码平台，它以 Excel 工作簿中的公式（如 SUM 和 TEXT）等概念为基础。您可以使用 Power Apps 构建简单的解决方案。这些解决方案可以是创建简单的车辆检查表格和状态报告，也可以是创建复杂的采购流程和库存管理业务解决方案。如果您能设想一个应用程序来解决业务问题，那么您就可以利用现有的技能来构建它。虽然 Power Apps 几乎适用于任何人，但它也为经验丰富的开发人员提供了高级功能，让他们可以轻松设计复杂的应用程序。
+
+* 在数据存在的地方处理数据
+
+### 探索画布应用
+略
+
+### 探索模型驱动的应用
+略
+
+### 区分画布应用程序和模型驱动应用程序
+略
+
+### 创建基本画布应用程序
+略
+
+### 构建基本的模型驱动应用程序
+略
+
+## [介绍如何使用 Microsoft Power Automate](https://learn.microsoft.com/en-us/training/modules/introduction-power-automate/)
+### 
