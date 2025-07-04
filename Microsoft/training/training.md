@@ -724,4 +724,49 @@ Power Apps 是一个用于构建应用程序的无代码/低代码平台，它�
 略
 
 ## [介绍如何使用 Microsoft Power Automate](https://learn.microsoft.com/en-us/training/modules/introduction-power-automate/)
-### 
+### 描述 Power Automate 的功能
+* Power Automate 流程主要有三种类型：
+  * 业务流程：这些流程用于模型驱动型应用程序，帮助人们完成工作。它们提供简化的用户体验，引导人们通过组织为需要推进到某种结论的交互所定义的流程。
+  * 云流程：这是最常用的流程。云流程以触发器开始，例如收到特定人员的电子邮件，或在社交媒体上提及贵公司。触发后，它们通常还包括一个或多个操作，如在不同系统中创建记录或向某人发送审批请求。
+    * 自动流程：这些流程由事件自动触发。
+    * 即时流量：这些流程会自动启动，只需点击按钮即可完成。
+    * 预定：这些流程按定义的时间表运行。
+  * 桌面流程 - 这些机器人流程自动化 (RPA) 流程允许您记录自己在桌面或网络浏览器上执行的操作。然后，您就可以触发一个流程来为您执行该流程。您还可以将数据传入流程或从流程中获取数据，从而实现 "手动 "业务流程的自动化。
+
+### 探索不同的 Power Automate 应用程序
+* Power Automate 门户网站：制作者门户网站为制作者提供了一个单一访问点，他们可以轻松创建、管理和监控他们创建的不同 Power Automate 流程。
+* Power Automate 移动版：Power Automate Mobile 可让用户随时随地使用 Power Automate 功能。该移动应用程序适用于安卓和 iOS 设备，并进行了优化。
+* Power Automate 桌面版：Power Automate Desktop 用于创建机器人流程自动化流。
+
+### 描述云流程的组成部分
+* 触发器：确定是什么启动了流程
+* 行动：确定流程的作用
+
+### 考虑 Power Automate 方案
+* 使用经批准的流程
+* Power Automate 和 Microsoft SharePoint
+* Managing approval flows  管理审批流程
+* 处理文件和列表
+* 将 Power Automate 与 Microsoft Outlook 结合使用
+* 在 Microsoft 表单中使用流程
+* 在 Microsoft Teams 中使用流程
+
+### Describe process mining  描述工艺挖掘
+略
+
+### 构建基本的 Power Automate 云流程
+略
+
+### 使用 Copilot 构建云流程
+略
+
+### 建立桌面流程
+略
+
+### 练习 - 构建基本的 Power Automate 流程
+略
+
+### 描述 Power Automate 的商业价值
+略
+
+## [描述 Microsoft Power BI 的功能](https://learn.microsoft.com/en-us/training/modules/introduction-power-bi/)
