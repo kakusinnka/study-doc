@@ -770,3 +770,159 @@ Power Apps 是一个用于构建应用程序的无代码/低代码平台，它�
 略
 
 ## [描述 Microsoft Power BI 的功能](https://learn.microsoft.com/en-us/training/modules/introduction-power-bi/)
+### 说明如何使用 Power BI 构建数据驱动型分析
+略
+
+### 探索不同的 Power BI 元素
+* Capacities  能力
+* Workspaces  工作空间
+  * 我的工作区
+  * 工作空
+* Semantic models  语义模型
+* Shared semantic models  共享语义模型
+* Reports  报告
+* Dashboards  仪表板
+* Template Apps  模板应用程序
+
+### 介绍如何在 Power BI Desktop 中清理和转换数据
+* Power BI Desktop 有三种视图：
+  * 报告视图：您可以创建查询来构建引人注目的可视化效果，并与他人共享。您可以按照自己的喜好对它们进行排列。
+  * 数据视图：以数据模型格式查看报告中的数据，在此可以添加度量值、创建新列和管理关系。
+  * 模型视图：获取在数据模型中建立的关系的图形表示，并根据需要管理或修改它们。
+* Transforming data  转换数据
+* Clean data  清洁数据
+
+### 说明如何使用人工智能洞察力发现趋势和异常情况
+* 深入了解报告和视觉效果
+* Insights  洞察力
+  * 异常：指超出预期的异常情况。例如，智能恒温器的温度通常为 72 华氏度，但突然读数为 100 华氏度，这就属于异常情况。
+  * 趋势：代表在时间序列数据集中发现的模式。例如，如果一家公司的销售额在四月份稳步增长，这就是一种趋势。
+  * 关键绩效指标 (KPI) 分析：帮助您对照既定目标评估当前值。
+* Anomalies  异常情况
+  * 重要异常点：异常点得分较高。异常得分表示该点与预期范围的距离。
+  * 最近的异常情况：测量中最近的异常情况。
+  * 异常汇总：该洞察类型汇总了测量中的多个异常。
+* Trends  发展趋势
+  * 长趋势：趋势明显，是单一序列或多个序列中最长的趋势。
+  * 陡峭趋势：趋势明显，是单个序列或多个序列中最陡峭的趋势。
+  * 最近趋势：趋势明显，是单个系列或多个系列在视觉上的最新趋势。
+  * 趋势逆转：单个序列或多个序列的近期趋势，与之前的趋势段相比，反转明显。
+* KPI analysis  关键绩效指标分析
+
+### 建立基本仪表板
+* Prepare the data  准备数据
+* 将数据上传到 Power BI 服务
+* Build your report  编写报告
+* 钉在仪表板上
+* 分享仪表板链接
+
+### 考虑 Power BI 的商业价值
+略
+
+## [演示 Microsoft Power Pages 的功能](https://learn.microsoft.com/en-us/training/modules/demonstrate-capabilities-power-pages/)
+### 探索 Power Pages
+Microsoft Power Pages 是一个用于创建、托管和管理现代对外业务网站的平台。
+
+### 描述 Power Pages 的商业价值
+略
+
+### 建立 Power Pages 网站
+* Create a website  创建网站
+* Use design studio  使用设计工作室
+  * 页面工作区：允许制作者创建、编辑设计和排列网站中的网页。
+  * 风格化工作区：用于通过为网站添加样式和主题来个性化网站的外观和感觉。
+  * 数据工作区：允许您创建和修改数据驱动型网络应用程序中使用的 Microsoft Dataverse 表格
+  * 设立工作区：主要行政区域，用于辅助行政和管理。
+* Create Pages  创建页面
+* Brand your site  打造网站品牌
+* Connecting to data  连接数据
+* Securing your site  确保网站安全
+
+## [描述 Power Platform 中的人工智能创作体验](https://learn.microsoft.com/en-us/training/modules/describe-ai-authoring-experience-power-platform/)
+### 探索 Copilot Studio
+Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建功能强大的机器人，而无需数据科学家或开发人员。在 Copilot Studio 中，机器人被称为代理。在 Copilot Studio 中创建的代理解决了当今行业中机器人构建的许多关键问题。Copilot Studio 消除了主题专家与开发团队之间在构建代理方面的差距。Copilot Studio 还消除了从团队发现问题到更新代理解决问题之间的漫长延迟。它消除了让团队了解对话式人工智能细微差别的复杂性，也无需编写复杂的代码。此外，它还能最大限度地减少部署和维护定制会话解决方案所需的 IT 工作。
+
+### 描述 Copilot Studio 的组件
+* Topics  主题
+* Entities  实体
+* Actions  行动
+* Generative AI  生成式人工智能
+* Publishing  出版
+
+### 创建基本代理
+* Create the agent  创建代理
+* 确定代理主题
+  * 触发短语：代表用户可能输入的触发主题的短语。
+  * 对话路径：该元素定义了根据客户提供的输入所采取的路径。
+    * 显示消息：向用户显示一条信息。
+    * 提出问题：向用户提出问题。
+    * 调用行动：该对话节点使 Power Automate 能够从其他服务中引入信息。
+    * 重定向到另一个主题：将最终用户发送到另一个主题。
+* 实时测试您的内容
+* Configure generative AI  配置生成式人工智能
+* Publish your agent  发布您的代理
+
+### 描述生成式人工智能机器人的使用案例
+略
+
+### 描述人工智能生成器
+* AI hub  人工智能中心
+* 为您的业务增加智能
+
+### 描述创建人工智能生成器模型的生命周期
+1. 选择人工智能模型类型：使用适合您业务需求的模型类型。从不断增加的人工智能解决方案中进行选择。
+2. 连接数据：从可用选项中选择特定业务数据。
+3. 定制人工智能模型：根据模型类型，您可以调整自定义模型，以优化人工智能的性能。
+4. 训练人工智能模型训练是一个自动过程。它教会人工智能模型如何根据您的业务数据和定制解决您的业务问题。
+5. 利用人工智能模型的洞察力：在 Power Platform 中使用人工智能模型的结果来创建满足您业务需求的解决方案，即使您没有编码技能也可以。
+
+# [管理 Microsoft Power Platform 环境](https://learn.microsoft.com/en-us/training/paths/manage-microsoft-power-platform-environment/)
+## [描述微软数据海](https://learn.microsoft.com/en-us/training/modules/describe-microsoft-dataverse/)
+### 描述传统数据库与数据海的区别
+* 数据存储
+* 安全性
+* 开发
+* 通用数据模型如何为数据海提供动力
+
+### 描述 Dataverse 中的表格、列和关系
+略
+
+### 描述 Dataverse 中的业务逻辑选项
+* Business rules  业务规则
+* Power Fx
+* Power Automate  动力自动化
+
+## [说明 Microsoft Power Platform 的管理和治理](https://learn.microsoft.com/en-us/training/modules/describe-microsoft-power-platform-administration-governance/)
+### 描述 Power Platform 安全模型
+* 认证和身份管理
+* 基于角色的访问控制（RBAC）
+  * 环境级访问：控制特定环境（如开发或生产环境）中应用程序、流程和资源的访问权限。
+  * 应用程序级访问：限制对环境中单个应用程序或组件的访问。
+  * 记录级访问：对谁可以查看、编辑或删除特定记录进行细粒度控制。
+* 数据丢失防护 (DLP) 政策
+* Environment security  环境安全
+* 数据加密：保护您的数据
+* Governance  管理
+
+### 描述动力平台环境
+* 了解 Power Platform 环境的概念
+* 识别不同类型的动力平台环境
+* Power Platform 中的托管环境
+
+### 描述 Power Platform 管理中心和门户
+* 行政管理经验
+* Power Platform 管理中心
+* Power Platform 生态系统中的其他管理门户
+
+### 说明 Power Platform 如何支持数据隐私和可访问性指南
+* 合规和数据隐私
+* Microsoft Power Platform 中的无障碍功能
+
+### 介绍 Power Platform 中的应用生命周期管理 (ALM)
+* 了解 Power Platform 中的应用生命周期管理 (ALM)
+* ALM 的各个阶段
+  * 规划：确定业务需求、目标和应用范围。这一阶段包括收集利益相关者的意见并制定开发路线图。
+  * 开发：使用 Power Apps、Power Automate 和 Dataverse 等工具构建应用程序。在这一阶段，开发人员合作创建和完善应用程序的组件。
+  * 测试：在测试环境中验证应用程序，确保其符合要求并按预期运行。这一阶段有助于在部署前发现并解决问题。
+  * 部署：将应用程序移至生产环境，供最终用户使用。解决方案通过打包所有组件并确保平稳过渡，在这一阶段发挥着至关重要的作用。
+  * 维护：随着时间的推移对应用程序进行监控和更新，以解决漏洞、添加新功能并适应不断变化的业务需求。

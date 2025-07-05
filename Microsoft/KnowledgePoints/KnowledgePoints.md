@@ -181,3 +181,6 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 
 ## [什么是高级认证？先進認証](https://learn.microsoft.com/ja-jp/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide#BKMK_WhatisModAuth)
 
+## [Dataverse for Teams 和 Dataverse 有什么不同？](https://learn.microsoft.com/en-us/power-apps/teams/data-platform-compare)
+
+## [什么是 Power Query？](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query)
