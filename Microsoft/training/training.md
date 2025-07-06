@@ -926,3 +926,79 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
   * 测试：在测试环境中验证应用程序，确保其符合要求并按预期运行。这一阶段有助于在部署前发现并解决问题。
   * 部署：将应用程序移至生产环境，供最终用户使用。解决方案通过打包所有组件并确保平稳过渡，在这一阶段发挥着至关重要的作用。
   * 维护：随着时间的推移对应用程序进行监控和更新，以解决漏洞、添加新功能并适应不断变化的业务需求。
+
+# [演示 Microsoft Power Pages 的功能](https://learn.microsoft.com/en-us/training/paths/demonstrate-capabilities-microsoft-power-pages/)
+## [描述 Microsoft Power Pages 的功能](https://learn.microsoft.com/en-us/training/modules/describe-capabilities-microsoft-power-pages/)
+### 描述 Power Pages 的使用案例
+* 客户门户网站：为客户提供自助服务
+* 合作伙伴协作网站：加强沟通与协调
+* 员工自助服务平台：促进独立任务管理
+* 金县的历程：
+  * 利用 Power Pages 转变服务提供方式
+  * 回馈门户
+  * 应对全球危机
+  * 在家为老年人提供支持
+
+### 说明创建网站的方法
+* 由人工智能驱动的 Copilot 是简化网站创建的主要选择。
+* Power Pages 还提供了从头开始手动创建网站的选项。
+* 对于高级用户和开发人员，开发人员网站提供专业代码工具和功能。
+* Power Pages 的设计工作室包括多个工作区，每个工作区都是为特定任务定制的：
+  * 页面工作区：让你可以通过上下文编辑来设计和创建网页。您可以添加文本、图片、视频和表单等内容，而无需编写代码。
+  * 样式工作区：允许您应用全局网站样式，包括主题、调色板、字体样式和按钮设计。它还支持企业品牌。
+  * 数据工作区：让你管理网站的业务数据，包括创建和编辑 Dataverse 表格、表单和视图。
+  * 设置工作区：提供用于配置网站设置（如身份提供商、安全性、权限和上线配置）的工具。
+  * 安全工作区：提供一个集中界面，用于监控和管理 Power Pages 网站的安全性。
+
+### 描述 Power Pages 安全概念
+* 了解 Power Pages 安全模型
+  * 网站可见性允许您管理谁可以访问您的网站。网站可见性可以设置为公开或私有。默认情况下，所有网站在创建时都设置为私有。
+  * Power Pages 中的验证用户在 Microsoft Dataverse 中以联系人表示。Power Pages 用户可以使用以下方法进行身份验证：
+    * 本地登录 - 基于表单的身份验证，信息安全地存储在 Dataverse 联系人行中。
+    * 外部身份验证--凭证和密码管理由外部身份供应商处理，如 Microsoft Entra External ID、Microsoft、Twitter、Facebook 等。
+  * 表权限定义了对 Dataverse 表中行的访问权限，与在 Power Pages 中访问这些行的方式和位置无关。
+  * 页面权限用于授予或拒绝访问网站上的各个页面。
+  * 网络角色将用户和权限联系在一起，以定义用户对 Dataverse 数据和网站内容的访问权限。
+
+## [创建 Microsoft Power Pages 网站](https://learn.microsoft.com/en-us/training/modules/create-microsoft-power-pages-site/)
+### 使用 Copilot 创建和修改 Power Pages 站点
+* Copilot 的功能
+  * 人工智能驱动的内容创建
+  * 自动生成网站地图
+  * 网站完善
+* 使用 Copilot 创建 Power Pages 网站
+* 使用 Copilot 创建网站时的一些注意事项
+
+### 使用设计工作室创建和修改 Power Pages 站点
+* Power Pages 设计工作室
+
+### 使用设计工作室创建表格
+* Tables
+* Views
+* Forms
+
+### 创建和修改页面
+* 添加新的页面和部分
+* 编辑文本
+* 添加新表格
+* 使用 Power Pages 设计工作室创建网页
+* 使用 Copilot 编辑和完善 Power Pages 站点
+* 使用设计工作室页面编辑器定制网页
+* 使用 Copilot 生成网页
+* 预览和管理网站导航
+
+### 配置 Power Pages 组件
+* 页面组件
+* 源代码
+
+### 修改 Power Pages 主题
+* Styling options  造型选择
+* 添加自定义 CSS
+* 应用模板
+
+### 应用 Power Pages 安全性
+* 用户认证
+* 权限
+* 利用网络角色进行基于角色的访问控制
+* 管理网站能见度
+* 使用 Copilot 进行负责任的人工智能实践
