@@ -3,3 +3,5 @@
 
 ## [官方网站](https://www.djangoproject.com/)
 * [阅读笔记](./djangoproject/djangoproject.md)
+
+## [Django 命令](./DjangoCMD.md)
