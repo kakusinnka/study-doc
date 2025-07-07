@@ -38,7 +38,25 @@ python manage.py check
 python manage.py migrate
 ```
 
+## 启动一个交互式 shell，加载 Django 项目环境。
+```python
+# python manage.py shell 的作用：
+# 启动一个交互式 shell，加载 Django 项目环境。
+# 提供对模型、数据库、配置等的直接访问。
+
+# 常见操作：
+# 导入模型。
+# 查询、创建、更新、删除数据库记录。
+# 测试项目的其他组件。
+python manage.py shell
+```
+
 ## 运行 Django 项目
 ```python
 py manage.py runserver
+```
+
+## 创建超级用户
+```python
+python manage.py createsuperuser
 ```
