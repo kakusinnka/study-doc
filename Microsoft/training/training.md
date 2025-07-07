@@ -1002,3 +1002,6 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 * 利用网络角色进行基于角色的访问控制
 * 管理网站能见度
 * 使用 Copilot 进行负责任的人工智能实践
+
+# [演示 Microsoft Power Automate 的功能](https://learn.microsoft.com/en-us/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+## [识别 Microsoft Power Automate 组件](https://learn.microsoft.com/en-us/training/modules/identify-microsoft-power-automate-components/)
