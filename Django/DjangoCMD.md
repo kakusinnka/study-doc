@@ -51,6 +51,15 @@ python manage.py migrate
 python manage.py shell
 ```
 
+## 单元测试的命令
+```python
+# Django 会创建一个临时的测试数据库。
+# Django 会扫描 polls 应用的代码目录，寻找以 test 开头的文件（例如 tests.py）。
+# Django 会运行测试类中定义的每个测试方法。
+# Django 会输出测试结果，包括成功的测试数量、失败的测试数量以及详细的错误信息（如果有）。
+py manage.py test polls
+```
+
 ## 运行 Django 项目
 ```python
 py manage.py runserver

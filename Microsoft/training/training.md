@@ -1130,3 +1130,37 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 
 ### 使用 Copilot 的录制功能构建一个基本的桌面操作流程
 略
+
+# [将人工智能引入您的业务，使用 AI Builder](https://learn.microsoft.com/en-us/training/paths/bring-ai/)
+## [开始使用 AI Builder](https://learn.microsoft.com/en-us/training/modules/get-started-with-ai-builder/)
+### AI Builder 入门指南
+* AI Builder 定义
+* 您可以使用 AI Builder 完成以下操作：
+  * 对文本进行分类、提取关键短语、分析语言特征及情感倾向。
+  * 预测某件事是否会发生。
+  * 处理名片信息。
+  * 从图像中提取文本。
+  * 阅读并保存标准文档中的信息。
+  * 识别并统计图像中的物体。
+* AI Builder 的常见应用之一是自动化流程。
+  * 发票处理 
+  * 文本分析
+* 您可以在哪些场景中使用 AI Builder？
+  * 在 Power Apps 和 Power Automate 的左侧菜单中，您可以选择 AI 中心
+
+### 选择一项人工智能能力
+* 选择一个模型
+* 学习模型
+
+### 创建您的第一个模型
+* 选择模型类型
+  * 需要在使用前进行微调的自定义模型。
+  * 预先构建的模型，经过精细调优，可直接使用。
+* 按照指引体验
+
+### 模型应用方法
+* 查看模型详细信息
+* 发布您的模型
+* 在应用程序中使用您的模型
+* 在流程中使用您的模型
+* 在您的数据库中使用您的模型
