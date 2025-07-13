@@ -1164,3 +1164,116 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 * 在应用程序中使用您的模型
 * 在流程中使用您的模型
 * 在您的数据库中使用您的模型
+
+# [使用 Microsoft Power BI 准备和可视化数据](https://learn.microsoft.com/en-us/training/paths/prepare-visualize-data-power-bi/)
+## [立即开始使用 Power BI 进行数据可视化](https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/)
+### 使用 Power BI
+* 要使用 Power BI 创建报告，您必须首先了解所需的工具。Power BI 主要由三个组件构成：
+  * Power BI 桌面版（桌面应用程序）
+  * Power BI 服务（在线平台）
+  * Power BI 移动版（跨平台移动应用程序）
+* 探索 Power BI 的工作流程
+  * 使用 Power BI Desktop 连接到数据。
+  * 使用 Power Query 编辑器（随 Power BI Desktop 一起提供）转换数据。
+  * 使用 Power BI Desktop 对数据进行建模。
+  * 使用 Power BI Desktop 创建可视化图表和报告。
+  * 将报告发布到 Power BI 服务。
+  * 在 Power BI 服务中分发和管理报告。
+
+### Power BI 的基础组件
+* 创建语义模型
+* 在报告中创建可视化图表
+* 创建仪表盘
+
+### 游览并使用 Power BI 服务
+* 使用工作区整理项目
+* 查看示例报告
+* 分发内容
+* 探索模板应用
+* 更新语义模型
+
+# [展示 Microsoft Power Apps 的功能](https://learn.microsoft.com/en-us/training/paths/demonstrate-capabilities-power-apps/)
+## [识别 Microsoft Power Apps 的基本功能](https://learn.microsoft.com/en-us/training/modules/identify-basic-microsoft-power-apps-capabilities/)
+### 描述 Power Apps
+* 在数据所在的位置进行数据处理
+
+### 描述画布应用的用例
+略
+
+### 描述基于模型的应用程序的使用场景
+略
+
+### 探索基于模型的应用程序功能
+* 在应用程序、区域和表格之间切换
+  * 应用程序：一组用于完成特定类型活动的功能集合，例如管理账户和联系人。
+  * 区域：区域是应用程序的子分区，专用于特定功能。
+  * 表格：用于表示特定类型的数据，例如联系人或账户。
+* 区域切换器
+* 视图操作
+* 表单操作
+* 在模型驱动的应用程序中定义业务流程
+
+### 描述画布应用与模型驱动应用之间的差异
+略
+
+## [创建一个画布应用](https://learn.microsoft.com/en-us/training/modules/build-canvas-app/)
+### 通过连接器连接到数据源
+* Sharepoint
+* Excel
+* SQL
+* Microsoft Dataverse
+* 为您的应用选择合适的数据源
+
+### 从数据创建应用程序
+* Microsoft Excel
+* SharePoint
+* Microsoft Dataverse
+* Build with Copilot
+* 向现有应用程序添加数据
+
+### 描述常见的控制措施
+* Power Apps 中的常用控件
+* 现代控制系统
+* 智能控制
+
+### 使用容器构建响应式页面
+* 响应式设计中的容器理解
+* Power Apps 中的布局容器类型
+  * 自动布局容器
+  * 手动布局容器
+  * 可调节高度的容器
+* 使用容器在 Power Apps 中创建响应式布局
+
+### 通过对话创建和修改应用程序
+* 使用 Copilot 创建一个应用程序
+* 审查生成的 Dataverse 表
+* 保存表格并打开应用程序
+* 设计您的应用程序
+* 预览您的应用
+* 保存您的应用程序
+* 发布您的应用程序
+* 在 Power Apps Studio 中使用 Copilot 编辑您的应用程序
+
+### 描述 Copilot 控制功能
+* 什么是 Copilot 控制？
+* 如何在画布应用中使用 Copilot 控件
+  * 为您的画布应用启用 Copilot
+  * 添加并配置 Copilot 控制
+
+### 描述代理构建器的使用场景
+* 代理构建器的工作原理
+* 代理构建器的优势
+* 使用 Power Apps 中的 Agent Builder 创建一个代理
+
+### 预览、测试并发布应用程序
+* 在 Power Apps Studio 中预览画布应用
+* 检查问题
+  * 应用程序检测器
+  * 无障碍检测工具
+* 保存并发布画布应用
+* 发布您的应用程序
+
+### 分享画布应用
+* 应用访问权限管理
+* 管理应用访问的步骤
+* 快速分享画布应用，体验全新的分享功能

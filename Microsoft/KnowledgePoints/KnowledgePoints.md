@@ -184,3 +184,8 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 ## [Dataverse for Teams 和 Dataverse 有什么不同？](https://learn.microsoft.com/en-us/power-apps/teams/data-platform-compare)
 
 ## [什么是 Power Query？](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query)
+
+## [表格在 Power Apps 中以以下几种不同类型出现](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/types-of-entities)
+
+## 什么是 Copilot Topic？
+在 Microsoft Copilot Studio 中，Topic（主题） 是 Copilot 的核心构建模块之一。每个 Topic 都代表一个特定的任务或对话主题，Copilot 可以根据用户的请求触发相应的 Topic，提供相关的帮助、信息或执行操作。
