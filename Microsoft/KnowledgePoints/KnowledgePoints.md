@@ -189,3 +189,13 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 
 ## 什么是 Copilot Topic？
 在 Microsoft Copilot Studio 中，Topic（主题） 是 Copilot 的核心构建模块之一。每个 Topic 都代表一个特定的任务或对话主题，Copilot 可以根据用户的请求触发相应的 Topic，提供相关的帮助、信息或执行操作。
+
+## [什么是 Microsoft Fabric？](https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview)
+
+## [Power BI 桌面版与 Power BI 服务](https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview)
+
+## 分享 Power BI 报告和仪表盘
+* 从我的工作区或其他工作区分享（需具备相应角色或权限）。
+* 从 Power BI 移动应用中分享。
+* 通过 Power BI Desktop 与 OneDrive 和 SharePoint 集成进行共享。
+* 将 Power BI Desktop 中的报告发布到 Power BI 服务。
