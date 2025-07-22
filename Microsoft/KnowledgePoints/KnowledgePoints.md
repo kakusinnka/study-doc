@@ -199,3 +199,19 @@ Microsoft 365 产品和服务以用户订购许可证 (USL) 的形式提供，�
 * 从 Power BI 移动应用中分享。
 * 通过 Power BI Desktop 与 OneDrive 和 SharePoint 集成进行共享。
 * 将 Power BI Desktop 中的报告发布到 Power BI 服务。
+
+## 什么是 Microsoft Copilot Studio
+Copilot Studio 是一个端到端的对话式 AI 平台，使您能够使用自然语言或图形界面创建代理。借助 Copilot Studio，您可以轻松地设计、测试和发布适合您需求的代理，以用于跨行业、部门或角色的内部或外部场景。您可以构建独立的代理或发布到 Microsoft 365 Copilot。
+
+## 什么是 AI Builder
+借助 AI Builder（Microsoft Power Platform 的一个功能），您可以创建并使用人工智能模型来优化业务流程。您可以选择使用预先构建的模型，这些模型已针对许多常见业务场景进行了优化，或者创建自定义模型以满足特定需求。AI Builder 帮助您的业务在 Power Apps 和 Power Automate 中实现流程自动化，并从数据中获取洞察。
+
+## 什么是 Power BI dashboard
+Power BI 仪表板是一个单页界面，通常称为画布，通过可视化方式讲述一个故事。由于仅限于一页，一个设计良好的仪表板仅包含该故事的重点内容。读者可查看相关报告以获取详细信息。
+
+仪表板是 Power BI 服务的一项功能。它们在 Power BI Desktop 中不可用。您无法在移动设备上创建仪表板，但可以在移动设备上查看和共享它们。
+
+## 什么是 Power BI report
+Power BI 报告是对语义模型的一种多视角展示，其中包含可视化内容，这些内容反映了从语义模型中提取的发现和洞察。一个报告可以包含单个可视化内容，也可以包含多个页面，每个页面都包含可视化内容。根据您的角色，您可能是负责设计报告的人员，也可能是使用报告的业务用户。本文面向业务用户。
+
+![Power BI 图表](../images/power-bi-diagram.png)
