@@ -1277,3 +1277,48 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 * 应用访问权限管理
 * 管理应用访问的步骤
 * 快速分享画布应用，体验全新的分享功能
+
+## [立即开始使用 Power Automate](https://learn.microsoft.com/en-us/training/modules/get-started-flows/)
+### 介绍 Power Automate
+* 什么是 Power Automate：Power Automate 是一个在线工作流服务，可自动化跨最常用应用和服务的操作。
+* Power Automate 能够实现哪些功能？
+* 在哪里可以创建和管理流程？
+* Power Automate 快速入门指南
+### 创建您的第一个流程
+* Power Automate 中的重要概念
+  * Triggers  触发器：您可以将触发器视为流程的启动动作。
+  * Actions  行动：操作是指在触发器被调用时希望发生的行为。
+
+### 练习 - 创建重复流程
+* 格式化 Excel 表格
+* 创建一个计划流程
+
+### 练习 - 监控收到的电子邮件
+* 指定 SharePoint 站点和库
+* 指定一个事件来启动流程
+* 指定操作
+
+### 练习 - 共享流程
+* 创建共享流程
+* 将 Microsoft Lists 添加为流程的共同所有者
+* 对流量变更的限制
+* 删除所有者
+* 嵌入式及其他连接
+
+### Troubleshoot flows  故障排除流程
+* 识别错误
+* 身份验证失败
+* 操作配置问题
+* 临时问题
+* 关于您的定价计划的问题
+* 数据使用问题
+* 您可能正在过频繁地运行流程。
+* 您可能正在使用错误的账户。
+* 某些流程的执行频率高于预期。
+* 其他基于限制和注意事项的问题
+
+## [使用 Power Automate 构建审批流程](https://learn.microsoft.com/en-us/training/modules/build-approval-flows/)
+### 为实际场景提供解决方案。
+### 模拟 - 创建审批请求
+### 模拟 - 创建业务流程图
+### 模拟 - 创建一个带有条件的业务流程图

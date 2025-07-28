@@ -2,6 +2,8 @@
 
 ## [训练](./training/training.md)
 
+## [官方文档](./documentation/documentation.md)
+
 ## [服务](./services/services.md)
 
 ## [知识点](./KnowledgePoints/KnowledgePoints.md)

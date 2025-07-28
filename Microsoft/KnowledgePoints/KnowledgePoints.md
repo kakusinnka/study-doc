@@ -215,3 +215,9 @@ Power BI 仪表板是一个单页界面，通常称为画布，通过可视化�
 Power BI 报告是对语义模型的一种多视角展示，其中包含可视化内容，这些内容反映了从语义模型中提取的发现和洞察。一个报告可以包含单个可视化内容，也可以包含多个页面，每个页面都包含可视化内容。根据您的角色，您可能是负责设计报告的人员，也可能是使用报告的业务用户。本文面向业务用户。
 
 ![Power BI 图表](../images/power-bi-diagram.png)
+
+## [什么是 Power BI Workspaces](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces)
+工作区是与同事协作创建仪表盘集合、报告、语义模型和分页报告的场所。
+
+## [Power BI 服务中的语义模型](https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand)
+Power BI 语义模型代表了一种可用于报告和可视化的数据源。
