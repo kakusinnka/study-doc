@@ -1322,3 +1322,118 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 ### 模拟 - 创建审批请求
 ### 模拟 - 创建业务流程图
 ### 模拟 - 创建一个带有条件的业务流程图
+
+# [使用 Power BI 创建并使用分析报告](https://learn.microsoft.com/en-us/training/paths/create-use-analytics-reports-power-bi/)
+## [立即开始使用 Power BI 进行数据可视化](https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/)
+### Use Power BI
+* Power BI 主要由三个组件构成：
+  * Power BI 桌面版（桌面应用程序）
+  * Power BI 服务（在线平台）
+  * Power BI 移动版（跨平台移动应用程序）
+* 探索 Power BI 的工作流程
+  * 使用 Power BI Desktop 连接到数据。
+  * 使用 Power Query 编辑器（随 Power BI Desktop 一起提供）转换数据。
+  * 使用 Power BI Desktop 对数据进行建模。
+  * 使用 Power BI Desktop 创建可视化图表和报告。
+  * 将报告发布到 Power BI 服务。
+  * 在 Power BI 服务中分发和管理报告。
+
+### Power BI 的基础组件
+* 创建语义模型
+* 在报告中创建可视化图表
+* 创建仪表盘
+
+### 游览并使用 Power BI 服务
+* 使用工作区整理项目
+* 查看示例报告
+* 分发内容
+* 探索模板应用
+* 更新语义模型
+
+## [在 Power BI 中建模数据](https://learn.microsoft.com/en-us/training/modules/model-data-power-bi/)
+### 数据建模入门
+* 建立数据源之间的关联
+* 创建一个包含计算列的新字段
+* 通过隐藏字段和排序可视化数据来优化数据。
+* 创建一个度量来对您的数据进行计算
+* 使用计算表在两个表之间建立关系
+* 将基于时间的数据格式化，以便您可以深入查看更多详细信息。
+
+### 如何管理您的数据关系
+略
+
+### 创建计算列
+略
+
+### 优化数据模型
+* 隐藏字段
+* 按另一个字段排序可视化数据
+
+### 制定措施
+* 创建一个度量
+* 采取一项措施
+
+### 创建计算表
+略
+
+### 探索基于时间的数据
+略
+
+## [在 Power BI 中探索数据](https://learn.microsoft.com/en-us/training/modules/explore-data-power-bi/)
+### Power BI 服务简介
+![Power BI 服务简介](../images/power-bi-desktop-overview.png)
+
+### Power BI 中的快速洞察
+略
+
+### 创建并配置仪表盘
+略
+
+### 用自然语言向数据提问
+* 探索问答
+* 提问
+* 问答视觉呈现
+
+### 创建自定义问答建议
+略
+
+### 与组织共享仪表盘
+略
+
+### 以全屏模式显示视觉元素和磁贴
+略
+
+### 编辑瓷砖详细信息并添加小工具
+* 在仪表盘中添加图片和文字
+
+### 在仪表盘上获得更多空间
+略
+
+## [在 Power BI 中发布和共享](https://learn.microsoft.com/en-us/training/modules/publish-share-power-bi/)
+### 工作区使用入门
+略
+
+### 发布 Power BI Desktop 报告
+略
+
+### 打印并导出仪表盘和报告
+略
+
+### 介绍 Power BI 移动版
+略
+
+### 在 Power BI 中创建工作区
+* 创建新的工作区
+* 设置经典工作区
+
+### Build apps  构建应用程序
+略
+
+### Use apps  使用应用程序
+略
+
+### 将 OneDrive for Business 与 Power BI 集成
+略
+
+### 发布到网页
+略
