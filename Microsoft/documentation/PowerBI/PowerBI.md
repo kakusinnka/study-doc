@@ -30,3 +30,23 @@
 
 # 教程
 ## 开始使用 Power BI Desktop
+### Power BI Desktop 的工作原理
+### 安装并运行 Power BI Desktop
+### 连接到数据
+### Shape data  形状数据
+### Combine data  合并数据
+### Build reports  生成报告
+### 分享你的作品
+
+## 开始使用 Power BI 服务
+### 注册 Power BI 服务
+### 添加数据以创建报告
+### 建立报告
+### 调整仪表盘上的瓷砖布局
+
+## 立即开始使用 Microsoft Fabric 和 Power BI
+### 创建一个湖仓来存储数据
+### 使用 Dataflows Gen2 将数据准备并加载到湖仓中。
+### 构建数据管道
+### 在湖仓中创建语义模型
+### 自动生成报告
