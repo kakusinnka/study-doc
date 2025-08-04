@@ -1437,3 +1437,46 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 
 ### 发布到网页
 略
+
+# [使用 Microsoft Copilot Studio 创建并发布代理](https://learn.microsoft.com/en-us/training/paths/work-power-virtual-agents/)
+## [立即开始使用 Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/modules/power-virtual-agents-bots/)
+### 导言
+* 代理创建概述
+* 负责的人工智能解决方案常见问题解答
+
+### 开始使用环境
+* 定义如何与环境进行交互
+* 创建环境
+
+### 创建代理并使用 Microsoft Copilot Studio 界面进行协作
+* 删除代理
+* 使用 Microsoft Copilot Studio 用户界面
+
+### 创建主题
+* 从主题开始
+* 系统主题
+* 创建主题
+* 与对话节点协作
+* 使用生成式回答进行搜索并总结内容
+* 将代理连接到 Microsoft 365 基础数据
+
+### 利用生成式人工智能提升生产力
+* 将生成式回答作为备用方案
+* 网站及 SharePoint 链接
+* 上传文件
+* 利用生成式人工智能协调代理
+* 内容审核
+* 在所有支持的语言中使用生成式回答
+
+### 测试您的代理
+* 测试生成式回答
+
+### 发布代理并分析性能
+* 安全
+* 企业级安全
+* 账单和使用情况在管理中心
+* 发布代理
+* 分析您的代理的性能
+
+## [使用 Microsoft Copilot Studio 构建初始代理](https://learn.microsoft.com/en-us/training/modules/create-copilots-copilot-studio/)
+### 

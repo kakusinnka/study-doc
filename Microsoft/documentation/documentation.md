@@ -3,3 +3,6 @@
 
 ## [Power BI](https://learn.microsoft.com/en-us/power-bi/)
 ### [Power BI](./PowerBI/PowerBI.md)
+
+## [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+### [Microsoft Copilot Studio](./CopilotStudio/CopilotStudio.md)
