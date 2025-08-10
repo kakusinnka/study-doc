@@ -1525,3 +1525,136 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
   * 共享一个代理以实现协作编写
   * 共享一个代理用于测试
   * 团队
+
+# [为 Microsoft Power Platform 构建自定义连接器](https://learn.microsoft.com/en-us/training/paths/build-custom-connectors/)
+## [开始使用 Microsoft Power Platform 的自定义连接器](https://learn.microsoft.com/en-us/training/modules/get-started-custom-connector/)
+### Introduction  导言
+* 识别或构建 API
+* 描述 API
+* 使用连接器
+* 将连接器认证并作为开源项目分享
+* 描述连接器
+* 使用经过身份验证的 API
+
+### 制造商门户体验演示
+略
+
+### 探索自定义连接器配置选项
+* 连接器命名及相关信息
+* 动作和触发器命名
+* 操作可见性
+* 请求
+* 应答
+* 验证
+* 其他设置
+
+### 练习 - 在解决方案中创建一个新连接器
+* 任务 1：审查 API
+* 任务 2：创建一个新的解决方案
+* 任务 3：创建一个新的连接器
+* 任务 4：导入 OpenAPI 定义
+* 任务 5：审查并调整定义
+* 任务 6：测试连接器
+
+### 使用自定义连接器
+略
+
+### 练习 - 使用 Power Automate 中的连接器
+* 任务 1：创建一个 Power Automate 云流程
+* 任务 2：测试云流
+
+# [开始使用 Dataverse](https://learn.microsoft.com/en-us/training/paths/get-started-cds/)
+## [在 Dataverse 中创建和管理环境](https://learn.microsoft.com/en-us/training/modules/create-manage-environments/)
+### Microsoft Dataverse 中的环境
+略
+
+### 开发环境
+* 谁可以注册 Power Apps 开发者计划？
+* 管理开发环境
+
+### 创建并管理一个环境
+* 创建 Dataverse 环境的场景
+* 练习
+
+### 创建一个 Microsoft Dataverse 数据库的实例
+略
+
+### 在环境中添加用户和角色
+* 创建自定义安全角色
+
+### 在环境中管理设置
+略
+
+### 环境运营
+* 更改环境类型
+* 添加 Microsoft Dataverse 数据存储
+* 删除环境
+* 恢复环境
+* 重置环境
+* 复制环境
+* 备份环境
+  * 系统备份
+  * 手动备份
+* 恢复环境
+* 管理模式
+* 环境历史
+
+## [在 Dataverse 中创建表](https://learn.microsoft.com/en-us/training/modules/get-started-with-powerapps-common-data-service/)
+### Microsoft Dataverse 入门指南
+* 微软数据海
+* 表格
+
+### 表格特征
+* 表格属性
+* 行键
+* 在 Dataverse 中创建一个表
+  * 从 Copilot 开始
+  * 从一个空白的表格开始
+  * 导入 SharePoint 列表
+  * 导入 Excel 文件或.CSV 文件
+  * 设置高级属性
+  * 创建一个虚拟表
+* 表格类型
+* 表所有权
+* 何时使用标准表格，何时创建新表格
+
+### 练习 - 创建一个 Microsoft Dataverse 表
+* 创建自定义表格
+* 添加并自定义列
+* 自定义视图
+* 自定义主表单
+
+### 练习 - 将数据导入您的 Microsoft Dataverse 数据库
+* 创建示例导入数据
+* 将数据导入您的 Dataverse 表
+
+###  表关系
+* 关系类型
+  * 一对多关系
+  * 多对多关系
+
+### 练习 - 创建表关系
+* 创建自定义表格并添加一列
+* 通过查找列建立关系
+* 添加一对多关系
+
+### 数据集逻辑与安全
+* 业务规则
+* 行动
+* 画布应用与模型驱动应用的区别
+* 数据集安全
+
+### 练习 - 创建自定义表格并导入数据
+* 使用 Microsoft Dataverse 存储数据
+* 创建自定义表格
+* 添加业务规则
+* 从 Excel 文件导入数据
+
+### Dataverse auditing  数据集审计
+* 关键概念
+* 在 Power Apps 中配置用于审计的表和列
+
+### 双写入与虚拟表
+* 双写
+* 虚拟表格
+* 何时使用双写入与虚拟表
