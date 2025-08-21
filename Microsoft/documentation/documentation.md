@@ -1,3 +1,6 @@
+## [Microsoft Power Pages documentation](https://learn.microsoft.com/en-us/power-pages/)
+### [](./PowerPages/PowerPages.md)
+
 ## [Power Automate](https://learn.microsoft.com/en-us/power-automate/)
 ### [Power Automate](./PowerAutomate/PowerAutomate.md)
 

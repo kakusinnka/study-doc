@@ -1278,6 +1278,48 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 * 管理应用访问的步骤
 * 快速分享画布应用，体验全新的分享功能
 
+## [构建基于模型的应用程序](https://learn.microsoft.com/en-us/training/modules/build-model-driven-app/)
+### 导言
+略
+
+### 模型驱动应用程序的组成部分
+* 数据组件
+  * 表格
+  * 列
+  * 关系
+  * 选择专栏
+* 用户界面组件
+* 逻辑组件
+* 可视化
+
+### 从表格创建基于模型的应用程序
+* 基于模型驱动的应用程序开发阶段
+  * 模型业务数据
+  * 定义业务流程
+  * 编写应用程序
+  * 配置安全角色
+  * 发布并分享
+
+### 修改表单
+* 理解模型驱动应用中的表单类型
+* 使用模型驱动的表单设计器创建表单
+* 使用 Copilot 为表单生成列建议
+* 如何使用 Copilot 进行列建议
+
+### 创建和修改视图
+* 理解模型驱动应用中视图的作用
+* 区分个人视图、系统视图和公共视图
+* 在 Power Apps 中访问并使用视图编辑器
+
+### 练习 - 创建一个基于模型的应用程序
+略
+
+### 分享一个基于模型的应用程序
+* 与他人共享基于模型的应用程序
+* 共享模型驱动型应用程序的步骤
+  * 分配安全角色
+  * 在不同设备上运行并测试您的模型驱动型应用程序
+
 ## [立即开始使用 Power Automate](https://learn.microsoft.com/en-us/training/modules/get-started-flows/)
 ### 介绍 Power Automate
 * 什么是 Power Automate：Power Automate 是一个在线工作流服务，可自动化跨最常用应用和服务的操作。
@@ -1658,3 +1700,194 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 * 双写
 * 虚拟表格
 * 何时使用双写入与虚拟表
+
+# [描述 Microsoft Power Platform 的商业价值。](https://learn.microsoft.com/en-us/training/paths/describe-business-value-microsoft-power-platform/)
+## [描述 Microsoft Power Platform 服务的商业价值](https://learn.microsoft.com/en-us/training/modules/describe-business-value-microsoft-power-platform-services/)
+### 导言
+### 探索 Microsoft Power Platform
+* Microsoft Power Apps
+* Microsoft Power Automate
+* Microsoft Power BI
+* Microsoft Power Pages
+* 辅助工具
+  * Connectors
+  * AI Builder
+  * Microsoft Dataverse
+  * Power Fx
+  * Managed Environments
+
+### 描述 Microsoft Power Platform 的价值
+* 利用 Power Platform 应对现代商业挑战
+* Power Platform 解决方案
+  * Power BI：数据驱动的决策制定
+  * Power Apps：赋能现场技术人员
+  * Power Automate：优化工作流程
+  * Power Pages：提升客户支持
+  * 以 Power Platform 驱动转型
+
+### 描述连接器在集成服务和数据中的价值
+* 连接器的角色与价值
+* 连接器的工作原理
+
+### 描述 Microsoft Dataverse 在组织业务数据方面的价值
+* Microsoft Dataverse 概述
+* 在 Power Platform 生态系统中的角色
+
+### 描述 Power Fx 作为低代码解决方案的价值
+* Power Fx：公式驱动的简洁性
+* Power Fx 在 Power Platform 中的应用场景
+  * Power Apps：构建动态且响应式应用程序
+  * Dataverse：自动化数据处理并确保业务逻辑执行
+  * Power Pages：实现动态、数据驱动的网页体验
+
+### 描述 Power Platform 服务如何协同工作
+* 释放 Power Platform 的潜力
+* 实际应用
+
+### 描述 Copilots 和生成式人工智能功能在 Power Platform 中的价值
+* Power Platform 中的 Copilot：简化开发与自动化
+
+### 为 Microsoft Power Platform 编写有效的 Copilot 提示词
+* 有效提示的最佳实践
+* 提示语的精准性至关重要
+* 对话式和自然语言交互
+* 提供背景信息以获得更佳效果
+* 迭代与验证：一种协作过程
+
+## [描述通过使用 Microsoft Power Platform 扩展业务解决方案的商业价值](https://learn.microsoft.com/en-us/training/modules/describe-business-value-extend-business-solutions-microsoft-power-platform/)
+### 导言
+### 描述 Microsoft Power Platform 商业解决方案如何与 Microsoft 365 应用程序和服务协同工作
+* 在 Microsoft Teams 中使用 Power Platform 组件
+
+### 描述 Microsoft Copilot Studio 的价值
+* Microsoft Copilot Studio 的主要功能
+* Microsoft Copilot Studio 代理的用例
+
+### 描述 Power Platform 如何与本地解决方案集成
+
+### 描述计划设计器的功能
+* Power Apps 中的计划设计器：简化业务解决方案
+* 计划设计器是如何工作的？
+* 计划设计器如何通过对话简化解决方案的创建
+* 企业核心优势
+
+# [Power Pages 入门](https://learn.microsoft.com/en-us/training/paths/power-pages-get-started/)
+## [Power Pages 的核心组件](https://learn.microsoft.com/en-us/training/modules/power-pages-intro/)
+### Power Pages 入门指南
+* Power Pages 功能
+  * 简化制作者的创作体验
+  * 面向专业开发者的高级开发能力
+  * 设计与响应式渲染
+  * 安全与治理
+  * 与其他 Microsoft Power Platform 组件的集成
+
+### 立即开始使用 Power Pages
+* 提供一个网站
+* Dynamics 365 模板
+* 提供一个 Dynamics 365 站点
+
+### Power Pages 的核心工具和组件
+* 工具
+* 核心组件
+  * 网页
+  * 数据处理
+  * 表格
+  * 列表
+  * 表格
+
+### Power Pages 安全概述
+* 网站可见性
+* 身份验证
+* 授权
+
+### Power Pages 扩展性概述
+* 与其他 Microsoft Power Platform 组件的集成
+* Power Pages 扩展性
+  * Liquid  液体
+  * 网页模板
+  * 代码编辑器
+  * JavaScript
+  * CSS
+  * 组件框架
+  * 开发工具
+
+## [探索 Power Pages 模板](https://learn.microsoft.com/en-us/training/modules/power-pages-templates/)
+### Power Pages 中的网站模板简介
+略
+
+### 网站设计模板
+* 空白页面模板
+
+### 场景化模板
+略
+
+### Dynamics 365 Power Pages 网站模板
+略
+
+## [探索 Power Pages 设计工作室](https://learn.microsoft.com/en-us/training/modules/power-pages-studio/)
+### Power Pages 设计工作室简介
+略
+
+### 与页面协作
+* 创建一个页面
+* 配置网站结构
+* 预览页面
+
+### 页面组件
+* 源代码
+
+### 网站样式与模板
+* Styling 造型
+* 自定义 CSS
+* Templates  模板
+
+### 练习 - 编辑页面
+略
+
+## [探索 Power Pages 设计工作室的数据和安全功能](https://learn.microsoft.com/en-us/training/modules/power-pages-studio-data-security/)
+### Power Pages 设计工作室数据与安全功能简介
+略
+
+### Power Pages 设计工作室中的数据工作区
+* 表格
+* 视图
+* 表单
+
+### Power Pages 安全功能
+* 页面权限
+* 表权限
+
+### 练习 - 保护 Dataverse 数据访问
+略
+
+## [Power Pages 管理入门](https://learn.microsoft.com/en-us/training/modules/power-pages-admin-intro/)
+### 简介
+* 生命周期管理操作
+* 站点配置
+* 安全
+* 生产环境监控与技术支持
+* 合规性与隐私
+
+### Power Pages 管理工具
+* Power Pages 设计工作室(面向单个站点，管理当前站点)
+* Power Pages 管理应用(面向所有站点的统一管理平台，管理通用网站功能)
+* Power Pages 管理中心(属于 Power Platform 管理中心的一部分，管理与其他服务的配合部分)
+* 其他工具
+
+### **总结对比**
+| 功能模块     | **Power Pages 设计工作室** | **Power Pages 管理应用** | **Power Pages 管理中心** |
+| ------------ | -------------------------- | ------------------------ | ------------------------ |
+| **目标用户** | 开发人员/设计人员          | 网站管理员               | 企业 IT 管理员           |
+| **核心功能** | 页面设计、数据绑定         | 用户权限管理、安全设置   | 全局配置、高级管理       |
+| **适用场景** | 网站设计和开发             | 日常运营和维护           | 企业级管理和配置         |
+| **优势**     | 低代码开发、直观界面       | 简化管理流程             | 企业级安全和合规支持     |
+
+### 在 Power Pages 设计工作室中设置工作区
+* 身份验证
+* 上线检查清单
+* 表权限
+* 网站可见性
+* 渐进式网页应用
+
+### 练习
+略

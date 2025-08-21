@@ -69,3 +69,20 @@ py manage.py runserver
 ```python
 python manage.py createsuperuser
 ```
+
+## 导入 JSON 数据
+```python
+# Django 的 loaddata 会在事务中运行。如果导入过程中发生错误，所有更改都会回滚，确保数据库一致性。
+# 如果 JSON 文件中包含的字段在模型中不存在，可以使用 --ignorenonexistent 参数忽略这些字段。
+# Django 使用 pk（主键）来判断数据是否已经存在。
+# 如果 JSON 文件中的数据的 pk 在数据库中已经存在，则会尝试更新该记录。
+# 如果 pk 不存在，则会创建新的记录。
+python manage.py loaddata data.json
+```
+
+## connection.queries 属性，可以用来捕获所有执行的 SQL 查询。
+```python
+from django.db import connection
+
+print(connection.queries[-1]["sql"]) # 打印最后一条 SQL 查询
+```
