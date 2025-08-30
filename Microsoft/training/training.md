@@ -1891,3 +1891,32 @@ Copilot Studio 使团队能够使用无代码引导的图形界面轻松创建�
 
 ### 练习
 略
+
+# [使用 Power Apps 创建机器订购应用 - 在线研讨会](https://learn.microsoft.com/en-us/training/paths/power-apps-online-workshop/)
+## [创建机器订购 Power Apps 画布应用 - 在线研讨会](https://learn.microsoft.com/en-us/training/modules/power-apps-canvas-app-online-workshop/)
+### 简介
+### 练习 - 在 Power Apps 中创建应用
+### 练习 - 添加设备库并连接数据源
+### 练习 - 添加比较屏幕
+
+## [为机器订购应用创建 Dataverse 表 - 在线研讨会](https://learn.microsoft.com/en-us/training/modules/dataverse-lab-manual-online-workshop/)
+### 简介
+### 练习 - 探索 Microsoft Dataverse
+### 练习 - 创建自定义表和列
+### 练习 - 从画布应用连接数据
+### 练习 - 使用 Copilot 构建应用
+
+## [创建用于机器订购的模型驱动型 Power Apps 应用 - 在线研讨会](https://learn.microsoft.com/en-us/training/modules/power-apps-model-driven-apps-online-workshop/)
+### 简介
+### 练习 - 创建应用并为机器订单表添加列
+### 练习 - 添加业务流程流
+### 练习 - 修改表单和视图
+### 练习 - 测试应用程序
+
+## [将 Power Apps 应用与 Power Automate 集成 - 在线研讨会](https://learn.microsoft.com/en-us/training/modules/integrate-power-apps-online-workshop/)
+### 简介
+### 练习 - 创建审批请求流
+### 练习 - 创建条件逻辑
+### 练习 - 测试云端流
+### 练习 - 更新流
+### 可选练习 - 添加 Teams 通知
